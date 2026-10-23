@@ -13,7 +13,17 @@ correspondem às implementações avaliadas.
 | H3 | Dijkstra referência | `humano/JavaScript/Dijkstra/Dijkstra.js` | `F8BC24163D174146834F04447CF0C51860227BDB2683C68994A4F1B4D0F0DB7E` |
 | IA3 | Dijkstra IA | `IA/JavaScript/Dijkstra/DijkstraIA.js` | `F5745D166767BE4BBD7838669900402276DC945C2AAF9B66B1F7FB0C149C6A46` |
 
+## Cópias modificadas
+
+| Arquivo | SHA-256 |
+|---|---|
+| `humano/JavaScript/Dijkstra/Dijkstra-modificado.js` | `FD230D4278812FA2D144BCFAE5A64FCE59F6467BE812292B7030D3C1B5702E69` |
+| `humano/JavaScript/MergeSort/MergeSort-modificado.js` | `EE5130E191B9EAC7A682897ECCE82EAA507FCC6F10775EABCF5D1C252C044D0E` |
+| `IA/JavaScript/Dijkstra/DijkstraIA-modificado.js` | `94A03136D0AAA2DCED4EE442E45334EAADADB230F252567DA061A9DB911039B6` |
+| `IA/JavaScript/MergeSort/MergeSort-modificado.js` | `44CC160BD6CD97D8EF56F890ACA681EDB3B35841CE97F5AED27F677176F7DCBC` |
+| `IA/JavaScript/Search/BinarySearch/index-modificado.js` | `5A314B389222836456A40C1266649AD1D3EAE32FC348EAA7C147645CD3013CB3` |
+
 Os hashes identificam o conteúdo dos arquivos preservados após as análises
 estáticas. As cópias com o sufixo `-modificado` foram criadas posteriormente
-para permitir a execução visível dos exemplos e não fazem parte deste
-manifesto.
+para permitir a execução visível dos exemplos e estão registradas
+separadamente neste manifesto.

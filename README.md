@@ -83,6 +83,42 @@ Os arquivos de Dijkstra e Merge Sort da pasta `IA/` possuem exemplos de uso
 no próprio arquivo. As implementações da pasta `humano/` podem ser importadas
 ou executadas conforme seus respectivos módulos JavaScript.
 
+### Testes automatizados
+
+Os testes funcionais ficam em `tests/algorithms.test.js` e utilizam o recurso
+nativo `node:test`. Para executá-los:
+
+```bash
+node --test tests/algorithms.test.js
+```
+
+Os testes são identificados da seguinte forma:
+
+| Identificação | Implementação |
+|---|---|
+| H1 | Busca binária humana |
+| IA1 | Busca binária IA |
+| H2 | Merge Sort humano |
+| IA2 | Merge Sort IA |
+| H3 | Dijkstra humano |
+| IA3 | Dijkstra IA |
+
+Os testes verificam o resultado dos algoritmos sem alterar os arquivos
+originais. Os pares recebem os mesmos casos lógicos, com adaptação apenas da
+representação dos dados quando as implementações usam formatos diferentes.
+Também são testados vetores vazios, valores únicos, valores ausentes,
+duplicados, vértices inacessíveis e caminhos com custo superior a `10.000`.
+
+No estado atual, são executados 29 cenários. A implementação humana de
+Dijkstra reprova intencionalmente o cenário de caminho maior que `10.000`,
+pois inicializa as distâncias com esse valor e retorna `10.000` em vez de
+`12.001`. Esse resultado registra uma diferença funcional entre as
+implementações; o algoritmo original não foi alterado para fazer o teste
+passar.
+
+As cópias com o sufixo `-modificado` servem apenas para registrar as
+alterações de saída feitas para visualizar os resultados no terminal.
+
 ## Análise estática
 
 Os diretórios dos algoritmos possuem arquivos `sonar-project.properties` para

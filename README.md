@@ -119,6 +119,9 @@ passar.
 As cópias com o sufixo `-modificado` servem apenas para registrar as
 alterações de saída feitas para visualizar os resultados no terminal.
 
+Os hashes SHA-256 dos arquivos utilizados nas análises estão registrados no
+[manifesto de rastreabilidade](docs/manifesto-rastreabilidade.md).
+
 ## Análise estática
 
 Os diretórios dos algoritmos possuem arquivos `sonar-project.properties` para

@@ -155,3 +155,13 @@ O objetivo não é estabelecer qual abordagem é universalmente melhor, mas
 fornecer uma base reproduzível para observar diferenças de implementação,
 legibilidade, complexidade e resultados de análise estática entre os dois
 grupos de código.
+
+## Convenção de cálculo dos hashes
+
+Os hashes SHA-256 registrados neste manifesto correspondem às cópias preservadas dos arquivos com terminações de linha CRLF, utilizadas no ambiente Windows.
+
+Os arquivos obtidos diretamente do repositório GitHub podem apresentar terminações de linha LF, o que resulta em hashes diferentes, mesmo quando o conteúdo lógico das implementações permanece inalterado.
+
+Para reproduzir os valores publicados, é necessário considerar a mesma representação em bytes utilizada no cálculo original, incluindo as terminações de linha CRLF. A diferença entre CRLF e LF, isoladamente, não constitui evidência de alteração da lógica dos algoritmos.
+
+Os hashes representam o conteúdo dos arquivos preservados e não comprovam, por si só, a revisão exata do repositório de origem consultada durante a coleta inicial.

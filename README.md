@@ -1,8 +1,6 @@
 # Códigos do TCC
 
-Este repositório reúne os códigos utilizados no Trabalho de Conclusão de Curso
-(TCC) para comparar implementações de algoritmos desenvolvidas por uma pessoa
-com implementações produzidas com auxílio de inteligência artificial.
+Este repositório reúne os códigos utilizados na etapa experimental preliminar do Trabalho de Conclusão de Curso (TCC), destinada a comparar implementações de referência provenientes de um repositório público com implementações geradas por Inteligência Artificial. A autoria exclusivamente humana dos códigos de referência não pôde ser comprovada.
 
 Os algoritmos analisados são:
 

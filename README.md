@@ -156,12 +156,12 @@ fornecer uma base reproduzível para observar diferenças de implementação,
 legibilidade, complexidade e resultados de análise estática entre os dois
 grupos de código.
 
-## Convenção de cálculo dos hashes
+## Convenção de cálculo dos hashes SHA-256
 
-Os hashes SHA-256 registrados neste manifesto correspondem às cópias preservadas dos arquivos com terminações de linha CRLF, utilizadas no ambiente Windows.
+Os hashes SHA-256 registrados neste manifesto correspondem às cópias preservadas dos arquivos JavaScript com terminações de linha CRLF, utilizadas no ambiente Windows durante o registro dos artefatos.
 
-Os arquivos obtidos diretamente do repositório GitHub podem apresentar terminações de linha LF, o que resulta em hashes diferentes, mesmo quando o conteúdo lógico das implementações permanece inalterado.
+Os arquivos recuperados diretamente do repositório GitHub podem apresentar terminações de linha LF. Essa diferença na representação dos arquivos altera os valores dos hashes SHA-256, mesmo quando não existem alterações nas instruções dos algoritmos.
 
-Para reproduzir os valores publicados, é necessário considerar a mesma representação em bytes utilizada no cálculo original, incluindo as terminações de linha CRLF. A diferença entre CRLF e LF, isoladamente, não constitui evidência de alteração da lógica dos algoritmos.
+Para reproduzir os hashes publicados, é necessário utilizar a mesma representação em bytes dos arquivos preservados, incluindo as terminações de linha CRLF.
 
-Os hashes representam o conteúdo dos arquivos preservados e não comprovam, por si só, a revisão exata do repositório de origem consultada durante a coleta inicial.
+Os hashes documentam a integridade das amostras preservadas, mas não comprovam, isoladamente, qual revisão do repositório TheAlgorithms/JavaScript foi consultada durante a coleta original.

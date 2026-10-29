@@ -33,7 +33,7 @@ Codigos-TCC/
 
 ### Pasta `IA/`
 
-<<<<<<< HEAD
+
 Contém implementações produzidas por IA, organizadas por linguagem de programação.
 =======
 Contém as implementações de referência provenientes do repositório TheAlgorithms/JavaScript. Embora esses códigos estejam disponíveis publicamente, não foi possível comprovar sua autoria exclusivamente humana. O nome da pasta `humano/` foi preservado por compatibilidade com a organização original dos arquivos do estudo piloto.
@@ -227,7 +227,7 @@ Para preservar a integridade metodológica, problemas identificados posteriormen
 
 | Tipo de ocorrência | Interpretação |
 |---|---|
-<<<<<<< HEAD
+
 | Falha de ambiente | Ferramenta, SDK, runtime ou banco ausente |
 | Falha de compatibilidade | Incompatibilidade entre ferramentas e dependências |
 | Erro de montagem | Arquivo copiado incorretamente ou no diretório errado |
@@ -244,7 +244,7 @@ Para preservar a integridade metodológica, problemas identificados posteriormen
 
 As informações de rastreabilidade devem permitir identificar os arquivos originais, eventuais intervenções posteriores e os resultados efetivamente obtidos.
 
-<<<<<<< HEAD
+
 Não devem ser atribuídos hashes ou resultados experimentais a arquivos sem a correspondente coleta ou verificação.
 =======
 No estado atual, são executados 12 cenários lógicos, totalizando 29 execuções individuais. A implementação de referência H3 (Dijkstra) apresenta falha no teste referente a caminho maior que `10.000`, pois inicializa as distâncias com esse valor e retorna `10.000` em vez de `12.001`. Esse resultado registra uma diferença funcional entre as implementações; o algoritmo original não foi alterado para fazer o teste passar.
@@ -274,7 +274,7 @@ A avaliação funcional busca identificar diferenças de comportamento entre as 
 
 Na etapa preliminar, foram utilizados testes de algoritmos com casos lógicos equivalentes.
 
-<<<<<<< HEAD
+
 Na etapa ampliada, os critérios funcionais devem considerar as características de cada aplicação, como:
 =======
 Os links acima apontam para o commit `5c39e87a9a31f279c60f830ad74a845e4788a517` do repositório TheAlgorithms/JavaScript, identificado posteriormente para fins de verificação. Não foi possível comprovar que essa revisão corresponde exatamente à versão consultada durante a coleta original. Na comparação realizada, os arquivos H2 e H3 apresentaram conteúdo idêntico ao dessa revisão, enquanto H1 preservou as funções dos algoritmos, mas apresentou alterações em elementos externos a elas.
@@ -293,7 +293,7 @@ e mantenha esta atribuição ao redistribuir ou modificar os trechos derivados.
 
 Os testes automatizados cobrem cenários específicos e não garantem a ausência de todos os defeitos.
 
-<<<<<<< HEAD
+
 Quando uma aplicação não puder ser iniciada, o impedimento deve ser registrado sem inventar resultados para testes não realizados.
 
 ## 8. Direitos autorais e reconhecimento das fontes

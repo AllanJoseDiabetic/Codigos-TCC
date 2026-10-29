@@ -1,0 +1,42 @@
+<article class="card post-card mb-4">
+
+    <div class="card-body">
+
+        <div class="post-metadata">
+
+            <a
+                href="{{ url_for('site.user_posts', username=post.author.username) }}"
+            >
+                {{ post.author.username }}
+            </a>
+
+            <span>
+                {{ post.created_at.strftime('%d/%m/%Y %H:%M') }} UTC
+            </span>
+
+        </div>
+
+        <h2 class="h4 post-title">
+
+            <a
+                href="{{ url_for('site.post_detail', post_id=post.id) }}"
+            >
+                {{ post.title }}
+            </a>
+
+        </h2>
+
+        <p class="post-excerpt">
+            {{ post.content | truncate(260, True, '…') }}
+        </p>
+
+        <a
+            class="btn btn-outline-primary btn-sm"
+            href="{{ url_for('site.post_detail', post_id=post.id) }}"
+        >
+            Ler publicação
+        </a>
+
+    </div>
+
+</article>

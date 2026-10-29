@@ -1,0 +1,171 @@
+{% extends "tracker/base.html" %}
+
+{% block title %}
+Minhas tarefas - Agenda de Hábitos
+{% endblock %}
+
+{% block content %}
+
+<section class="content-panel">
+
+    <div class="page-heading">
+
+        <h1 class="page-title">
+            Minhas tarefas
+        </h1>
+
+        <div class="heading-actions">
+
+            <a
+                class="btn btn-outline-primary"
+                href="{% url 'tracker:add_category' %}"
+            >
+                Nova categoria
+            </a>
+
+            <a
+                class="btn btn-primary"
+                href="{% url 'tracker:add_task' %}"
+            >
+                Nova tarefa
+            </a>
+
+        </div>
+
+    </div>
+
+    {% for category in categories %}
+
+        <section class="category-section">
+
+            <div class="category-heading">
+
+                <h2>
+                    {{ category.name }}
+                </h2>
+
+                <div class="action-links">
+
+                    <a
+                        href="{% url 'tracker:edit_category' category.id %}"
+                    >
+                        Renomear
+                    </a>
+
+                    <a
+                        class="text-danger"
+                        href="{% url 'tracker:delete_category' category.id %}"
+                    >
+                        Excluir
+                    </a>
+
+                </div>
+
+            </div>
+
+            {% for task in category.tasks.all %}
+
+                <div class="task-item">
+
+                    <div class="task-description">
+
+                        <h3>
+                            {{ task.name }}
+                        </h3>
+
+                        {% if task.active %}
+
+                            <span class="badge badge-success">
+                                Ativa
+                            </span>
+
+                        {% else %}
+
+                            <span class="badge badge-secondary">
+                                Inativa
+                            </span>
+
+                        {% endif %}
+
+                        <p class="small text-muted mb-0">
+
+                            Dias previstos:
+
+                            {% if "0" in task.weekdays %}
+                                Seg
+                            {% endif %}
+
+                            {% if "1" in task.weekdays %}
+                                Ter
+                            {% endif %}
+
+                            {% if "2" in task.weekdays %}
+                                Qua
+                            {% endif %}
+
+                            {% if "3" in task.weekdays %}
+                                Qui
+                            {% endif %}
+
+                            {% if "4" in task.weekdays %}
+                                Sex
+                            {% endif %}
+
+                            {% if "5" in task.weekdays %}
+                                Sáb
+                            {% endif %}
+
+                            {% if "6" in task.weekdays %}
+                                Dom
+                            {% endif %}
+
+                        </p>
+
+                    </div>
+
+                    <div class="action-links">
+
+                        <a
+                            href="{% url 'tracker:edit_task' task.id %}"
+                        >
+                            Editar
+                        </a>
+
+                        <a
+                            class="text-danger"
+                            href="{% url 'tracker:delete_task' task.id %}"
+                        >
+                            Excluir
+                        </a>
+
+                    </div>
+
+                </div>
+
+            {% empty %}
+
+                <p class="text-muted">
+                    Nenhuma tarefa nesta categoria.
+                </p>
+
+            {% endfor %}
+
+        </section>
+
+    {% empty %}
+
+        <div class="alert alert-info">
+
+            Você ainda não possui categorias cadastradas.
+
+            <a href="{% url 'tracker:add_category' %}">
+                Criar minha primeira categoria
+            </a>
+
+        </div>
+
+    {% endfor %}
+
+</section>
+
+{% endblock %}

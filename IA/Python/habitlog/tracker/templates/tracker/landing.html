@@ -1,0 +1,77 @@
+{% extends "tracker/base.html" %}
+
+{% block title %}
+Início - Agenda de Hábitos
+{% endblock %}
+
+{% block content %}
+
+<section class="welcome-section">
+
+    <h1>
+        Organize seus hábitos
+    </h1>
+
+    <p class="lead">
+        Planeje tarefas, registre suas atividades
+        e acompanhe seu progresso ao longo do tempo.
+    </p>
+
+    <div class="welcome-actions">
+
+        <a
+            class="btn btn-primary btn-lg"
+            href="{% url 'tracker:register' %}"
+        >
+            Criar conta
+        </a>
+
+        <a
+            class="btn btn-outline-primary btn-lg"
+            href="{% url 'tracker:login' %}"
+        >
+            Entrar
+        </a>
+
+    </div>
+
+</section>
+
+<section class="feature-grid">
+
+    <div class="feature-card">
+
+        <h2>Organização</h2>
+
+        <p>
+            Separe suas tarefas em categorias
+            e escolha os dias da semana previstos.
+        </p>
+
+    </div>
+
+    <div class="feature-card">
+
+        <h2>Acompanhamento</h2>
+
+        <p>
+            Consulte registros diários, semanais
+            e mensais de suas atividades.
+        </p>
+
+    </div>
+
+    <div class="feature-card">
+
+        <h2>Progresso</h2>
+
+        <p>
+            Visualize estatísticas de conclusão
+            e acompanhe sua regularidade.
+        </p>
+
+    </div>
+
+</section>
+
+{% endblock %}

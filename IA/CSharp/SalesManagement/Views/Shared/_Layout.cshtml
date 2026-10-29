@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    />
+
+    <title>@ViewData["Title"] - Gestão de Vendas</title>
+
+    <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+
+    <link
+        rel="stylesheet"
+        href="~/css/site.css"
+        asp-append-version="true"
+    />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+
+            <div class="navbar-header">
+
+                <button
+                    type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#main-navigation"
+                    aria-expanded="false"
+                >
+                    <span class="sr-only">
+                        Alternar navegação
+                    </span>
+
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a
+                    class="navbar-brand"
+                    asp-controller="Home"
+                    asp-action="Index"
+                >
+                    Gestão de Vendas
+                </a>
+
+            </div>
+
+            <div
+                class="collapse navbar-collapse"
+                id="main-navigation"
+            >
+
+                <ul class="nav navbar-nav">
+
+                    <li>
+                        <a
+                            asp-controller="Home"
+                            asp-action="Index"
+                        >
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            asp-controller="Departments"
+                            asp-action="Index"
+                        >
+                            Departamentos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            asp-controller="Sellers"
+                            asp-action="Index"
+                        >
+                            Vendedores
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            asp-controller="SalesRecords"
+                            asp-action="Index"
+                        >
+                            Vendas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            asp-controller="SalesRecords"
+                            asp-action="SimpleSearch"
+                        >
+                            Busca simples
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            asp-controller="SalesRecords"
+                            asp-action="GroupingSearch"
+                        >
+                            Busca agrupada
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <main class="container main-content">
+
+        @if (TempData["Success"] != null)
+        {
+            <div
+                class="alert alert-success"
+                role="alert"
+            >
+                @TempData["Success"]
+            </div>
+        }
+
+        @RenderBody()
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>
+                Gestão de Vendas
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>

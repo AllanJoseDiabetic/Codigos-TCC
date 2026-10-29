@@ -1,0 +1,44 @@
+{% extends "tracker/base.html" %}
+
+{% block title %}
+Registro diário - Agenda de Hábitos
+{% endblock %}
+
+{% block content %}
+
+<section class="content-panel">
+
+    <div class="page-heading">
+
+        <div>
+
+            <h1 class="page-title">
+                Registro diário
+            </h1>
+
+            <p class="text-muted">
+                {{ today|date:"d/m/Y" }}
+            </p>
+
+        </div>
+
+        <a
+            class="btn btn-outline-primary"
+            href="{% url 'tracker:weekly' %}"
+        >
+            Ver semana
+        </a>
+
+    </div>
+
+    <p>
+        Marque a situação de cada tarefa
+        prevista para hoje e adicione
+        anotações quando necessário.
+    </p>
+
+    {% include "tracker/_log_form.html" %}
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,80 @@
+@{
+    ViewData["Title"] = "Consultas de vendas";
+}
+
+<section class="content-panel">
+
+    <h1 class="page-title">
+        Consultas de vendas
+    </h1>
+
+    <p>
+        Consulte os registros comerciais
+        de acordo com o intervalo de datas desejado.
+    </p>
+
+    <div class="row">
+
+        <div class="col-md-6">
+
+            <div class="search-option">
+
+                <h2>
+                    Busca simples
+                </h2>
+
+                <p>
+                    Apresenta as vendas encontradas no período
+                    e a soma dos valores dos registros.
+                </p>
+
+                <a
+                    class="btn btn-primary"
+                    asp-action="SimpleSearch"
+                >
+                    Realizar busca simples
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="search-option">
+
+                <h2>
+                    Busca agrupada
+                </h2>
+
+                <p>
+                    Organiza as vendas por departamento,
+                    exibindo os registros e os respectivos totais.
+                </p>
+
+                <a
+                    class="btn btn-primary"
+                    asp-action="GroupingSearch"
+                >
+                    Realizar busca agrupada
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="alert alert-info sample-data-information">
+
+        <strong>Dados fictícios:</strong>
+
+        os registros iniciais abrangem o período
+        de 12/08/2025 a 10/10/2026.
+
+        Uma pesquisa fora desse intervalo
+        pode não apresentar registros.
+
+    </div>
+
+</section>

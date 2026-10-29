@@ -1,0 +1,189 @@
+{% extends "tracker/base.html" %}
+
+{% block title %}
+Progresso - Agenda de Hábitos
+{% endblock %}
+
+{% block content %}
+
+<section class="content-panel">
+
+    <h1 class="page-title">
+        Meu progresso
+    </h1>
+
+    <p>
+        Acompanhe o histórico de suas tarefas
+        e a distribuição dos estados registrados.
+    </p>
+
+    {% if summaries %}
+
+        <div
+            id="progress-chart"
+            class="progress-chart"
+            role="img"
+            aria-label="Gráfico de colunas com os estados dos registros por tarefa"
+        ></div>
+
+        <div id="progress-fallback">
+
+            <h2 class="section-title">
+                Resumo por tarefa
+            </h2>
+
+            {% for summary in summaries %}
+
+                <article class="progress-item">
+
+                    <h3 class="h5">
+                        {{ summary.task.name }}
+                    </h3>
+
+                    <p class="text-muted">
+                        {{ summary.task.category.name }}
+                    </p>
+
+                    <p>
+                        Taxa de conclusão:
+                        <strong>
+                            {{ summary.completion_rate }}%
+                        </strong>
+                    </p>
+
+                    <ul>
+                        <li>
+                            Complete:
+                            {{ summary.counts.Complete }}
+                        </li>
+
+                        <li>
+                            Incomplete:
+                            {{ summary.counts.Incomplete }}
+                        </li>
+
+                        <li>
+                            Ignored:
+                            {{ summary.counts.Ignored }}
+                        </li>
+
+                        <li>
+                            Pending:
+                            {{ summary.counts.Pending }}
+                        </li>
+                    </ul>
+
+                </article>
+
+            {% endfor %}
+
+        </div>
+
+    {% else %}
+
+        <div class="alert alert-info">
+            Cadastre tarefas para acompanhar seu progresso.
+        </div>
+
+    {% endif %}
+
+</section>
+
+{% endblock %}
+
+{% block scripts %}
+
+{% if summaries %}
+
+    {{ chart_rows|json_script:"progress-chart-data" }}
+
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script>
+        (function () {
+            "use strict";
+
+            var chartElement = document.getElementById(
+                "progress-chart"
+            );
+
+            var fallbackElement = document.getElementById(
+                "progress-fallback"
+            );
+
+            var dataElement = document.getElementById(
+                "progress-chart-data"
+            );
+
+            if (
+                !chartElement ||
+                !fallbackElement ||
+                !dataElement ||
+                !window.google ||
+                !google.charts
+            ) {
+                return;
+            }
+
+            var chartRows = JSON.parse(
+                dataElement.textContent
+            );
+
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable(
+                    chartRows
+                );
+
+                var options = {
+                    title: "Registros por tarefa",
+                    height: 420,
+                    legend: {
+                        position: "bottom"
+                    },
+                    chartArea: {
+                        left: 55,
+                        right: 20,
+                        top: 55,
+                        bottom: 110
+                    },
+                    hAxis: {
+                        title: "Tarefas",
+                        slantedText: true,
+                        slantedTextAngle: 45
+                    },
+                    vAxis: {
+                        title: "Quantidade",
+                        minValue: 0,
+                        format: "0"
+                    },
+                    isStacked: false
+                };
+
+                var chart = new google.visualization.ColumnChart(
+                    chartElement
+                );
+
+                chart.draw(
+                    data,
+                    options
+                );
+
+                fallbackElement.hidden = true;
+            }
+
+            google.charts.load(
+                "current",
+                {
+                    packages: ["corechart"]
+                }
+            );
+
+            google.charts.setOnLoadCallback(
+                drawChart
+            );
+        }());
+    </script>
+
+{% endif %}
+
+{% endblock %}

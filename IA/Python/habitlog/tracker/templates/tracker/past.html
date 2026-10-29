@@ -1,0 +1,45 @@
+{% extends "tracker/base.html" %}
+
+{% block title %}
+Meses anteriores - Agenda de Hábitos
+{% endblock %}
+
+{% block content %}
+
+<section class="content-panel">
+
+    <h1 class="page-title">
+        Histórico mensal
+    </h1>
+
+    <p>
+        Selecione um mês para consultar
+        os registros de suas tarefas.
+    </p>
+
+    <div class="month-grid">
+
+        {% for item in months %}
+
+            <a
+                class="month-item"
+                href="{% url 'tracker:monthly' item.year item.month %}"
+            >
+
+                <strong>
+                    {{ item.name }}
+                </strong>
+
+                <span>
+                    {{ item.year }}
+                </span>
+
+            </a>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+{% endblock %}

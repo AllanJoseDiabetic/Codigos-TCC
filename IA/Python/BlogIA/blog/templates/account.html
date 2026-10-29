@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% from "partials/fields.html" import render_field %}
+
+{% block title %}
+Minha conta - Blog Pessoal
+{% endblock %}
+
+{% block content %}
+
+<section class="content-section">
+
+    <div class="profile-header">
+
+        <img
+            class="profile-picture"
+            src="{{ url_for('static', filename='profile_pics/' + current_user.image_file) }}"
+            alt="Imagem de perfil"
+        >
+
+        <div>
+
+            <h1>{{ current_user.username }}</h1>
+
+            <p class="text-muted">
+                {{ current_user.email }}
+            </p>
+
+            <a
+                href="{{ url_for('site.user_posts', username=current_user.username) }}"
+            >
+                Ver minhas publicações
+            </a>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <h2 class="h4 mb-4">
+        Atualizar perfil
+    </h2>
+
+    <form
+        method="POST"
+        enctype="multipart/form-data"
+    >
+
+        {{ form.hidden_tag() }}
+
+        {{ render_field(form.username) }}
+
+        {{ render_field(form.email) }}
+
+        {{ render_field(form.picture) }}
+
+        <p class="text-muted small">
+            Formatos aceitos: JPG e PNG.
+            Tamanho máximo da requisição: 2 MB.
+        </p>
+
+        <div class="form-group">
+
+            {{ form.submit(class="btn btn-primary") }}
+
+        </div>
+
+    </form>
+
+</section>
+
+{% endblock %}

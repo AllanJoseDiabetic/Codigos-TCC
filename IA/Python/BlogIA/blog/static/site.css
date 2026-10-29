@@ -1,0 +1,284 @@
+:root {
+    --page-background: #f5f6f8;
+    --content-background: #ffffff;
+    --primary-text: #24292f;
+    --secondary-text: #68717c;
+    --border-color: #e1e5e9;
+    --link-color: #2463a6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--page-background);
+    color: var(--primary-text);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.page-content {
+    flex: 1;
+    padding-top: 36px;
+    padding-bottom: 50px;
+}
+
+.page-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 26px;
+    line-height: 1.3;
+}
+
+.content-section {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 30px;
+    background: var(--content-background);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+.form-section {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 32px;
+    background: var(--content-background);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+.form-section .page-title {
+    text-align: center;
+}
+
+.form-control {
+    border-radius: 4px;
+}
+
+textarea.form-control {
+    min-height: 240px;
+    resize: vertical;
+}
+
+.btn {
+    border-radius: 4px;
+}
+
+.post-card {
+    border: 1px solid var(--border-color);
+    box-shadow: none;
+}
+
+.post-card .card-body {
+    padding: 22px;
+}
+
+.post-metadata {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+    color: var(--secondary-text);
+    font-size: 0.9rem;
+}
+
+.post-title {
+    margin-bottom: 14px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+
+.post-title a {
+    color: var(--primary-text);
+    text-decoration: none;
+}
+
+.post-title a:hover {
+    color: var(--link-color);
+}
+
+.post-excerpt {
+    color: #444b53;
+    line-height: 1.7;
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+}
+
+.post-detail {
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.post-detail .page-title {
+    overflow-wrap: anywhere;
+}
+
+.post-body {
+    margin-top: 26px;
+    margin-bottom: 28px;
+    font-size: 1rem;
+    line-height: 1.85;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.post-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.inline-form {
+    display: inline-block;
+    margin: 0;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.profile-header h1 {
+    margin-bottom: 8px;
+    font-size: 1.8rem;
+    overflow-wrap: anywhere;
+}
+
+.profile-header p {
+    margin-bottom: 8px;
+    overflow-wrap: anywhere;
+}
+
+.profile-picture {
+    width: 110px;
+    height: 110px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+    background-color: #e9ecef;
+}
+
+.nav-logout-form {
+    margin: 0;
+}
+
+.nav-logout-button {
+    display: block;
+    padding: 0.5rem;
+    border: 0;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    font: inherit;
+}
+
+.nav-logout-button:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.error-section {
+    max-width: 650px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 40px 25px;
+    background: var(--content-background);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+.error-code {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #495057;
+    margin-bottom: 15px;
+}
+
+.error-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+}
+
+.error-section p {
+    color: var(--secondary-text);
+    margin-bottom: 28px;
+}
+
+.pagination {
+    margin-top: 28px;
+}
+
+.site-footer {
+    background-color: #ffffff;
+    border-top: 1px solid var(--border-color);
+    padding: 22px 0;
+}
+
+.site-footer p {
+    color: var(--secondary-text);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .page-content {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .content-section,
+    .form-section {
+        padding: 20px;
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+    }
+
+    .profile-header {
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .profile-picture {
+        width: 76px;
+        height: 76px;
+    }
+
+    .profile-header h1 {
+        font-size: 1.4rem;
+    }
+
+    .post-card .card-body {
+        padding: 17px;
+    }
+
+    .error-section {
+        margin: 25px auto;
+    }
+
+    .error-code {
+        font-size: 4rem;
+    }
+}

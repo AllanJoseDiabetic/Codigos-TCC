@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>SpaceArcade</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="application">
+
+        <header class="heading">
+            <h1>SPACE ARCADE</h1>
+            <p>Defenda sua nave das ondas inimigas</p>
+        </header>
+
+        <section
+            class="game-frame"
+            aria-label="Jogo de nave espacial"
+        >
+
+            <div class="hud">
+                <div class="hud-item">
+                    <span class="hud-label">PONTOS</span>
+                    <strong id="score">000000</strong>
+                </div>
+
+                <div class="hud-item right">
+                    <span class="hud-label">ONDA</span>
+                    <strong id="wave">01</strong>
+                </div>
+            </div>
+
+            <canvas
+                id="gameCanvas"
+                width="600"
+                height="360"
+                aria-label="Área de jogo com nave, inimigos e projéteis"
+            >
+                O navegador precisa oferecer suporte a Canvas 2D.
+            </canvas>
+
+            <div
+                id="overlay"
+                class="overlay"
+                aria-live="polite"
+            >
+                <div class="overlay-panel">
+
+                    <h2 id="overlayTitle">
+                        CARREGANDO
+                    </h2>
+
+                    <p id="overlayMessage">
+                        Preparando o jogo e os recursos sonoros.
+                    </p>
+
+                    <div
+                        id="loadingTrack"
+                        class="loading-track"
+                    >
+                        <div
+                            id="loadingProgress"
+                            class="loading-progress"
+                        ></div>
+                    </div>
+
+                    <button
+                        id="actionButton"
+                        type="button"
+                        hidden
+                    >
+                        INICIAR
+                    </button>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="instructions">
+
+            <div class="instruction">
+                <span class="key">↑</span>
+                <span class="key">↓</span>
+                <span class="key">←</span>
+                <span class="key">→</span>
+                <span>Mover nave</span>
+            </div>
+
+            <div class="instruction">
+                <span class="key wide">ESPAÇO</span>
+                <span>Disparar</span>
+            </div>
+
+        </section>
+
+        <p id="audioStatus" class="audio-status">
+            Preparando áudio HTML5.
+        </p>
+
+    </main>
+
+    <script src="audio.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+@model SalesManagement.Models.Department
+
+@{
+    ViewData["Title"] = "Detalhes do departamento";
+}
+
+<section class="content-panel">
+
+    <h1 class="page-title">
+        Detalhes do departamento
+    </h1>
+
+    <dl class="dl-horizontal">
+
+        <dt>
+            Identificador
+        </dt>
+
+        <dd>
+            @Model.Id
+        </dd>
+
+        <dt>
+            Nome
+        </dt>
+
+        <dd>
+            @Model.Name
+        </dd>
+
+    </dl>
+
+    <h2 class="section-title">
+        Vendedores associados
+    </h2>
+
+    @if (Model.Sellers.Any())
+    {
+        <ul class="list-group">
+
+            @foreach (var seller in Model.Sellers.OrderBy(s => s.Name))
+            {
+                <li class="list-group-item">
+
+                    <a
+                        asp-controller="Sellers"
+                        asp-action="Details"
+                        asp-route-id="@seller.Id"
+                    >
+                        @seller.Name
+                    </a>
+
+                </li>
+            }
+
+        </ul>
+    }
+    else
+    {
+        <p class="text-muted">
+            Nenhum vendedor está associado a este departamento.
+        </p>
+    }
+
+    <div class="form-actions">
+
+        <a
+            class="btn btn-primary"
+            asp-action="Edit"
+            asp-route-id="@Model.Id"
+        >
+            Editar
+        </a>
+
+        <a
+            class="btn btn-default"
+            asp-action="Index"
+        >
+            Voltar
+        </a>
+
+    </div>
+
+</section>

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% from "partials/fields.html" import render_field %}
+
+{% block title %}
+Recuperar senha - Blog Pessoal
+{% endblock %}
+
+{% block content %}
+
+<section class="form-section">
+
+    <h1 class="page-title">
+        Recuperar senha
+    </h1>
+
+    <p>
+        Informe o e-mail utilizado em seu cadastro
+        para solicitar um link de recuperação.
+    </p>
+
+    <form method="POST">
+
+        {{ form.hidden_tag() }}
+
+        {{ render_field(form.email) }}
+
+        <div class="form-group">
+
+            {{ form.submit(class="btn btn-primary btn-block") }}
+
+        </div>
+
+    </form>
+
+    <p class="text-center">
+
+        <a href="{{ url_for('site.login') }}">
+            Voltar ao login
+        </a>
+
+    </p>
+
+</section>
+
+{% endblock %}

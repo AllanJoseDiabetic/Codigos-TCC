@@ -1,0 +1,108 @@
+@model IEnumerable<SalesManagement.Models.Seller>
+
+@{
+    ViewData["Title"] = "Vendedores";
+}
+
+<div class="page-heading">
+
+    <h1>
+        Vendedores
+    </h1>
+
+    <a
+        class="btn btn-primary"
+        asp-action="Create"
+    >
+        Novo vendedor
+    </a>
+
+</div>
+
+<div class="content-panel">
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            Nenhum vendedor foi cadastrado.
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+
+            <table class="table table-striped table-hover">
+
+                <thead>
+
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Departamento</th>
+                        <th>Salário-base</th>
+                        <th>Ações</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    @foreach (var seller in Model)
+                    {
+                        <tr>
+
+                            <td>
+                                @seller.Name
+                            </td>
+
+                            <td>
+                                @seller.Email
+                            </td>
+
+                            <td>
+                                @seller.Department.Name
+                            </td>
+
+                            <td>
+                                @seller.BaseSalary.ToString("N2")
+                            </td>
+
+                            <td class="table-actions">
+
+                                <a
+                                    class="btn btn-info btn-sm"
+                                    asp-action="Details"
+                                    asp-route-id="@seller.Id"
+                                >
+                                    Detalhes
+                                </a>
+
+                                <a
+                                    class="btn btn-default btn-sm"
+                                    asp-action="Edit"
+                                    asp-route-id="@seller.Id"
+                                >
+                                    Editar
+                                </a>
+
+                                <a
+                                    class="btn btn-danger btn-sm"
+                                    asp-action="Delete"
+                                    asp-route-id="@seller.Id"
+                                >
+                                    Excluir
+                                </a>
+
+                            </td>
+
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+
+        </div>
+    }
+
+</div>

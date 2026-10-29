@@ -1,0 +1,390 @@
+:root {
+    --page-background: #f3f6fb;
+    --surface: #ffffff;
+    --primary: #2858a7;
+    --primary-dark: #173b78;
+    --text: #243044;
+    --muted: #68778a;
+    --border: #dae2ec;
+    --danger: #c53949;
+    --success: #247a58;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: var(--page-background);
+    color: var(--text);
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.app-header {
+    background: var(--primary-dark);
+    box-shadow: 0 2px 9px rgba(21, 43, 76, 0.15);
+}
+
+.navbar {
+    min-height: 70px;
+}
+
+.navbar-brand {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1.1px;
+}
+
+.navbar-nav {
+    gap: 7px;
+}
+
+.navbar .nav-link {
+    font-size: 13px;
+}
+
+.user-label {
+    color: #d7e5fb !important;
+    font-size: 12px;
+    padding: 0 8px;
+}
+
+.logout-form {
+    margin: 0;
+}
+
+.main-container {
+    flex: 1;
+    padding-top: 33px;
+    padding-bottom: 55px;
+}
+
+.app-footer {
+    background: #e6ecf5;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 12px;
+    text-align: center;
+    padding: 18px;
+}
+
+.page-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 27px;
+}
+
+.page-heading h1 {
+    margin: 0 0 7px;
+    font-size: 26px;
+    font-weight: 750;
+    color: #193b6e;
+}
+
+.page-heading p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.app-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    box-shadow: 0 3px 15px rgba(28, 56, 92, 0.045);
+}
+
+.app-card .card-header {
+    background: #f9fbfe;
+    border-bottom: 1px solid var(--border);
+    color: #254470;
+    font-weight: 700;
+    padding: 17px 20px;
+}
+
+.app-card .card-body {
+    padding: 24px;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 470px;
+    margin: 35px auto;
+}
+
+.auth-container .card-body {
+    padding: 35px;
+}
+
+.auth-container h1 {
+    font-weight: 750;
+    color: #193b6e;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 650;
+    color: #34465d;
+}
+
+.form-control {
+    min-height: 39px;
+    border-radius: 5px;
+    border-color: #cbd6e4;
+    color: var(--text);
+}
+
+.form-control:focus {
+    border-color: #588bd7;
+    box-shadow: 0 0 0 3px rgba(53, 113, 203, 0.12);
+}
+
+textarea.form-control {
+    line-height: 1.55;
+    resize: vertical;
+}
+
+.field-error {
+    min-height: 14px;
+    font-size: 12px;
+}
+
+.btn-primary {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.counter-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 19px;
+    min-height: 142px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.counter-card span {
+    color: #5f7085;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.counter-card strong {
+    color: #1c508f;
+    font-size: 31px;
+    line-height: 1.25;
+}
+
+.counter-card small {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.list-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.completed-filter {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0;
+    cursor: pointer;
+}
+
+.completed-filter input {
+    cursor: pointer;
+}
+
+.bug-table {
+    margin: 0;
+    font-size: 13px;
+}
+
+.bug-table th {
+    background: #f9fbfe;
+    border-top: none;
+    border-bottom: 1px solid var(--border);
+    color: #52647c;
+    font-size: 11px;
+    font-weight: 750;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 15px 13px;
+}
+
+.bug-table td {
+    padding: 15px 13px;
+    vertical-align: middle;
+    border-top: 1px solid #ecf0f5;
+}
+
+.bug-table tr:hover td {
+    background: #f7faff;
+}
+
+.bug-table a:not(.btn) {
+    color: #245bb2;
+    font-weight: 650;
+    text-decoration: none;
+}
+
+.bug-table a:not(.btn):hover {
+    text-decoration: underline;
+}
+
+.bug-table .badge {
+    padding: 7px 9px;
+    font-size: 10px;
+    font-weight: 650;
+}
+
+.empty-state {
+    padding: 55px 20px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.detail-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.detail-properties {
+    margin: 0;
+}
+
+.detail-properties dt {
+    color: #6b7b8e;
+    font-size: 11px;
+    font-weight: 750;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    margin-bottom: 3px;
+}
+
+.detail-properties dd {
+    margin: 0 0 17px;
+    font-size: 13px;
+    color: #263852;
+    overflow-wrap: anywhere;
+}
+
+.reproduction-text {
+    margin: 0;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    line-height: 1.8;
+    font-size: 14px;
+    color: #304158;
+}
+
+#completeBugForm {
+    border-top: 1px solid var(--border);
+    padding-top: 19px;
+    margin-top: 8px;
+}
+
+.alert {
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar-nav {
+        flex-wrap: wrap;
+    }
+
+    .page-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .counter-card {
+        min-height: 125px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-container {
+        padding-top: 22px;
+    }
+
+    .page-heading h1 {
+        font-size: 22px;
+    }
+
+    .auth-container .card-body {
+        padding: 22px;
+    }
+
+    .app-card .card-body {
+        padding: 18px;
+    }
+
+    .list-toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .navbar-brand {
+        font-size: 14px;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions .btn {
+        width: 100%;
+    }
+}

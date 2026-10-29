@@ -1,0 +1,413 @@
+<Window
+    x:Class="CircuitWorkbench.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="CircuitWorkbench - Simulador de Circuitos Lógicos"
+    Width="1450"
+    Height="860"
+    MinWidth="1050"
+    MinHeight="650"
+    WindowStartupLocation="CenterScreen"
+    Background="#111827"
+    PreviewKeyDown="Window_PreviewKeyDown">
+
+    <Window.Resources>
+
+        <Style
+            x:Key="PaletteButtonStyle"
+            TargetType="Button">
+
+            <Setter
+                Property="Margin"
+                Value="4" />
+
+            <Setter
+                Property="Padding"
+                Value="10,9" />
+
+            <Setter
+                Property="HorizontalContentAlignment"
+                Value="Left" />
+
+            <Setter
+                Property="Background"
+                Value="#374151" />
+
+            <Setter
+                Property="Foreground"
+                Value="White" />
+
+            <Setter
+                Property="BorderBrush"
+                Value="#4B5563" />
+
+        </Style>
+
+    </Window.Resources>
+
+    <DockPanel LastChildFill="True">
+
+        <Border
+            DockPanel.Dock="Top"
+            Background="#1F2937"
+            BorderBrush="#374151"
+            BorderThickness="0,0,0,1"
+            Padding="10">
+
+            <StackPanel
+                Orientation="Horizontal"
+                VerticalAlignment="Center">
+
+                <Button
+                    x:Name="RunButton"
+                    Content="Executar"
+                    Width="100"
+                    Click="RunButton_Click" />
+
+                <Button
+                    x:Name="PauseButton"
+                    Content="Pausar / Retomar"
+                    Width="145"
+                    Click="PauseButton_Click" />
+
+                <Button
+                    Content="Avançar 1 passo"
+                    Width="145"
+                    Click="StepButton_Click" />
+
+                <Border
+                    Width="1"
+                    Height="30"
+                    Margin="15,0"
+                    Background="#4B5563" />
+
+                <TextBlock
+                    Text="Intervalo:"
+                    VerticalAlignment="Center"
+                    Margin="4,0,8,0" />
+
+                <Slider
+                    x:Name="IntervalSlider"
+                    Minimum="10"
+                    Maximum="2000"
+                    Value="100"
+                    TickFrequency="10"
+                    IsSnapToTickEnabled="True"
+                    Width="240"
+                    VerticalAlignment="Center"
+                    ValueChanged="IntervalSlider_ValueChanged" />
+
+                <TextBlock
+                    x:Name="IntervalText"
+                    Text="100 ms"
+                    Width="80"
+                    VerticalAlignment="Center"
+                    Margin="12,0,0,0"
+                    FontWeight="Bold" />
+
+                <Border
+                    Width="1"
+                    Height="30"
+                    Margin="12,0"
+                    Background="#4B5563" />
+
+                <TextBlock
+                    Text="Estado:"
+                    VerticalAlignment="Center"
+                    Margin="2,0,8,0" />
+
+                <TextBlock
+                    x:Name="SimulationStateText"
+                    Text="Parado"
+                    Foreground="#FBBF24"
+                    VerticalAlignment="Center"
+                    FontWeight="Bold" />
+
+            </StackPanel>
+
+        </Border>
+
+        <Border
+            DockPanel.Dock="Bottom"
+            Padding="12,9"
+            Background="#1F2937"
+            BorderBrush="#374151"
+            BorderThickness="0,1,0,0">
+
+            <TextBlock
+                x:Name="StatusText"
+                Text="Adicione componentes pela paleta para começar."
+                TextWrapping="Wrap"
+                FontSize="12"
+                Foreground="#D1D5DB" />
+
+        </Border>
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="235" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="285" />
+            </Grid.ColumnDefinitions>
+
+            <Border
+                Grid.Column="0"
+                Background="#1F2937"
+                BorderBrush="#374151"
+                BorderThickness="0,0,1,0">
+
+                <ScrollViewer
+                    VerticalScrollBarVisibility="Auto"
+                    HorizontalScrollBarVisibility="Disabled">
+
+                    <StackPanel Margin="10">
+
+                        <TextBlock
+                            Text="COMPONENTES"
+                            FontSize="17"
+                            FontWeight="Bold"
+                            Margin="6,8,0,15" />
+
+                        <TextBlock
+                            Text="FONTES E ENTRADAS"
+                            Foreground="#9CA3AF"
+                            FontSize="11"
+                            FontWeight="Bold"
+                            Margin="6,8,0,5" />
+
+                        <Button
+                            Style="{StaticResource PaletteButtonStyle}"
+                            Content="Nível alto"
+                            Tag="High"
+                            Click="Palette_Click" />
+
+                        <Button
+                            Style="{StaticResource PaletteButtonStyle}"
+                            Content="Entrada lógica"
+                            Tag="Input"
+                            Click="Palette_Click" />
+
+                        <Button
+                            Style="{StaticResource PaletteButtonStyle}"
+                            Content="Interruptor"
+                            Tag="Switch"
+                            Click="Palette_Click" />
+
+                        <Button
+                            Style="{StaticResource PaletteButtonStyle}"
+                            Content="Clock"
+                            Tag="Clock"
+                            Click="Palette_Click" />
+
+                        <Button
+                            Style="{StaticResource PaletteButtonStyle}"
+                            Content="Teclado numérico de 8 bits"
+                            Tag="Keypad8"
+                            Click="Palette_Click" />
+
+                        <TextBlock
+                            Text="PORTAS LÓGICAS"
+                            Foreground="#9CA3AF"
+                            FontSize="11"
+                            FontWeight="Bold"
+                            Margin="6,17,0,5" />
+
+                        <Button
+                            Style="{StaticResource PaletteButtonStyle}"
+                            Content="Porta AND"
+                            Tag="And"
+                            Click="Palette_Click" />
+
+                        <Button
+                            Style="{StaticResource PaletteButtonStyle}"
+                            Content="Porta OR"
+                            Tag="Or"
+                            Click="Palette_Click" />
+
+                        <Button
+                            Style="{StaticResource PaletteButtonStyle}"
+                            Content="Porta NOT"
+                            Tag="Not"
+                            Click="Palette_Click" />
+
+                        <Button
+                            Style="{StaticResource PaletteButtonStyle}"
+                            Content="Junção de sinal"
+                            Tag="Junction"
+                            Click="Palette_Click" />
+
+                        <TextBlock
+                            Text="MEMÓRIA"
+                            Foreground="#9CA3AF"
+                            FontSize="11"
+                            FontWeight="Bold"
+                            Margin="6,17,0,5" />
+
+                        <Button
+                            Style="{StaticResource PaletteButtonStyle}"
+                            Content="Flip-flop D"
+                            Tag="FlipFlopD"
+                            Click="Palette_Click" />
+
+                        <Button
+                            Style="{StaticResource PaletteButtonStyle}"
+                            Content="Flip-flop JK"
+                            Tag="FlipFlopJK"
+                            Click="Palette_Click" />
+
+                        <TextBlock
+                            Text="INDICADORES"
+                            Foreground="#9CA3AF"
+                            FontSize="11"
+                            FontWeight="Bold"
+                            Margin="6,17,0,5" />
+
+                        <Button
+                            Style="{StaticResource PaletteButtonStyle}"
+                            Content="Saída lógica"
+                            Tag="Output"
+                            Click="Palette_Click" />
+
+                        <Button
+                            Style="{StaticResource PaletteButtonStyle}"
+                            Content="LED"
+                            Tag="Led"
+                            Click="Palette_Click" />
+
+                        <Button
+                            Style="{StaticResource PaletteButtonStyle}"
+                            Content="Visor de oito bits"
+                            Tag="Display8"
+                            Click="Palette_Click" />
+
+                        <Separator Margin="4,18" />
+
+                        <TextBlock
+                            Text="EDIÇÃO"
+                            Foreground="#9CA3AF"
+                            FontSize="11"
+                            FontWeight="Bold"
+                            Margin="6,0,0,8" />
+
+                        <Button
+                            Content="Alternar entrada / interruptor"
+                            Click="ToggleSelected_Click" />
+
+                        <Button
+                            Content="Remover componente"
+                            Click="RemoveSelected_Click" />
+
+                        <Button
+                            Content="Cancelar conexão"
+                            Click="CancelConnection_Click" />
+
+                    </StackPanel>
+
+                </ScrollViewer>
+
+            </Border>
+
+            <Grid
+                Grid.Column="1"
+                Background="#0B1220">
+
+                <ScrollViewer
+                    HorizontalScrollBarVisibility="Auto"
+                    VerticalScrollBarVisibility="Auto">
+
+                    <Grid
+                        x:Name="BoardSurface"
+                        Width="1900"
+                        Height="1300"
+                        Background="#111827">
+
+                        <Canvas
+                            x:Name="WireCanvas"
+                            Width="1900"
+                            Height="1300"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top" />
+
+                        <Canvas
+                            x:Name="NodeCanvas"
+                            Width="1900"
+                            Height="1300"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top" />
+
+                    </Grid>
+
+                </ScrollViewer>
+
+            </Grid>
+
+            <Border
+                Grid.Column="2"
+                Background="#1F2937"
+                BorderBrush="#374151"
+                BorderThickness="1,0,0,0">
+
+                <DockPanel Margin="12">
+
+                    <TextBlock
+                        DockPanel.Dock="Top"
+                        Text="PROPRIEDADES"
+                        FontSize="17"
+                        FontWeight="Bold"
+                        Margin="3,8,0,14" />
+
+                    <StackPanel DockPanel.Dock="Bottom">
+
+                        <Separator Margin="0,12" />
+
+                        <TextBlock
+                            Text="VALOR NUMÉRICO"
+                            FontWeight="Bold"
+                            Foreground="#D1D5DB"
+                            Margin="0,0,0,7" />
+
+                        <TextBlock
+                            Text="Selecione um teclado de 8 bits e informe um número de 0 a 255."
+                            Foreground="#9CA3AF"
+                            TextWrapping="Wrap"
+                            Margin="0,0,0,9" />
+
+                        <TextBox
+                            x:Name="KeypadNumberText"
+                            Text="0"
+                            Height="30"
+                            VerticalContentAlignment="Center"
+                            Padding="8,0"
+                            Margin="0,0,0,6" />
+
+                        <Button
+                            Content="Aplicar valor"
+                            Click="ApplyNumber_Click" />
+
+                    </StackPanel>
+
+                    <ScrollViewer
+                        VerticalScrollBarVisibility="Auto"
+                        HorizontalScrollBarVisibility="Disabled">
+
+                        <TextBlock
+                            x:Name="InspectorText"
+                            Text="Nenhum componente selecionado."
+                            TextWrapping="Wrap"
+                            LineHeight="23"
+                            FontSize="13"
+                            Foreground="#E5E7EB"
+                            Margin="3" />
+
+                    </ScrollViewer>
+
+                </DockPanel>
+
+            </Border>
+
+        </Grid>
+
+    </DockPanel>
+
+</Window>

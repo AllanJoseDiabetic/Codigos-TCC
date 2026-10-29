@@ -1,0 +1,78 @@
+{% extends "tracker/base.html" %}
+
+{% block title %}
+Login - Agenda de Hábitos
+{% endblock %}
+
+{% block content %}
+
+<section class="form-panel">
+
+    <h1 class="page-title">
+        Entrar
+    </h1>
+
+    <form method="post">
+
+        {% csrf_token %}
+
+        <input
+            type="hidden"
+            name="next"
+            value="{{ next }}"
+        >
+
+        {% if form.non_field_errors %}
+
+            <div class="alert alert-danger">
+
+                {% for error in form.non_field_errors %}
+                    <p class="mb-0">{{ error }}</p>
+                {% endfor %}
+
+            </div>
+
+        {% endif %}
+
+        {% for field in form %}
+
+            <div class="form-group">
+
+                {{ field.label_tag }}
+
+                {{ field }}
+
+                {% for error in field.errors %}
+
+                    <div class="field-error">
+                        {{ error }}
+                    </div>
+
+                {% endfor %}
+
+            </div>
+
+        {% endfor %}
+
+        <button
+            type="submit"
+            class="btn btn-primary btn-block"
+        >
+            Entrar
+        </button>
+
+    </form>
+
+    <p class="text-center mt-4">
+
+        Ainda não possui conta?
+
+        <a href="{% url 'tracker:register' %}">
+            Cadastre-se
+        </a>
+
+    </p>
+
+</section>
+
+{% endblock %}

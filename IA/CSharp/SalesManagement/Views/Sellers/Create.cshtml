@@ -1,0 +1,46 @@
+@model SalesManagement.Models.Seller
+
+@{
+    ViewData["Title"] = "Novo vendedor";
+}
+
+<section class="form-panel">
+
+    <h1 class="page-title">
+        Novo vendedor
+    </h1>
+
+    <form
+        method="post"
+        action="@Url.Action("Create", "Sellers")"
+    >
+
+        @Html.AntiForgeryToken()
+
+        @Html.Partial("_Form", Model)
+
+        <div class="form-actions">
+
+            <button
+                type="submit"
+                class="btn btn-primary"
+            >
+                Salvar vendedor
+            </button>
+
+            <a
+                class="btn btn-default"
+                asp-action="Index"
+            >
+                Cancelar
+            </a>
+
+        </div>
+
+    </form>
+
+</section>
+
+@section Scripts {
+    @Html.Partial("_ValidationScriptsPartial")
+}

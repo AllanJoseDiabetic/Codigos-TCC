@@ -1,0 +1,92 @@
+@model SalesManagement.Models.Seller
+
+@{
+    ViewData["Title"] = "Detalhes do vendedor";
+}
+
+<section class="content-panel">
+
+    <h1 class="page-title">
+        Detalhes do vendedor
+    </h1>
+
+    <dl class="dl-horizontal">
+
+        <dt>
+            Identificador
+        </dt>
+
+        <dd>
+            @Model.Id
+        </dd>
+
+        <dt>
+            Nome
+        </dt>
+
+        <dd>
+            @Model.Name
+        </dd>
+
+        <dt>
+            E-mail
+        </dt>
+
+        <dd>
+            @Model.Email
+        </dd>
+
+        <dt>
+            Data de nascimento
+        </dt>
+
+        <dd>
+            @Model.BirthDate.ToString("dd/MM/yyyy")
+        </dd>
+
+        <dt>
+            Salário-base
+        </dt>
+
+        <dd>
+            @Model.BaseSalary.ToString("N2")
+        </dd>
+
+        <dt>
+            Departamento
+        </dt>
+
+        <dd>
+
+            <a
+                asp-controller="Departments"
+                asp-action="Details"
+                asp-route-id="@Model.DepartmentId"
+            >
+                @Model.Department.Name
+            </a>
+
+        </dd>
+
+    </dl>
+
+    <div class="form-actions">
+
+        <a
+            class="btn btn-primary"
+            asp-action="Edit"
+            asp-route-id="@Model.Id"
+        >
+            Editar
+        </a>
+
+        <a
+            class="btn btn-default"
+            asp-action="Index"
+        >
+            Voltar
+        </a>
+
+    </div>
+
+</section>

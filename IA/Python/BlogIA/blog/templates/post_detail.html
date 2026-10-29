@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ post.title }} - Blog Pessoal
+{% endblock %}
+
+{% block content %}
+
+<article class="content-section post-detail">
+
+    <div class="post-metadata">
+
+        <a
+            href="{{ url_for('site.user_posts', username=post.author.username) }}"
+        >
+            {{ post.author.username }}
+        </a>
+
+        <span>
+            {{ post.created_at.strftime('%d/%m/%Y %H:%M') }} UTC
+        </span>
+
+    </div>
+
+    <h1 class="page-title">
+        {{ post.title }}
+    </h1>
+
+    {% if current_user.is_authenticated %}
+
+        {% if current_user.id == post.author_id %}
+
+            <div class="post-actions">
+
+                <a
+                    class="btn btn-outline-primary btn-sm"
+                    href="{{ url_for('site.update_post', post_id=post.id) }}"
+                >
+                    Editar
+                </a>
+
+                <form
+                    method="POST"
+                    action="{{ url_for('site.delete_post', post_id=post.id) }}"
+                    class="inline-form"
+                    onsubmit="return confirm('Deseja excluir esta publicação?');"
+                >
+
+                    <input
+                        type="hidden"
+                        name="csrf_token"
+                        value="{{ csrf_token() }}"
+                    >
+
+                    <button
+                        type="submit"
+                        class="btn btn-outline-danger btn-sm"
+                    >
+                        Excluir
+                    </button>
+
+                </form>
+
+            </div>
+
+        {% endif %}
+
+    {% endif %}
+
+    <div class="post-body">
+        {{ post.content }}
+    </div>
+
+    <hr>
+
+    <a href="{{ url_for('site.home') }}">
+        Voltar às publicações
+    </a>
+
+</article>
+
+{% endblock %}

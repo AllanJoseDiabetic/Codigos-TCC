@@ -1,0 +1,77 @@
+{% if entries %}
+
+    <form method="post">
+
+        {% csrf_token %}
+
+        {% for entry in entries %}
+
+            <article class="log-editor-item">
+
+                <div class="log-editor-heading">
+
+                    <h2 class="h5">
+                        {{ entry.log.task.name }}
+                    </h2>
+
+                    <span class="text-muted small">
+                        {{ entry.log.task.category.name }}
+                    </span>
+
+                </div>
+
+                <div class="form-group">
+
+                    {{ entry.form.status.label_tag }}
+
+                    {{ entry.form.status }}
+
+                    {% for error in entry.form.status.errors %}
+
+                        <div class="field-error">
+                            {{ error }}
+                        </div>
+
+                    {% endfor %}
+
+                </div>
+
+                <div class="form-group">
+
+                    {{ entry.form.note.label_tag }}
+
+                    {{ entry.form.note }}
+
+                    {% for error in entry.form.note.errors %}
+
+                        <div class="field-error">
+                            {{ error }}
+                        </div>
+
+                    {% endfor %}
+
+                </div>
+
+            </article>
+
+        {% endfor %}
+
+        <button
+            class="btn btn-primary"
+            type="submit"
+        >
+            Salvar registros
+        </button>
+
+    </form>
+
+{% else %}
+
+    <div class="alert alert-info">
+
+        Nenhuma tarefa possui registro previsto
+        para esta data.
+
+    </div>
+
+{% endif %}

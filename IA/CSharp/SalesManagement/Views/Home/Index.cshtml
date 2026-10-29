@@ -1,0 +1,95 @@
+@{
+    ViewData["Title"] = "Início";
+}
+
+<section class="home-header">
+
+    <h1>
+        Gestão de vendedores e vendas
+    </h1>
+
+    <p class="lead">
+        Gerencie departamentos, organize vendedores
+        e consulte os registros comerciais por período.
+    </p>
+
+</section>
+
+<div class="row">
+
+    <div class="col-md-4">
+
+        <section class="module-card">
+
+            <h2>
+                Departamentos
+            </h2>
+
+            <p>
+                Cadastre, consulte, atualize e exclua
+                departamentos da organização.
+            </p>
+
+            <a
+                class="btn btn-primary"
+                asp-controller="Departments"
+                asp-action="Index"
+            >
+                Ver departamentos
+            </a>
+
+        </section>
+
+    </div>
+
+    <div class="col-md-4">
+
+        <section class="module-card">
+
+            <h2>
+                Vendedores
+            </h2>
+
+            <p>
+                Consulte e mantenha as informações
+                dos vendedores e seus departamentos.
+            </p>
+
+            <a
+                class="btn btn-primary"
+                asp-controller="Sellers"
+                asp-action="Index"
+            >
+                Ver vendedores
+            </a>
+
+        </section>
+
+    </div>
+
+    <div class="col-md-4">
+
+        <section class="module-card">
+
+            <h2>
+                Consultas de vendas
+            </h2>
+
+            <p>
+                Consulte vendas por intervalo de datas
+                e visualize totais por departamento.
+            </p>
+
+            <a
+                class="btn btn-primary"
+                asp-controller="SalesRecords"
+                asp-action="Index"
+            >
+                Consultar vendas
+            </a>
+
+        </section>
+
+    </div>
+
+</div>

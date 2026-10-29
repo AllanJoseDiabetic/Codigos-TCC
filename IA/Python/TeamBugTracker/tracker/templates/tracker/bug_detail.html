@@ -1,0 +1,147 @@
+{% extends 'tracker/base.html' %}
+{% load static %}
+
+{% block title %}
+    Detalhes do defeito - TeamBugTracker
+{% endblock %}
+
+{% block content %}
+
+<div
+    id="bug-detail-root"
+    data-detail-url="{% url 'tracker:bug_detail_content' bug.pk %}"
+    data-complete-url="{% url 'tracker:complete_bug' bug.pk %}"
+>
+
+    <div class="page-heading">
+        <div>
+            <h1 id="detailTitle">
+                Carregando defeito
+            </h1>
+
+            <p id="detailSubtitle">
+                Consultando informações.
+            </p>
+        </div>
+
+        <div class="detail-actions">
+
+            <a
+                id="editBugLink"
+                class="btn btn-outline-primary"
+                href="{% url 'tracker:bug_edit' bug.pk %}"
+            >
+                Editar defeito
+            </a>
+
+            <a
+                class="btn btn-outline-secondary"
+                href="{% url 'tracker:bug_list' %}"
+            >
+                Voltar
+            </a>
+
+        </div>
+    </div>
+
+    <div
+        id="detailMessage"
+        class="alert"
+        role="status"
+        hidden
+    ></div>
+
+    <div id="detailContent" hidden>
+
+        <div class="row">
+
+            <div class="col-lg-8 mb-4">
+                <div class="card app-card">
+
+                    <div class="card-header">
+                        Descrição e reprodução
+                    </div>
+
+                    <div class="card-body">
+                        <p
+                            id="detailSteps"
+                            class="reproduction-text"
+                        ></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card app-card">
+
+                    <div class="card-header">
+                        Informações
+                    </div>
+
+                    <div class="card-body">
+
+                        <dl class="detail-properties">
+
+                            <dt>Estado</dt>
+                            <dd id="detailStatus"></dd>
+
+                            <dt>Responsável técnico</dt>
+                            <dd id="detailAssignee"></dd>
+
+                            <dt>Categoria</dt>
+                            <dd id="detailCategory"></dd>
+
+                            <dt>Severidade</dt>
+                            <dd id="detailSeverity"></dd>
+
+                            <dt>Estimativa</dt>
+                            <dd id="detailHours"></dd>
+
+                            <dt>Organização</dt>
+                            <dd id="detailOrganization"></dd>
+
+                            <dt>Registrado por</dt>
+                            <dd id="detailCreator"></dd>
+
+                            <dt>Criação</dt>
+                            <dd id="detailCreated"></dd>
+
+                            <dt>Última atualização</dt>
+                            <dd id="detailUpdated"></dd>
+
+                        </dl>
+
+                        <form
+                            id="completeBugForm"
+                            method="post"
+                        >
+                            {% csrf_token %}
+
+                            <button
+                                id="completeBugButton"
+                                type="submit"
+                                class="btn btn-success btn-block"
+                            >
+                                Marcar como concluído
+                            </button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
+
+{% block extra_scripts %}
+
+<script src="{% static 'tracker/js/detail.js' %}"></script>
+
+{% endblock %}

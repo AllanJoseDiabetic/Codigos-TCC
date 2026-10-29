@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}
+413 - Arquivo muito grande
+{% endblock %}
+
+{% block content %}
+
+<section class="error-section">
+
+    <h1 class="error-code">
+        413
+    </h1>
+
+    <h2>
+        Limite de envio excedido
+    </h2>
+
+    <p>
+        O conteúdo enviado ultrapassa
+        o tamanho máximo permitido de 2 MB.
+    </p>
+
+    {% if current_user.is_authenticated %}
+
+        <a
+            class="btn btn-primary"
+            href="{{ url_for('site.account') }}"
+        >
+            Voltar ao perfil
+        </a>
+
+    {% else %}
+
+        <a
+            class="btn btn-primary"
+            href="{{ url_for('site.home') }}"
+        >
+            Voltar ao início
+        </a>
+
+    {% endif %}
+
+</section>
+
+{% endblock %}

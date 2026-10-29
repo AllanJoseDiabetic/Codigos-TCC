@@ -1,0 +1,320 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    background:
+        radial-gradient(
+            ellipse at 50% 15%,
+            #1e315d 0%,
+            #090e1c 48%,
+            #03050b 100%
+        );
+
+    color: #eef7ff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 24px 12px;
+}
+
+.application {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.heading {
+    margin-bottom: 20px;
+}
+
+.heading h1 {
+    margin: 0;
+
+    color: #80f5ff;
+
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 5px;
+
+    text-shadow:
+        0 0 12px rgba(55, 219, 255, 0.45);
+}
+
+.heading p {
+    margin: 9px 0 0;
+
+    font-size: 13px;
+    letter-spacing: 1px;
+
+    color: #a8bedc;
+}
+
+.game-frame {
+    position: relative;
+
+    width: 100%;
+    max-width: 600px;
+
+    margin: auto;
+
+    overflow: hidden;
+
+    background: #030714;
+
+    border: 2px solid #467898;
+    border-radius: 5px;
+
+    box-shadow:
+        0 0 22px rgba(20, 125, 205, 0.18),
+        inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+canvas {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    aspect-ratio: 5 / 3;
+
+    background: #030714;
+}
+
+.hud {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 11px 15px;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0, 5, 18, 0.75),
+            rgba(0, 5, 18, 0)
+        );
+}
+
+.hud-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.hud-item.right {
+    align-items: flex-end;
+}
+
+.hud-label {
+    color: #95a9c6;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.hud strong {
+    color: #fff;
+    font-family: Consolas, monospace;
+    font-size: 19px;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+
+    z-index: 5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background: rgba(2, 8, 20, 0.87);
+}
+
+.overlay.hidden {
+    display: none;
+}
+
+.overlay-panel {
+    width: 100%;
+    max-width: 380px;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+.overlay-panel h2 {
+    margin: 0 0 15px;
+
+    font-size: 29px;
+    letter-spacing: 3px;
+
+    color: #84efff;
+
+    text-shadow:
+        0 0 15px rgba(44, 210, 255, 0.4);
+}
+
+.overlay-panel p {
+    margin: 0 0 20px;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: #c3d5ee;
+}
+
+.loading-track {
+    height: 11px;
+    width: 100%;
+
+    overflow: hidden;
+
+    border: 1px solid #417a99;
+    border-radius: 8px;
+
+    background: #102038;
+}
+
+.loading-progress {
+    width: 0%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #1675c8,
+            #5ef2d5
+        );
+
+    transition: width 0.2s ease;
+}
+
+#actionButton {
+    min-width: 170px;
+
+    border: 1px solid #80f5ff;
+    border-radius: 4px;
+
+    padding: 13px 22px;
+
+    color: #03101b;
+
+    background: #7be8f1;
+
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+}
+
+#actionButton:hover {
+    background: #b2fcff;
+}
+
+#actionButton:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 3px;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.instructions {
+    margin: 22px auto 0;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.instruction {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+
+    color: #c4d3e8;
+    font-size: 12px;
+}
+
+.key {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 24px;
+    height: 25px;
+
+    border: 1px solid #627e9f;
+    border-radius: 3px;
+
+    padding: 0 5px;
+
+    background: #182840;
+
+    color: #e8f8ff;
+
+    font-family: Consolas, monospace;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.key.wide {
+    min-width: 85px;
+    margin-right: 5px;
+}
+
+.audio-status {
+    margin-top: 22px;
+
+    color: #7f98b8;
+
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+@media (max-width: 500px) {
+    .heading h1 {
+        font-size: 23px;
+        letter-spacing: 3px;
+    }
+
+    .instructions {
+        gap: 14px;
+    }
+
+    .overlay-panel h2 {
+        font-size: 22px;
+    }
+}

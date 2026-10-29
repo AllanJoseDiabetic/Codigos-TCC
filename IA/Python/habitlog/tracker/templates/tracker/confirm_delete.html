@@ -1,0 +1,70 @@
+{% extends "tracker/base.html" %}
+
+{% block title %}
+Confirmação - Agenda de Hábitos
+{% endblock %}
+
+{% block content %}
+
+<section class="form-panel">
+
+    {% if access_denied %}
+
+        <h1 class="page-title">
+            Acesso não permitido
+        </h1>
+
+        <div class="alert alert-warning">
+            {{ description }}
+        </div>
+
+        <a
+            class="btn btn-primary"
+            href="{% url 'tracker:weekly' %}"
+        >
+            Voltar
+        </a>
+
+    {% else %}
+
+        <h1 class="page-title">
+            Confirmar exclusão
+        </h1>
+
+        <p>
+            Deseja realmente excluir esta {{ object_type }}?
+        </p>
+
+        <p>
+            <strong>{{ object_name }}</strong>
+        </p>
+
+        <div class="alert alert-warning">
+            {{ description }}
+        </div>
+
+        <form method="post">
+
+            {% csrf_token %}
+
+            <button
+                type="submit"
+                class="btn btn-danger"
+            >
+                Confirmar exclusão
+            </button>
+
+            <a
+                class="btn btn-secondary"
+                href="{% url 'tracker:overview' %}"
+            >
+                Cancelar
+            </a>
+
+        </form>
+
+    {% endif %}
+
+</section>
+
+{% endblock %}

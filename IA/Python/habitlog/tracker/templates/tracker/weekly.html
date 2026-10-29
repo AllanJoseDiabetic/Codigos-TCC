@@ -1,0 +1,132 @@
+{% extends "tracker/base.html" %}
+
+{% block title %}
+Registro semanal - Agenda de Hábitos
+{% endblock %}
+
+{% block content %}
+
+<section class="content-panel">
+
+    <h1 class="page-title">
+        Registro semanal
+    </h1>
+
+    <p class="text-muted">
+
+        {{ week_start|date:"d/m/Y" }}
+
+        até
+
+        {{ week_end|date:"d/m/Y" }}
+
+    </p>
+
+    <div class="period-navigation">
+
+        <a
+            class="btn btn-outline-primary"
+            href="{% url 'tracker:weekly' %}?start={{ previous_start|date:'Y-m-d' }}"
+        >
+            Semana anterior
+        </a>
+
+        <a
+            class="btn btn-outline-primary"
+            href="{% url 'tracker:weekly' %}?start={{ next_start|date:'Y-m-d' }}"
+        >
+            Próxima semana
+        </a>
+
+    </div>
+
+    {% for item in days %}
+
+        <section class="week-day">
+
+            <div class="week-day-heading">
+
+                <h2 class="h5 mb-0">
+                    {{ item.date|date:"l, d/m/Y" }}
+                </h2>
+
+                {% if item.editable %}
+
+                    <a
+                        class="btn btn-sm btn-outline-primary"
+                        href="{% url 'tracker:edit_day' item.date|date:'Y-m-d' %}"
+                    >
+                        Editar
+                    </a>
+
+                {% endif %}
+
+            </div>
+
+            {% if item.logs %}
+
+                <ul class="record-list">
+
+                    {% for log in item.logs %}
+
+                        <li>
+
+                            <span class="record-title">
+                                {{ log.task.name }}
+                            </span>
+
+                            {% if log.status == "Complete" %}
+
+                                <span class="badge badge-success">
+                                    Complete
+                                </span>
+
+                            {% elif log.status == "Incomplete" %}
+
+                                <span class="badge badge-danger">
+                                    Incomplete
+                                </span>
+
+                            {% elif log.status == "Ignored" %}
+
+                                <span class="badge badge-secondary">
+                                    Ignored
+                                </span>
+
+                            {% else %}
+
+                                <span class="badge badge-warning">
+                                    Pending
+                                </span>
+
+                            {% endif %}
+
+                            {% if log.note %}
+
+                                <p class="record-note">
+                                    {{ log.note }}
+                                </p>
+
+                            {% endif %}
+
+                        </li>
+
+                    {% endfor %}
+
+                </ul>
+
+            {% else %}
+
+                <p class="text-muted mb-0">
+                    Nenhuma atividade registrada.
+                </p>
+
+            {% endif %}
+
+        </section>
+
+    {% endfor %}
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}
+Início - Blog Pessoal
+{% endblock %}
+
+{% block content %}
+
+<section class="content-section">
+
+    <h1 class="page-title">
+        Publicações recentes
+    </h1>
+
+    {% if posts %}
+
+        {% for post in posts %}
+
+            {% include "partials/post_preview.html" %}
+
+        {% endfor %}
+
+        {% set endpoint = "site.home" %}
+        {% set endpoint_args = {} %}
+
+        {% include "partials/pagination.html" %}
+
+    {% else %}
+
+        <div class="alert alert-info">
+            Ainda não existem publicações.
+        </div>
+
+    {% endif %}
+
+</section>
+
+{% endblock %}

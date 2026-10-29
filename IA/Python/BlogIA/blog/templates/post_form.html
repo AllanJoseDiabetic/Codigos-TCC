@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% from "partials/fields.html" import render_field %}
+
+{% block title %}
+{{ heading }} - Blog Pessoal
+{% endblock %}
+
+{% block content %}
+
+<section class="content-section">
+
+    <h1 class="page-title">
+        {{ heading }}
+    </h1>
+
+    <form method="POST">
+
+        {{ form.hidden_tag() }}
+
+        {{ render_field(form.title) }}
+
+        {{ render_field(form.content) }}
+
+        <div class="form-group">
+
+            {{ form.submit(class="btn btn-primary") }}
+
+            <a
+                class="btn btn-secondary"
+                href="{{ url_for('site.home') }}"
+            >
+                Cancelar
+            </a>
+
+        </div>
+
+    </form>
+
+</section>
+
+{% endblock %}

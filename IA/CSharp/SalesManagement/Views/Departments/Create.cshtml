@@ -1,0 +1,46 @@
+@model SalesManagement.Models.Department
+
+@{
+    ViewData["Title"] = "Novo departamento";
+}
+
+<section class="form-panel">
+
+    <h1 class="page-title">
+        Novo departamento
+    </h1>
+
+    <form
+        method="post"
+        action="@Url.Action("Create", "Departments")"
+    >
+
+        @Html.AntiForgeryToken()
+
+        @Html.Partial("_Form", Model)
+
+        <div class="form-actions">
+
+            <button
+                type="submit"
+                class="btn btn-primary"
+            >
+                Salvar
+            </button>
+
+            <a
+                class="btn btn-default"
+                asp-action="Index"
+            >
+                Cancelar
+            </a>
+
+        </div>
+
+    </form>
+
+</section>
+
+@section Scripts {
+    @Html.Partial("_ValidationScriptsPartial")
+}

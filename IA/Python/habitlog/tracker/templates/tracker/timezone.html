@@ -1,0 +1,57 @@
+{% extends "tracker/base.html" %}
+
+{% block title %}
+Fuso horário - Agenda de Hábitos
+{% endblock %}
+
+{% block content %}
+
+<section class="form-panel">
+
+    <h1 class="page-title">
+        Fuso horário
+    </h1>
+
+    <p>
+        Fuso horário atual:
+        <strong>{{ current_timezone }}</strong>
+    </p>
+
+    <p class="text-muted">
+        O fuso selecionado determina a data
+        corrente utilizada nos registros
+        e nos limites de edição.
+    </p>
+
+    <form method="post">
+
+        {% csrf_token %}
+
+        <div class="form-group">
+
+            {{ form.timezone.label_tag }}
+
+            {{ form.timezone }}
+
+            {% for error in form.timezone.errors %}
+
+                <div class="field-error">
+                    {{ error }}
+                </div>
+
+            {% endfor %}
+
+        </div>
+
+        <button
+            class="btn btn-primary"
+            type="submit"
+        >
+            Salvar fuso horário
+        </button>
+
+    </form>
+
+</section>
+
+{% endblock %}

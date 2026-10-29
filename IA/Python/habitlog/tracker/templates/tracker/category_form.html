@@ -1,0 +1,53 @@
+{% extends "tracker/base.html" %}
+
+{% block title %}
+{{ heading }} - Agenda de Hábitos
+{% endblock %}
+
+{% block content %}
+
+<section class="form-panel">
+
+    <h1 class="page-title">
+        {{ heading }}
+    </h1>
+
+    <form method="post">
+
+        {% csrf_token %}
+
+        <div class="form-group">
+
+            {{ form.name.label_tag }}
+
+            {{ form.name }}
+
+            {% for error in form.name.errors %}
+
+                <div class="field-error">
+                    {{ error }}
+                </div>
+
+            {% endfor %}
+
+        </div>
+
+        <button
+            class="btn btn-primary"
+            type="submit"
+        >
+            Salvar categoria
+        </button>
+
+        <a
+            class="btn btn-secondary"
+            href="{% url 'tracker:overview' %}"
+        >
+            Cancelar
+        </a>
+
+    </form>
+
+</section>
+
+{% endblock %}

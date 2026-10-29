@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}
+Publicações de {{ user.username }}
+{% endblock %}
+
+{% block content %}
+
+<section class="content-section">
+
+    <div class="profile-header">
+
+        <img
+            class="profile-picture"
+            src="{{ url_for('static', filename='profile_pics/' + user.image_file) }}"
+            alt="Imagem de {{ user.username }}"
+        >
+
+        <div>
+
+            <h1 class="page-title">
+                {{ user.username }}
+            </h1>
+
+            <p class="text-muted">
+                {{ pagination.total }} publicação(ões)
+            </p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    {% if posts %}
+
+        {% for post in posts %}
+
+            {% include "partials/post_preview.html" %}
+
+        {% endfor %}
+
+        {% set endpoint = "site.user_posts" %}
+
+        {% set endpoint_args = {"username": user.username} %}
+
+        {% include "partials/pagination.html" %}
+
+    {% else %}
+
+        <p>
+            Este usuário ainda não publicou nenhum texto.
+        </p>
+
+    {% endif %}
+
+</section>
+
+{% endblock %}

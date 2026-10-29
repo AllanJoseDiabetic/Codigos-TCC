@@ -1,0 +1,219 @@
+@model SalesManagement.ViewModels.SalesSearchViewModel
+
+@{
+    ViewData["Title"] = "Busca simples de vendas";
+}
+
+<section class="content-panel">
+
+    <h1 class="page-title">
+        Busca simples de vendas
+    </h1>
+
+    <form
+        method="get"
+        action="@Url.Action("SimpleSearch", "SalesRecords")"
+        class="search-form"
+    >
+
+        <div class="row">
+
+            <div class="col-sm-4">
+
+                <div class="form-group">
+
+                    <label for="minDate">
+                        Data inicial
+                    </label>
+
+                    <input
+                        type="date"
+                        id="minDate"
+                        name="minDate"
+                        class="form-control"
+                        value="@Model.MinDate.ToString("yyyy-MM-dd")"
+                    />
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-4">
+
+                <div class="form-group">
+
+                    <label for="maxDate">
+                        Data final
+                    </label>
+
+                    <input
+                        type="date"
+                        id="maxDate"
+                        name="maxDate"
+                        class="form-control"
+                        value="@Model.MaxDate.ToString("yyyy-MM-dd")"
+                    />
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-4 search-button-column">
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+                    Consultar
+                </button>
+
+            </div>
+
+        </div>
+
+    </form>
+
+    @if (!ViewData.ModelState.IsValid)
+    {
+        <div class="alert alert-danger">
+
+            @Html.ValidationSummary(false)
+
+        </div>
+    }
+    else
+    {
+        <div class="search-summary">
+
+            <h2>
+                Resultados
+            </h2>
+
+            <p>
+                Período:
+                <strong>
+                    @Model.MinDate.ToString("dd/MM/yyyy")
+                </strong>
+                até
+                <strong>
+                    @Model.MaxDate.ToString("dd/MM/yyyy")
+                </strong>
+            </p>
+
+            <p>
+                Registros encontrados:
+                <strong>@Model.Records.Count</strong>
+            </p>
+
+        </div>
+
+        @if (Model.Records.Count > 0)
+        {
+            <div class="table-responsive">
+
+                <table class="table table-striped table-hover">
+
+                    <thead>
+
+                        <tr>
+                            <th>Data</th>
+                            <th>Vendedor</th>
+                            <th>Departamento</th>
+                            <th>Estado</th>
+                            <th class="text-right">Valor</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        @foreach (var record in Model.Records)
+                        {
+                            <tr>
+
+                                <td>
+                                    @record.Date.ToString("dd/MM/yyyy")
+                                </td>
+
+                                <td>
+                                    @record.Seller.Name
+                                </td>
+
+                                <td>
+                                    @record.Seller.Department.Name
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => record.Status)
+                                </td>
+
+                                <td class="text-right">
+                                    @record.Amount.ToString("N2")
+                                </td>
+
+                            </tr>
+                        }
+
+                    </tbody>
+
+                    <tfoot>
+
+                        <tr class="total-row">
+
+                            <td colspan="4">
+                                Total do período
+                            </td>
+
+                            <td class="text-right">
+                                @Model.Total.ToString("N2")
+                            </td>
+
+                        </tr>
+
+                    </tfoot>
+
+                </table>
+
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-info">
+
+                Não foram encontrados registros
+                para o intervalo selecionado.
+
+            </div>
+        }
+
+        <p class="text-muted sample-note">
+
+            Dados fictícios iniciais:
+            12/08/2025 a 10/10/2026.
+
+            Os totais incluem todos os estados de venda.
+
+        </p>
+    }
+
+    <div class="form-actions">
+
+        <a
+            class="btn btn-default"
+            asp-action="Index"
+        >
+            Voltar às consultas
+        </a>
+
+        <a
+            class="btn btn-default"
+            asp-action="GroupingSearch"
+            asp-route-minDate="@Model.MinDate.ToString("yyyy-MM-dd")"
+            asp-route-maxDate="@Model.MaxDate.ToString("yyyy-MM-dd")"
+        >
+            Ver agrupamento
+        </a>
+
+    </div>
+
+</section>

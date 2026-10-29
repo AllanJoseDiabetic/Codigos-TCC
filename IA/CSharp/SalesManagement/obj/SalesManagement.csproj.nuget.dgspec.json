@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\codigosTCC\\CodigosTCCGitHub\\Codigos-TCC\\IA\\CSharp\\SalesManagement\\SalesManagement.csproj": {}
+  },
+  "projects": {
+    "E:\\codigosTCC\\CodigosTCCGitHub\\Codigos-TCC\\IA\\CSharp\\SalesManagement\\SalesManagement.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\codigosTCC\\CodigosTCCGitHub\\Codigos-TCC\\IA\\CSharp\\SalesManagement\\SalesManagement.csproj",
+        "projectName": "SalesManagement",
+        "projectPath": "E:\\codigosTCC\\CodigosTCCGitHub\\Codigos-TCC\\IA\\CSharp\\SalesManagement\\SalesManagement.csproj",
+        "packagesPath": "C:\\Users\\Allan José\\.nuget\\packages\\",
+        "outputPath": "E:\\codigosTCC\\CodigosTCCGitHub\\Codigos-TCC\\IA\\CSharp\\SalesManagement\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Allan José\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

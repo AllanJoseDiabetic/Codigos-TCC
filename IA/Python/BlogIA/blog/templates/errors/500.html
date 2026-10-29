@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}
+500 - Erro interno
+{% endblock %}
+
+{% block content %}
+
+<section class="error-section">
+
+    <h1 class="error-code">
+        500
+    </h1>
+
+    <h2>
+        Erro interno do servidor
+    </h2>
+
+    <p>
+        Não foi possível concluir a operação
+        devido a um problema interno.
+    </p>
+
+    <a
+        class="btn btn-primary"
+        href="{{ url_for('site.home') }}"
+    >
+        Voltar ao início
+    </a>
+
+</section>
+
+{% endblock %}

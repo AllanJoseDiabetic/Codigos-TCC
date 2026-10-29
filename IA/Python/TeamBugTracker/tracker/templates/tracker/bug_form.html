@@ -1,0 +1,126 @@
+{% extends 'tracker/base.html' %}
+{% load static %}
+
+{% block title %}
+    {{ page_title }} - TeamBugTracker
+{% endblock %}
+
+{% block content %}
+
+<div class="page-heading">
+
+    <div>
+        <h1>{{ page_title }}</h1>
+
+        <p>
+            Informe os dados necessários
+            para acompanhar o defeito.
+        </p>
+    </div>
+
+    <a
+        class="btn btn-outline-secondary"
+        href="{% url 'tracker:bug_list' %}"
+    >
+        Voltar à lista
+    </a>
+
+</div>
+
+<div class="row">
+    <div class="col-lg-9">
+
+        <div class="card app-card">
+
+            <div class="card-body">
+
+                <div
+                    id="formMessage"
+                    class="alert"
+                    role="alert"
+                    hidden
+                ></div>
+
+                <form
+                    id="bugForm"
+                    method="post"
+                    action="{{ request.path }}"
+                >
+                    {% csrf_token %}
+
+                    {% if form.non_field_errors %}
+
+                        <div class="alert alert-danger">
+                            {{ form.non_field_errors }}
+                        </div>
+
+                    {% endif %}
+
+                    {% for field in form %}
+
+                        <div class="form-group">
+
+                            <label for="{{ field.id_for_label }}">
+                                {{ field.label }}
+                            </label>
+
+                            {{ field }}
+
+                            <small
+                                id="error-{{ field.name }}"
+                                class="form-text text-danger field-error"
+                                aria-live="polite"
+                            >
+                                {% for error in field.errors %}
+                                    {{ error }}
+                                {% endfor %}
+                            </small>
+
+                        </div>
+
+                    {% endfor %}
+
+                    <div class="form-actions">
+
+                        <button
+                            id="saveBugButton"
+                            type="submit"
+                            class="btn btn-primary"
+                        >
+                            {{ button_label }}
+                        </button>
+
+                        {% if editing %}
+                            <a
+                                class="btn btn-outline-secondary"
+                                href="{% url 'tracker:bug_detail' bug.pk %}"
+                            >
+                                Cancelar
+                            </a>
+                        {% else %}
+                            <a
+                                class="btn btn-outline-secondary"
+                                href="{% url 'tracker:bug_list' %}"
+                            >
+                                Cancelar
+                            </a>
+                        {% endif %}
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+{% block extra_scripts %}
+
+<script src="{% static 'tracker/js/form.js' %}"></script>
+
+{% endblock %}

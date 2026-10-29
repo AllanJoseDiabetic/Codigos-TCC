@@ -1,0 +1,173 @@
+{% extends "tracker/base.html" %}
+
+{% block title %}
+{{ month_name }} de {{ year }} - Agenda de Hábitos
+{% endblock %}
+
+{% block content %}
+
+<section class="content-panel">
+
+    <h1 class="page-title">
+        {{ month_name }} de {{ year }}
+    </h1>
+
+    <div class="period-navigation">
+
+        {% if previous_month %}
+
+            <a
+                class="btn btn-outline-primary"
+                href="{% url 'tracker:monthly' previous_month.year previous_month.month %}"
+            >
+                Mês anterior
+            </a>
+
+        {% endif %}
+
+        {% if next_month %}
+
+            <a
+                class="btn btn-outline-primary"
+                href="{% url 'tracker:monthly' next_month.year next_month.month %}"
+            >
+                Próximo mês
+            </a>
+
+        {% endif %}
+
+        <a
+            class="btn btn-outline-secondary"
+            href="{% url 'tracker:past' %}"
+        >
+            Todos os meses
+        </a>
+
+    </div>
+
+    <h2 class="section-title">
+        Resumo mensal
+    </h2>
+
+    <div class="summary-grid">
+
+        <div class="summary-item">
+
+            <strong>{{ counts.Complete }}</strong>
+            <span>Complete</span>
+
+        </div>
+
+        <div class="summary-item">
+
+            <strong>{{ counts.Incomplete }}</strong>
+            <span>Incomplete</span>
+
+        </div>
+
+        <div class="summary-item">
+
+            <strong>{{ counts.Ignored }}</strong>
+            <span>Ignored</span>
+
+        </div>
+
+        <div class="summary-item">
+
+            <strong>{{ counts.Pending }}</strong>
+            <span>Pending</span>
+
+        </div>
+
+    </div>
+
+    <h2 class="section-title">
+        Registros do mês
+    </h2>
+
+    {% if logs %}
+
+        <div class="table-responsive">
+
+            <table class="table table-bordered table-hover">
+
+                <thead class="thead-light">
+
+                    <tr>
+                        <th>Data</th>
+                        <th>Tarefa</th>
+                        <th>Situação</th>
+                        <th>Anotação</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    {% for log in logs %}
+
+                        <tr>
+
+                            <td>
+                                {{ log.date|date:"d/m/Y" }}
+                            </td>
+
+                            <td>
+                                {{ log.task.name }}
+                            </td>
+
+                            <td>
+
+                                {% if log.status == "Complete" %}
+
+                                    <span class="badge badge-success">
+                                        Complete
+                                    </span>
+
+                                {% elif log.status == "Incomplete" %}
+
+                                    <span class="badge badge-danger">
+                                        Incomplete
+                                    </span>
+
+                                {% elif log.status == "Ignored" %}
+
+                                    <span class="badge badge-secondary">
+                                        Ignored
+                                    </span>
+
+                                {% else %}
+
+                                    <span class="badge badge-warning">
+                                        Pending
+                                    </span>
+
+                                {% endif %}
+
+                            </td>
+
+                            <td class="note-cell">
+                                {{ log.note|default:"—" }}
+                            </td>
+
+                        </tr>
+
+                    {% endfor %}
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    {% else %}
+
+        <div class="alert alert-info">
+            Não existem registros neste mês.
+        </div>
+
+    {% endif %}
+
+</section>
+
+{% endblock %}

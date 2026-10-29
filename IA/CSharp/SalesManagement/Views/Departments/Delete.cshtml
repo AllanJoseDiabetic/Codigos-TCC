@@ -1,0 +1,71 @@
+@model SalesManagement.Models.Department
+
+@{
+    ViewData["Title"] = "Excluir departamento";
+}
+
+<section class="form-panel">
+
+    <h1 class="page-title">
+        Excluir departamento
+    </h1>
+
+    @if (ViewData["DeleteError"] != null)
+    {
+        <div class="alert alert-danger">
+            @ViewData["DeleteError"]
+        </div>
+    }
+
+    <div class="alert alert-warning">
+
+        <strong>Atenção:</strong>
+
+        Confirme a exclusão do departamento selecionado.
+
+    </div>
+
+    <dl class="dl-horizontal">
+
+        <dt>Identificador</dt>
+        <dd>@Model.Id</dd>
+
+        <dt>Nome</dt>
+        <dd>@Model.Name</dd>
+
+    </dl>
+
+    <form
+        method="post"
+        action="@Url.Action("Delete", "Departments", new { id = Model.Id })"
+    >
+
+        @Html.AntiForgeryToken()
+
+        <input
+            type="hidden"
+            name="id"
+            value="@Model.Id"
+        />
+
+        <div class="form-actions">
+
+            <button
+                type="submit"
+                class="btn btn-danger"
+            >
+                Confirmar exclusão
+            </button>
+
+            <a
+                class="btn btn-default"
+                asp-action="Index"
+            >
+                Cancelar
+            </a>
+
+        </div>
+
+    </form>
+
+</section>

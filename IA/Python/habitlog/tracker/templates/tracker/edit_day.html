@@ -1,0 +1,38 @@
+{% extends "tracker/base.html" %}
+
+{% block title %}
+Editar registros - Agenda de Hábitos
+{% endblock %}
+
+{% block content %}
+
+<section class="content-panel">
+
+    <h1 class="page-title">
+        Editar registros
+    </h1>
+
+    <p class="text-muted">
+        {{ selected_date|date:"d/m/Y" }}
+    </p>
+
+    <p>
+        Você pode alterar a situação
+        das atividades e suas anotações,
+        desde que a data esteja dentro
+        do período permitido.
+    </p>
+
+    {% include "tracker/_log_form.html" %}
+
+    <div class="mt-4">
+
+        <a href="{% url 'tracker:weekly' %}">
+            Voltar ao acompanhamento semanal
+        </a>
+
+    </div>
+
+</section>
+
+{% endblock %}

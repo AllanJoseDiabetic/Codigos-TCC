@@ -1,0 +1,111 @@
+@model SalesManagement.Models.Seller
+
+<div
+    asp-validation-summary="ModelOnly"
+    class="text-danger validation-summary"
+></div>
+
+<div class="form-group">
+
+    <label
+        asp-for="Name"
+        class="control-label"
+    ></label>
+
+    <input
+        asp-for="Name"
+        class="form-control"
+    />
+
+    <span
+        asp-validation-for="Name"
+        class="text-danger"
+    ></span>
+
+</div>
+
+<div class="form-group">
+
+    <label
+        asp-for="Email"
+        class="control-label"
+    ></label>
+
+    <input
+        asp-for="Email"
+        type="email"
+        class="form-control"
+    />
+
+    <span
+        asp-validation-for="Email"
+        class="text-danger"
+    ></span>
+
+</div>
+
+<div class="form-group">
+
+    <label
+        asp-for="BirthDate"
+        class="control-label"
+    ></label>
+
+    <input
+        asp-for="BirthDate"
+        type="date"
+        class="form-control"
+    />
+
+    <span
+        asp-validation-for="BirthDate"
+        class="text-danger"
+    ></span>
+
+</div>
+
+<div class="form-group">
+
+    <label
+        asp-for="BaseSalary"
+        class="control-label"
+    ></label>
+
+    <input
+        asp-for="BaseSalary"
+        type="number"
+        step="0.01"
+        min="0.01"
+        class="form-control"
+    />
+
+    <span
+        asp-validation-for="BaseSalary"
+        class="text-danger"
+    ></span>
+
+</div>
+
+<div class="form-group">
+
+    <label
+        asp-for="DepartmentId"
+        class="control-label"
+    ></label>
+
+    <select
+        asp-for="DepartmentId"
+        asp-items="ViewBag.Departments"
+        class="form-control"
+    >
+        <option value="0">
+            Selecione um departamento
+        </option>
+    </select>
+
+    <span
+        asp-validation-for="DepartmentId"
+        class="text-danger"
+    ></span>
+
+</div>

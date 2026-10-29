@@ -1,6 +1,10 @@
 # Códigos do TCC
 
+<<<<<<< HEAD
 Este repositório reúne as implementações de código geradas por Inteligência Artificial utilizadas no Trabalho de Conclusão de Curso (TCC):
+=======
+Este repositório reúne os códigos utilizados na etapa experimental preliminar do Trabalho de Conclusão de Curso (TCC), destinada a comparar implementações de referência provenientes de um repositório público com implementações geradas por Inteligência Artificial. A autoria exclusivamente humana dos códigos de referência não pôde ser comprovada.
+>>>>>>> de289c77085396c0fd2932fa464c2a3dc0ff8794
 
 **Análise Comparativa da Qualidade de Software e Dívida Técnica em Códigos Gerados por LLMs e Desenvolvidos por Humanos.**
 
@@ -30,7 +34,15 @@ Codigos-TCC/
 
 ### Pasta `IA/`
 
+<<<<<<< HEAD
 Contém implementações produzidas por IA, organizadas por linguagem de programação.
+=======
+Contém as implementações de referência provenientes do repositório TheAlgorithms/JavaScript. Embora esses códigos estejam disponíveis publicamente, não foi possível comprovar sua autoria exclusivamente humana. O nome da pasta `humano/` foi preservado por compatibilidade com a organização original dos arquivos do estudo piloto.
+Esses arquivos foram adaptados a partir de implementações disponíveis no
+repositório [TheAlgorithms/JavaScript](https://github.com/TheAlgorithms/JavaScript).
+Os caminhos e os créditos específicos estão indicados na seção
+[Atribuição e créditos](#atribuição-e-créditos).
+>>>>>>> de289c77085396c0fd2932fa464c2a3dc0ff8794
 
 Cada aplicação foi solicitada a partir de uma especificação funcional e tecnológica, com restrições de geração estabelecidas para a pesquisa.
 
@@ -216,15 +228,28 @@ Para preservar a integridade metodológica, problemas identificados posteriormen
 
 | Tipo de ocorrência | Interpretação |
 |---|---|
+<<<<<<< HEAD
 | Falha de ambiente | Ferramenta, SDK, runtime ou banco ausente |
 | Falha de compatibilidade | Incompatibilidade entre ferramentas e dependências |
 | Erro de montagem | Arquivo copiado incorretamente ou no diretório errado |
 | Defeito de implementação | Problema presente no código gerado originalmente |
 | Falha funcional | Comportamento observado diferente do requisito |
+=======
+| H1 | Busca binária — referência |
+| IA1 | Busca binária IA |
+| H2 | Merge Sort — referência |
+| IA2 | Merge Sort IA |
+| H3 | Dijkstra — referência |
+| IA3 | Dijkstra IA |
+>>>>>>> de289c77085396c0fd2932fa464c2a3dc0ff8794
 
 As informações de rastreabilidade devem permitir identificar os arquivos originais, eventuais intervenções posteriores e os resultados efetivamente obtidos.
 
+<<<<<<< HEAD
 Não devem ser atribuídos hashes ou resultados experimentais a arquivos sem a correspondente coleta ou verificação.
+=======
+No estado atual, são executados 12 cenários lógicos, totalizando 29 execuções individuais. A implementação de referência H3 (Dijkstra) apresenta falha no teste referente a caminho maior que `10.000`, pois inicializa as distâncias com esse valor e retorna `10.000` em vez de `12.001`. Esse resultado registra uma diferença funcional entre as implementações; o algoritmo original não foi alterado para fazer o teste passar.
+>>>>>>> de289c77085396c0fd2932fa464c2a3dc0ff8794
 
 ## 6. Análise estática com SonarQube
 
@@ -250,7 +275,15 @@ A avaliação funcional busca identificar diferenças de comportamento entre as 
 
 Na etapa preliminar, foram utilizados testes de algoritmos com casos lógicos equivalentes.
 
+<<<<<<< HEAD
 Na etapa ampliada, os critérios funcionais devem considerar as características de cada aplicação, como:
+=======
+Os links acima apontam para o commit `5c39e87a9a31f279c60f830ad74a845e4788a517` do repositório TheAlgorithms/JavaScript, identificado posteriormente para fins de verificação. Não foi possível comprovar que essa revisão corresponde exatamente à versão consultada durante a coleta original. Na comparação realizada, os arquivos H2 e H3 apresentaram conteúdo idêntico ao dessa revisão, enquanto H1 preservou as funções dos algoritmos, mas apresentou alterações em elementos externos a elas.
+O repositório de origem informa que seus conteúdos são licenciados sob a **GNU General Public License v3.0
+(GPL-3.0)**. Consulte o [arquivo de licença do projeto de
+origem](https://github.com/TheAlgorithms/JavaScript/blob/5c39e87a9a31f279c60f830ad74a845e4788a517/LICENSE)
+e mantenha esta atribuição ao redistribuir ou modificar os trechos derivados.
+>>>>>>> de289c77085396c0fd2932fa464c2a3dc0ff8794
 
 - Operações de API.
 - Persistência de dados.
@@ -261,6 +294,7 @@ Na etapa ampliada, os critérios funcionais devem considerar as características
 
 Os testes automatizados cobrem cenários específicos e não garantem a ausência de todos os defeitos.
 
+<<<<<<< HEAD
 Quando uma aplicação não puder ser iniciada, o impedimento deve ser registrado sem inventar resultados para testes não realizados.
 
 ## 8. Direitos autorais e reconhecimento das fontes
@@ -306,3 +340,19 @@ O estudo não pretende demonstrar antecipadamente que uma abordagem seja univers
 Busca-se produzir uma comparação fundamentada em evidências observáveis, considerando métricas estáticas, resultados funcionais, características das linguagens, diversidade dos projetos e limitações metodológicas.
 
 **Este repositório corresponde ao grupo experimental de IA. Os projetos de referência utilizados na comparação são creditados e identificados pelos links históricos apresentados neste documento.**
+=======
+O objetivo não é estabelecer qual abordagem é universalmente melhor, mas
+fornecer uma base reproduzível para observar diferenças de implementação,
+legibilidade, complexidade e resultados de análise estática entre os dois
+grupos de código.
+
+## Convenção de cálculo dos hashes SHA-256
+
+Os hashes SHA-256 registrados neste manifesto correspondem às cópias preservadas dos arquivos JavaScript com terminações de linha CRLF, utilizadas no ambiente Windows durante o registro dos artefatos.
+
+Os arquivos recuperados diretamente do repositório GitHub podem apresentar terminações de linha LF. Essa diferença na representação dos arquivos altera os valores dos hashes SHA-256, mesmo quando não existem alterações nas instruções dos algoritmos.
+
+Para reproduzir os hashes publicados, é necessário utilizar a mesma representação em bytes dos arquivos preservados, incluindo as terminações de linha CRLF.
+
+Os hashes documentam a integridade das amostras preservadas, mas não comprovam, isoladamente, qual revisão do repositório TheAlgorithms/JavaScript foi consultada durante a coleta original.
+>>>>>>> de289c77085396c0fd2932fa464c2a3dc0ff8794

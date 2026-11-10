@@ -1,11 +1,8 @@
 # Códigos do TCC
 
 Este repositório reúne as implementações de código geradas por Inteligência Artificial utilizadas no Trabalho de Conclusão de Curso (TCC):
-=======
-Este repositório reúne os códigos utilizados na etapa experimental preliminar do Trabalho de Conclusão de Curso (TCC), destinada a comparar implementações de referência provenientes de um repositório público com implementações geradas por Inteligência Artificial. A autoria exclusivamente humana dos códigos de referência não pôde ser comprovada.
->>>>>>> de289c77085396c0fd2932fa464c2a3dc0ff8794
 
-**Análise Comparativa da Qualidade de Software e Dívida Técnica em Códigos Gerados por LLMs e Desenvolvidos por Humanos.**
+**Análise Comparativa da Qualidade de Software e da Dívida Técnica entre Códigos Gerados por LLMs e Implementações de Referência de Repositórios Públicos**
 
 O estudo tem como objetivo comparar características de qualidade interna, manutenibilidade, dívida técnica e comportamento funcional entre implementações geradas por modelos de linguagem de grande porte (LLMs) e implementações de referência provenientes de repositórios públicos.
 
@@ -25,7 +22,8 @@ Codigos-TCC/
 │   └── TypeScript/
 ├── docs/
 │   ├── manifesto-rastreabilidade.md
-│   └── PROMPTS.md
+│   ├── PROMPTS.md
+│   └── REPRODUCAO.md
 ├── tests/
 ├── .gitignore
 └── README.md
@@ -33,15 +31,7 @@ Codigos-TCC/
 
 ### Pasta `IA/`
 
-
 Contém implementações produzidas por IA, organizadas por linguagem de programação.
-=======
-Contém as implementações de referência provenientes do repositório TheAlgorithms/JavaScript. Embora esses códigos estejam disponíveis publicamente, não foi possível comprovar sua autoria exclusivamente humana. O nome da pasta `humano/` foi preservado por compatibilidade com a organização original dos arquivos do estudo piloto.
-Esses arquivos foram adaptados a partir de implementações disponíveis no
-repositório [TheAlgorithms/JavaScript](https://github.com/TheAlgorithms/JavaScript).
-Os caminhos e os créditos específicos estão indicados na seção
-[Atribuição e créditos](#atribuição-e-créditos).
->>>>>>> de289c77085396c0fd2932fa464c2a3dc0ff8794
 
 Cada aplicação foi solicitada a partir de uma especificação funcional e tecnológica, com restrições de geração estabelecidas para a pesquisa.
 
@@ -49,16 +39,17 @@ Cada aplicação foi solicitada a partir de uma especificação funcional e tecn
 
 Contém documentação complementar dos experimentos:
 
-- [`PROMPTS.md`](docs/PROMPTS.md): registro dos prompts utilizados na pesquisa.
+- [`PROMPTS.md`](docs/PROMPTS.md): dez prompts das aplicações da etapa ampliada, preservados como registro histórico.
 - [`manifesto-rastreabilidade.md`](docs/manifesto-rastreabilidade.md): informações de rastreabilidade e hashes documentados na etapa preliminar.
+- [`REPRODUCAO.md`](docs/REPRODUCAO.md): estado verificável da reprodução, caminhos ausentes, inventário de CSV/JSON e conferência dos links.
 
-Esses documentos foram iniciados durante os experimentos preliminares e podem não abranger integralmente a etapa ampliada.
+O manifesto cobre os algoritmos preliminares; não apresenta hashes das dez aplicações. Os prompts documentam especificações, não comprovam execução ou resultados.
 
 ### Pasta `tests/`
 
 Contém materiais de avaliação funcional da etapa preliminar.
 
-Como os códigos humanos foram retirados da árvore atual, testes que dependem dos caminhos anteriormente utilizados podem exigir acesso às referências externas para reprodução.
+**A suíte não é executável integralmente na árvore atual sem preparação adicional.** `tests/algorithms.test.js` carrega três arquivos ausentes de `humano/` e usa três caminhos antigos de IA, agora sob `IA/JavaScript/Preliminar/`. O primeiro carregamento de referência ausente interrompe a avaliação antes dos cenários. O teste foi preservado sem alterações; consulte os caminhos e limites em [Estado de reprodução](docs/REPRODUCAO.md).
 
 ## 2. Etapa preliminar — Algoritmos JavaScript
 
@@ -77,9 +68,9 @@ A pesquisa começou com três algoritmos clássicos implementados em JavaScript.
 
 As três implementações de referência foram selecionadas do projeto [TheAlgorithms/JavaScript](https://github.com/TheAlgorithms/JavaScript), mantido por seus colaboradores.
 
-**Commit utilizado:** `5c39e87a9a31f279c60f830ad74a845e4788a517`
+**Commit identificado posteriormente para verificação:** `5c39e87a9a31f279c60f830ad74a845e4788a517`
 
-| Algoritmo | Código de referência no commit selecionado |
+| Algoritmo | Código de referência no commit de verificação |
 |---|---|
 | Busca binária | [Search/BinarySearch.js](https://github.com/TheAlgorithms/JavaScript/blob/5c39e87a9a31f279c60f830ad74a845e4788a517/Search/BinarySearch.js) |
 | Merge Sort | [Sorts/MergeSort.js](https://github.com/TheAlgorithms/JavaScript/blob/5c39e87a9a31f279c60f830ad74a845e4788a517/Sorts/MergeSort.js) |
@@ -91,21 +82,23 @@ As três implementações de referência foram selecionadas do projeto [TheAlgor
 
 Acesso anteriormente registrado: 23 de outubro de 2026.
 
+Não foi possível comprovar que essa revisão corresponde exatamente à versão consultada durante a coleta original. Segundo o registro histórico, H2 e H3 apresentaram conteúdo idêntico ao dessa revisão; H1 preservou as funções dos algoritmos, com alterações em elementos externos a elas. Essa comparação histórica não foi refeita nesta revisão documental, pois as cópias locais de referência estão ausentes. A autoria exclusivamente humana das referências públicas não está comprovada.
+
 ### Avaliação preliminar
 
-A avaliação funcional preliminar utilizou o recurso nativo `node:test`, com registros associados a:
+A suíte preliminar utiliza o recurso nativo `node:test`. O comando abaixo é o comando histórico, **não uma instrução de reprodução imediata na árvore atual**:
 
 ```bash
 node --test tests/algorithms.test.js
 ```
 
-Foram documentadas 29 execuções de teste, abrangendo diferentes casos de entrada.
+O código da suíte define 12 cenários lógicos, que correspondem a 29 testes individuais: 5 casos de busca × 3 funções, 4 casos de ordenação × 2 implementações e 3 casos de Dijkstra × 2 implementações. Essa contagem descreve a suíte; não comprova uma execução atual.
 
 Entre as situações consideradas estavam listas vazias, valores ausentes, valores duplicados, vértices inacessíveis e caminhos com custo superior a 10.000.
 
-Foi identificada uma diferença funcional na implementação de referência H3 (Dijkstra), relacionada ao uso de 10.000 como valor inicial das distâncias.
+O README anterior registrava uma diferença funcional na implementação de referência H3 (Dijkstra), relacionada ao uso de 10.000 como valor inicial das distâncias.
 
-A implementação original foi preservada, e o comportamento foi registrado como resultado experimental.
+O registro histórico descreve retorno de 10.000 em vez de 12.001 no caso de caminho maior que 10.000, sem alteração do algoritmo para fazer o teste passar. A cópia local de referência não está na árvore atual.
 
 Esses resultados pertencem à etapa preliminar e não representam novas execuções após a reorganização do repositório.
 
@@ -130,7 +123,7 @@ Foram selecionados projetos de referência disponíveis publicamente. A partir d
 | 9 | SpaceArcade | JavaScript | [straker/galaxian-canvas-game](https://github.com/straker/galaxian-canvas-game) |
 | 10 | Survey NPS API | TypeScript | [rocketseat-education/nlw-04-nodejs](https://github.com/rocketseat-education/nlw-04-nodejs) |
 
-Os códigos desses repositórios foram selecionados para compor o grupo de referência da pesquisa. A classificação como referência humana não significa que a autoria exclusivamente humana de todos os arquivos tenha sido comprovada.
+Os códigos desses repositórios foram selecionados para compor o grupo de referência da pesquisa. A disponibilidade pública não comprova autoria exclusivamente humana. Identificadores históricos como H1, H2 e H3 designam o grupo de referência.
 
 ### 3.2. Commits históricos utilizados
 
@@ -217,7 +210,7 @@ O procedimento determinou:
 9. Identificar hipóteses de compatibilidade e limitações não determinadas.
 10. Preservar a implementação original para avaliação posterior.
 
-O registro dos prompts permite documentar as condições de geração das aplicações.
+Os dez prompts estão em [docs/PROMPTS.md](docs/PROMPTS.md). As regras acima descrevem o procedimento solicitado; sua presença no texto não comprova, por si só, cumprimento pelo modelo, versões efetivamente executadas ou equivalência funcional.
 
 ## 5. Preservação e rastreabilidade
 
@@ -227,28 +220,15 @@ Para preservar a integridade metodológica, problemas identificados posteriormen
 
 | Tipo de ocorrência | Interpretação |
 |---|---|
-
 | Falha de ambiente | Ferramenta, SDK, runtime ou banco ausente |
 | Falha de compatibilidade | Incompatibilidade entre ferramentas e dependências |
 | Erro de montagem | Arquivo copiado incorretamente ou no diretório errado |
 | Defeito de implementação | Problema presente no código gerado originalmente |
 | Falha funcional | Comportamento observado diferente do requisito |
-=======
-| H1 | Busca binária — referência |
-| IA1 | Busca binária IA |
-| H2 | Merge Sort — referência |
-| IA2 | Merge Sort IA |
-| H3 | Dijkstra — referência |
-| IA3 | Dijkstra IA |
->>>>>>> de289c77085396c0fd2932fa464c2a3dc0ff8794
 
 As informações de rastreabilidade devem permitir identificar os arquivos originais, eventuais intervenções posteriores e os resultados efetivamente obtidos.
 
-
 Não devem ser atribuídos hashes ou resultados experimentais a arquivos sem a correspondente coleta ou verificação.
-=======
-No estado atual, são executados 12 cenários lógicos, totalizando 29 execuções individuais. A implementação de referência H3 (Dijkstra) apresenta falha no teste referente a caminho maior que `10.000`, pois inicializa as distâncias com esse valor e retorna `10.000` em vez de `12.001`. Esse resultado registra uma diferença funcional entre as implementações; o algoritmo original não foi alterado para fazer o teste passar.
->>>>>>> de289c77085396c0fd2932fa464c2a3dc0ff8794
 
 ## 6. Análise estática com SonarQube
 
@@ -268,21 +248,15 @@ A existência de um projeto neste repositório não significa que sua análise t
 
 Os resultados devem ser interpretados considerando diferenças de tamanho, linguagem, dependências e características funcionais.
 
+Na árvore auditada, não foram encontrados CSV nem JSON de resultados de análise estática ou testes funcionais da etapa ampliada. Os 14 JSON existentes são configurações, manifestos e metadados de dependências/build. O [inventário documental](docs/REPRODUCAO.md) registra os caminhos e o alcance dessa verificação; ausência na árvore não significa que análises nunca tenham ocorrido.
+
 ## 7. Avaliação funcional
 
 A avaliação funcional busca identificar diferenças de comportamento entre as implementações e os requisitos estabelecidos.
 
 Na etapa preliminar, foram utilizados testes de algoritmos com casos lógicos equivalentes.
 
-
 Na etapa ampliada, os critérios funcionais devem considerar as características de cada aplicação, como:
-=======
-Os links acima apontam para o commit `5c39e87a9a31f279c60f830ad74a845e4788a517` do repositório TheAlgorithms/JavaScript, identificado posteriormente para fins de verificação. Não foi possível comprovar que essa revisão corresponde exatamente à versão consultada durante a coleta original. Na comparação realizada, os arquivos H2 e H3 apresentaram conteúdo idêntico ao dessa revisão, enquanto H1 preservou as funções dos algoritmos, mas apresentou alterações em elementos externos a elas.
-O repositório de origem informa que seus conteúdos são licenciados sob a **GNU General Public License v3.0
-(GPL-3.0)**. Consulte o [arquivo de licença do projeto de
-origem](https://github.com/TheAlgorithms/JavaScript/blob/5c39e87a9a31f279c60f830ad74a845e4788a517/LICENSE)
-e mantenha esta atribuição ao redistribuir ou modificar os trechos derivados.
->>>>>>> de289c77085396c0fd2932fa464c2a3dc0ff8794
 
 - Operações de API.
 - Persistência de dados.
@@ -292,7 +266,6 @@ e mantenha esta atribuição ao redistribuir ou modificar os trechos derivados.
 - Comportamento de algoritmos e simulações.
 
 Os testes automatizados cobrem cenários específicos e não garantem a ausência de todos os defeitos.
-
 
 Quando uma aplicação não puder ser iniciada, o impedimento deve ser registrado sem inventar resultados para testes não realizados.
 
@@ -339,19 +312,3 @@ O estudo não pretende demonstrar antecipadamente que uma abordagem seja univers
 Busca-se produzir uma comparação fundamentada em evidências observáveis, considerando métricas estáticas, resultados funcionais, características das linguagens, diversidade dos projetos e limitações metodológicas.
 
 **Este repositório corresponde ao grupo experimental de IA. Os projetos de referência utilizados na comparação são creditados e identificados pelos links históricos apresentados neste documento.**
-=======
-O objetivo não é estabelecer qual abordagem é universalmente melhor, mas
-fornecer uma base reproduzível para observar diferenças de implementação,
-legibilidade, complexidade e resultados de análise estática entre os dois
-grupos de código.
-
-## Convenção de cálculo dos hashes SHA-256
-
-Os hashes SHA-256 registrados neste manifesto correspondem às cópias preservadas dos arquivos JavaScript com terminações de linha CRLF, utilizadas no ambiente Windows durante o registro dos artefatos.
-
-Os arquivos recuperados diretamente do repositório GitHub podem apresentar terminações de linha LF. Essa diferença na representação dos arquivos altera os valores dos hashes SHA-256, mesmo quando não existem alterações nas instruções dos algoritmos.
-
-Para reproduzir os hashes publicados, é necessário utilizar a mesma representação em bytes dos arquivos preservados, incluindo as terminações de linha CRLF.
-
-Os hashes documentam a integridade das amostras preservadas, mas não comprovam, isoladamente, qual revisão do repositório TheAlgorithms/JavaScript foi consultada durante a coleta original.
->>>>>>> de289c77085396c0fd2932fa464c2a3dc0ff8794

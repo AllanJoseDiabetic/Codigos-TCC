@@ -1,1 +1,137 @@
+
+# ============================================
+# TCC - Arquivos ignorados pelo Git
+# ============================================
+
+# 1. SonarQube e scanners
 .scannerwork/
+.sonarqube/
+.sonar/
+**/.scannerwork/
+**/.sonarqube/
+
+# 2. Python - ambientes virtuais e cache
+.venv/
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+coverage.xml
+htmlcov/
+
+# 3. Java - Maven e Gradle
+target/
+.gradle/
+.classpath
+.project
+.settings/
+*.class
+*.jar
+*.war
+
+# 4. JavaScript / TypeScript
+node_modules/
+.npm/
+.pnpm-store/
+.next/
+.nuxt/
+.turbo/
+dist/
+.nyc_output/
+coverage/
+*.tsbuildinfo
+
+# 5. C# / .NET
+[Bb]in/
+[Oo]bj/
+.vs/
+TestResults/
+*.user
+*.suo
+*.cache
+*.pdb
+
+# 6. Arquivos de ambiente e credenciais
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.pem
+*.p12
+*.pfx
+*.key
+secrets.json
+appsettings.Development.json
+appsettings.Local.json
+**/appsettings.*.local.json
+
+# 7. Bancos de dados e dados de execucao
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.bson
+*.rdb
+dados_mongodb/
+mongodb-data/
+mongo-data/
+WiredTiger*
+mongod.lock
+
+# 8. Logs e arquivos temporarios
+*.log
+*.tmp
+*.temp
+*.bak
+*.old
+*.swp
+*.swo
+*.stackdump
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 9. Editores e sistemas operacionais
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# 10. Arquivos compactados temporarios
+*.rar
+*.7z
+*.zip
+
+# ============================================
+# PRESERVAR EVIDENCIAS CIENTIFICAS
+# ============================================
+# Nao ignorar genericamente:
+# *.csv
+# *.json
+# *.xlsx
+# *.md
+# *.js
+# *.py
+# *.java
+# *.cs
+# *.ts
+#
+# Resultados e documentacao:
+# docs/resultados-sonarqube/
+# docs/resultados-teste-funcionais/
+# docs/REPRODUCAO.md
+# docs/PROMPTS.md

@@ -1,8 +1,8 @@
 # Manifesto de rastreabilidade
 
-Este documento registra os hashes SHA-256 dos arquivos JavaScript utilizados
-nas análises estáticas do TCC. Os identificadores H1, H2, H3, IA1, IA2 e IA3
-correspondem às implementações avaliadas.
+Este documento preserva os hashes SHA-256 registrados para os arquivos JavaScript da etapa preliminar do TCC. Os identificadores H1, H2, H3, IA1, IA2 e IA3 correspondem às implementações descritas no registro histórico. As tabelas abaixo mantêm os caminhos e valores originais; não são uma nova validação dos arquivos da árvore atual.
+
+As cópias de `humano/` estão ausentes. Os seis arquivos de IA (originais e cópias modificadas) estão atualmente sob `IA/JavaScript/Preliminar/`, acrescentando `Preliminar/` aos caminhos históricos abaixo. A correspondência por caminho/nome não comprova igualdade de bytes ou de hashes. Não foram recalculados hashes nesta revisão documental. Este manifesto não cobre as dez aplicações da etapa ampliada; veja [Estado de reprodução](REPRODUCAO.md).
 
 | Identificador | Implementação | Arquivo | SHA-256 |
 |---|---|---|---|
@@ -27,3 +27,9 @@ Os hashes identificam o conteúdo dos arquivos preservados após as análises
 estáticas. As cópias com o sufixo `-modificado` foram criadas posteriormente
 para permitir a execução visível dos exemplos e estão registradas
 separadamente neste manifesto.
+
+## Convenção histórica de bytes e limites
+
+O README anterior registrava que os hashes correspondem às cópias preservadas com terminações de linha CRLF, utilizadas no ambiente Windows. Arquivos recuperados com LF podem produzir hashes diferentes mesmo sem alteração das instruções dos algoritmos. Essa convenção foi mantida como registro histórico, sem normalizar ou alterar arquivos experimentais nesta revisão.
+
+Para conferir um hash, é necessário dispor da mesma representação em bytes da amostra preservada. Não se deve substituir os valores publicados por hashes de outra representação sem registrar a distinção. Os hashes, isoladamente, não comprovam qual revisão de TheAlgorithms/JavaScript foi consultada na coleta original. O commit identificado posteriormente para verificação e a ressalva sobre sua procedência estão no [README](../README.md#referências-originais).

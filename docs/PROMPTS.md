@@ -1,3 +1,28 @@
+# Prompts de geração — etapa ampliada
+
+## Escopo e leitura deste registro
+
+Este arquivo contém dez prompts das aplicações da etapa ampliada. Os textos a partir de “Prompt 01” foram preservados integralmente nesta revisão documental. Expressões históricas como “snapshot histórico humano” referem-se às implementações de referência de repositórios públicos; não comprovam autoria exclusivamente humana.
+
+As instruções abaixo são registros fornecidos ao modelo, não comandos para quem consulta este documento. A existência de uma especificação não comprova o cumprimento das restrições de geração, a execução nas versões indicadas ou os resultados científicos. Este arquivo não inclui os prompts dos três algoritmos preliminares.
+
+| Prompt | Implementação de IA correspondente no README |
+|---|---|
+| 01 | Flask Blog |
+| 02 | HabitLog |
+| 03 | Commerce API |
+| 04 | Turnboard |
+| 05 | SalesManagement |
+| 06 | CircuitWorkbench |
+| 07 | Movie Rental API |
+| 08 | SpaceArcade |
+| 09 | TeamBugTracker |
+| 10 | Survey NPS API |
+
+Os créditos, repositórios e commits históricos permanecem no [README](../README.md). A ordem dos prompts difere da ordem dos projetos nesse documento. Consulte [Estado de reprodução](REPRODUCAO.md) para os artefatos disponíveis e as lacunas; este registro não constitui um pacote completo de reprodução.
+
+---
+
 ## Prompt 01 Blog pessoal com autenticação
 
 Produza uma implementação original da aplicação descrita abaixo em uma única resposta inicial. Use somente esta especificação. Não consulte web, repositórios, projetos conhecidos ou código de referência; não peça arquivos, links nem esclarecimentos. Não copie, transcreva ou traduza uma implementação existente.

@@ -1,0 +1,1665 @@
+﻿{
+    "issues":  [
+                   {
+                       "key":  "4d4866a0-2817-4099-b560-171256c01c69",
+                       "rule":  "csharpsquid:S1450",
+                       "severity":  "MINOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/BaseObjects/CircuitObject.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  25,
+                       "hash":  "84c7e877021a2ab51988e1d08007e437",
+                       "textRange":  {
+                                         "startLine":  25,
+                                         "endLine":  25,
+                                         "startOffset":  22,
+                                         "endOffset":  35
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove the field \u0027_currentPoint\u0027 and declare it as a local variable in the relevant methods.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "pitfall"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "3bc86392-5921-4b15-bf77-8d6d930f8e76",
+                       "rule":  "csharpsquid:S2933",
+                       "severity":  "MAJOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/BaseObjects/CircuitObject.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  28,
+                       "hash":  "fcc7d2b9a3dd6d24e0143880bb64e74e",
+                       "textRange":  {
+                                         "startLine":  28,
+                                         "endLine":  28,
+                                         "startOffset":  35,
+                                         "endOffset":  45
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make \u0027_transform\u0027 \u0027readonly\u0027.",
+                       "effort":  "2min",
+                       "debt":  "2min",
+                       "author":  "",
+                       "tags":  [
+                                    "confusing"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "bcac537d-13db-4e74-8ad3-cf014ca652ff",
+                       "rule":  "csharpsquid:S2933",
+                       "severity":  "MAJOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/BaseObjects/CircuitObject.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  34,
+                       "hash":  "f0158d2ce5de2162e75972db2d76b8da",
+                       "textRange":  {
+                                         "startLine":  34,
+                                         "endLine":  34,
+                                         "startOffset":  35,
+                                         "endOffset":  54
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make \u0027_attachedInputLines\u0027 \u0027readonly\u0027.",
+                       "effort":  "2min",
+                       "debt":  "2min",
+                       "author":  "",
+                       "tags":  [
+                                    "confusing"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "09d7c173-c3bc-4dd1-81f5-10cc1275b107",
+                       "rule":  "csharpsquid:S2933",
+                       "severity":  "MAJOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/BaseObjects/CircuitObject.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  37,
+                       "hash":  "dc5c126e64b870f79113a95879c4f0f3",
+                       "textRange":  {
+                                         "startLine":  37,
+                                         "endLine":  37,
+                                         "startOffset":  35,
+                                         "endOffset":  55
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make \u0027_attachedOutputLines\u0027 \u0027readonly\u0027.",
+                       "effort":  "2min",
+                       "debt":  "2min",
+                       "author":  "",
+                       "tags":  [
+                                    "confusing"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "d0323715-e251-4416-87fa-1fa457e06135",
+                       "rule":  "csharpsquid:S1125",
+                       "severity":  "MINOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/BaseObjects/CircuitObject.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  62,
+                       "hash":  "2bc13e1f344e89f9de43502d190ebba5",
+                       "textRange":  {
+                                         "startLine":  62,
+                                         "endLine":  62,
+                                         "startOffset":  24,
+                                         "endOffset":  32
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove the unnecessary Boolean literal(s).",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "clumsy"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "1d497d60-fe14-4c94-812a-a2b62d35ecb8",
+                       "rule":  "csharpsquid:S1481",
+                       "severity":  "MINOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/BaseObjects/CircuitObject.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  113,
+                       "hash":  "4b16f2019921588839c54fbb5ec21526",
+                       "textRange":  {
+                                         "startLine":  113,
+                                         "endLine":  113,
+                                         "startOffset":  20,
+                                         "endOffset":  27
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove the unused local variable \u0027element\u0027.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "unused"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "5dcdc6da-9637-4672-820b-ff7f27d96816",
+                       "rule":  "csharpsquid:S2325",
+                       "severity":  "MINOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/BaseObjects/CircuitObject.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  150,
+                       "hash":  "4b5bccba1588f849d5711d0a8a00c584",
+                       "textRange":  {
+                                         "startLine":  150,
+                                         "endLine":  150,
+                                         "startOffset":  22,
+                                         "endOffset":  30
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make \u0027MoveLine\u0027 a static method.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "pitfall"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "11d8ee88-b586-4a03-ae90-973f5e371ee8",
+                       "rule":  "csharpsquid:S112",
+                       "severity":  "MAJOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/BaseObjects/Input.xaml.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  38,
+                       "hash":  "c4e4b92810a284b0d9807073b5a5730b",
+                       "textRange":  {
+                                         "startLine":  38,
+                                         "endLine":  38,
+                                         "startOffset":  22,
+                                         "endOffset":  68
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "\u0027System.Exception\u0027 should not be thrown by user code.",
+                       "effort":  "20min",
+                       "debt":  "20min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "error-handling"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "b49c025b-1be6-4687-b16c-ff27cea30f3e",
+                       "rule":  "csharpsquid:S2292",
+                       "severity":  "MINOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/BaseObjects/Output.xaml.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  22,
+                       "hash":  "561a793cdc8bb72207fc0d99307166d2",
+                       "textRange":  {
+                                         "startLine":  22,
+                                         "endLine":  22,
+                                         "startOffset":  20,
+                                         "endOffset":  25
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make this an auto-implemented property and remove its backing field.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "clumsy"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "e569e8b0-9190-4c4b-9cd6-d7bd50406b8c",
+                       "rule":  "csharpsquid:S101",
+                       "severity":  "MINOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/BaseObjects/PowerObject.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  4,
+                       "hash":  "79a48512e8e9ff6dc88a618cd060f20b",
+                       "textRange":  {
+                                         "startLine":  4,
+                                         "endLine":  4,
+                                         "startOffset":  21,
+                                         "endOffset":  32
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Rename interface \u0027PowerObject\u0027 to match pascal case naming rules, consider using \u0027IPowerObject\u0027.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "convention"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "IDENTIFIABLE",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "2f642559-ed21-4a96-87df-d2486a200a9f",
+                       "rule":  "csharpsquid:S1125",
+                       "severity":  "MINOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/FlipFlop/D.xaml.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  39,
+                       "hash":  "2ba3d65ba5ba2b1e00f3757fa56a2838",
+                       "textRange":  {
+                                         "startLine":  39,
+                                         "endLine":  39,
+                                         "startOffset":  48,
+                                         "endOffset":  55
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove the unnecessary Boolean literal(s).",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "clumsy"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "73001f5f-726b-4608-abf4-95f77ad13836",
+                       "rule":  "csharpsquid:S1125",
+                       "severity":  "MINOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/FlipFlop/D.xaml.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  60,
+                       "hash":  "4fb1b2641cf3eee639f95647b0a04919",
+                       "textRange":  {
+                                         "startLine":  60,
+                                         "endLine":  60,
+                                         "startOffset":  38,
+                                         "endOffset":  46
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove the unnecessary Boolean literal(s).",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "clumsy"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "838af81d-bac3-49de-9fb7-fefc9cf6fe91",
+                       "rule":  "csharpsquid:S1125",
+                       "severity":  "MINOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/FlipFlop/JK.xaml.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  39,
+                       "hash":  "2ba3d65ba5ba2b1e00f3757fa56a2838",
+                       "textRange":  {
+                                         "startLine":  39,
+                                         "endLine":  39,
+                                         "startOffset":  48,
+                                         "endOffset":  55
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove the unnecessary Boolean literal(s).",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "clumsy"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "cff5225a-ca04-496b-a388-e238b11985a0",
+                       "rule":  "csharpsquid:S1125",
+                       "severity":  "MINOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/FlipFlop/JK.xaml.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  75,
+                       "hash":  "4fb1b2641cf3eee639f95647b0a04919",
+                       "textRange":  {
+                                         "startLine":  75,
+                                         "endLine":  75,
+                                         "startOffset":  38,
+                                         "endOffset":  46
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove the unnecessary Boolean literal(s).",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "clumsy"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "6f06bfe9-2c8a-444b-b520-d72e161e6fc6",
+                       "rule":  "csharpsquid:S1125",
+                       "severity":  "MINOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/Gates/And.xaml.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  29,
+                       "hash":  "7a760810b9b9dccdf7240152f7d69b82",
+                       "textRange":  {
+                                         "startLine":  29,
+                                         "endLine":  29,
+                                         "startOffset":  31,
+                                         "endOffset":  38
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove the unnecessary Boolean literal(s).",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "clumsy"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "aa11b4c3-9e90-4310-ad3c-ef908287b5fd",
+                       "rule":  "csharpsquid:S1125",
+                       "severity":  "MINOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/Gates/And.xaml.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  29,
+                       "hash":  "7a760810b9b9dccdf7240152f7d69b82",
+                       "textRange":  {
+                                         "startLine":  29,
+                                         "endLine":  29,
+                                         "startOffset":  57,
+                                         "endOffset":  64
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove the unnecessary Boolean literal(s).",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "clumsy"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "2675d9f8-a772-4bdc-b5bc-b98da997aeab",
+                       "rule":  "csharpsquid:S1125",
+                       "severity":  "MINOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/Gates/Or.xaml.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  28,
+                       "hash":  "9e676f6da58504e34968f79791a0eac7",
+                       "textRange":  {
+                                         "startLine":  28,
+                                         "endLine":  28,
+                                         "startOffset":  57,
+                                         "endOffset":  64
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove the unnecessary Boolean literal(s).",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "clumsy"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "a2d39525-8c4e-40cc-94c3-b9f83ef99eef",
+                       "rule":  "csharpsquid:S1125",
+                       "severity":  "MINOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/Gates/Or.xaml.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  28,
+                       "hash":  "9e676f6da58504e34968f79791a0eac7",
+                       "textRange":  {
+                                         "startLine":  28,
+                                         "endLine":  28,
+                                         "startOffset":  31,
+                                         "endOffset":  38
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove the unnecessary Boolean literal(s).",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "clumsy"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "c0d9105e-5cb7-4eba-9b6e-cffbad8580a9",
+                       "rule":  "csharpsquid:S3247",
+                       "severity":  "MINOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/IO/LED.xaml.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  37,
+                       "hash":  "7b4d90d8a0d6eaa0285419b04ae1e9c9",
+                       "textRange":  {
+                                         "startLine":  37,
+                                         "endLine":  37,
+                                         "startOffset":  20,
+                                         "endOffset":  30
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/IO/LED.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  39,
+                                                                                 "endLine":  39,
+                                                                                 "startOffset":  31,
+                                                                                 "endOffset":  39
+                                                                             },
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Replace this type-check-and-cast sequence to use pattern matching.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "performance"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "8b174a60-2b49-4649-8ae3-bf5839d654a8",
+                       "rule":  "csharpsquid:S3247",
+                       "severity":  "MINOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/MainWindow.xaml.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  75,
+                       "hash":  "64f0fd2aaab58aa68ab13e464544da55",
+                       "textRange":  {
+                                         "startLine":  75,
+                                         "endLine":  75,
+                                         "startOffset":  16,
+                                         "endOffset":  42
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  78,
+                                                                                 "endLine":  78,
+                                                                                 "startOffset":  32,
+                                                                                 "endOffset":  56
+                                                                             },
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Replace this type-check-and-cast sequence to use pattern matching.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "performance"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "971d5805-1734-47fb-ba4f-f8c003598739",
+                       "rule":  "csharpsquid:S3247",
+                       "severity":  "MINOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/MainWindow.xaml.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  82,
+                       "hash":  "affd14f46aa8ef7fe0c0d3a01925be6e",
+                       "textRange":  {
+                                         "startLine":  82,
+                                         "endLine":  82,
+                                         "startOffset":  20,
+                                         "endOffset":  32
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  85,
+                                                                                 "endLine":  85,
+                                                                                 "startOffset":  38,
+                                                                                 "endOffset":  48
+                                                                             },
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  98,
+                                                                                 "endLine":  98,
+                                                                                 "startOffset":  34,
+                                                                                 "endOffset":  44
+                                                                             },
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Replace this type-check-and-cast sequence to use pattern matching.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "performance"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "e9ee0cc4-5d01-4d21-8ef2-905d6ac63522",
+                       "rule":  "csharpsquid:S3776",
+                       "severity":  "CRITICAL",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/MainWindow.xaml.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  122,
+                       "hash":  "b1431c8e0baedc015e0b4789be1e0cd6",
+                       "textRange":  {
+                                         "startLine":  122,
+                                         "endLine":  122,
+                                         "startOffset":  21,
+                                         "endOffset":  42
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  125,
+                                                                                 "endLine":  125,
+                                                                                 "startOffset":  12,
+                                                                                 "endOffset":  14
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  133,
+                                                                                 "endLine":  133,
+                                                                                 "startOffset":  16,
+                                                                                 "endOffset":  18
+                                                                             },
+                                                               "msg":  "+2 (incl 1 for nesting)",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  145,
+                                                                                 "endLine":  145,
+                                                                                 "startOffset":  20,
+                                                                                 "endOffset":  22
+                                                                             },
+                                                               "msg":  "+3 (incl 2 for nesting)",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  145,
+                                                                                 "endLine":  145,
+                                                                                 "startOffset":  39,
+                                                                                 "endOffset":  41
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  155,
+                                                                                 "endLine":  155,
+                                                                                 "startOffset":  20,
+                                                                                 "endOffset":  22
+                                                                             },
+                                                               "msg":  "+3 (incl 2 for nesting)",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  161,
+                                                                                 "endLine":  161,
+                                                                                 "startOffset":  24,
+                                                                                 "endOffset":  26
+                                                                             },
+                                                               "msg":  "+4 (incl 3 for nesting)",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  192,
+                                                                                 "endLine":  192,
+                                                                                 "startOffset":  16,
+                                                                                 "endOffset":  18
+                                                                             },
+                                                               "msg":  "+2 (incl 1 for nesting)",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Refactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.",
+                       "effort":  "6min",
+                       "debt":  "6min",
+                       "author":  "",
+                       "tags":  [
+                                    "brain-overload"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "FOCUSED",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "ff7abc33-1f82-4509-8f96-25e2e1fd4891",
+                       "rule":  "csharpsquid:S3247",
+                       "severity":  "MINOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/MainWindow.xaml.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  155,
+                       "hash":  "64f0fd2aaab58aa68ab13e464544da55",
+                       "textRange":  {
+                                         "startLine":  155,
+                                         "endLine":  155,
+                                         "startOffset":  24,
+                                         "endOffset":  50
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  157,
+                                                                                 "endLine":  157,
+                                                                                 "startOffset":  40,
+                                                                                 "endOffset":  64
+                                                                             },
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Replace this type-check-and-cast sequence to use pattern matching.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "performance"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "76985032-7fde-4a48-aa50-223f5d12ea0c",
+                       "rule":  "csharpsquid:S3247",
+                       "severity":  "MINOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/MainWindow.xaml.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  161,
+                       "hash":  "b596918c6f60ada98d01665eff0dd4b7",
+                       "textRange":  {
+                                         "startLine":  161,
+                                         "endLine":  161,
+                                         "startOffset":  28,
+                                         "endOffset":  39
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  164,
+                                                                                 "endLine":  164,
+                                                                                 "startOffset":  44,
+                                                                                 "endOffset":  53
+                                                                             },
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Replace this type-check-and-cast sequence to use pattern matching.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "performance"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "bb53f797-0b7f-41ae-96a9-957b72084e60",
+                       "rule":  "csharpsquid:S3267",
+                       "severity":  "MINOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/MainWindow.xaml.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  305,
+                       "hash":  "add2c1aad08543430d8d32ae0a8636c1",
+                       "textRange":  {
+                                         "startLine":  305,
+                                         "endLine":  305,
+                                         "startOffset":  42,
+                                         "endOffset":  52
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  308,
+                                                                                 "endLine":  308,
+                                                                                 "startOffset":  24,
+                                                                                 "endOffset":  50
+                                                                             },
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Loops should be simplified using the \"Where\" LINQ method",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "6feb29e0-d64c-4641-9945-f6ce2c4bd057",
+                       "rule":  "csharpsquid:S3247",
+                       "severity":  "MINOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/MainWindow.xaml.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  310,
+                       "hash":  "8b9fe94998ee58878ecaf0abc4977c2d",
+                       "textRange":  {
+                                         "startLine":  310,
+                                         "endLine":  310,
+                                         "startOffset":  28,
+                                         "endOffset":  39
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  313,
+                                                                                 "endLine":  313,
+                                                                                 "startOffset":  29,
+                                                                                 "endOffset":  38
+                                                                             },
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Replace this type-check-and-cast sequence to use pattern matching.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "performance"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "d5eae67b-8b2d-4274-8710-b0fbb9d40873",
+                       "rule":  "csharpsquid:S3247",
+                       "severity":  "MINOR",
+                       "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/MainWindow.xaml.cs",
+                       "project":  "h13---CircuitSimulator",
+                       "line":  315,
+                       "hash":  "33522ca9d3c3a49fde132a62b5e16452",
+                       "textRange":  {
+                                         "startLine":  315,
+                                         "endLine":  315,
+                                         "startOffset":  33,
+                                         "endOffset":  43
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "h13---CircuitSimulator:CircuitSim/CircuitSim/MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  318,
+                                                                                 "endLine":  318,
+                                                                                 "startOffset":  29,
+                                                                                 "endOffset":  37
+                                                                             },
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Replace this type-check-and-cast sequence to use pattern matching.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "performance"
+                                ],
+                       "creationDate":  "2026-10-28T16:53:42-0300",
+                       "updateDate":  "2026-10-28T16:53:42-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   }
+               ],
+    "total":  27,
+    "projectKey":  "h13---CircuitSimulator"
+}

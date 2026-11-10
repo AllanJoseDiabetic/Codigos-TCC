@@ -1,0 +1,35 @@
+﻿TCC_CULTURA=InvariantCulture
+humano T01 PASS Total de vendas do vendedor no intervalo
+humano T02 PASS Excluir vendas fora do intervalo
+humano T03 PASS Associar vendedor ao departamento
+humano T04 PASS Total de vendas agregado pelo departamento
+humano T05 PASS Adicionar e remover venda de um vendedor
+humano T06 PASS Listar departamentos pelo controlador
+humano T07 PASS Consultar departamento existente
+humano T08 PASS Consultar departamento inexistente
+humano T09 PASS Abrir cadastro de departamento
+humano T10 PASS Criar e persistir departamento
+humano T11 PASS Abrir edicao de departamento
+humano T12 PASS Alterar e persistir departamento
+humano T13 PASS Abrir exclusao de departamento
+humano T14 PASS Excluir departamento sem vendedores
+humano T15 PASS Listar vendedores
+humano T16 PASS Abrir formulario de vendedor
+humano T17 PASS Consultar vendedor existente
+humano T18 PASS Abrir edicao de vendedor
+humano T19 PASS Cadastrar e persistir vendedor
+humano T20 PASS Atualizar vendedor existente
+humano T21 PASS Abrir exclusao de vendedor
+humano T22 PASS Excluir vendedor sem vendas
+humano T23 PASS Abrir pagina de registros de vendas
+humano T24 PASS Consultar vendas por intervalo
+humano T25 PASS Agrupar vendas por departamento
+humano T26 PASS Validar nome obrigatorio do vendedor
+humano T27 PASS Validar formato de e-mail do vendedor
+humano T28 PASS Validar salario negativo
+humano T29 FAIL Validar departamento nao selecionado | Exception: DepartmentId=0 aceito
+humano T30 FAIL Recusar cadastro de vendedor com nascimento futuro | Exception: nascimento futuro aceito
+humano T31 FAIL Recusar cadastro em departamento inexistente | Exception: departamento inexistente aceito
+humano T32 FAIL Busca inclui vendas na tarde da data final | Exception: venda no dia final nao encontrada
+humano T33 FAIL Nome do departamento e obrigatorio | Exception: departamento sem nome aceito na validacao
+RESUMO humano: PASS=28 FAIL=5 TOTAL=33

@@ -1,0 +1,98 @@
+﻿{
+    "component":  {
+                      "key":  "IA---CircuitWorkbench",
+                      "name":  "IA - CircuitWorkbench",
+                      "qualifier":  "TRK",
+                      "measures":  [
+                                       {
+                                           "metric":  "coverage",
+                                           "value":  "0.0",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "complexity",
+                                           "value":  "289"
+                                       },
+                                       {
+                                           "metric":  "duplicated_lines_density",
+                                           "value":  "0.0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "ncloc_language_distribution",
+                                           "value":  "cs=1749;xml=8"
+                                       },
+                                       {
+                                           "metric":  "duplicated_lines",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "software_quality_security_issues",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "software_quality_maintainability_remediation_effort",
+                                           "value":  "52",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "sqale_debt_ratio",
+                                           "value":  "0.1",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "software_quality_maintainability_debt_ratio",
+                                           "value":  "0.1",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "security_hotspots",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "sqale_index",
+                                           "value":  "52",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "lines_to_cover",
+                                           "value":  "747"
+                                       },
+                                       {
+                                           "metric":  "software_quality_reliability_issues",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "cognitive_complexity",
+                                           "value":  "204",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "duplicated_blocks",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "ncloc",
+                                           "value":  "1757"
+                                       },
+                                       {
+                                           "metric":  "software_quality_maintainability_issues",
+                                           "value":  "10",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "files",
+                                           "value":  "5"
+                                       },
+                                       {
+                                           "metric":  "lines",
+                                           "value":  "2220"
+                                       }
+                                   ]
+                  }
+}

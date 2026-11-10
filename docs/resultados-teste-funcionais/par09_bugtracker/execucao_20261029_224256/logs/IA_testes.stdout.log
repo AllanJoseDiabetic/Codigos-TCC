@@ -1,0 +1,41 @@
+IA T01 PASS    Abrir pagina de login | HTTP 200
+IA T02 PASS    Abrir formulario de cadastro | HTTP 200
+IA T03 PASS    Rejeitar login incorreto | HTTP 200; sessao nao autenticada
+IA T04 PASS    Autenticar com senha correta | HTTP 302; sessao autenticada
+IA T05 PASS    Encerrar sessao | HTTP 302; sessao encerrada
+IA T06 PASS    Rejeitar cadastro com senhas divergentes | HTTP 200; usuario nao criado
+IA T07 PASS    Cadastrar usuario valido | HTTP 302; cadastro persistido e autenticado
+IA T08 PASS    Rejeitar nome de usuario duplicado | HTTP 200; duplicidade rejeitada
+IA T09 PASS    Impedir acesso anonimo a lista de defeitos | HTTP 302; acesso negado
+IA T10 PASS    Impedir acesso anonimo a API de defeitos | HTTP 302; acesso negado
+IA T11 PASS    Impedir acesso anonimo ao formulario de defeito | HTTP 302; acesso negado
+IA T12 PASS    Impedir consulta anonima a detalhe de defeito | HTTP 302; acesso negado
+IA T13 PASS    Impedir encerramento anonimo de defeito | HTTP 302; estado preservado
+IA T14 PASS    Abrir lista da organizacao autenticado | HTTP 200
+IA T15 PASS    Abrir lista de defeitos atribuidos ao usuario | HTTP 200
+IA T16 PASS    Abrir formulario de novo defeito | HTTP 200
+IA T17 PASS    Criar defeito com dados validos e persistir | HTTP 201; defeito_id=1
+IA T18 PASS    Abrir pagina de detalhe de defeito | HTTP 200
+IA T19 PASS    Consultar dados do defeito por JSON | HTTP 200; titulo correto
+IA T20 PASS    Listagem da organizacao contem defeito | Defeito da organizacao encontrado
+IA T21 PASS    Listagem pessoal contem defeito atribuido | Defeito atribuido encontrado
+IA T22 PASS    Listagem pessoal omite defeito de outro responsavel | Defeito nao atribuido omitido
+IA T23 PASS    Contagem de defeitos da organizacao | Contagem da organizacao=2
+IA T24 PASS    Contagem pessoal de defeitos | Contagem pessoal=1
+IA T25 PASS    Abrir formulario de edicao de defeito | HTTP 200
+IA T26 PASS    Editar e persistir defeito | HTTP 200; titulo atualizado
+IA T27 PASS    Rejeitar defeito sem titulo | HTTP 400; nenhum defeito criado
+IA T28 PASS    Rejeitar defeito sem descricao | HTTP 400; nenhum defeito criado
+IA T29 PASS    Rejeitar estimativa negativa | HTTP 400; nenhum defeito criado
+IA T30 PASS    Impedir atribuicao a usuario de outra organizacao | HTTP 400; atribuicao externa rejeitada
+IA T31 PASS    Isolar lista JSON entre organizacoes | Nenhum defeito da outra organizacao divulgado
+IA T32 PASS    Negar detalhe JSON de outra organizacao | HTTP 404; acesso negado
+IA T33 PASS    Negar edicao de outra organizacao | HTTP 404; acesso negado
+IA T34 PASS    Negar encerramento de outra organizacao | HTTP 404; defeito externo preservado
+IA T35 PASS    Encerrar defeito e persistir estado inativo | HTTP 200; active=False
+IA T36 PASS    Nao listar como ativo defeito concluido | Defeito concluido nao aparece ativo
+IA T37 PASS    Retornar 404 para detalhe JSON inexistente | HTTP 404
+IA T38 PASS    Retornar 404 para edicao inexistente | HTTP 404
+IA T39 PASS    Retornar 404 para encerramento inexistente | HTTP 404
+IA T40 PASS    GET nao pode encerrar defeito (sem efeito colateral) | HTTP 405; active=True
+RESULTADO IA: {'PASS': 40, 'FAIL': 0, 'BLOCKED': 0}

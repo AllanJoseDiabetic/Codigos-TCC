@@ -1,0 +1,98 @@
+﻿{
+    "component":  {
+                      "key":  "IA---movie-rental-api",
+                      "name":  "IA - movie-rental-api",
+                      "qualifier":  "TRK",
+                      "measures":  [
+                                       {
+                                           "metric":  "coverage",
+                                           "value":  "0.0",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "complexity",
+                                           "value":  "81"
+                                       },
+                                       {
+                                           "metric":  "duplicated_lines_density",
+                                           "value":  "0.0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "ncloc_language_distribution",
+                                           "value":  "js=1082"
+                                       },
+                                       {
+                                           "metric":  "duplicated_lines",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "software_quality_security_issues",
+                                           "value":  "1",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "software_quality_maintainability_remediation_effort",
+                                           "value":  "87",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "sqale_debt_ratio",
+                                           "value":  "0.3",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "software_quality_maintainability_debt_ratio",
+                                           "value":  "0.3",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "security_hotspots",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "sqale_index",
+                                           "value":  "87",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "lines_to_cover",
+                                           "value":  "359"
+                                       },
+                                       {
+                                           "metric":  "software_quality_reliability_issues",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "cognitive_complexity",
+                                           "value":  "44",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "duplicated_blocks",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "ncloc",
+                                           "value":  "1082"
+                                       },
+                                       {
+                                           "metric":  "software_quality_maintainability_issues",
+                                           "value":  "7",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "files",
+                                           "value":  "16"
+                                       },
+                                       {
+                                           "metric":  "lines",
+                                           "value":  "1341"
+                                       }
+                                   ]
+                  }
+}

@@ -1,0 +1,6 @@
+﻿"key";"rule";"component";"message";"status";"effort";"severity";"linha"
+"cf3a7fa7-17d6-4d19-9bf9-ec90664da1e6";"typescript:S5689";"h9---NPS-NLW-da-Rocketseat:src/app.ts";"This framework implicitly discloses version information by default. Make sure it is safe here.";"OPEN";"5min";"MINOR";"9"
+"52330d5d-af5f-4e5c-b2c3-9d5e06154160";"typescript:S7772";"h9---NPS-NLW-da-Rocketseat:src/controllers/SendMailController.ts";"Prefer `node:path` over `path`.";"OPEN";"5min";"MINOR";"2"
+"a0698262-cd68-4889-9bdb-ca0fa019b85b";"typescript:S7726";"h9---NPS-NLW-da-Rocketseat:src/database/index.ts";"The async arrow function should be named.";"OPEN";"5min";"MINOR";"3"
+"7d933bea-7c7e-42d3-8254-37dc57571c8c";"typescript:S1128";"h9---NPS-NLW-da-Rocketseat:src/database/migrations/1614015788331-CreateSurveys.ts";"Remove this unused import of 'query'.";"OPEN";"1min";"MINOR";"1"
+"2da6bddf-fe28-4fa3-9cef-384d42ffe512";"typescript:S7772";"h9---NPS-NLW-da-Rocketseat:src/services/SendMailService.ts";"Prefer `node:fs` over `fs`.";"OPEN";"5min";"MINOR";"4"

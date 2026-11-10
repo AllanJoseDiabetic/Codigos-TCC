@@ -1,0 +1,1815 @@
+﻿{
+    "issues":  [
+                   {
+                       "key":  "1aaf780e-e40e-4acc-90be-ca89846cbfe2",
+                       "rule":  "javascript:S7748",
+                       "severity":  "MINOR",
+                       "component":  "IA---SpaceArcade:audio.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  18,
+                       "hash":  "b758d0f23b212c82531fa52fee0a450f",
+                       "textRange":  {
+                                         "startLine":  18,
+                                         "endLine":  18,
+                                         "startOffset":  23,
+                                         "endOffset":  24
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Don\u0027t use a zero fraction in the number.",
+                       "effort":  "1min",
+                       "debt":  "1min",
+                       "author":  "",
+                       "tags":  [
+                                    "consistency",
+                                    "formatting"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "bdb5610d-db7f-443f-bb9f-1a07c3af8cd8",
+                       "rule":  "javascript:S7748",
+                       "severity":  "MINOR",
+                       "component":  "IA---SpaceArcade:audio.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  21,
+                       "hash":  "fd943ac2694e35cb6b71b87d3dc3c4dc",
+                       "textRange":  {
+                                         "startLine":  21,
+                                         "endLine":  21,
+                                         "startOffset":  25,
+                                         "endOffset":  26
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Don\u0027t use a zero fraction in the number.",
+                       "effort":  "1min",
+                       "debt":  "1min",
+                       "author":  "",
+                       "tags":  [
+                                    "consistency",
+                                    "formatting"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "b0710e05-bce4-4f4e-bd78-3b178d0140d2",
+                       "rule":  "javascript:S7758",
+                       "severity":  "MINOR",
+                       "component":  "IA---SpaceArcade:audio.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  30,
+                       "hash":  "b523125fcfc0505cea2893f24f436f82",
+                       "textRange":  {
+                                         "startLine":  30,
+                                         "endLine":  30,
+                                         "startOffset":  21,
+                                         "endOffset":  31
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Prefer `String#codePointAt()` over `String#charCodeAt()`.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "internationalization",
+                                    "es2015",
+                                    "unicode"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "LOW"
+                                       },
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "ae4cc8f8-9319-4485-8a30-61f57df19029",
+                       "rule":  "javascript:S7748",
+                       "severity":  "MINOR",
+                       "component":  "IA---SpaceArcade:audio.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  90,
+                       "hash":  "7b1d3eaee22b81ef85a15bc30e8528e1",
+                       "textRange":  {
+                                         "startLine":  90,
+                                         "endLine":  90,
+                                         "startOffset":  19,
+                                         "endOffset":  22
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Don\u0027t use a zero fraction in the number.",
+                       "effort":  "1min",
+                       "debt":  "1min",
+                       "author":  "",
+                       "tags":  [
+                                    "consistency",
+                                    "formatting"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "a18669af-2865-4703-9a91-451807491cd2",
+                       "rule":  "javascript:S7748",
+                       "severity":  "MINOR",
+                       "component":  "IA---SpaceArcade:audio.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  93,
+                       "hash":  "b9e184cffd6103371ab68d6901a4a796",
+                       "textRange":  {
+                                         "startLine":  93,
+                                         "endLine":  93,
+                                         "startOffset":  19,
+                                         "endOffset":  22
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Don\u0027t use a zero fraction in the number.",
+                       "effort":  "1min",
+                       "debt":  "1min",
+                       "author":  "",
+                       "tags":  [
+                                    "consistency",
+                                    "formatting"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "cfe49996-06d6-4fa8-b1dc-60a2274ce095",
+                       "rule":  "javascript:S7748",
+                       "severity":  "MINOR",
+                       "component":  "IA---SpaceArcade:audio.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  97,
+                       "hash":  "7b1d3eaee22b81ef85a15bc30e8528e1",
+                       "textRange":  {
+                                         "startLine":  97,
+                                         "endLine":  97,
+                                         "startOffset":  19,
+                                         "endOffset":  22
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Don\u0027t use a zero fraction in the number.",
+                       "effort":  "1min",
+                       "debt":  "1min",
+                       "author":  "",
+                       "tags":  [
+                                    "consistency",
+                                    "formatting"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "a16ba1a7-2f1a-452c-8f06-3227f810d4c0",
+                       "rule":  "javascript:S7748",
+                       "severity":  "MINOR",
+                       "component":  "IA---SpaceArcade:audio.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  98,
+                       "hash":  "77f98379242fa07598fb8db8c1ba885b",
+                       "textRange":  {
+                                         "startLine":  98,
+                                         "endLine":  98,
+                                         "startOffset":  19,
+                                         "endOffset":  22
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Don\u0027t use a zero fraction in the number.",
+                       "effort":  "1min",
+                       "debt":  "1min",
+                       "author":  "",
+                       "tags":  [
+                                    "consistency",
+                                    "formatting"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "11022898-c3bd-4701-940e-7e9a69a41ae1",
+                       "rule":  "javascript:S7748",
+                       "severity":  "MINOR",
+                       "component":  "IA---SpaceArcade:audio.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  101,
+                       "hash":  "e29142249248ec676002ea5b3dcbe453",
+                       "textRange":  {
+                                         "startLine":  101,
+                                         "endLine":  101,
+                                         "startOffset":  19,
+                                         "endOffset":  22
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Don\u0027t use a zero fraction in the number.",
+                       "effort":  "1min",
+                       "debt":  "1min",
+                       "author":  "",
+                       "tags":  [
+                                    "consistency",
+                                    "formatting"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "68d12752-6d44-44ae-9a4d-900dc7c53e18",
+                       "rule":  "javascript:S7748",
+                       "severity":  "MINOR",
+                       "component":  "IA---SpaceArcade:audio.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  102,
+                       "hash":  "b9e184cffd6103371ab68d6901a4a796",
+                       "textRange":  {
+                                         "startLine":  102,
+                                         "endLine":  102,
+                                         "startOffset":  19,
+                                         "endOffset":  22
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Don\u0027t use a zero fraction in the number.",
+                       "effort":  "1min",
+                       "debt":  "1min",
+                       "author":  "",
+                       "tags":  [
+                                    "consistency",
+                                    "formatting"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "6e339b61-5453-450f-bbd7-af3fe73d1a7b",
+                       "rule":  "javascript:S7748",
+                       "severity":  "MINOR",
+                       "component":  "IA---SpaceArcade:audio.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  105,
+                       "hash":  "176bc97be340aa9118c17d244ec855c2",
+                       "textRange":  {
+                                         "startLine":  105,
+                                         "endLine":  105,
+                                         "startOffset":  19,
+                                         "endOffset":  22
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Don\u0027t use a zero fraction in the number.",
+                       "effort":  "1min",
+                       "debt":  "1min",
+                       "author":  "",
+                       "tags":  [
+                                    "consistency",
+                                    "formatting"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "4cc93fa0-a584-4bb4-a571-dcd60b6b9f52",
+                       "rule":  "javascript:S2486",
+                       "severity":  "MINOR",
+                       "component":  "IA---SpaceArcade:audio.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  284,
+                       "hash":  "161b8313784081f5965c2da97df48970",
+                       "textRange":  {
+                                         "startLine":  284,
+                                         "endLine":  286,
+                                         "startOffset":  10,
+                                         "endOffset":  9
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Handle this exception or don\u0027t catch it at all.",
+                       "effort":  "1h",
+                       "debt":  "1h",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "error-handling",
+                                    "suspicious"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "0cee355a-0c8f-4243-ae05-128aca012a0d",
+                       "rule":  "javascript:S2486",
+                       "severity":  "MINOR",
+                       "component":  "IA---SpaceArcade:audio.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  313,
+                       "hash":  "161b8313784081f5965c2da97df48970",
+                       "textRange":  {
+                                         "startLine":  313,
+                                         "endLine":  325,
+                                         "startOffset":  22,
+                                         "endOffset":  21
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Handle this exception or don\u0027t catch it at all.",
+                       "effort":  "1h",
+                       "debt":  "1h",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "error-handling",
+                                    "suspicious"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "87668aad-580a-46cd-8549-a95064e6bdd0",
+                       "rule":  "javascript:S2004",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---SpaceArcade:audio.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  356,
+                       "hash":  "aebdf576435b921ee503e986c028c348",
+                       "textRange":  {
+                                         "startLine":  356,
+                                         "endLine":  356,
+                                         "startOffset":  45,
+                                         "endOffset":  47
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---SpaceArcade:audio.js",
+                                                               "textRange":  {
+                                                                                 "startLine":  1,
+                                                                                 "endLine":  1,
+                                                                                 "startOffset":  1,
+                                                                                 "endOffset":  9
+                                                                             },
+                                                               "msg":  "Nesting +1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---SpaceArcade:audio.js",
+                                                               "textRange":  {
+                                                                                 "startLine":  297,
+                                                                                 "endLine":  297,
+                                                                                 "startOffset":  8,
+                                                                                 "endOffset":  12
+                                                                             },
+                                                               "msg":  "Nesting +1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---SpaceArcade:audio.js",
+                                                               "textRange":  {
+                                                                                 "startLine":  307,
+                                                                                 "endLine":  307,
+                                                                                 "startOffset":  46,
+                                                                                 "endOffset":  48
+                                                                             },
+                                                               "msg":  "Nesting +1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---SpaceArcade:audio.js",
+                                                               "textRange":  {
+                                                                                 "startLine":  308,
+                                                                                 "endLine":  308,
+                                                                                 "startOffset":  45,
+                                                                                 "endOffset":  47
+                                                                             },
+                                                               "msg":  "Nesting +1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Refactor this code to not nest functions more than 4 levels deep.",
+                       "effort":  "20min",
+                       "debt":  "20min",
+                       "author":  "",
+                       "tags":  [
+                                    "brain-overload"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "FOCUSED",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "b8a7d9e0-f6dc-4237-b813-d880b7ca8f47",
+                       "rule":  "javascript:S2004",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---SpaceArcade:audio.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  381,
+                       "hash":  "fb40c96ea4a36d4ec74b5a4b032784c3",
+                       "textRange":  {
+                                         "startLine":  381,
+                                         "endLine":  381,
+                                         "startOffset":  24,
+                                         "endOffset":  32
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---SpaceArcade:audio.js",
+                                                               "textRange":  {
+                                                                                 "startLine":  1,
+                                                                                 "endLine":  1,
+                                                                                 "startOffset":  1,
+                                                                                 "endOffset":  9
+                                                                             },
+                                                               "msg":  "Nesting +1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---SpaceArcade:audio.js",
+                                                               "textRange":  {
+                                                                                 "startLine":  297,
+                                                                                 "endLine":  297,
+                                                                                 "startOffset":  8,
+                                                                                 "endOffset":  12
+                                                                             },
+                                                               "msg":  "Nesting +1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---SpaceArcade:audio.js",
+                                                               "textRange":  {
+                                                                                 "startLine":  307,
+                                                                                 "endLine":  307,
+                                                                                 "startOffset":  46,
+                                                                                 "endOffset":  48
+                                                                             },
+                                                               "msg":  "Nesting +1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---SpaceArcade:audio.js",
+                                                               "textRange":  {
+                                                                                 "startLine":  308,
+                                                                                 "endLine":  308,
+                                                                                 "startOffset":  45,
+                                                                                 "endOffset":  47
+                                                                             },
+                                                               "msg":  "Nesting +1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Refactor this code to not nest functions more than 4 levels deep.",
+                       "effort":  "20min",
+                       "debt":  "20min",
+                       "author":  "",
+                       "tags":  [
+                                    "brain-overload"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "FOCUSED",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "ca6a7170-3be5-4668-a95c-87d0ce8bb242",
+                       "rule":  "javascript:S2004",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---SpaceArcade:audio.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  391,
+                       "hash":  "fb40c96ea4a36d4ec74b5a4b032784c3",
+                       "textRange":  {
+                                         "startLine":  391,
+                                         "endLine":  391,
+                                         "startOffset":  24,
+                                         "endOffset":  32
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---SpaceArcade:audio.js",
+                                                               "textRange":  {
+                                                                                 "startLine":  1,
+                                                                                 "endLine":  1,
+                                                                                 "startOffset":  1,
+                                                                                 "endOffset":  9
+                                                                             },
+                                                               "msg":  "Nesting +1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---SpaceArcade:audio.js",
+                                                               "textRange":  {
+                                                                                 "startLine":  297,
+                                                                                 "endLine":  297,
+                                                                                 "startOffset":  8,
+                                                                                 "endOffset":  12
+                                                                             },
+                                                               "msg":  "Nesting +1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---SpaceArcade:audio.js",
+                                                               "textRange":  {
+                                                                                 "startLine":  307,
+                                                                                 "endLine":  307,
+                                                                                 "startOffset":  46,
+                                                                                 "endOffset":  48
+                                                                             },
+                                                               "msg":  "Nesting +1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---SpaceArcade:audio.js",
+                                                               "textRange":  {
+                                                                                 "startLine":  308,
+                                                                                 "endLine":  308,
+                                                                                 "startOffset":  45,
+                                                                                 "endOffset":  47
+                                                                             },
+                                                               "msg":  "Nesting +1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Refactor this code to not nest functions more than 4 levels deep.",
+                       "effort":  "20min",
+                       "debt":  "20min",
+                       "author":  "",
+                       "tags":  [
+                                    "brain-overload"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "FOCUSED",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "7af97dc8-4bf6-431a-b31c-ef22cae17edd",
+                       "rule":  "javascript:S2004",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---SpaceArcade:audio.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  400,
+                       "hash":  "fb40c96ea4a36d4ec74b5a4b032784c3",
+                       "textRange":  {
+                                         "startLine":  400,
+                                         "endLine":  400,
+                                         "startOffset":  24,
+                                         "endOffset":  32
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---SpaceArcade:audio.js",
+                                                               "textRange":  {
+                                                                                 "startLine":  1,
+                                                                                 "endLine":  1,
+                                                                                 "startOffset":  1,
+                                                                                 "endOffset":  9
+                                                                             },
+                                                               "msg":  "Nesting +1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---SpaceArcade:audio.js",
+                                                               "textRange":  {
+                                                                                 "startLine":  297,
+                                                                                 "endLine":  297,
+                                                                                 "startOffset":  8,
+                                                                                 "endOffset":  12
+                                                                             },
+                                                               "msg":  "Nesting +1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---SpaceArcade:audio.js",
+                                                               "textRange":  {
+                                                                                 "startLine":  307,
+                                                                                 "endLine":  307,
+                                                                                 "startOffset":  46,
+                                                                                 "endOffset":  48
+                                                                             },
+                                                               "msg":  "Nesting +1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---SpaceArcade:audio.js",
+                                                               "textRange":  {
+                                                                                 "startLine":  308,
+                                                                                 "endLine":  308,
+                                                                                 "startOffset":  45,
+                                                                                 "endOffset":  47
+                                                                             },
+                                                               "msg":  "Nesting +1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Refactor this code to not nest functions more than 4 levels deep.",
+                       "effort":  "20min",
+                       "debt":  "20min",
+                       "author":  "",
+                       "tags":  [
+                                    "brain-overload"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "FOCUSED",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "f78e887d-8c2f-4b76-84b0-261e42962cf6",
+                       "rule":  "javascript:S7770",
+                       "severity":  "MINOR",
+                       "component":  "IA---SpaceArcade:audio.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  413,
+                       "hash":  "43a97a039f0ed51bb6dc38d11287452d",
+                       "textRange":  {
+                                         "startLine":  413,
+                                         "endLine":  413,
+                                         "startOffset":  34,
+                                         "endOffset":  36
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "arrow function is equivalent to `Boolean`. Use `Boolean` directly.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "performance",
+                                    "unnecessary"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "6412f8e0-b186-4609-bd8d-ddd6d4cad3df",
+                       "rule":  "javascript:S4138",
+                       "severity":  "MINOR",
+                       "component":  "IA---SpaceArcade:audio.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  428,
+                       "hash":  "8fee0eefccd33a7ef8cf3d20cfe564e5",
+                       "textRange":  {
+                                         "startLine":  428,
+                                         "endLine":  436,
+                                         "startOffset":  12,
+                                         "endOffset":  13
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Expected a `for-of` loop instead of a `for` loop with this simple iteration.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "clumsy"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "290981e2-1c1d-449a-8705-acb3ddd29b8c",
+                       "rule":  "javascript:S2486",
+                       "severity":  "MINOR",
+                       "component":  "IA---SpaceArcade:audio.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  445,
+                       "hash":  "161b8313784081f5965c2da97df48970",
+                       "textRange":  {
+                                         "startLine":  445,
+                                         "endLine":  447,
+                                         "startOffset":  14,
+                                         "endOffset":  13
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Handle this exception or don\u0027t catch it at all.",
+                       "effort":  "1h",
+                       "debt":  "1h",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "error-handling",
+                                    "suspicious"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "f0da7aa6-159b-4cf1-ad3d-e32a7749ab6e",
+                       "rule":  "javascript:S2486",
+                       "severity":  "MINOR",
+                       "component":  "IA---SpaceArcade:audio.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  463,
+                       "hash":  "161b8313784081f5965c2da97df48970",
+                       "textRange":  {
+                                         "startLine":  463,
+                                         "endLine":  465,
+                                         "startOffset":  14,
+                                         "endOffset":  13
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Handle this exception or don\u0027t catch it at all.",
+                       "effort":  "1h",
+                       "debt":  "1h",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "error-handling",
+                                    "suspicious"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "78546cd8-a043-4e1b-8ac3-380a40e781bd",
+                       "rule":  "javascript:S2486",
+                       "severity":  "MINOR",
+                       "component":  "IA---SpaceArcade:audio.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  481,
+                       "hash":  "161b8313784081f5965c2da97df48970",
+                       "textRange":  {
+                                         "startLine":  481,
+                                         "endLine":  483,
+                                         "startOffset":  14,
+                                         "endOffset":  13
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Handle this exception or don\u0027t catch it at all.",
+                       "effort":  "1h",
+                       "debt":  "1h",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "error-handling",
+                                    "suspicious"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "3c2f067b-2c17-4b4c-aab2-821d8ac3cefe",
+                       "rule":  "javascript:S7764",
+                       "severity":  "MINOR",
+                       "component":  "IA---SpaceArcade:audio.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  521,
+                       "hash":  "b97495691aed1095f987346081a582da",
+                       "textRange":  {
+                                         "startLine":  521,
+                                         "endLine":  521,
+                                         "startOffset":  4,
+                                         "endOffset":  10
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Prefer `globalThis` over `window`.",
+                       "effort":  "2min",
+                       "debt":  "2min",
+                       "author":  "",
+                       "tags":  [
+                                    "portability",
+                                    "es2020"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "417ae71e-1919-44a9-a72f-bf6fbc7904d0",
+                       "rule":  "javascript:S7764",
+                       "severity":  "MINOR",
+                       "component":  "IA---SpaceArcade:game.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  147,
+                       "hash":  "f81f296bd6378a430371e0ec7707f1a4",
+                       "textRange":  {
+                                         "startLine":  147,
+                                         "endLine":  147,
+                                         "startOffset":  12,
+                                         "endOffset":  18
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Prefer `globalThis` over `window`.",
+                       "effort":  "2min",
+                       "debt":  "2min",
+                       "author":  "",
+                       "tags":  [
+                                    "portability",
+                                    "es2020"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "cfe995d1-dbc0-4f36-8d56-21b9085f1c00",
+                       "rule":  "javascript:S7765",
+                       "severity":  "MINOR",
+                       "component":  "IA---SpaceArcade:game.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  151,
+                       "hash":  "143ea478af6ea5061ecc5ba0b4a9c216",
+                       "textRange":  {
+                                         "startLine":  151,
+                                         "endLine":  151,
+                                         "startOffset":  39,
+                                         "endOffset":  46
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Use `.includes()`, rather than `.indexOf()`, when checking for existence.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "readability",
+                                    "es2016"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "d2ca6c69-35b2-40ea-b9c6-347dbc35ac8e",
+                       "rule":  "javascript:S7764",
+                       "severity":  "MINOR",
+                       "component":  "IA---SpaceArcade:game.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  164,
+                       "hash":  "f81f296bd6378a430371e0ec7707f1a4",
+                       "textRange":  {
+                                         "startLine":  164,
+                                         "endLine":  164,
+                                         "startOffset":  12,
+                                         "endOffset":  18
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Prefer `globalThis` over `window`.",
+                       "effort":  "2min",
+                       "debt":  "2min",
+                       "author":  "",
+                       "tags":  [
+                                    "portability",
+                                    "es2020"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "9b4abd95-8db5-4ee8-a044-a84598e62b9c",
+                       "rule":  "javascript:S7769",
+                       "severity":  "MINOR",
+                       "component":  "IA---SpaceArcade:game.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  483,
+                       "hash":  "83a05732ba18bc0f92e1d1590f359e07",
+                       "textRange":  {
+                                         "startLine":  483,
+                                         "endLine":  483,
+                                         "startOffset":  39,
+                                         "endOffset":  43
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Prefer `Math.hypot(â¦)` over `Math.sqrt(â¦)`.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "performance",
+                                    "es2015"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "f99f3703-d408-454e-8709-518439d97402",
+                       "rule":  "javascript:S7748",
+                       "severity":  "MINOR",
+                       "component":  "IA---SpaceArcade:game.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  520,
+                       "hash":  "c03884342c77a97baf2ede05be58668d",
+                       "textRange":  {
+                                         "startLine":  520,
+                                         "endLine":  520,
+                                         "startOffset":  42,
+                                         "endOffset":  43
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Don\u0027t use a zero fraction in the number.",
+                       "effort":  "1min",
+                       "debt":  "1min",
+                       "author":  "",
+                       "tags":  [
+                                    "consistency",
+                                    "formatting"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "19bac5b8-e022-4f81-b763-2e15ede7bd19",
+                       "rule":  "javascript:S7769",
+                       "severity":  "MINOR",
+                       "component":  "IA---SpaceArcade:game.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  617,
+                       "hash":  "02ce860b6a603811d4c7dac8176ae931",
+                       "textRange":  {
+                                         "startLine":  617,
+                                         "endLine":  617,
+                                         "startOffset":  21,
+                                         "endOffset":  25
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Prefer `Math.hypot(â¦)` over `Math.sqrt(â¦)`.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "performance",
+                                    "es2015"
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "591fc3c0-c4ca-47c3-8b7c-efd7bd1676ac",
+                       "rule":  "javascript:S1848",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SpaceArcade:game.js",
+                       "project":  "IA---SpaceArcade",
+                       "line":  1067,
+                       "hash":  "1a4baa91863afbd4cbf6827e1bbd0af7",
+                       "textRange":  {
+                                         "startLine":  1067,
+                                         "endLine":  1067,
+                                         "startOffset":  8,
+                                         "endOffset":  21
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Either remove this useless object instantiation of \"SpaceGame\" or use it.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2026-10-28T21:50:21-0300",
+                       "updateDate":  "2026-10-28T21:50:21-0300",
+                       "type":  "BUG",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   }
+               ],
+    "total":  29,
+    "projectKey":  "IA---SpaceArcade"
+}

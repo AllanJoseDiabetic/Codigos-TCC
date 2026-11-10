@@ -1,0 +1,318 @@
+{
+  "par": "par05_tabuleiro",
+  "execucao": "20261029_203042",
+  "metodo": "testes externos do motor Java; modelo humano vs Game IA; sem rede Socket/RMI, UI ou partidas completas",
+  "escopo": "mesmos 18 requisitos funcionais abstratos; valores numericos e APIs diferem entre projetos",
+  "originais_preservados": true,
+  "quantidade_testes_por_projeto": 18,
+  "resumo": {
+    "humano": {
+      "PASS": 18,
+      "FAIL": 0,
+      "BLOCKED": 0,
+      "BLOCKED_PREPARACAO": 0
+    },
+    "IA": {
+      "PASS": 18,
+      "FAIL": 0,
+      "BLOCKED": 0,
+      "BLOCKED_PREPARACAO": 0
+    }
+  },
+  "testes": [
+    {
+      "projeto": "humano",
+      "teste": "T01",
+      "descricao": "Preparar dois participantes",
+      "resultado": "PASS",
+      "obtido": "2 giocatori preparados",
+      "duracao_ms": 91.74
+    },
+    {
+      "projeto": "humano",
+      "teste": "T02",
+      "descricao": "Identificar jogadores separadamente",
+      "resultado": "PASS",
+      "obtido": "Ana e Bia identificadas separadamente",
+      "duracao_ms": 6.24
+    },
+    {
+      "projeto": "humano",
+      "teste": "T03",
+      "descricao": "Inicializar a partida e o periodo",
+      "resultado": "PASS",
+      "obtido": "Partida iniciada no periodo 1/turno 1",
+      "duracao_ms": 5.0
+    },
+    {
+      "projeto": "humano",
+      "teste": "T04",
+      "descricao": "Distribuir recursos iniciais",
+      "resultado": "PASS",
+      "obtido": "Recursos de inicio atribuidos",
+      "duracao_ms": 6.21
+    },
+    {
+      "projeto": "humano",
+      "teste": "T05",
+      "descricao": "Disponibilizar familiares do jogador",
+      "resultado": "PASS",
+      "obtido": "Familiar vinculado e livre",
+      "duracao_ms": 6.38
+    },
+    {
+      "projeto": "humano",
+      "teste": "T06",
+      "descricao": "Distribuir cartas nas torres",
+      "resultado": "PASS",
+      "obtido": "Cartas presentes nas torres",
+      "duracao_ms": 7.31
+    },
+    {
+      "projeto": "humano",
+      "teste": "T07",
+      "descricao": "Ganhar moedas ao utilizar mercado",
+      "resultado": "PASS",
+      "obtido": "Recompensa mercado: moedas 5 -> 10",
+      "duracao_ms": 13.26
+    },
+    {
+      "projeto": "humano",
+      "teste": "T08",
+      "descricao": "Ganhar servos ao utilizar mercado",
+      "resultado": "PASS",
+      "obtido": "Recompensa mercado: servos 3 -> 8",
+      "duracao_ms": 6.59
+    },
+    {
+      "projeto": "humano",
+      "teste": "T09",
+      "descricao": "Registrar ocupacao do espaco de mercado",
+      "resultado": "PASS",
+      "obtido": "Ocupacao registrada no mercado",
+      "duracao_ms": 7.56
+    },
+    {
+      "projeto": "humano",
+      "teste": "T10",
+      "descricao": "Rejeitar espaco ja ocupado",
+      "resultado": "PASS",
+      "obtido": "Segunda ocupacao rejeitada",
+      "duracao_ms": 8.48
+    },
+    {
+      "projeto": "humano",
+      "teste": "T11",
+      "descricao": "Rejeitar reutilizacao de familiar",
+      "resultado": "PASS",
+      "obtido": "Reutilizacao do familiar rejeitada",
+      "duracao_ms": 6.28
+    },
+    {
+      "projeto": "humano",
+      "teste": "T12",
+      "descricao": "Consumir servos para elevar poder",
+      "resultado": "PASS",
+      "obtido": "2 servos trocados por 2 pontos de poder",
+      "duracao_ms": 3.87
+    },
+    {
+      "projeto": "humano",
+      "teste": "T13",
+      "descricao": "Impedir gasto acima dos servos disponiveis",
+      "resultado": "PASS",
+      "obtido": "Saldo insuficiente rejeitado",
+      "duracao_ms": 5.35
+    },
+    {
+      "projeto": "humano",
+      "teste": "T14",
+      "descricao": "Aplicar privilegio do conselho",
+      "resultado": "PASS",
+      "obtido": "Conselho concedeu moedas",
+      "duracao_ms": 12.81
+    },
+    {
+      "projeto": "humano",
+      "teste": "T15",
+      "descricao": "Identificar proximo jogador do turno",
+      "resultado": "PASS",
+      "obtido": "Proximo jogador identificado corretamente",
+      "duracao_ms": 25.79
+    },
+    {
+      "projeto": "humano",
+      "teste": "T16",
+      "descricao": "Acumular pontos de vitoria",
+      "resultado": "PASS",
+      "obtido": "Pontos de vitoria acumulados",
+      "duracao_ms": 22.85
+    },
+    {
+      "projeto": "humano",
+      "teste": "T17",
+      "descricao": "Rejeitar area inexistente",
+      "resultado": "PASS",
+      "obtido": "Posicao invalida rejeitada",
+      "duracao_ms": 16.03
+    },
+    {
+      "projeto": "humano",
+      "teste": "T18",
+      "descricao": "Impedir acao fora do turno",
+      "resultado": "PASS",
+      "obtido": "Jogador fora da vez bloqueado pela regra",
+      "duracao_ms": 23.54
+    },
+    {
+      "projeto": "IA",
+      "teste": "T01",
+      "descricao": "Preparar dois participantes",
+      "resultado": "PASS",
+      "obtido": "Dois participantes na partida",
+      "duracao_ms": 701.49
+    },
+    {
+      "projeto": "IA",
+      "teste": "T02",
+      "descricao": "Identificar jogadores separadamente",
+      "resultado": "PASS",
+      "obtido": "Ana e Bia identificadas separadamente",
+      "duracao_ms": 70.02
+    },
+    {
+      "projeto": "IA",
+      "teste": "T03",
+      "descricao": "Inicializar a partida e o periodo",
+      "resultado": "PASS",
+      "obtido": "Partida iniciada no periodo 1/rodada 1",
+      "duracao_ms": 14.12
+    },
+    {
+      "projeto": "IA",
+      "teste": "T04",
+      "descricao": "Distribuir recursos iniciais",
+      "resultado": "PASS",
+      "obtido": "Recursos de inicio atribuidos",
+      "duracao_ms": 15.59
+    },
+    {
+      "projeto": "IA",
+      "teste": "T05",
+      "descricao": "Disponibilizar familiares do jogador",
+      "resultado": "PASS",
+      "obtido": "Familiar vinculado e livre",
+      "duracao_ms": 14.27
+    },
+    {
+      "projeto": "IA",
+      "teste": "T06",
+      "descricao": "Distribuir cartas nas torres",
+      "resultado": "PASS",
+      "obtido": "Cartas presentes nas torres",
+      "duracao_ms": 14.54
+    },
+    {
+      "projeto": "IA",
+      "teste": "T07",
+      "descricao": "Ganhar moedas ao utilizar mercado",
+      "resultado": "PASS",
+      "obtido": "Recompensa mercado: moedas 6 -> 9",
+      "duracao_ms": 66.82
+    },
+    {
+      "projeto": "IA",
+      "teste": "T08",
+      "descricao": "Ganhar servos ao utilizar mercado",
+      "resultado": "PASS",
+      "obtido": "Recompensa mercado: servos 4 -> 6",
+      "duracao_ms": 58.57
+    },
+    {
+      "projeto": "IA",
+      "teste": "T09",
+      "descricao": "Registrar ocupacao do espaco de mercado",
+      "resultado": "PASS",
+      "obtido": "Ocupacao registrada no mercado",
+      "duracao_ms": 15.27
+    },
+    {
+      "projeto": "IA",
+      "teste": "T10",
+      "descricao": "Rejeitar espaco ja ocupado",
+      "resultado": "PASS",
+      "obtido": "Segunda ocupacao rejeitada",
+      "duracao_ms": 14.97
+    },
+    {
+      "projeto": "IA",
+      "teste": "T11",
+      "descricao": "Rejeitar reutilizacao de familiar",
+      "resultado": "PASS",
+      "obtido": "Reutilizacao do familiar rejeitada",
+      "duracao_ms": 14.59
+    },
+    {
+      "projeto": "IA",
+      "teste": "T12",
+      "descricao": "Consumir servos para elevar poder",
+      "resultado": "PASS",
+      "obtido": "2 servos trocados por 2 pontos de poder",
+      "duracao_ms": 30.04
+    },
+    {
+      "projeto": "IA",
+      "teste": "T13",
+      "descricao": "Impedir gasto acima dos servos disponiveis",
+      "resultado": "PASS",
+      "obtido": "Saldo insuficiente rejeitado",
+      "duracao_ms": 45.38
+    },
+    {
+      "projeto": "IA",
+      "teste": "T14",
+      "descricao": "Aplicar privilegio do conselho",
+      "resultado": "PASS",
+      "obtido": "Conselho concedeu moedas",
+      "duracao_ms": 29.95
+    },
+    {
+      "projeto": "IA",
+      "teste": "T15",
+      "descricao": "Identificar proximo jogador do turno",
+      "resultado": "PASS",
+      "obtido": "Proximo jogador identificado corretamente",
+      "duracao_ms": 15.56
+    },
+    {
+      "projeto": "IA",
+      "teste": "T16",
+      "descricao": "Acumular pontos de vitoria",
+      "resultado": "PASS",
+      "obtido": "Pontos de vitoria ganhos por carta",
+      "duracao_ms": 31.07
+    },
+    {
+      "projeto": "IA",
+      "teste": "T17",
+      "descricao": "Rejeitar area inexistente",
+      "resultado": "PASS",
+      "obtido": "Posicao invalida rejeitada",
+      "duracao_ms": 15.19
+    },
+    {
+      "projeto": "IA",
+      "teste": "T18",
+      "descricao": "Impedir acao fora do turno",
+      "resultado": "PASS",
+      "obtido": "Jogador fora da vez bloqueado pela regra",
+      "duracao_ms": 30.32
+    }
+  ],
+  "limites": [
+    "IlMagnifico testado por modelos e Partita, nao por protocolo de rede",
+    "turnboard testado por Game.join e Game.command e eventos, nao por protocolo de rede",
+    "JDK --release 11; codigo humano compilado com windows-1252 para suportar fontes legados",
+    "cada teste usa partida nova; turnboard possui ExecutorService de notificacao"
+  ]
+}

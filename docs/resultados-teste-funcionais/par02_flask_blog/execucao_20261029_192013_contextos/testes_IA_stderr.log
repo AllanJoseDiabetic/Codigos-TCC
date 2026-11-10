@@ -1,0 +1,4 @@
+E:\codigosTCC\testes-funcionais\par02_flask_blog\executar_testes_contextos_isolados.py:181: LegacyAPIWarning: The Query.get() method is considered legacy as of the 1.x series of SQLAlchemy and becomes a legacy construct in 2.0. The method is now available as Session.get() (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  post = Post.query.get(estado["post_id"])
+E:\codigosTCC\testes-funcionais\par02_flask_blog\executar_testes_contextos_isolados.py:415: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "data_utc": datetime.datetime.utcnow().replace(microsecond=0).isoformat() + "Z",

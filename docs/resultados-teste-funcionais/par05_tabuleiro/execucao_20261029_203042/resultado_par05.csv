@@ -1,0 +1,37 @@
+﻿projeto;teste;descricao;resultado;obtido;duracao_ms
+humano;T01;Preparar dois participantes;PASS;2 giocatori preparados;91.74
+humano;T02;Identificar jogadores separadamente;PASS;Ana e Bia identificadas separadamente;6.24
+humano;T03;Inicializar a partida e o periodo;PASS;Partida iniciada no periodo 1/turno 1;5.0
+humano;T04;Distribuir recursos iniciais;PASS;Recursos de inicio atribuidos;6.21
+humano;T05;Disponibilizar familiares do jogador;PASS;Familiar vinculado e livre;6.38
+humano;T06;Distribuir cartas nas torres;PASS;Cartas presentes nas torres;7.31
+humano;T07;Ganhar moedas ao utilizar mercado;PASS;Recompensa mercado: moedas 5 -> 10;13.26
+humano;T08;Ganhar servos ao utilizar mercado;PASS;Recompensa mercado: servos 3 -> 8;6.59
+humano;T09;Registrar ocupacao do espaco de mercado;PASS;Ocupacao registrada no mercado;7.56
+humano;T10;Rejeitar espaco ja ocupado;PASS;Segunda ocupacao rejeitada;8.48
+humano;T11;Rejeitar reutilizacao de familiar;PASS;Reutilizacao do familiar rejeitada;6.28
+humano;T12;Consumir servos para elevar poder;PASS;2 servos trocados por 2 pontos de poder;3.87
+humano;T13;Impedir gasto acima dos servos disponiveis;PASS;Saldo insuficiente rejeitado;5.35
+humano;T14;Aplicar privilegio do conselho;PASS;Conselho concedeu moedas;12.81
+humano;T15;Identificar proximo jogador do turno;PASS;Proximo jogador identificado corretamente;25.79
+humano;T16;Acumular pontos de vitoria;PASS;Pontos de vitoria acumulados;22.85
+humano;T17;Rejeitar area inexistente;PASS;Posicao invalida rejeitada;16.03
+humano;T18;Impedir acao fora do turno;PASS;Jogador fora da vez bloqueado pela regra;23.54
+IA;T01;Preparar dois participantes;PASS;Dois participantes na partida;701.49
+IA;T02;Identificar jogadores separadamente;PASS;Ana e Bia identificadas separadamente;70.02
+IA;T03;Inicializar a partida e o periodo;PASS;Partida iniciada no periodo 1/rodada 1;14.12
+IA;T04;Distribuir recursos iniciais;PASS;Recursos de inicio atribuidos;15.59
+IA;T05;Disponibilizar familiares do jogador;PASS;Familiar vinculado e livre;14.27
+IA;T06;Distribuir cartas nas torres;PASS;Cartas presentes nas torres;14.54
+IA;T07;Ganhar moedas ao utilizar mercado;PASS;Recompensa mercado: moedas 6 -> 9;66.82
+IA;T08;Ganhar servos ao utilizar mercado;PASS;Recompensa mercado: servos 4 -> 6;58.57
+IA;T09;Registrar ocupacao do espaco de mercado;PASS;Ocupacao registrada no mercado;15.27
+IA;T10;Rejeitar espaco ja ocupado;PASS;Segunda ocupacao rejeitada;14.97
+IA;T11;Rejeitar reutilizacao de familiar;PASS;Reutilizacao do familiar rejeitada;14.59
+IA;T12;Consumir servos para elevar poder;PASS;2 servos trocados por 2 pontos de poder;30.04
+IA;T13;Impedir gasto acima dos servos disponiveis;PASS;Saldo insuficiente rejeitado;45.38
+IA;T14;Aplicar privilegio do conselho;PASS;Conselho concedeu moedas;29.95
+IA;T15;Identificar proximo jogador do turno;PASS;Proximo jogador identificado corretamente;15.56
+IA;T16;Acumular pontos de vitoria;PASS;Pontos de vitoria ganhos por carta;31.07
+IA;T17;Rejeitar area inexistente;PASS;Posicao invalida rejeitada;15.19
+IA;T18;Impedir acao fora do turno;PASS;Jogador fora da vez bloqueado pela regra;30.32

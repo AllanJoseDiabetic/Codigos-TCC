@@ -1,0 +1,98 @@
+﻿{
+    "component":  {
+                      "key":  "IA---SpaceArcade",
+                      "name":  "IA - SpaceArcade",
+                      "qualifier":  "TRK",
+                      "measures":  [
+                                       {
+                                           "metric":  "coverage",
+                                           "value":  "0.0",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "complexity",
+                                           "value":  "151"
+                                       },
+                                       {
+                                           "metric":  "duplicated_lines_density",
+                                           "value":  "0.0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "ncloc_language_distribution",
+                                           "value":  "css=232;js=1258;web=91"
+                                       },
+                                       {
+                                           "metric":  "duplicated_lines",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "software_quality_security_issues",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "software_quality_maintainability_remediation_effort",
+                                           "value":  "426",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "sqale_debt_ratio",
+                                           "value":  "0.9",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "software_quality_maintainability_debt_ratio",
+                                           "value":  "0.9",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "security_hotspots",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "sqale_index",
+                                           "value":  "426",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "lines_to_cover",
+                                           "value":  "537"
+                                       },
+                                       {
+                                           "metric":  "software_quality_reliability_issues",
+                                           "value":  "2",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "cognitive_complexity",
+                                           "value":  "164",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "duplicated_blocks",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "ncloc",
+                                           "value":  "1581"
+                                       },
+                                       {
+                                           "metric":  "software_quality_maintainability_issues",
+                                           "value":  "28",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "files",
+                                           "value":  "4"
+                                       },
+                                       {
+                                           "metric":  "lines",
+                                           "value":  "2039"
+                                       }
+                                   ]
+                  }
+}

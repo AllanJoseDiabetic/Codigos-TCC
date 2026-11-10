@@ -1,0 +1,15 @@
+﻿Microsoft(R) Build Engine versão 16.2.37902+b5aaefc9f para .NET Core 
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Services\SellerService.cs(44,38): warning CS0168: A variável "e" está declarada, mas nunca é usada [E:\codigosTCC\testes-funcionais\par06_aspnet\copias\execucao_20261029_210746\copias\humano\SalesWebMvc\SalesWebMvc.csproj]
+  SalesWebMvc -> E:\codigosTCC\testes-funcionais\par06_aspnet\copias\execucao_20261029_210746\copias\humano\SalesWebMvc\bin\Release\netcoreapp2.1\SalesWebMvc.dll
+  SalesWebMvc -> E:\codigosTCC\testes-funcionais\par06_aspnet\copias\execucao_20261029_210746\copias\humano\SalesWebMvc\bin\Release\netcoreapp2.1\SalesWebMvc.Views.dll
+  HarnessHumano -> E:\codigosTCC\testes-funcionais\par06_aspnet\copias\execucao_20261029_210746\harness\humano\bin\Release\netcoreapp2.1\TccPar06Humano.dll
+
+Compilação com êxito.
+
+Services\SellerService.cs(44,38): warning CS0168: A variável "e" está declarada, mas nunca é usada [E:\codigosTCC\testes-funcionais\par06_aspnet\copias\execucao_20261029_210746\copias\humano\SalesWebMvc\SalesWebMvc.csproj]
+    1 Aviso(s)
+    0 Erro(s)
+
+Tempo Decorrido 00:00:44.67

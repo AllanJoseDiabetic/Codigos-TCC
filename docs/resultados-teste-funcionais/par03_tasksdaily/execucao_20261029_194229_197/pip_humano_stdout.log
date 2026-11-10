@@ -1,0 +1,14 @@
+Collecting Django==4.0.6
+  Downloading Django-4.0.6-py3-none-any.whl (8.0 MB)
+Collecting pytz==2020.4
+  Downloading pytz-2020.4-py2.py3-none-any.whl (509 kB)
+Collecting asgiref==3.5.0
+  Downloading asgiref-3.5.0-py3-none-any.whl (22 kB)
+Collecting sqlparse==0.4.2
+  Downloading sqlparse-0.4.2-py3-none-any.whl (42 kB)
+Collecting tzdata; sys_platform == "win32"
+  Downloading tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+Collecting backports.zoneinfo; python_version < "3.9"
+  Downloading backports.zoneinfo-0.2.1-cp38-cp38-win_amd64.whl (38 kB)
+Installing collected packages: sqlparse, tzdata, backports.zoneinfo, asgiref, Django, pytz
+Successfully installed Django-4.0.6 asgiref-3.5.0 backports.zoneinfo-0.2.1 pytz-2020.4 sqlparse-0.4.2 tzdata-2026.6

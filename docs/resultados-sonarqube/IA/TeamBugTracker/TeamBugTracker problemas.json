@@ -1,0 +1,2143 @@
+﻿{
+    "issues":  [
+                   {
+                       "key":  "b1e83510-b467-4e31-91ae-51bc37474c66",
+                       "rule":  "python:S3752",
+                       "severity":  "MINOR",
+                       "component":  "IA---TeamBugTracker:teamtracker/urls.py",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  6,
+                       "hash":  "af1542f38cafcabd12564c43e3295069",
+                       "textRange":  {
+                                         "startLine":  6,
+                                         "endLine":  6,
+                                         "startOffset":  4,
+                                         "endOffset":  8
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Explicitly specify the HTTP methods this endpoint accepts.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "django",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "da2b275a-63d9-4016-88d2-f0257dbf79ac",
+                       "rule":  "python:S1066",
+                       "severity":  "MAJOR",
+                       "component":  "IA---TeamBugTracker:tracker/forms.py",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  113,
+                       "hash":  "d0dbbf82f8d1e6cfd78d550181c1d6f2",
+                       "textRange":  {
+                                         "startLine":  113,
+                                         "endLine":  113,
+                                         "startOffset":  12,
+                                         "endOffset":  14
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---TeamBugTracker:tracker/forms.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  112,
+                                                                                 "endLine":  112,
+                                                                                 "startOffset":  8,
+                                                                                 "endOffset":  10
+                                                                             },
+                                                               "msg":  "enclosing",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Merge this if statement with the enclosing one.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "clumsy"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "164e120b-fd3b-4881-b968-002218a28cd1",
+                       "rule":  "python:S1066",
+                       "severity":  "MAJOR",
+                       "component":  "IA---TeamBugTracker:tracker/models.py",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  152,
+                       "hash":  "9e4cfecead37bff43e5fe5b201c04cdd",
+                       "textRange":  {
+                                         "startLine":  152,
+                                         "endLine":  152,
+                                         "startOffset":  12,
+                                         "endOffset":  14
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---TeamBugTracker:tracker/models.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  148,
+                                                                                 "endLine":  148,
+                                                                                 "startOffset":  8,
+                                                                                 "endOffset":  10
+                                                                             },
+                                                               "msg":  "enclosing",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Merge this if statement with the enclosing one.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "clumsy"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "9347d44a-1f6d-412e-a993-724de40fc6d0",
+                       "rule":  "javascript:S3504",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/detail.js",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  4,
+                       "hash":  "4b9e9e979e3565d746fa78c16ebffb95",
+                       "textRange":  {
+                                         "startLine":  4,
+                                         "endLine":  4,
+                                         "startOffset":  4,
+                                         "endOffset":  12
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Unexpected var, use let or const instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "es2015",
+                                    "bad-practice"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "8d434c43-e9af-4b40-bf95-5b1c9bffd0ac",
+                       "rule":  "javascript:S7761",
+                       "severity":  "MAJOR",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/detail.js",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  12,
+                       "hash":  "afd7feb3591454f017bac81d50ccc7d3",
+                       "textRange":  {
+                                         "startLine":  12,
+                                         "endLine":  14,
+                                         "startOffset":  20,
+                                         "endOffset":  5
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Prefer `.dataset` over `getAttribute(â¦)`.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "dom",
+                                    "html",
+                                    "api"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "ab0c7900-7355-4c31-9035-663d5a64b2a9",
+                       "rule":  "javascript:S3504",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/detail.js",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  12,
+                       "hash":  "afd7feb3591454f017bac81d50ccc7d3",
+                       "textRange":  {
+                                         "startLine":  12,
+                                         "endLine":  12,
+                                         "startOffset":  4,
+                                         "endOffset":  17
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Unexpected var, use let or const instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "es2015",
+                                    "bad-practice"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "51a58f14-4dfa-4038-87c0-1aa1e66264cd",
+                       "rule":  "javascript:S7761",
+                       "severity":  "MAJOR",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/detail.js",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  16,
+                       "hash":  "6cbd36709190847f8edbc9dc07faf7a4",
+                       "textRange":  {
+                                         "startLine":  16,
+                                         "endLine":  18,
+                                         "startOffset":  22,
+                                         "endOffset":  5
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Prefer `.dataset` over `getAttribute(â¦)`.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "dom",
+                                    "html",
+                                    "api"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "a139aa37-36bf-47ba-b557-ef4c8abcc878",
+                       "rule":  "javascript:S3504",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/detail.js",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  16,
+                       "hash":  "6cbd36709190847f8edbc9dc07faf7a4",
+                       "textRange":  {
+                                         "startLine":  16,
+                                         "endLine":  16,
+                                         "startOffset":  4,
+                                         "endOffset":  19
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Unexpected var, use let or const instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "es2015",
+                                    "bad-practice"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "432aa2cc-443c-41a9-919b-da2c84f22eef",
+                       "rule":  "javascript:S3504",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/detail.js",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  20,
+                       "hash":  "516c3b38edfb1c721611784aabb7e979",
+                       "textRange":  {
+                                         "startLine":  20,
+                                         "endLine":  20,
+                                         "startOffset":  4,
+                                         "endOffset":  15
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Unexpected var, use let or const instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "es2015",
+                                    "bad-practice"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "817916e8-b622-4fc3-af12-cb35ed7e74e4",
+                       "rule":  "javascript:S3504",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/detail.js",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  24,
+                       "hash":  "5d8cd7243174d8abc30816a7bc37ff4c",
+                       "textRange":  {
+                                         "startLine":  24,
+                                         "endLine":  24,
+                                         "startOffset":  4,
+                                         "endOffset":  15
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Unexpected var, use let or const instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "es2015",
+                                    "bad-practice"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "f6a8f24a-7919-44a3-9fb1-8bff95b0762b",
+                       "rule":  "javascript:S3504",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/detail.js",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  28,
+                       "hash":  "c916a8e5184e1085cfd5254e032964a4",
+                       "textRange":  {
+                                         "startLine":  28,
+                                         "endLine":  28,
+                                         "startOffset":  4,
+                                         "endOffset":  20
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Unexpected var, use let or const instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "es2015",
+                                    "bad-practice"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "130f95dd-c569-429f-82a2-113fd6d3193b",
+                       "rule":  "javascript:S3504",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/detail.js",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  32,
+                       "hash":  "25c527f73788cb59ffb3a2e1b5e27628",
+                       "textRange":  {
+                                         "startLine":  32,
+                                         "endLine":  32,
+                                         "startOffset":  4,
+                                         "endOffset":  22
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Unexpected var, use let or const instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "es2015",
+                                    "bad-practice"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "59d5f945-ad87-4a73-9a2b-d8c423cdef14",
+                       "rule":  "javascript:S3504",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/detail.js",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  57,
+                       "hash":  "768c83832823a05ca42089c077f90c23",
+                       "textRange":  {
+                                         "startLine":  57,
+                                         "endLine":  57,
+                                         "startOffset":  8,
+                                         "endOffset":  16
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Unexpected var, use let or const instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "es2015",
+                                    "bad-practice"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "beedf1f8-a5f3-41c2-856b-6b2cc0957e62",
+                       "rule":  "javascript:S7773",
+                       "severity":  "MINOR",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/detail.js",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  59,
+                       "hash":  "025542fd7a7605dd4a7bd939a3edb0f8",
+                       "textRange":  {
+                                         "startLine":  59,
+                                         "endLine":  59,
+                                         "startOffset":  12,
+                                         "endOffset":  17
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Prefer `Number.isNaN` over `isNaN`.",
+                       "effort":  "2min",
+                       "debt":  "2min",
+                       "author":  "",
+                       "tags":  [
+                                    "convention",
+                                    "es2015"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       },
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "a02f2381-6dd7-4440-9f12-3aea1a0bce02",
+                       "rule":  "javascript:S3504",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/detail.js",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  179,
+                       "hash":  "a12c3f9500a110a4b75ac49f7cdb4d57",
+                       "textRange":  {
+                                         "startLine":  179,
+                                         "endLine":  179,
+                                         "startOffset":  12,
+                                         "endOffset":  20
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Unexpected var, use let or const instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "es2015",
+                                    "bad-practice"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "772578ad-3ea2-433d-98a7-5ac971b567b2",
+                       "rule":  "javascript:S3504",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/form.js",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  4,
+                       "hash":  "8365348eebd3eff1991214d5aed3dbae",
+                       "textRange":  {
+                                         "startLine":  4,
+                                         "endLine":  4,
+                                         "startOffset":  4,
+                                         "endOffset":  12
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Unexpected var, use let or const instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "es2015",
+                                    "bad-practice"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "b87a6b0e-3688-4cb8-a111-2b076b776886",
+                       "rule":  "javascript:S3504",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/form.js",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  12,
+                       "hash":  "516c3b38edfb1c721611784aabb7e979",
+                       "textRange":  {
+                                         "startLine":  12,
+                                         "endLine":  12,
+                                         "startOffset":  4,
+                                         "endOffset":  15
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Unexpected var, use let or const instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "es2015",
+                                    "bad-practice"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "33a47c55-99e2-4152-b979-428c9d7fce78",
+                       "rule":  "javascript:S3504",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/form.js",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  16,
+                       "hash":  "6fb0966c4377afc075eaeea162599213",
+                       "textRange":  {
+                                         "startLine":  16,
+                                         "endLine":  16,
+                                         "startOffset":  4,
+                                         "endOffset":  18
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Unexpected var, use let or const instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "es2015",
+                                    "bad-practice"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "9a6cb60c-a441-4cf3-b1ff-3b20cc3ce417",
+                       "rule":  "javascript:S3504",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/form.js",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  21,
+                       "hash":  "156cd555df59266d820cd775be78d12e",
+                       "textRange":  {
+                                         "startLine":  21,
+                                         "endLine":  21,
+                                         "startOffset":  8,
+                                         "endOffset":  18
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Unexpected var, use let or const instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "es2015",
+                                    "bad-practice"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "fded62a4-84f3-4b8c-a8f1-04026861aa89",
+                       "rule":  "javascript:S3504",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/form.js",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  47,
+                       "hash":  "bac81673d81abb0a2026e953854f3486",
+                       "textRange":  {
+                                         "startLine":  47,
+                                         "endLine":  47,
+                                         "startOffset":  8,
+                                         "endOffset":  27
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Unexpected var, use let or const instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "es2015",
+                                    "bad-practice"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "20ec847b-68fe-441d-863d-c2fcc157a988",
+                       "rule":  "javascript:S3504",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/form.js",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  50,
+                       "hash":  "3bac90c0d959c7634caed0380d7012c9",
+                       "textRange":  {
+                                         "startLine":  50,
+                                         "endLine":  50,
+                                         "startOffset":  12,
+                                         "endOffset":  23
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Unexpected var, use let or const instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "es2015",
+                                    "bad-practice"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "313c039e-3daa-43e9-b722-402f11beebd6",
+                       "rule":  "javascript:S3504",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/form.js",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  54,
+                       "hash":  "ed71dce14ab13ad8c7373c757e6bc692",
+                       "textRange":  {
+                                         "startLine":  54,
+                                         "endLine":  54,
+                                         "startOffset":  12,
+                                         "endOffset":  20
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Unexpected var, use let or const instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "es2015",
+                                    "bad-practice"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "ba313b40-fa9c-4fee-ae9f-c95ad89c39c7",
+                       "rule":  "javascript:S3504",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/form.js",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  85,
+                       "hash":  "d790fbcc8ba26db733c85d4888960bc4",
+                       "textRange":  {
+                                         "startLine":  85,
+                                         "endLine":  85,
+                                         "startOffset":  12,
+                                         "endOffset":  20
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Unexpected var, use let or const instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "es2015",
+                                    "bad-practice"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "bd450899-b2f7-4fe7-9d92-de777bd4c85a",
+                       "rule":  "javascript:S3504",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/form.js",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  87,
+                       "hash":  "a609f5439b5e5bf083e044a2835303ec",
+                       "textRange":  {
+                                         "startLine":  87,
+                                         "endLine":  87,
+                                         "startOffset":  12,
+                                         "endOffset":  20
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Unexpected var, use let or const instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "es2015",
+                                    "bad-practice"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "9d747ffc-0ced-4d69-8ed5-f0858b4f6991",
+                       "rule":  "javascript:S3504",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/form.js",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  104,
+                       "hash":  "5d70a02b36e93e8de6c5425cab5460cf",
+                       "textRange":  {
+                                         "startLine":  104,
+                                         "endLine":  104,
+                                         "startOffset":  16,
+                                         "endOffset":  31
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Unexpected var, use let or const instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "es2015",
+                                    "bad-practice"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "e893802d-bed4-48d7-9feb-de894eb7468b",
+                       "rule":  "javascript:S7765",
+                       "severity":  "MINOR",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/form.js",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  110,
+                       "hash":  "a6f44b1fb9cd31b826d48dce4a2e03c6",
+                       "textRange":  {
+                                         "startLine":  110,
+                                         "endLine":  110,
+                                         "startOffset":  32,
+                                         "endOffset":  39
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Use `.includes()`, rather than `.indexOf()`, when checking for existence.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "readability",
+                                    "es2016"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "2d523a19-37d8-4ffe-a396-513ea5c75d5c",
+                       "rule":  "javascript:S7764",
+                       "severity":  "MINOR",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/form.js",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  150,
+                       "hash":  "7ff6189b10130cf3fb449052026cd248",
+                       "textRange":  {
+                                         "startLine":  150,
+                                         "endLine":  150,
+                                         "startOffset":  16,
+                                         "endOffset":  22
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Prefer `globalThis` over `window`.",
+                       "effort":  "2min",
+                       "debt":  "2min",
+                       "author":  "",
+                       "tags":  [
+                                    "portability",
+                                    "es2020"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "8daa1a84-7fac-4318-936a-1c35e2fae7f7",
+                       "rule":  "javascript:S6772",
+                       "severity":  "MAJOR",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/lists.jsx",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  303,
+                       "hash":  "18f68d13217048286fcb813f5c627bc0",
+                       "textRange":  {
+                                         "startLine":  303,
+                                         "endLine":  303,
+                                         "startOffset":  0,
+                                         "endOffset":  34
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Ambiguous spacing after previous element input",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "react"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "FORMATTED",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "LOW"
+                                       },
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "73d9eb58-4cac-4930-9136-b2f85e54f29c",
+                       "rule":  "javascript:S7761",
+                       "severity":  "MAJOR",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/lists.jsx",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  328,
+                       "hash":  "8a5d3dd24c2f560a49cfc16260383f3f",
+                       "textRange":  {
+                                         "startLine":  328,
+                                         "endLine":  328,
+                                         "startOffset":  26,
+                                         "endOffset":  60
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Prefer `.dataset` over `getAttribute(â¦)`.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "dom",
+                                    "html",
+                                    "api"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "bfb4b166-964e-4811-bfd6-0c8f1822dcc2",
+                       "rule":  "javascript:S7761",
+                       "severity":  "MAJOR",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/lists.jsx",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  329,
+                       "hash":  "0b7ef32dad8baee68ac36278a83c37f9",
+                       "textRange":  {
+                                         "startLine":  329,
+                                         "endLine":  331,
+                                         "startOffset":  31,
+                                         "endOffset":  17
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Prefer `.dataset` over `getAttribute(â¦)`.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "dom",
+                                    "html",
+                                    "api"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "9ee5ee14-e202-4d78-b49d-65b37e0a0419",
+                       "rule":  "javascript:S7761",
+                       "severity":  "MAJOR",
+                       "component":  "IA---TeamBugTracker:tracker/static/tracker/js/lists.jsx",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  332,
+                       "hash":  "136cdfc5f2a32cc072f84b839c59148e",
+                       "textRange":  {
+                                         "startLine":  332,
+                                         "endLine":  332,
+                                         "startOffset":  22,
+                                         "endOffset":  52
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Prefer `.dataset` over `getAttribute(â¦)`.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "dom",
+                                    "html",
+                                    "api"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "68e0ac5b-5edd-4b11-8047-fd4f4f1de69c",
+                       "rule":  "Web:S5725",
+                       "severity":  "MINOR",
+                       "component":  "IA---TeamBugTracker:tracker/templates/tracker/base.html",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  18,
+                       "hash":  "d3a849324710a64d959776e31e34fd6d",
+                       "textRange":  {
+                                         "startLine":  18,
+                                         "endLine":  21,
+                                         "startOffset":  4,
+                                         "endOffset":  5
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make sure not using resource integrity feature is safe here.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "664b5971-5bf5-4962-b201-e9b496275d63",
+                       "rule":  "Web:S6819",
+                       "severity":  "MAJOR",
+                       "component":  "IA---TeamBugTracker:tracker/templates/tracker/bug_detail.html",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  47,
+                       "hash":  "d90c26198ff23a5c54f81269ceed5c01",
+                       "textRange":  {
+                                         "startLine":  47,
+                                         "endLine":  52,
+                                         "startOffset":  4,
+                                         "endOffset":  5
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Use \u003coutput\u003e instead of the status role to ensure accessibility across all devices.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "accessibility"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "e7d9db74-3b54-4b69-966b-a4c304d791d8",
+                       "rule":  "Web:S5725",
+                       "severity":  "MINOR",
+                       "component":  "IA---TeamBugTracker:tracker/templates/tracker/bug_list.html",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  45,
+                       "hash":  "363769305a2568703236aef2da707090",
+                       "textRange":  {
+                                         "startLine":  45,
+                                         "endLine":  45,
+                                         "startOffset":  0,
+                                         "endOffset":  69
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make sure not using resource integrity feature is safe here.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "bdd04dae-704b-4956-83d6-dc90e6c22ffe",
+                       "rule":  "Web:S5725",
+                       "severity":  "MINOR",
+                       "component":  "IA---TeamBugTracker:tracker/templates/tracker/bug_list.html",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  47,
+                       "hash":  "861b832c536258072d04d0481ced9e79",
+                       "textRange":  {
+                                         "startLine":  47,
+                                         "endLine":  47,
+                                         "startOffset":  0,
+                                         "endOffset":  77
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make sure not using resource integrity feature is safe here.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "521a25d1-1f0b-4736-aa23-b912c14a7c36",
+                       "rule":  "Web:S5725",
+                       "severity":  "MINOR",
+                       "component":  "IA---TeamBugTracker:tracker/templates/tracker/bug_list.html",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  49,
+                       "hash":  "a83da8c698ba4be60b76970661524abb",
+                       "textRange":  {
+                                         "startLine":  49,
+                                         "endLine":  49,
+                                         "startOffset":  0,
+                                         "endOffset":  64
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make sure not using resource integrity feature is safe here.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "e26264bf-f151-4958-a858-579b04b625bc",
+                       "rule":  "python:S1192",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---TeamBugTracker:tracker/views.py",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  77,
+                       "hash":  "43a728e40791849cb8cecf787da08118",
+                       "textRange":  {
+                                         "startLine":  77,
+                                         "endLine":  77,
+                                         "startOffset":  12,
+                                         "endOffset":  32
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---TeamBugTracker:tracker/views.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  324,
+                                                                                 "endLine":  324,
+                                                                                 "startOffset":  16,
+                                                                                 "endOffset":  36
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---TeamBugTracker:tracker/views.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  392,
+                                                                                 "endLine":  392,
+                                                                                 "startOffset":  16,
+                                                                                 "endOffset":  36
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Define a constant instead of duplicating this literal \"tracker:bug_detail\" 3 times.",
+                       "effort":  "6min",
+                       "debt":  "6min",
+                       "author":  "",
+                       "tags":  [
+                                    "design"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "DISTINCT",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "cc944e60-5ceb-444c-9d55-b8d65e7db6f8",
+                       "rule":  "python:S1192",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---TeamBugTracker:tracker/views.py",
+                       "project":  "IA---TeamBugTracker",
+                       "line":  109,
+                       "hash":  "0d7f4813c64d683ed4cd08dd38d43e9a",
+                       "textRange":  {
+                                         "startLine":  109,
+                                         "endLine":  109,
+                                         "startOffset":  24,
+                                         "endOffset":  42
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---TeamBugTracker:tracker/views.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  124,
+                                                                                 "endLine":  124,
+                                                                                 "startOffset":  28,
+                                                                                 "endOffset":  46
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---TeamBugTracker:tracker/views.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  138,
+                                                                                 "endLine":  138,
+                                                                                 "startOffset":  24,
+                                                                                 "endOffset":  42
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---TeamBugTracker:tracker/views.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  159,
+                                                                                 "endLine":  159,
+                                                                                 "startOffset":  32,
+                                                                                 "endOffset":  50
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Define a constant instead of duplicating this literal \"tracker:bug_list\" 4 times.",
+                       "effort":  "8min",
+                       "debt":  "8min",
+                       "author":  "",
+                       "tags":  [
+                                    "design"
+                                ],
+                       "creationDate":  "2026-10-28T21:44:59-0300",
+                       "updateDate":  "2026-10-28T21:44:59-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "DISTINCT",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   }
+               ],
+    "total":  38,
+    "projectKey":  "IA---TeamBugTracker"
+}

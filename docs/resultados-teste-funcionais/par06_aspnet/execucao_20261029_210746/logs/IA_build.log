@@ -1,0 +1,29 @@
+﻿Microsoft(R) Build Engine versão 16.2.37902+b5aaefc9f para .NET Core 
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Views\Sellers\Create.cshtml(20,10): warning MVC1000: Use of IHtmlHelper.Partial may result in application deadlocks. Consider using <partial> Tag Helper or IHtmlHelper.PartialAsync. [E:\codigosTCC\testes-funcionais\par06_aspnet\copias\execucao_20261029_210746\copias\IA\SalesManagement.csproj]
+Views\Departments\Create.cshtml(20,10): warning MVC1000: Use of IHtmlHelper.Partial may result in application deadlocks. Consider using <partial> Tag Helper or IHtmlHelper.PartialAsync. [E:\codigosTCC\testes-funcionais\par06_aspnet\copias\execucao_20261029_210746\copias\IA\SalesManagement.csproj]
+Views\Departments\Edit.cshtml(25,10): warning MVC1000: Use of IHtmlHelper.Partial may result in application deadlocks. Consider using <partial> Tag Helper or IHtmlHelper.PartialAsync. [E:\codigosTCC\testes-funcionais\par06_aspnet\copias\execucao_20261029_210746\copias\IA\SalesManagement.csproj]
+Views\Departments\Create.cshtml(45,7): warning MVC1000: Use of IHtmlHelper.Partial may result in application deadlocks. Consider using <partial> Tag Helper or IHtmlHelper.PartialAsync. [E:\codigosTCC\testes-funcionais\par06_aspnet\copias\execucao_20261029_210746\copias\IA\SalesManagement.csproj]
+Views\Sellers\Create.cshtml(45,7): warning MVC1000: Use of IHtmlHelper.Partial may result in application deadlocks. Consider using <partial> Tag Helper or IHtmlHelper.PartialAsync. [E:\codigosTCC\testes-funcionais\par06_aspnet\copias\execucao_20261029_210746\copias\IA\SalesManagement.csproj]
+Views\Departments\Edit.cshtml(50,7): warning MVC1000: Use of IHtmlHelper.Partial may result in application deadlocks. Consider using <partial> Tag Helper or IHtmlHelper.PartialAsync. [E:\codigosTCC\testes-funcionais\par06_aspnet\copias\execucao_20261029_210746\copias\IA\SalesManagement.csproj]
+Views\Sellers\Edit.cshtml(25,10): warning MVC1000: Use of IHtmlHelper.Partial may result in application deadlocks. Consider using <partial> Tag Helper or IHtmlHelper.PartialAsync. [E:\codigosTCC\testes-funcionais\par06_aspnet\copias\execucao_20261029_210746\copias\IA\SalesManagement.csproj]
+Views\Sellers\Edit.cshtml(50,7): warning MVC1000: Use of IHtmlHelper.Partial may result in application deadlocks. Consider using <partial> Tag Helper or IHtmlHelper.PartialAsync. [E:\codigosTCC\testes-funcionais\par06_aspnet\copias\execucao_20261029_210746\copias\IA\SalesManagement.csproj]
+  SalesManagement -> E:\codigosTCC\testes-funcionais\par06_aspnet\copias\execucao_20261029_210746\copias\IA\bin\Release\netcoreapp2.1\SalesManagement.dll
+  SalesManagement -> E:\codigosTCC\testes-funcionais\par06_aspnet\copias\execucao_20261029_210746\copias\IA\bin\Release\netcoreapp2.1\SalesManagement.Views.dll
+  HarnessIA -> E:\codigosTCC\testes-funcionais\par06_aspnet\copias\execucao_20261029_210746\harness\IA\bin\Release\netcoreapp2.1\TccPar06IA.dll
+
+Compilação com êxito.
+
+Views\Sellers\Create.cshtml(20,10): warning MVC1000: Use of IHtmlHelper.Partial may result in application deadlocks. Consider using <partial> Tag Helper or IHtmlHelper.PartialAsync. [E:\codigosTCC\testes-funcionais\par06_aspnet\copias\execucao_20261029_210746\copias\IA\SalesManagement.csproj]
+Views\Departments\Create.cshtml(20,10): warning MVC1000: Use of IHtmlHelper.Partial may result in application deadlocks. Consider using <partial> Tag Helper or IHtmlHelper.PartialAsync. [E:\codigosTCC\testes-funcionais\par06_aspnet\copias\execucao_20261029_210746\copias\IA\SalesManagement.csproj]
+Views\Departments\Edit.cshtml(25,10): warning MVC1000: Use of IHtmlHelper.Partial may result in application deadlocks. Consider using <partial> Tag Helper or IHtmlHelper.PartialAsync. [E:\codigosTCC\testes-funcionais\par06_aspnet\copias\execucao_20261029_210746\copias\IA\SalesManagement.csproj]
+Views\Departments\Create.cshtml(45,7): warning MVC1000: Use of IHtmlHelper.Partial may result in application deadlocks. Consider using <partial> Tag Helper or IHtmlHelper.PartialAsync. [E:\codigosTCC\testes-funcionais\par06_aspnet\copias\execucao_20261029_210746\copias\IA\SalesManagement.csproj]
+Views\Sellers\Create.cshtml(45,7): warning MVC1000: Use of IHtmlHelper.Partial may result in application deadlocks. Consider using <partial> Tag Helper or IHtmlHelper.PartialAsync. [E:\codigosTCC\testes-funcionais\par06_aspnet\copias\execucao_20261029_210746\copias\IA\SalesManagement.csproj]
+Views\Departments\Edit.cshtml(50,7): warning MVC1000: Use of IHtmlHelper.Partial may result in application deadlocks. Consider using <partial> Tag Helper or IHtmlHelper.PartialAsync. [E:\codigosTCC\testes-funcionais\par06_aspnet\copias\execucao_20261029_210746\copias\IA\SalesManagement.csproj]
+Views\Sellers\Edit.cshtml(25,10): warning MVC1000: Use of IHtmlHelper.Partial may result in application deadlocks. Consider using <partial> Tag Helper or IHtmlHelper.PartialAsync. [E:\codigosTCC\testes-funcionais\par06_aspnet\copias\execucao_20261029_210746\copias\IA\SalesManagement.csproj]
+Views\Sellers\Edit.cshtml(50,7): warning MVC1000: Use of IHtmlHelper.Partial may result in application deadlocks. Consider using <partial> Tag Helper or IHtmlHelper.PartialAsync. [E:\codigosTCC\testes-funcionais\par06_aspnet\copias\execucao_20261029_210746\copias\IA\SalesManagement.csproj]
+    8 Aviso(s)
+    0 Erro(s)
+
+Tempo Decorrido 00:00:46.88

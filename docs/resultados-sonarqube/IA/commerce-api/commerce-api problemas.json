@@ -1,0 +1,2047 @@
+﻿{
+    "issues":  [
+                   {
+                       "key":  "9495e471-3aa7-434c-aceb-7cd8688c065f",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  14,
+                       "hash":  "d29eb809cd7e712070b86a449a5f2e82",
+                       "textRange":  {
+                                         "startLine":  14,
+                                         "endLine":  14,
+                                         "startOffset":  22,
+                                         "endOffset":  26
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make name a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "9757e77f-aeb7-4ef6-ba9a-11d7472ede91",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  15,
+                       "hash":  "80c09e3c102db03306eb0bb690a772c0",
+                       "textRange":  {
+                                         "startLine":  15,
+                                         "endLine":  15,
+                                         "startOffset":  22,
+                                         "endOffset":  27
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make email a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "b88a4fc2-9607-48b8-81b3-db341d5e52b1",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  16,
+                       "hash":  "0d47aaccd34e0e40aafc906c49bc56fa",
+                       "textRange":  {
+                                         "startLine":  16,
+                                         "endLine":  16,
+                                         "startOffset":  22,
+                                         "endOffset":  27
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make phone a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "0ff39bc1-98e7-499e-b49e-91e0db6dafcd",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  17,
+                       "hash":  "0446fa69f560c33bcb5f21bc6dcfb254",
+                       "textRange":  {
+                                         "startLine":  17,
+                                         "endLine":  17,
+                                         "startOffset":  22,
+                                         "endOffset":  30
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make password a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "fd7824f7-ebcc-45e5-8656-22c84fc2c6ed",
+                       "rule":  "java:S1186",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  19,
+                       "hash":  "baf5e9cae9096de5984fd76bae255e33",
+                       "textRange":  {
+                                         "startLine":  19,
+                                         "endLine":  19,
+                                         "startOffset":  15,
+                                         "endOffset":  24
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "suspicious"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "e689ea43-dfbd-4102-b47f-73f19fd7988c",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  25,
+                       "hash":  "a7bd5db8102d9e9f0ab19d72066002f7",
+                       "textRange":  {
+                                         "startLine":  25,
+                                         "endLine":  25,
+                                         "startOffset":  20,
+                                         "endOffset":  22
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make id a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "a2ee5b85-791c-45ac-b848-88f0e4e4f191",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  26,
+                       "hash":  "d29eb809cd7e712070b86a449a5f2e82",
+                       "textRange":  {
+                                         "startLine":  26,
+                                         "endLine":  26,
+                                         "startOffset":  22,
+                                         "endOffset":  26
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make name a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "8f84b470-fc94-41ee-ab59-846190b055a1",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  27,
+                       "hash":  "80c09e3c102db03306eb0bb690a772c0",
+                       "textRange":  {
+                                         "startLine":  27,
+                                         "endLine":  27,
+                                         "startOffset":  22,
+                                         "endOffset":  27
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make email a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "d8e78c9a-a37b-4742-8be5-285cc625bae6",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  28,
+                       "hash":  "0d47aaccd34e0e40aafc906c49bc56fa",
+                       "textRange":  {
+                                         "startLine":  28,
+                                         "endLine":  28,
+                                         "startOffset":  22,
+                                         "endOffset":  27
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make phone a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "4511f905-cf82-46e5-b14f-7a76b9b8ba3f",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  45,
+                       "hash":  "a7bd5db8102d9e9f0ab19d72066002f7",
+                       "textRange":  {
+                                         "startLine":  45,
+                                         "endLine":  45,
+                                         "startOffset":  20,
+                                         "endOffset":  22
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make id a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "84d4cd99-ee14-474e-95d6-d68651921966",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  46,
+                       "hash":  "d29eb809cd7e712070b86a449a5f2e82",
+                       "textRange":  {
+                                         "startLine":  46,
+                                         "endLine":  46,
+                                         "startOffset":  22,
+                                         "endOffset":  26
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make name a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "d9c55317-56f9-4504-ab6e-02efc04afa7c",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  59,
+                       "hash":  "a7bd5db8102d9e9f0ab19d72066002f7",
+                       "textRange":  {
+                                         "startLine":  59,
+                                         "endLine":  59,
+                                         "startOffset":  20,
+                                         "endOffset":  22
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make id a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "41879bbf-71ba-4a6e-a765-1481121eef94",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  60,
+                       "hash":  "d29eb809cd7e712070b86a449a5f2e82",
+                       "textRange":  {
+                                         "startLine":  60,
+                                         "endLine":  60,
+                                         "startOffset":  22,
+                                         "endOffset":  26
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make name a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "0d944c50-fff3-46e3-9e90-c11335d4ac13",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  73,
+                       "hash":  "a7bd5db8102d9e9f0ab19d72066002f7",
+                       "textRange":  {
+                                         "startLine":  73,
+                                         "endLine":  73,
+                                         "startOffset":  20,
+                                         "endOffset":  22
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make id a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "dc13ffbf-2dbd-4681-930f-48ff9a604a99",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  74,
+                       "hash":  "d29eb809cd7e712070b86a449a5f2e82",
+                       "textRange":  {
+                                         "startLine":  74,
+                                         "endLine":  74,
+                                         "startOffset":  22,
+                                         "endOffset":  26
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make name a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "f5bc5dfa-3eac-4353-afe7-e5760bd26f1e",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  75,
+                       "hash":  "4bb05ca73b38711b3bd45248956fe7a6",
+                       "textRange":  {
+                                         "startLine":  75,
+                                         "endLine":  75,
+                                         "startOffset":  34,
+                                         "endOffset":  42
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make products a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "476e6d51-36bc-492c-9e31-31b447872e23",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  90,
+                       "hash":  "a7bd5db8102d9e9f0ab19d72066002f7",
+                       "textRange":  {
+                                         "startLine":  90,
+                                         "endLine":  90,
+                                         "startOffset":  20,
+                                         "endOffset":  22
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make id a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "4212316c-df92-44c1-a2dc-0860347140f8",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  91,
+                       "hash":  "d29eb809cd7e712070b86a449a5f2e82",
+                       "textRange":  {
+                                         "startLine":  91,
+                                         "endLine":  91,
+                                         "startOffset":  22,
+                                         "endOffset":  26
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make name a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "765e292b-0b4b-4013-87fe-ee8253507561",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  92,
+                       "hash":  "ce2ea66b1d2db3520c7c27026c72f1a8",
+                       "textRange":  {
+                                         "startLine":  92,
+                                         "endLine":  92,
+                                         "startOffset":  22,
+                                         "endOffset":  33
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make description a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "b531a4c6-22ec-4877-b45b-2f6be268bd42",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  93,
+                       "hash":  "6bf90dedadd4780fc69a525de472fa85",
+                       "textRange":  {
+                                         "startLine":  93,
+                                         "endLine":  93,
+                                         "startOffset":  26,
+                                         "endOffset":  31
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make price a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "5d4a5c96-0173-4044-89bc-0c30e48bc24f",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  94,
+                       "hash":  "01fe958179825e762d2d2581b541fea0",
+                       "textRange":  {
+                                         "startLine":  94,
+                                         "endLine":  94,
+                                         "startOffset":  22,
+                                         "endOffset":  30
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make imageUrl a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "2e87e70c-e2d8-4014-868b-953183d3709e",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  95,
+                       "hash":  "df102f64166e18ac72f54849c6a479a4",
+                       "textRange":  {
+                                         "startLine":  95,
+                                         "endLine":  95,
+                                         "startOffset":  35,
+                                         "endOffset":  45
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make categories a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "83076480-24f3-49c9-becd-67164166078a",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  116,
+                       "hash":  "a7bd5db8102d9e9f0ab19d72066002f7",
+                       "textRange":  {
+                                         "startLine":  116,
+                                         "endLine":  116,
+                                         "startOffset":  20,
+                                         "endOffset":  22
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make id a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "84fa7488-a9bb-4956-9d63-87d4a1e0d417",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  117,
+                       "hash":  "b8ad3660ad2c975110cb5a7b304e15b2",
+                       "textRange":  {
+                                         "startLine":  117,
+                                         "endLine":  117,
+                                         "startOffset":  23,
+                                         "endOffset":  29
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make moment a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "182764db-0823-49fa-8e54-039ae9a3e430",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  130,
+                       "hash":  "06a7c67cd4a3c4abbd0ebba0fd9de89a",
+                       "textRange":  {
+                                         "startLine":  130,
+                                         "endLine":  130,
+                                         "startOffset":  28,
+                                         "endOffset":  35
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make product a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "2bd29719-2c0f-4380-823c-36f04a5c4371",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  131,
+                       "hash":  "b3c937a062d12aa91b0864056b75af0a",
+                       "textRange":  {
+                                         "startLine":  131,
+                                         "endLine":  131,
+                                         "startOffset":  23,
+                                         "endOffset":  31
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make quantity a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "06a4ad80-69be-4597-b905-114d599d4d3c",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  132,
+                       "hash":  "6bf90dedadd4780fc69a525de472fa85",
+                       "textRange":  {
+                                         "startLine":  132,
+                                         "endLine":  132,
+                                         "startOffset":  26,
+                                         "endOffset":  31
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make price a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "7b3c49e2-e22b-48e5-ada4-6d8ca4e06886",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  133,
+                       "hash":  "b02cc40e1f64a987076728ceab7fba9e",
+                       "textRange":  {
+                                         "startLine":  133,
+                                         "endLine":  133,
+                                         "startOffset":  26,
+                                         "endOffset":  34
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make subtotal a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "854105c7-c4b2-4190-819f-696176bd8059",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  150,
+                       "hash":  "a7bd5db8102d9e9f0ab19d72066002f7",
+                       "textRange":  {
+                                         "startLine":  150,
+                                         "endLine":  150,
+                                         "startOffset":  20,
+                                         "endOffset":  22
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make id a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "4749ec28-af91-4da4-aacc-09b45b7ab559",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  151,
+                       "hash":  "b8ad3660ad2c975110cb5a7b304e15b2",
+                       "textRange":  {
+                                         "startLine":  151,
+                                         "endLine":  151,
+                                         "startOffset":  23,
+                                         "endOffset":  29
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make moment a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "dd01d4cd-be9a-4b97-a8f4-2cd27e8819f3",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  152,
+                       "hash":  "a00265cea49c7df1e6340bc0422038cf",
+                       "textRange":  {
+                                         "startLine":  152,
+                                         "endLine":  152,
+                                         "startOffset":  22,
+                                         "endOffset":  28
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make status a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "eb340235-3b86-4d9d-b44a-fb81cc83a137",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  153,
+                       "hash":  "54b38b154a11d32a5a7a04bf5f5bd529",
+                       "textRange":  {
+                                         "startLine":  153,
+                                         "endLine":  153,
+                                         "startOffset":  24,
+                                         "endOffset":  32
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make customer a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "618dad06-0495-4e3f-9e16-cec7ecffd993",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  154,
+                       "hash":  "88d22b862a84fbfdaa739bd50d212581",
+                       "textRange":  {
+                                         "startLine":  154,
+                                         "endLine":  154,
+                                         "startOffset":  35,
+                                         "endOffset":  40
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make items a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "78fe9cb0-08ff-45fc-b731-c69dd52302da",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  155,
+                       "hash":  "6ae157d2ccf49a25041fe0e9fd879c10",
+                       "textRange":  {
+                                         "startLine":  155,
+                                         "endLine":  155,
+                                         "startOffset":  27,
+                                         "endOffset":  34
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make payment a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "ce4a9925-927e-4d9c-a8ea-34be418dad5e",
+                       "rule":  "java:S1104",
+                       "severity":  "MINOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/api/ApiDtos.java",
+                       "project":  "IA---commerce-api",
+                       "line":  156,
+                       "hash":  "b45392ea69ccc007ac1a701936da4533",
+                       "textRange":  {
+                                         "startLine":  156,
+                                         "endLine":  156,
+                                         "startOffset":  26,
+                                         "endOffset":  31
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make total a static final constant or non-public and provide accessors if needed.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "MODULAR",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "4f763522-e331-437c-955c-2f6d3a5ea278",
+                       "rule":  "java:S1192",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/config/LocalDataInitializer.java",
+                       "project":  "IA---commerce-api",
+                       "line":  91,
+                       "hash":  "c6c6322e8f8018e432723061612c6683",
+                       "textRange":  {
+                                         "startLine":  91,
+                                         "endLine":  91,
+                                         "startOffset":  31,
+                                         "endOffset":  38
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---commerce-api:src/main/java/app/commerce/config/LocalDataInitializer.java",
+                                                               "textRange":  {
+                                                                                 "startLine":  91,
+                                                                                 "endLine":  91,
+                                                                                 "startOffset":  31,
+                                                                                 "endOffset":  38
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---commerce-api:src/main/java/app/commerce/config/LocalDataInitializer.java",
+                                                               "textRange":  {
+                                                                                 "startLine":  131,
+                                                                                 "endLine":  131,
+                                                                                 "startOffset":  35,
+                                                                                 "endOffset":  42
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---commerce-api:src/main/java/app/commerce/config/LocalDataInitializer.java",
+                                                               "textRange":  {
+                                                                                 "startLine":  163,
+                                                                                 "endLine":  163,
+                                                                                 "startOffset":  35,
+                                                                                 "endOffset":  42
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Define a constant instead of duplicating this literal \"25.50\" 3 times.",
+                       "effort":  "8min",
+                       "debt":  "8min",
+                       "author":  "",
+                       "tags":  [
+                                    "design"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "DISTINCT",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "f0de81af-457a-4d87-bd75-733a8413f3af",
+                       "rule":  "java:S5998",
+                       "severity":  "MAJOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/service/UserService.java",
+                       "project":  "IA---commerce-api",
+                       "line":  27,
+                       "hash":  "579beb462b59efc6e94ef136d92bba57",
+                       "textRange":  {
+                                         "startLine":  27,
+                                         "endLine":  27,
+                                         "startOffset":  24,
+                                         "endOffset":  43
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Refactor this repetition that can lead to a stack overflow for large inputs.",
+                       "effort":  "20min",
+                       "debt":  "20min",
+                       "author":  "",
+                       "tags":  [
+                                    "regex"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "BUG",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "a0ee359f-cb70-41c5-933d-f159e77102d5",
+                       "rule":  "java:S1066",
+                       "severity":  "MAJOR",
+                       "component":  "IA---commerce-api:src/main/java/app/commerce/service/UserService.java",
+                       "project":  "IA---commerce-api",
+                       "line":  176,
+                       "hash":  "9e4cfecead37bff43e5fe5b201c04cdd",
+                       "textRange":  {
+                                         "startLine":  176,
+                                         "endLine":  176,
+                                         "startOffset":  12,
+                                         "endOffset":  14
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---commerce-api:src/main/java/app/commerce/service/UserService.java",
+                                                               "textRange":  {
+                                                                                 "startLine":  175,
+                                                                                 "endLine":  175,
+                                                                                 "startOffset":  8,
+                                                                                 "endOffset":  10
+                                                                             },
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Merge this if statement with the enclosing one.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "clumsy"
+                                ],
+                       "creationDate":  "2026-10-28T21:59:16-0300",
+                       "updateDate":  "2026-10-28T21:59:16-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   }
+               ],
+    "total":  38,
+    "projectKey":  "IA---commerce-api"
+}

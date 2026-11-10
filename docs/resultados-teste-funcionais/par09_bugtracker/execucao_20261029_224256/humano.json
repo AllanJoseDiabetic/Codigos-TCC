@@ -1,0 +1,426 @@
+{
+  "par": "par09_bugtracker",
+  "projeto": "humano",
+  "data_utc": "2026-10-30T01:43:56.681931Z",
+  "django": "3.1.5",
+  "metodo": "Django test Client; settings externas; SQLite :memory:; fixtures isoladas por caso; CSRF desabilitado",
+  "categorias": {
+    "comum": 23,
+    "robustez": 17
+  },
+  "resumo": {
+    "PASS": 26,
+    "FAIL": 14,
+    "BLOCKED": 0
+  },
+  "erro_preparacao": null,
+  "resultados": [
+    {
+      "projeto": "humano",
+      "teste": "T01",
+      "grupo": "comum",
+      "descricao": "Abrir pagina de login",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "HTTP 200",
+      "duracao_ms": 49.6
+    },
+    {
+      "projeto": "humano",
+      "teste": "T02",
+      "grupo": "comum",
+      "descricao": "Abrir formulario de cadastro",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "HTTP 200",
+      "duracao_ms": 16.55
+    },
+    {
+      "projeto": "humano",
+      "teste": "T03",
+      "grupo": "comum",
+      "descricao": "Rejeitar login incorreto",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "HTTP 200; sessao nao autenticada",
+      "duracao_ms": 19.19
+    },
+    {
+      "projeto": "humano",
+      "teste": "T04",
+      "grupo": "comum",
+      "descricao": "Autenticar com senha correta",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "HTTP 302; sessao autenticada",
+      "duracao_ms": 17.53
+    },
+    {
+      "projeto": "humano",
+      "teste": "T05",
+      "grupo": "comum",
+      "descricao": "Encerrar sessao",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "HTTP 302; sessao encerrada",
+      "duracao_ms": 16.85
+    },
+    {
+      "projeto": "humano",
+      "teste": "T06",
+      "grupo": "comum",
+      "descricao": "Rejeitar cadastro com senhas divergentes",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "HTTP 200; usuario nao criado",
+      "duracao_ms": 15.94
+    },
+    {
+      "projeto": "humano",
+      "teste": "T07",
+      "grupo": "comum",
+      "descricao": "Cadastrar usuario valido",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "HTTP 302; cadastro persistido e autenticado",
+      "duracao_ms": 18.72
+    },
+    {
+      "projeto": "humano",
+      "teste": "T08",
+      "grupo": "comum",
+      "descricao": "Rejeitar nome de usuario duplicado",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "HTTP 200; duplicidade rejeitada",
+      "duracao_ms": 16.12
+    },
+    {
+      "projeto": "humano",
+      "teste": "T09",
+      "grupo": "robustez",
+      "descricao": "Impedir acesso anonimo a lista de defeitos",
+      "resultado": "FAIL",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "AssertionError: Anonimo acessou lista (HTTP 200)",
+      "duracao_ms": 16.44
+    },
+    {
+      "projeto": "humano",
+      "teste": "T10",
+      "grupo": "robustez",
+      "descricao": "Impedir acesso anonimo a API de defeitos",
+      "resultado": "FAIL",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "IndexError: list index out of range",
+      "duracao_ms": 35.05
+    },
+    {
+      "projeto": "humano",
+      "teste": "T11",
+      "grupo": "robustez",
+      "descricao": "Impedir acesso anonimo ao formulario de defeito",
+      "resultado": "FAIL",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "IndexError: list index out of range",
+      "duracao_ms": 22.5
+    },
+    {
+      "projeto": "humano",
+      "teste": "T12",
+      "grupo": "robustez",
+      "descricao": "Impedir consulta anonima a detalhe de defeito",
+      "resultado": "FAIL",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "AssertionError: Anonimo consultou detalhe (HTTP 200)",
+      "duracao_ms": 15.56
+    },
+    {
+      "projeto": "humano",
+      "teste": "T13",
+      "grupo": "robustez",
+      "descricao": "Impedir encerramento anonimo de defeito",
+      "resultado": "FAIL",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "AssertionError: Anonimo encerrou o defeito",
+      "duracao_ms": 16.44
+    },
+    {
+      "projeto": "humano",
+      "teste": "T14",
+      "grupo": "comum",
+      "descricao": "Abrir lista da organizacao autenticado",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "HTTP 200",
+      "duracao_ms": 17.1
+    },
+    {
+      "projeto": "humano",
+      "teste": "T15",
+      "grupo": "comum",
+      "descricao": "Abrir lista de defeitos atribuidos ao usuario",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "HTTP 200",
+      "duracao_ms": 18.02
+    },
+    {
+      "projeto": "humano",
+      "teste": "T16",
+      "grupo": "comum",
+      "descricao": "Abrir formulario de novo defeito",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "HTTP 200",
+      "duracao_ms": 25.98
+    },
+    {
+      "projeto": "humano",
+      "teste": "T17",
+      "grupo": "comum",
+      "descricao": "Criar defeito com dados validos e persistir",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "HTTP 200; defeito_id=1",
+      "duracao_ms": 20.98
+    },
+    {
+      "projeto": "humano",
+      "teste": "T18",
+      "grupo": "comum",
+      "descricao": "Abrir pagina de detalhe de defeito",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "HTTP 200",
+      "duracao_ms": 17.43
+    },
+    {
+      "projeto": "humano",
+      "teste": "T19",
+      "grupo": "comum",
+      "descricao": "Consultar dados do defeito por JSON",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "HTTP 200; titulo correto",
+      "duracao_ms": 17.89
+    },
+    {
+      "projeto": "humano",
+      "teste": "T20",
+      "grupo": "comum",
+      "descricao": "Listagem da organizacao contem defeito",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "Defeito da organizacao encontrado",
+      "duracao_ms": 41.43
+    },
+    {
+      "projeto": "humano",
+      "teste": "T21",
+      "grupo": "comum",
+      "descricao": "Listagem pessoal contem defeito atribuido",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "Defeito atribuido encontrado",
+      "duracao_ms": 16.94
+    },
+    {
+      "projeto": "humano",
+      "teste": "T22",
+      "grupo": "comum",
+      "descricao": "Listagem pessoal omite defeito de outro responsavel",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "Defeito nao atribuido omitido",
+      "duracao_ms": 17.31
+    },
+    {
+      "projeto": "humano",
+      "teste": "T23",
+      "grupo": "comum",
+      "descricao": "Contagem de defeitos da organizacao",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "Contagem da organizacao=2",
+      "duracao_ms": 18.21
+    },
+    {
+      "projeto": "humano",
+      "teste": "T24",
+      "grupo": "comum",
+      "descricao": "Contagem pessoal de defeitos",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "Contagem pessoal=1",
+      "duracao_ms": 18.15
+    },
+    {
+      "projeto": "humano",
+      "teste": "T25",
+      "grupo": "comum",
+      "descricao": "Abrir formulario de edicao de defeito",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "HTTP 200",
+      "duracao_ms": 23.95
+    },
+    {
+      "projeto": "humano",
+      "teste": "T26",
+      "grupo": "comum",
+      "descricao": "Editar e persistir defeito",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "HTTP 200; titulo atualizado",
+      "duracao_ms": 24.19
+    },
+    {
+      "projeto": "humano",
+      "teste": "T27",
+      "grupo": "robustez",
+      "descricao": "Rejeitar defeito sem titulo",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "HTTP 200; nenhum defeito criado",
+      "duracao_ms": 24.19
+    },
+    {
+      "projeto": "humano",
+      "teste": "T28",
+      "grupo": "robustez",
+      "descricao": "Rejeitar defeito sem descricao",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "HTTP 200; nenhum defeito criado",
+      "duracao_ms": 20.88
+    },
+    {
+      "projeto": "humano",
+      "teste": "T29",
+      "grupo": "robustez",
+      "descricao": "Rejeitar estimativa negativa",
+      "resultado": "FAIL",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "IntegrityError: CHECK constraint failed: bugtracker_bug",
+      "duracao_ms": 36.03
+    },
+    {
+      "projeto": "humano",
+      "teste": "T30",
+      "grupo": "robustez",
+      "descricao": "Impedir atribuicao a usuario de outra organizacao",
+      "resultado": "FAIL",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "AssertionError: Responsavel de outra organizacao aceito (HTTP 200)",
+      "duracao_ms": 20.04
+    },
+    {
+      "projeto": "humano",
+      "teste": "T31",
+      "grupo": "robustez",
+      "descricao": "Isolar lista JSON entre organizacoes",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "Nenhum defeito da outra organizacao divulgado",
+      "duracao_ms": 18.06
+    },
+    {
+      "projeto": "humano",
+      "teste": "T32",
+      "grupo": "robustez",
+      "descricao": "Negar detalhe JSON de outra organizacao",
+      "resultado": "FAIL",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "AssertionError: Detalhe externo divulgado (HTTP 200)",
+      "duracao_ms": 17.77
+    },
+    {
+      "projeto": "humano",
+      "teste": "T33",
+      "grupo": "robustez",
+      "descricao": "Negar edicao de outra organizacao",
+      "resultado": "FAIL",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "AssertionError: Edicao de organizacao externa acessivel (HTTP 200)",
+      "duracao_ms": 20.54
+    },
+    {
+      "projeto": "humano",
+      "teste": "T34",
+      "grupo": "robustez",
+      "descricao": "Negar encerramento de outra organizacao",
+      "resultado": "FAIL",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "AssertionError: Defeito de outra organizacao foi encerrado",
+      "duracao_ms": 16.82
+    },
+    {
+      "projeto": "humano",
+      "teste": "T35",
+      "grupo": "comum",
+      "descricao": "Encerrar defeito e persistir estado inativo",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "HTTP 200; active=False",
+      "duracao_ms": 16.97
+    },
+    {
+      "projeto": "humano",
+      "teste": "T36",
+      "grupo": "comum",
+      "descricao": "Nao listar como ativo defeito concluido",
+      "resultado": "PASS",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "Defeito concluido nao aparece ativo",
+      "duracao_ms": 17.78
+    },
+    {
+      "projeto": "humano",
+      "teste": "T37",
+      "grupo": "robustez",
+      "descricao": "Retornar 404 para detalhe JSON inexistente",
+      "resultado": "FAIL",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "IndexError: list index out of range",
+      "duracao_ms": 23.08
+    },
+    {
+      "projeto": "humano",
+      "teste": "T38",
+      "grupo": "robustez",
+      "descricao": "Retornar 404 para edicao inexistente",
+      "resultado": "FAIL",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "IndexError: list index out of range",
+      "duracao_ms": 37.31
+    },
+    {
+      "projeto": "humano",
+      "teste": "T39",
+      "grupo": "robustez",
+      "descricao": "Retornar 404 para encerramento inexistente",
+      "resultado": "FAIL",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "IndexError: list index out of range",
+      "duracao_ms": 22.94
+    },
+    {
+      "projeto": "humano",
+      "teste": "T40",
+      "grupo": "robustez",
+      "descricao": "GET nao pode encerrar defeito (sem efeito colateral)",
+      "resultado": "FAIL",
+      "esperado": "Criterio funcional satisfeito",
+      "obtido": "AssertionError: GET encerrou defeito; efeito colateral em operacao de leitura",
+      "duracao_ms": 15.75
+    }
+  ],
+  "ressalvas": [
+    "Configuracoes Django externas minimais, pois settings.py foi excluido do diagnostico",
+    "CSRF nao avaliado; cliente Django interno, nao servidor HTTP real",
+    "Senha das fixtures usa MD5 apenas no ambiente temporario para agilizar testes, nao testa seguranca criptografica",
+    "Diferencas em formulários, rotas e formato JSON adaptadas; mesmos criterios funcionais",
+    "Falhas em casos de robustez devem ser interpretadas frente ao escopo do projeto didatico historico"
+  ]
+}

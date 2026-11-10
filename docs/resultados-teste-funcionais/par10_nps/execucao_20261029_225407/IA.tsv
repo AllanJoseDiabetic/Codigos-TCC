@@ -1,0 +1,61 @@
+projeto	teste	grupo	resultado	descricao	obtido
+IA	T01	comum	PASS	Listar pesquisas em banco novo	Conforme expectativa
+IA	T02	comum	PASS	Retornar 404 para rota inexistente	Conforme expectativa
+IA	T03	robustez	PASS	Rejeitar JSON malformado (nao retornar 500)	Conforme expectativa
+IA	T04	robustez	PASS	Rejeitar usuario sem nome	Conforme expectativa
+IA	T05	robustez	PASS	Rejeitar usuario sem email	Conforme expectativa
+IA	T06	robustez	PASS	Rejeitar email com sintaxe invalida	Conforme expectativa
+IA	T07	comum	PASS	Cadastrar primeiro usuario valido	Conforme expectativa
+IA	T08	comum	PASS	Verificar dados retornados do usuario criado	Conforme expectativa
+IA	T09	robustez	PASS	Impedir cadastro de email duplicado	Conforme expectativa
+IA	T10	comum	PASS	Cadastrar segundo usuario valido	Conforme expectativa
+IA	T11	robustez	PASS	Rejeitar pesquisa sem titulo	Conforme expectativa
+IA	T12	robustez	PASS	Rejeitar pesquisa sem descricao	Conforme expectativa
+IA	T13	comum	PASS	Cadastrar pesquisa A	Conforme expectativa
+IA	T14	comum	PASS	Confirmar pesquisa A na listagem	Conforme expectativa
+IA	T15	comum	PASS	Cadastrar pesquisa B	Conforme expectativa
+IA	T16	comum	PASS	Listar pesquisas distintas A e B	Conforme expectativa
+IA	T17	robustez	PASS	Rejeitar convite para usuario inexistente	Conforme expectativa
+IA	T18	robustez	PASS	Rejeitar convite para pesquisa inexistente	Conforme expectativa
+IA	T19	robustez	PASS	Rejeitar convite sem email	Conforme expectativa
+IA	T20	robustez	PASS	Rejeitar convite sem identificador da pesquisa	Conforme expectativa
+IA	T21	comum	PASS	Gerar convite para usuario 1 e pesquisa A	Conforme expectativa
+IA	T22	comum	PASS	Consultar NPS da pesquisa A antes de responder	Conforme expectativa
+IA	T23	robustez	PASS	NPS sem respostas deve ser zero e finito	Conforme expectativa
+IA	T24	robustez	PASS	Rejeitar resposta sem identificador de convite	Conforme expectativa
+IA	T25	comum	FAIL	Registrar nota zero para primeira resposta	AssertionError: HTTP 400 (esperado 200); body={"error":"O convite já foi respondido por outra solicitação.","status":"answered"}
+IA	T26	comum	PASS	Classificar nota zero como detratora	Conforme expectativa
+IA	T27	comum	PASS	Gerar convite para segundo usuario	Conforme expectativa
+IA	T28	comum	FAIL	Registrar nota sete como passiva	AssertionError: HTTP 400 (esperado 200); body={"error":"O convite já foi respondido por outra solicitação.","status":"answered"}
+IA	T29	comum	PASS	Calcular NPS -50 para 0 e 7	Conforme expectativa
+IA	T30	comum	PASS	Gerar novo convite apos resposta anterior	Conforme expectativa
+IA	T31	comum	FAIL	Registrar nota dez como promotora	AssertionError: HTTP 400 (esperado 200); body={"error":"O convite já foi respondido por outra solicitação.","status":"answered"}
+IA	T32	comum	PASS	Calcular NPS zero para 0, 7 e 10	Conforme expectativa
+IA	T33	robustez	PASS	Rejeitar segunda resposta do mesmo convite	Conforme expectativa
+IA	T34	robustez	PASS	Preservar pontuacao apos tentativa de sobrescrita	Conforme expectativa
+IA	T35	comum	PASS	Criar convite para pesquisa B	Conforme expectativa
+IA	T36	comum	FAIL	Registrar nota nove na pesquisa B	AssertionError: HTTP 400 (esperado 200); body={"error":"O convite já foi respondido por outra solicitação.","status":"answered"}
+IA	T37	comum	PASS	NPS da pesquisa B deve ser 100	Conforme expectativa
+IA	T38	comum	PASS	Respostas da pesquisa B nao alteram A	Conforme expectativa
+IA	T39	robustez	PASS	Rejeitar NPS com ID malformado	Conforme expectativa
+IA	T40	robustez	PASS	Pesquisa inexistente retorna HTTP 404 no NPS	Conforme expectativa
+IA	T41	robustez	PASS	Resposta para convite inexistente deve ser rejeitada	Conforme expectativa
+IA	T42	robustez	PASS	Rejeitar convite com survey_id malformado	Conforme expectativa
+IA	T43	robustez	PASS	Rejeitar titulo de pesquisa vazio	Conforme expectativa
+IA	T44	robustez	PASS	Rejeitar descricao de pesquisa vazia	Conforme expectativa
+IA	T45	robustez	PASS	Rejeitar nome com apenas espacos	Conforme expectativa
+IA	T46	comum	PASS	Cadastrar usuario para notas limites	Conforme expectativa
+IA	T47	comum	PASS	Criar pesquisa C para testes de notas	Conforme expectativa
+IA	T48	comum	PASS	Criar convite para teste de notas invalidas	Conforme expectativa
+IA	T49	robustez	PASS	Rejeitar resposta com nota negativa	Conforme expectativa
+IA	T50	robustez	PASS	Rejeitar resposta com nota acima de dez	Conforme expectativa
+IA	T51	robustez	PASS	Rejeitar resposta com nota decimal	Conforme expectativa
+IA	T52	robustez	PASS	Rejeitar resposta com nota nao numerica	Conforme expectativa
+IA	T53	comum	FAIL	Registrar nota seis como detratora	AssertionError: HTTP 400 (esperado 200); body={"error":"O convite já foi respondido por outra solicitação.","status":"answered"}
+IA	T54	comum	PASS	Calcular NPS -100 apos nota seis	Conforme expectativa
+IA	T55	comum	PASS	Criar segundo convite para teste de nota oito	Conforme expectativa
+IA	T56	comum	FAIL	Registrar nota oito como passiva	AssertionError: HTTP 400 (esperado 200); body={"error":"O convite já foi respondido por outra solicitação.","status":"answered"}
+IA	T57	comum	PASS	Criar terceiro convite para teste de nota nove	Conforme expectativa
+IA	T58	comum	FAIL	Registrar nota nove como promotora	AssertionError: HTTP 400 (esperado 200); body={"error":"O convite já foi respondido por outra solicitação.","status":"answered"}
+IA	T59	comum	PASS	NPS final C: um detrator, passivo e promotor	Conforme expectativa
+IA	T60	comum	PASS	Confirmar nenhuma resposta entre pesquisas misturada	Conforme expectativa

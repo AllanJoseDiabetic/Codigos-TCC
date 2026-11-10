@@ -1,0 +1,8 @@
+﻿PROJETO: SalesManagement
+ORIGEM: IA - GPT-6
+PRIMEIRA COMPILACAO: FALHOU
+INTERVENCAO MANUAL: SIM
+ALTERACAO: inclusao de using Microsoft.EntityFrameworkCore.Infrastructure;
+TIPO: diretiva de importacao, sem alteracao intencional da logica
+RESULTADO DA VERSAO CORRIGIDA: verificar nesta execucao
+OBSERVACAO: nao contabilizar como sucesso de primeira tentativa.

@@ -1,0 +1,88 @@
+﻿{
+    "component":  {
+                      "key":  "h12--workshop-asp-net-core-mvc",
+                      "name":  "h12- workshop-asp-net-core-mvc",
+                      "qualifier":  "TRK",
+                      "measures":  [
+                                       {
+                                           "metric":  "coverage",
+                                           "value":  "0.0",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "complexity",
+                                           "value":  "176"
+                                       },
+                                       {
+                                           "metric":  "duplicated_lines_density",
+                                           "value":  "4.2",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "ncloc_language_distribution",
+                                           "value":  "cs=977;css=24;web=831"
+                                       },
+                                       {
+                                           "metric":  "software_quality_security_issues",
+                                           "value":  "12",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "software_quality_maintainability_remediation_effort",
+                                           "value":  "367",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "sqale_debt_ratio",
+                                           "value":  "0.8",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "software_quality_maintainability_debt_ratio",
+                                           "value":  "0.7",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "security_hotspots",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "sqale_index",
+                                           "value":  "447",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "lines_to_cover",
+                                           "value":  "279"
+                                       },
+                                       {
+                                           "metric":  "software_quality_reliability_issues",
+                                           "value":  "32",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "cognitive_complexity",
+                                           "value":  "42",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "ncloc",
+                                           "value":  "1832"
+                                       },
+                                       {
+                                           "metric":  "software_quality_maintainability_issues",
+                                           "value":  "68",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "files",
+                                           "value":  "53"
+                                       },
+                                       {
+                                           "metric":  "lines",
+                                           "value":  "2545"
+                                       }
+                                   ]
+                  }
+}

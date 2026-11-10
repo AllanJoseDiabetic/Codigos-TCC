@@ -1,0 +1,35 @@
+﻿TCC_CULTURA=InvariantCulture
+IA T01 PASS Total de vendas do vendedor no intervalo
+IA T02 PASS Excluir vendas fora do intervalo
+IA T03 PASS Associar vendedor ao departamento
+IA T04 PASS Total de vendas agregado pelo departamento
+IA T05 PASS Adicionar e remover venda de um vendedor
+IA T06 PASS Listar departamentos pelo controlador
+IA T07 PASS Consultar departamento existente
+IA T08 PASS Consultar departamento inexistente
+IA T09 PASS Abrir cadastro de departamento
+IA T10 PASS Criar e persistir departamento
+IA T11 PASS Abrir edicao de departamento
+IA T12 PASS Alterar e persistir departamento
+IA T13 PASS Abrir exclusao de departamento
+IA T14 PASS Excluir departamento sem vendedores
+IA T15 PASS Listar vendedores
+IA T16 PASS Abrir formulario de vendedor
+IA T17 PASS Consultar vendedor existente
+IA T18 PASS Abrir edicao de vendedor
+IA T19 PASS Cadastrar e persistir vendedor
+IA T20 PASS Atualizar vendedor existente
+IA T21 PASS Abrir exclusao de vendedor
+IA T22 PASS Excluir vendedor sem vendas
+IA T23 PASS Abrir pagina de registros de vendas
+IA T24 PASS Consultar vendas por intervalo
+IA T25 PASS Agrupar vendas por departamento
+IA T26 PASS Validar nome obrigatorio do vendedor
+IA T27 PASS Validar formato de e-mail do vendedor
+IA T28 PASS Validar salario negativo
+IA T29 PASS Validar departamento nao selecionado
+IA T30 PASS Recusar cadastro de vendedor com nascimento futuro
+IA T31 PASS Recusar cadastro em departamento inexistente
+IA T32 PASS Busca inclui vendas na tarde da data final
+IA T33 PASS Nome do departamento e obrigatorio
+RESUMO IA: PASS=33 FAIL=0 TOTAL=33

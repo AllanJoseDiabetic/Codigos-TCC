@@ -1,0 +1,272 @@
+﻿{
+    "issues":  [
+                   {
+                       "key":  "75b2f178-7b1c-42c3-bec7-e614179e9f2d",
+                       "rule":  "typescript:S6571",
+                       "severity":  "MINOR",
+                       "component":  "IA---survey-nps-api:src/app.ts",
+                       "project":  "IA---survey-nps-api",
+                       "line":  79,
+                       "hash":  "be53a20e073176072580eb63c2b0063b",
+                       "textRange":  {
+                                         "startLine":  79,
+                                         "endLine":  79,
+                                         "startOffset":  11,
+                                         "endOffset":  14
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "\u0027any\u0027 overrides all other types in this union type.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "type-dependent",
+                                    "redundant"
+                                ],
+                       "creationDate":  "2026-10-28T21:53:36-0300",
+                       "updateDate":  "2026-10-28T21:53:36-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "dbae1562-7491-4ece-862b-03ce8ad799b5",
+                       "rule":  "typescript:S6353",
+                       "severity":  "MINOR",
+                       "component":  "IA---survey-nps-api:src/app.ts",
+                       "project":  "IA---survey-nps-api",
+                       "line":  351,
+                       "hash":  "a0b74ff3c287045b8f31f8eaab3411a4",
+                       "textRange":  {
+                                         "startLine":  351,
+                                         "endLine":  351,
+                                         "startOffset":  19,
+                                         "endOffset":  24
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Use concise character class syntax \u0027\\d\u0027 instead of \u0027[0-9]\u0027.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "regex",
+                                    "type-dependent"
+                                ],
+                       "creationDate":  "2026-10-28T21:53:36-0300",
+                       "updateDate":  "2026-10-28T21:53:36-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "24ec390e-1996-4337-907b-ba74a5294da8",
+                       "rule":  "typescript:S4138",
+                       "severity":  "MINOR",
+                       "component":  "IA---survey-nps-api:src/app.ts",
+                       "project":  "IA---survey-nps-api",
+                       "line":  476,
+                       "hash":  "b7b12fbf47f4ca5b3f8c0f801fd949cf",
+                       "textRange":  {
+                                         "startLine":  476,
+                                         "endLine":  496,
+                                         "startOffset":  8,
+                                         "endOffset":  9
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Expected a `for-of` loop instead of a `for` loop with this simple iteration.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "clumsy"
+                                ],
+                       "creationDate":  "2026-10-28T21:53:36-0300",
+                       "updateDate":  "2026-10-28T21:53:36-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "fbe17c50-cbf9-4704-b686-dd17bd163fed",
+                       "rule":  "typescript:S7772",
+                       "severity":  "MINOR",
+                       "component":  "IA---survey-nps-api:src/database.ts",
+                       "project":  "IA---survey-nps-api",
+                       "line":  1,
+                       "hash":  "236006d04f1286ddfd1dd6bf864eade4",
+                       "textRange":  {
+                                         "startLine":  1,
+                                         "endLine":  1,
+                                         "startOffset":  20,
+                                         "endOffset":  24
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Prefer `node:fs` over `fs`.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "convention",
+                                    "import",
+                                    "nodejs"
+                                ],
+                       "creationDate":  "2026-10-28T21:53:36-0300",
+                       "updateDate":  "2026-10-28T21:53:36-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "5c811a27-85dd-4d29-9f56-1e6f5ed1cf59",
+                       "rule":  "typescript:S7772",
+                       "severity":  "MINOR",
+                       "component":  "IA---survey-nps-api:src/database.ts",
+                       "project":  "IA---survey-nps-api",
+                       "line":  2,
+                       "hash":  "5efdc1a9a3afb59706e3344c25d63baf",
+                       "textRange":  {
+                                         "startLine":  2,
+                                         "endLine":  2,
+                                         "startOffset":  22,
+                                         "endOffset":  28
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Prefer `node:path` over `path`.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "convention",
+                                    "import",
+                                    "nodejs"
+                                ],
+                       "creationDate":  "2026-10-28T21:53:36-0300",
+                       "updateDate":  "2026-10-28T21:53:36-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   }
+               ],
+    "total":  5,
+    "projectKey":  "IA---survey-nps-api"
+}

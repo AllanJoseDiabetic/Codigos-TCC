@@ -1,0 +1,431 @@
+﻿{
+    "issues":  [
+                   {
+                       "key":  "cdaa94ae-8554-4a01-adbe-d40c025b9806",
+                       "rule":  "javascript:S5122",
+                       "severity":  "MAJOR",
+                       "component":  "IA---movie-rental-api:src/app.js",
+                       "project":  "IA---movie-rental-api",
+                       "line":  21,
+                       "hash":  "c130ad820d45a83a455ca80ab658384e",
+                       "textRange":  {
+                                         "startLine":  21,
+                                         "endLine":  21,
+                                         "startOffset":  0,
+                                         "endOffset":  15
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make sure that enabling CORS is safe here.",
+                       "effort":  "4h",
+                       "debt":  "4h",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "express.js",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T21:47:15-0300",
+                       "updateDate":  "2026-10-28T21:47:15-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "82dae3ea-ba1f-4def-b11e-e0116ceed7ea",
+                       "rule":  "javascript:S7764",
+                       "severity":  "MINOR",
+                       "component":  "IA---movie-rental-api:src/index.js",
+                       "project":  "IA---movie-rental-api",
+                       "line":  8,
+                       "hash":  "8ff0867f27849d2f23a54aab3309386f",
+                       "textRange":  {
+                                         "startLine":  8,
+                                         "endLine":  8,
+                                         "startOffset":  19,
+                                         "endOffset":  25
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Prefer `globalThis` over `global`.",
+                       "effort":  "2min",
+                       "debt":  "2min",
+                       "author":  "",
+                       "tags":  [
+                                    "portability",
+                                    "es2020"
+                                ],
+                       "creationDate":  "2026-10-28T21:47:15-0300",
+                       "updateDate":  "2026-10-28T21:47:15-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "e26393bb-de28-48d6-a2b4-7c8c7b41d739",
+                       "rule":  "javascript:S6582",
+                       "severity":  "MAJOR",
+                       "component":  "IA---movie-rental-api:src/index.js",
+                       "project":  "IA---movie-rental-api",
+                       "line":  11,
+                       "hash":  "b01a7d9034574ed98cf8163eb660dce5",
+                       "textRange":  {
+                                         "startLine":  11,
+                                         "endLine":  11,
+                                         "startOffset":  18,
+                                         "endOffset":  42
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Prefer using an optional chain expression instead, as it\u0027s more concise and easier to read.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "type-dependent"
+                                ],
+                       "creationDate":  "2026-10-28T21:47:15-0300",
+                       "updateDate":  "2026-10-28T21:47:15-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "2858768f-b421-4a2d-b3ca-979920b63c64",
+                       "rule":  "javascript:S7726",
+                       "severity":  "MINOR",
+                       "component":  "IA---movie-rental-api:src/middleware/admin.js",
+                       "project":  "IA---movie-rental-api",
+                       "line":  1,
+                       "hash":  "80d8f149d5f2af26d8b1eb688fd6d61e",
+                       "textRange":  {
+                                         "startLine":  1,
+                                         "endLine":  1,
+                                         "startOffset":  17,
+                                         "endOffset":  26
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "The function should be named.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "convention",
+                                    "es2015"
+                                ],
+                       "creationDate":  "2026-10-28T21:47:15-0300",
+                       "updateDate":  "2026-10-28T21:47:15-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "IDENTIFIABLE",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "a772da6b-25d0-45c4-8475-7d1ecd184346",
+                       "rule":  "javascript:S7726",
+                       "severity":  "MINOR",
+                       "component":  "IA---movie-rental-api:src/middleware/auth.js",
+                       "project":  "IA---movie-rental-api",
+                       "line":  6,
+                       "hash":  "1cf89bec1d9607b3e538c08353493e09",
+                       "textRange":  {
+                                         "startLine":  6,
+                                         "endLine":  6,
+                                         "startOffset":  17,
+                                         "endOffset":  32
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "The async function should be named.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "convention",
+                                    "es2015"
+                                ],
+                       "creationDate":  "2026-10-28T21:47:15-0300",
+                       "updateDate":  "2026-10-28T21:47:15-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "IDENTIFIABLE",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "fa1b7db1-7e89-477b-a105-299c814d27a4",
+                       "rule":  "javascript:S2486",
+                       "severity":  "MINOR",
+                       "component":  "IA---movie-rental-api:src/middleware/auth.js",
+                       "project":  "IA---movie-rental-api",
+                       "line":  22,
+                       "hash":  "161b8313784081f5965c2da97df48970",
+                       "textRange":  {
+                                         "startLine":  22,
+                                         "endLine":  26,
+                                         "startOffset":  4,
+                                         "endOffset":  3
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Handle this exception or don\u0027t catch it at all.",
+                       "effort":  "1h",
+                       "debt":  "1h",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "error-handling",
+                                    "suspicious"
+                                ],
+                       "creationDate":  "2026-10-28T21:47:15-0300",
+                       "updateDate":  "2026-10-28T21:47:15-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "d6c71145-574e-4a71-bb9e-f52f59e5d318",
+                       "rule":  "javascript:S7726",
+                       "severity":  "MINOR",
+                       "component":  "IA---movie-rental-api:src/middleware/error.js",
+                       "project":  "IA---movie-rental-api",
+                       "line":  3,
+                       "hash":  "6754d492870dd60432c4fbf517d71888",
+                       "textRange":  {
+                                         "startLine":  3,
+                                         "endLine":  3,
+                                         "startOffset":  17,
+                                         "endOffset":  26
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "The function should be named.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "convention",
+                                    "es2015"
+                                ],
+                       "creationDate":  "2026-10-28T21:47:15-0300",
+                       "updateDate":  "2026-10-28T21:47:15-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "IDENTIFIABLE",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "428e06e8-ad7b-41b4-8fe5-d0b5446184c9",
+                       "rule":  "javascript:S7726",
+                       "severity":  "MINOR",
+                       "component":  "IA---movie-rental-api:src/middleware/validate-id.js",
+                       "project":  "IA---movie-rental-api",
+                       "line":  3,
+                       "hash":  "80d8f149d5f2af26d8b1eb688fd6d61e",
+                       "textRange":  {
+                                         "startLine":  3,
+                                         "endLine":  3,
+                                         "startOffset":  17,
+                                         "endOffset":  26
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "The function should be named.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "convention",
+                                    "es2015"
+                                ],
+                       "creationDate":  "2026-10-28T21:47:15-0300",
+                       "updateDate":  "2026-10-28T21:47:15-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "IDENTIFIABLE",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   }
+               ],
+    "total":  8,
+    "projectKey":  "IA---movie-rental-api"
+}

@@ -1,0 +1,6 @@
+﻿"key";"rule";"message";"component";"line";"status";"severity";"type";"impacts";"effort"
+"75b2f178-7b1c-42c3-bec7-e614179e9f2d";"typescript:S6571";"'any' overrides all other types in this union type.";"IA---survey-nps-api:src/app.ts";"79";"OPEN";"MINOR";"CODE_SMELL";"MAINTAINABILITY:LOW";"5min"
+"dbae1562-7491-4ece-862b-03ce8ad799b5";"typescript:S6353";"Use concise character class syntax '\d' instead of '[0-9]'.";"IA---survey-nps-api:src/app.ts";"351";"OPEN";"MINOR";"CODE_SMELL";"MAINTAINABILITY:LOW";"5min"
+"24ec390e-1996-4337-907b-ba74a5294da8";"typescript:S4138";"Expected a `for-of` loop instead of a `for` loop with this simple iteration.";"IA---survey-nps-api:src/app.ts";"476";"OPEN";"MINOR";"CODE_SMELL";"MAINTAINABILITY:LOW";"5min"
+"fbe17c50-cbf9-4704-b686-dd17bd163fed";"typescript:S7772";"Prefer `node:fs` over `fs`.";"IA---survey-nps-api:src/database.ts";"1";"OPEN";"MINOR";"CODE_SMELL";"MAINTAINABILITY:MEDIUM";"5min"
+"5c811a27-85dd-4d29-9f56-1e6f5ed1cf59";"typescript:S7772";"Prefer `node:path` over `path`.";"IA---survey-nps-api:src/database.ts";"2";"OPEN";"MINOR";"CODE_SMELL";"MAINTAINABILITY:MEDIUM";"5min"

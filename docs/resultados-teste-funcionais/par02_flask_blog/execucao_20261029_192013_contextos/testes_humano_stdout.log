@@ -1,0 +1,26 @@
+T01 PASS    Abrir pagina inicial
+T02 PASS    Abrir pagina Sobre
+T03 PASS    Abrir formulario de cadastro
+T04 PASS    Abrir formulario de login
+T05 PASS    Impedir acesso anonimo ao perfil
+T06 PASS    Impedir publicacao anonima
+T07 PASS    Retornar 404 para publicacao inexistente
+T08 PASS    Retornar 404 para autor inexistente
+T09 PASS    Nao cadastrar usuario com formulario invalido
+T10 PASS    Cadastrar usuario valido e persistir no banco
+T11 PASS    Rejeitar cadastro duplicado
+T12 PASS    Rejeitar login com senha incorreta
+T13 PASS    Autenticar usuario com senha correta
+T14 PASS    Consultar perfil autenticado
+T15 PASS    Rejeitar publicacao sem conteudo
+T16 PASS    Criar e persistir publicacao valida
+T17 PASS    Exibir publicacao na pagina e detalhe
+T18 PASS    Editar e persistir publicacao propria
+T19 PASS    Listar publicacoes do autor
+T20 PASS    Impedir edicao por outro usuario
+T21 PASS    Impedir exclusao por outro usuario
+T22 PASS    Excluir publicacao propria e confirmar 404
+T23 PASS    Encerrar sessao e proteger perfil
+T24 PASS    Recusar token de redefinicao invalido
+T25 PASS    Exibir pagina de solicitacao de redefinicao
+T26 PASS    Bloquear publicacao sem token CSRF

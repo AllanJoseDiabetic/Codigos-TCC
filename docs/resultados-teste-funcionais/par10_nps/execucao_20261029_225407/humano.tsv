@@ -1,0 +1,61 @@
+projeto	teste	grupo	resultado	descricao	obtido
+humano	T01	comum	PASS	Listar pesquisas em banco novo	Conforme expectativa
+humano	T02	comum	PASS	Retornar 404 para rota inexistente	Conforme expectativa
+humano	T03	robustez	FAIL	Rejeitar JSON malformado (nao retornar 500)	AssertionError: HTTP 500 (esperado 400); body={"status":"Error","message":"Internal server error Expected property name or '}' in JSON at position 1 (line 1 column 2)"}
+humano	T04	robustez	PASS	Rejeitar usuario sem nome	Conforme expectativa
+humano	T05	robustez	PASS	Rejeitar usuario sem email	Conforme expectativa
+humano	T06	robustez	PASS	Rejeitar email com sintaxe invalida	Conforme expectativa
+humano	T07	comum	PASS	Cadastrar primeiro usuario valido	Conforme expectativa
+humano	T08	comum	PASS	Verificar dados retornados do usuario criado	Conforme expectativa
+humano	T09	robustez	PASS	Impedir cadastro de email duplicado	Conforme expectativa
+humano	T10	comum	PASS	Cadastrar segundo usuario valido	Conforme expectativa
+humano	T11	robustez	FAIL	Rejeitar pesquisa sem titulo	AssertionError: Esperado rejeicao 4xx; HTTP 500; body={"status":"Error","message":"Internal server error SQLITE_CONSTRAINT: NOT NULL constraint failed: surveys.title"}
+humano	T12	robustez	FAIL	Rejeitar pesquisa sem descricao	AssertionError: Esperado rejeicao 4xx; HTTP 500; body={"status":"Error","message":"Internal server error SQLITE_CONSTRAINT: NOT NULL constraint failed: surveys.description"}
+humano	T13	comum	PASS	Cadastrar pesquisa A	Conforme expectativa
+humano	T14	comum	PASS	Confirmar pesquisa A na listagem	Conforme expectativa
+humano	T15	comum	PASS	Cadastrar pesquisa B	Conforme expectativa
+humano	T16	comum	PASS	Listar pesquisas distintas A e B	Conforme expectativa
+humano	T17	robustez	PASS	Rejeitar convite para usuario inexistente	Conforme expectativa
+humano	T18	robustez	PASS	Rejeitar convite para pesquisa inexistente	Conforme expectativa
+humano	T19	robustez	PASS	Rejeitar convite sem email	Conforme expectativa
+humano	T20	robustez	PASS	Rejeitar convite sem identificador da pesquisa	Conforme expectativa
+humano	T21	comum	PASS	Gerar convite para usuario 1 e pesquisa A	Conforme expectativa
+humano	T22	comum	PASS	Consultar NPS da pesquisa A antes de responder	Conforme expectativa
+humano	T23	robustez	FAIL	NPS sem respostas deve ser zero e finito	AssertionError: NPS=null, esperado=0
+humano	T24	robustez	PASS	Rejeitar resposta sem identificador de convite	Conforme expectativa
+humano	T25	comum	PASS	Registrar nota zero para primeira resposta	Conforme expectativa
+humano	T26	comum	PASS	Classificar nota zero como detratora	Conforme expectativa
+humano	T27	comum	PASS	Gerar convite para segundo usuario	Conforme expectativa
+humano	T28	comum	PASS	Registrar nota sete como passiva	Conforme expectativa
+humano	T29	comum	PASS	Calcular NPS -50 para 0 e 7	Conforme expectativa
+humano	T30	comum	PASS	Gerar novo convite apos resposta anterior	Conforme expectativa
+humano	T31	comum	PASS	Registrar nota dez como promotora	Conforme expectativa
+humano	T32	comum	PASS	Calcular NPS zero para 0, 7 e 10	Conforme expectativa
+humano	T33	robustez	FAIL	Rejeitar segunda resposta do mesmo convite	AssertionError: Esperado rejeicao 4xx; HTTP 200; body={"id":"d2c66ec9-da43-4f84-9c0f-c4c4b45a28b1","user_id":"d3971802-794a-46b4-b120-aec43661dc37","survey_id":"6bf7ca95-d306-4a9b-a0ff-4d76c4201df2","value":1,"created_at":"2026-10-30T01:55:00.000Z"}
+humano	T34	robustez	FAIL	Preservar pontuacao apos tentativa de sobrescrita	AssertionError: detratores=2, esperado=1
+humano	T35	comum	PASS	Criar convite para pesquisa B	Conforme expectativa
+humano	T36	comum	PASS	Registrar nota nove na pesquisa B	Conforme expectativa
+humano	T37	comum	PASS	NPS da pesquisa B deve ser 100	Conforme expectativa
+humano	T38	comum	FAIL	Respostas da pesquisa B nao alteram A	AssertionError: detratores=2, esperado=1
+humano	T39	robustez	FAIL	Rejeitar NPS com ID malformado	AssertionError: Esperado rejeicao 4xx; HTTP 200; body={"detractor":0,"promoters":0,"passive":0,"totalAnswers":0,"nps":null}
+humano	T40	robustez	FAIL	Pesquisa inexistente retorna HTTP 404 no NPS	AssertionError: HTTP 200 (esperado 404); body={"detractor":0,"promoters":0,"passive":0,"totalAnswers":0,"nps":null}
+humano	T41	robustez	PASS	Resposta para convite inexistente deve ser rejeitada	Conforme expectativa
+humano	T42	robustez	PASS	Rejeitar convite com survey_id malformado	Conforme expectativa
+humano	T43	robustez	FAIL	Rejeitar titulo de pesquisa vazio	AssertionError: Esperado rejeicao 4xx; HTTP 201; body={"id":"5f2a24f7-6138-456e-b6c6-9aedeb4b3d2e","title":"","description":"Descricao valida","created_at":"2026-10-30T01:55:00.000Z"}
+humano	T44	robustez	FAIL	Rejeitar descricao de pesquisa vazia	AssertionError: Esperado rejeicao 4xx; HTTP 201; body={"id":"95457388-7ff8-4f68-8a29-aa666136610c","title":"Titulo valido","description":"","created_at":"2026-10-30T01:55:00.000Z"}
+humano	T45	robustez	FAIL	Rejeitar nome com apenas espacos	AssertionError: Esperado rejeicao 4xx; HTTP 201; body={"id":"8cbe49d5-c401-4cb4-9728-6470280e23d4","name":"   ","email":"espacos@example.invalid","created_at":"2026-10-30T01:55:00.000Z"}
+humano	T46	comum	PASS	Cadastrar usuario para notas limites	Conforme expectativa
+humano	T47	comum	PASS	Criar pesquisa C para testes de notas	Conforme expectativa
+humano	T48	comum	PASS	Criar convite para teste de notas invalidas	Conforme expectativa
+humano	T49	robustez	FAIL	Rejeitar resposta com nota negativa	AssertionError: Esperado rejeicao 4xx; HTTP 200; body={"id":"7b3f8122-d8fc-4751-bcbf-9535d3406d9d","user_id":"2bd72227-3fb8-4b3f-8847-4dbb9f627fc8","survey_id":"1bb20b53-c4bb-4721-89fd-eba4ab031d5b","value":-1,"created_at":"2026-10-30T01:55:00.000Z"}
+humano	T50	robustez	FAIL	Rejeitar resposta com nota acima de dez	AssertionError: Esperado rejeicao 4xx; HTTP 200; body={"id":"7b3f8122-d8fc-4751-bcbf-9535d3406d9d","user_id":"2bd72227-3fb8-4b3f-8847-4dbb9f627fc8","survey_id":"1bb20b53-c4bb-4721-89fd-eba4ab031d5b","value":11,"created_at":"2026-10-30T01:55:00.000Z"}
+humano	T51	robustez	FAIL	Rejeitar resposta com nota decimal	AssertionError: Esperado rejeicao 4xx; HTTP 200; body={"id":"7b3f8122-d8fc-4751-bcbf-9535d3406d9d","user_id":"2bd72227-3fb8-4b3f-8847-4dbb9f627fc8","survey_id":"1bb20b53-c4bb-4721-89fd-eba4ab031d5b","value":8.5,"created_at":"2026-10-30T01:55:00.000Z"}
+humano	T52	robustez	FAIL	Rejeitar resposta com nota nao numerica	AssertionError: Esperado rejeicao 4xx; HTTP 200; body={"id":"7b3f8122-d8fc-4751-bcbf-9535d3406d9d","user_id":"2bd72227-3fb8-4b3f-8847-4dbb9f627fc8","survey_id":"1bb20b53-c4bb-4721-89fd-eba4ab031d5b","value":null,"created_at":"2026-10-30T01:55:00.000Z"}
+humano	T53	comum	PASS	Registrar nota seis como detratora	Conforme expectativa
+humano	T54	comum	PASS	Calcular NPS -100 apos nota seis	Conforme expectativa
+humano	T55	comum	PASS	Criar segundo convite para teste de nota oito	Conforme expectativa
+humano	T56	comum	PASS	Registrar nota oito como passiva	Conforme expectativa
+humano	T57	comum	PASS	Criar terceiro convite para teste de nota nove	Conforme expectativa
+humano	T58	comum	PASS	Registrar nota nove como promotora	Conforme expectativa
+humano	T59	comum	PASS	NPS final C: um detrator, passivo e promotor	Conforme expectativa
+humano	T60	comum	FAIL	Confirmar nenhuma resposta entre pesquisas misturada	AssertionError: detratores=2, esperado=1

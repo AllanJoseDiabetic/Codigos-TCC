@@ -1,0 +1,4 @@
+﻿JDK: C:\Program Files\Eclipse Adoptium\jdk-11.0.32.101-hotspot\bin\java.exe
+JAVA_HOME: C:\Program Files\Eclipse Adoptium\jdk-11.0.32.101-hotspot
+Maven: E:\codigosTCC\_ferramentas\apache-maven-3.6.0\bin\mvn.cmd
+Python: C:\Users\Allan José\AppData\Local\Programs\Python\Python312\python.exe

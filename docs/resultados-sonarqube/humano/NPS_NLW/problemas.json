@@ -1,0 +1,334 @@
+﻿{
+    "total":  5,
+    "p":  1,
+    "ps":  500,
+    "paging":  {
+                   "pageIndex":  1,
+                   "pageSize":  500,
+                   "total":  5
+               },
+    "effortTotal":  21,
+    "issues":  [
+                   {
+                       "key":  "cf3a7fa7-17d6-4d19-9bf9-ec90664da1e6",
+                       "rule":  "typescript:S5689",
+                       "severity":  "MINOR",
+                       "component":  "h9---NPS-NLW-da-Rocketseat:src/app.ts",
+                       "project":  "h9---NPS-NLW-da-Rocketseat",
+                       "line":  9,
+                       "hash":  "4af77bcf43147b78489dd9c4043bfe01",
+                       "textRange":  {
+                                         "startLine":  9,
+                                         "endLine":  9,
+                                         "startOffset":  6,
+                                         "endOffset":  9
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "This framework implicitly discloses version information by default. Make sure it is safe here.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "dani.leao89@gmail.com",
+                       "tags":  [
+                                    "cwe",
+                                    "express.js",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2021-02-26T10:12:34-0300",
+                       "updateDate":  "2026-10-28T14:37:00-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "TRUSTWORTHY",
+                       "cleanCodeAttributeCategory":  "RESPONSIBLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "52330d5d-af5f-4e5c-b2c3-9d5e06154160",
+                       "rule":  "typescript:S7772",
+                       "severity":  "MINOR",
+                       "component":  "h9---NPS-NLW-da-Rocketseat:src/controllers/SendMailController.ts",
+                       "project":  "h9---NPS-NLW-da-Rocketseat",
+                       "line":  2,
+                       "hash":  "45fc2c05a7b30a7e10c3319522e567a5",
+                       "textRange":  {
+                                         "startLine":  2,
+                                         "endLine":  2,
+                                         "startOffset":  24,
+                                         "endOffset":  30
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Prefer `node:path` over `path`.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "dani.leao89@gmail.com",
+                       "tags":  [
+                                    "convention",
+                                    "import",
+                                    "nodejs"
+                                ],
+                       "creationDate":  "2021-02-26T10:12:34-0300",
+                       "updateDate":  "2026-10-28T14:37:00-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "a0698262-cd68-4889-9bdb-ca0fa019b85b",
+                       "rule":  "typescript:S7726",
+                       "severity":  "MINOR",
+                       "component":  "h9---NPS-NLW-da-Rocketseat:src/database/index.ts",
+                       "project":  "h9---NPS-NLW-da-Rocketseat",
+                       "line":  3,
+                       "hash":  "f75166529d86bf580006ee962925bb50",
+                       "textRange":  {
+                                         "startLine":  3,
+                                         "endLine":  3,
+                                         "startOffset":  45,
+                                         "endOffset":  47
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "The async arrow function should be named.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "dani.leao89@gmail.com",
+                       "tags":  [
+                                    "convention",
+                                    "es2015"
+                                ],
+                       "creationDate":  "2021-02-26T10:12:34-0300",
+                       "updateDate":  "2026-10-28T14:37:00-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "IDENTIFIABLE",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "7d933bea-7c7e-42d3-8254-37dc57571c8c",
+                       "rule":  "typescript:S1128",
+                       "severity":  "MINOR",
+                       "component":  "h9---NPS-NLW-da-Rocketseat:src/database/migrations/1614015788331-CreateSurveys.ts",
+                       "project":  "h9---NPS-NLW-da-Rocketseat",
+                       "line":  1,
+                       "hash":  "d64e18298d92a80cc4417f59ec9bccb9",
+                       "textRange":  {
+                                         "startLine":  1,
+                                         "endLine":  1,
+                                         "startOffset":  9,
+                                         "endOffset":  14
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove this unused import of \u0027query\u0027.",
+                       "effort":  "1min",
+                       "debt":  "1min",
+                       "author":  "dani.leao89@gmail.com",
+                       "tags":  [
+                                    "es2015",
+                                    "type-dependent",
+                                    "unused"
+                                ],
+                       "creationDate":  "2021-02-26T10:12:34-0300",
+                       "updateDate":  "2026-10-28T14:37:00-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "2da6bddf-fe28-4fa3-9cef-384d42ffe512",
+                       "rule":  "typescript:S7772",
+                       "severity":  "MINOR",
+                       "component":  "h9---NPS-NLW-da-Rocketseat:src/services/SendMailService.ts",
+                       "project":  "h9---NPS-NLW-da-Rocketseat",
+                       "line":  4,
+                       "hash":  "e6257dc4b1f21417043851734f5ab373",
+                       "textRange":  {
+                                         "startLine":  4,
+                                         "endLine":  4,
+                                         "startOffset":  15,
+                                         "endOffset":  19
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Prefer `node:fs` over `fs`.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "dani.leao89@gmail.com",
+                       "tags":  [
+                                    "convention",
+                                    "import",
+                                    "nodejs"
+                                ],
+                       "creationDate":  "2021-02-26T10:12:34-0300",
+                       "updateDate":  "2026-10-28T14:37:00-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   }
+               ],
+    "components":  [
+                       {
+                           "key":  "h9---NPS-NLW-da-Rocketseat:src/services/SendMailService.ts",
+                           "enabled":  true,
+                           "qualifier":  "FIL",
+                           "name":  "SendMailService.ts",
+                           "longName":  "src/services/SendMailService.ts",
+                           "path":  "src/services/SendMailService.ts"
+                       },
+                       {
+                           "key":  "h9---NPS-NLW-da-Rocketseat:src/database/index.ts",
+                           "enabled":  true,
+                           "qualifier":  "FIL",
+                           "name":  "index.ts",
+                           "longName":  "src/database/index.ts",
+                           "path":  "src/database/index.ts"
+                       },
+                       {
+                           "key":  "h9---NPS-NLW-da-Rocketseat:src/database/migrations/1614015788331-CreateSurveys.ts",
+                           "enabled":  true,
+                           "qualifier":  "FIL",
+                           "name":  "1614015788331-CreateSurveys.ts",
+                           "longName":  "src/database/migrations/1614015788331-CreateSurveys.ts",
+                           "path":  "src/database/migrations/1614015788331-CreateSurveys.ts"
+                       },
+                       {
+                           "key":  "h9---NPS-NLW-da-Rocketseat:src/app.ts",
+                           "enabled":  true,
+                           "qualifier":  "FIL",
+                           "name":  "app.ts",
+                           "longName":  "src/app.ts",
+                           "path":  "src/app.ts"
+                       },
+                       {
+                           "key":  "h9---NPS-NLW-da-Rocketseat",
+                           "enabled":  true,
+                           "qualifier":  "TRK",
+                           "name":  "h9 - NPS-NLW da Rocketseat",
+                           "longName":  "h9 - NPS-NLW da Rocketseat"
+                       },
+                       {
+                           "key":  "h9---NPS-NLW-da-Rocketseat:src/controllers/SendMailController.ts",
+                           "enabled":  true,
+                           "qualifier":  "FIL",
+                           "name":  "SendMailController.ts",
+                           "longName":  "src/controllers/SendMailController.ts",
+                           "path":  "src/controllers/SendMailController.ts"
+                       }
+                   ],
+    "facets":  [
+
+               ]
+}

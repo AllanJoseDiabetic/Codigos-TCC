@@ -1,0 +1,50 @@
+﻿{
+    "paging":  {
+                   "pageIndex":  1,
+                   "pageSize":  500,
+                   "total":  1
+               },
+    "hotspots":  [
+                     {
+                         "key":  "0a67dcf3-4201-4e09-ad37-cf745f9ef59f",
+                         "component":  "H4---Flask_Blog:flaskblog/__init__.py",
+                         "project":  "H4---Flask_Blog",
+                         "securityCategory":  "csrf",
+                         "vulnerabilityProbability":  "HIGH",
+                         "status":  "TO_REVIEW",
+                         "line":  18,
+                         "message":  "Make sure disabling CSRF protection is safe here.",
+                         "author":  "",
+                         "creationDate":  "2026-10-28T11:21:29-0300",
+                         "updateDate":  "2026-10-28T11:21:29-0300",
+                         "textRange":  {
+                                           "startLine":  18,
+                                           "endLine":  18,
+                                           "startOffset":  10,
+                                           "endOffset":  25
+                                       },
+                         "flows":  [
+
+                                   ],
+                         "ruleKey":  "python:S4502",
+                         "messageFormattings":  [
+
+                                                ]
+                     }
+                 ],
+    "components":  [
+                       {
+                           "key":  "H4---Flask_Blog:flaskblog/__init__.py",
+                           "qualifier":  "FIL",
+                           "name":  "__init__.py",
+                           "longName":  "flaskblog/__init__.py",
+                           "path":  "flaskblog/__init__.py"
+                       },
+                       {
+                           "key":  "H4---Flask_Blog",
+                           "qualifier":  "TRK",
+                           "name":  "H4 - Flask_Blog",
+                           "longName":  "H4 - Flask_Blog"
+                       }
+                   ]
+}

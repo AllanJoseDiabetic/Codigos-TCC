@@ -1,0 +1,10 @@
+﻿{
+    "humano":  {
+                   "resultado":  "EXECUTADO",
+                   "etapa":  "testes_concluidos"
+               },
+    "IA":  {
+               "resultado":  "EXECUTADO",
+               "etapa":  "testes_concluidos"
+           }
+}

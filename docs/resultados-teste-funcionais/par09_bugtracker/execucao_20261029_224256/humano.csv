@@ -1,0 +1,41 @@
+﻿projeto,teste,grupo,descricao,resultado,esperado,obtido,duracao_ms
+humano,T01,comum,Abrir pagina de login,PASS,Criterio funcional satisfeito,HTTP 200,49.6
+humano,T02,comum,Abrir formulario de cadastro,PASS,Criterio funcional satisfeito,HTTP 200,16.55
+humano,T03,comum,Rejeitar login incorreto,PASS,Criterio funcional satisfeito,HTTP 200; sessao nao autenticada,19.19
+humano,T04,comum,Autenticar com senha correta,PASS,Criterio funcional satisfeito,HTTP 302; sessao autenticada,17.53
+humano,T05,comum,Encerrar sessao,PASS,Criterio funcional satisfeito,HTTP 302; sessao encerrada,16.85
+humano,T06,comum,Rejeitar cadastro com senhas divergentes,PASS,Criterio funcional satisfeito,HTTP 200; usuario nao criado,15.94
+humano,T07,comum,Cadastrar usuario valido,PASS,Criterio funcional satisfeito,HTTP 302; cadastro persistido e autenticado,18.72
+humano,T08,comum,Rejeitar nome de usuario duplicado,PASS,Criterio funcional satisfeito,HTTP 200; duplicidade rejeitada,16.12
+humano,T09,robustez,Impedir acesso anonimo a lista de defeitos,FAIL,Criterio funcional satisfeito,AssertionError: Anonimo acessou lista (HTTP 200),16.44
+humano,T10,robustez,Impedir acesso anonimo a API de defeitos,FAIL,Criterio funcional satisfeito,IndexError: list index out of range,35.05
+humano,T11,robustez,Impedir acesso anonimo ao formulario de defeito,FAIL,Criterio funcional satisfeito,IndexError: list index out of range,22.5
+humano,T12,robustez,Impedir consulta anonima a detalhe de defeito,FAIL,Criterio funcional satisfeito,AssertionError: Anonimo consultou detalhe (HTTP 200),15.56
+humano,T13,robustez,Impedir encerramento anonimo de defeito,FAIL,Criterio funcional satisfeito,AssertionError: Anonimo encerrou o defeito,16.44
+humano,T14,comum,Abrir lista da organizacao autenticado,PASS,Criterio funcional satisfeito,HTTP 200,17.1
+humano,T15,comum,Abrir lista de defeitos atribuidos ao usuario,PASS,Criterio funcional satisfeito,HTTP 200,18.02
+humano,T16,comum,Abrir formulario de novo defeito,PASS,Criterio funcional satisfeito,HTTP 200,25.98
+humano,T17,comum,Criar defeito com dados validos e persistir,PASS,Criterio funcional satisfeito,HTTP 200; defeito_id=1,20.98
+humano,T18,comum,Abrir pagina de detalhe de defeito,PASS,Criterio funcional satisfeito,HTTP 200,17.43
+humano,T19,comum,Consultar dados do defeito por JSON,PASS,Criterio funcional satisfeito,HTTP 200; titulo correto,17.89
+humano,T20,comum,Listagem da organizacao contem defeito,PASS,Criterio funcional satisfeito,Defeito da organizacao encontrado,41.43
+humano,T21,comum,Listagem pessoal contem defeito atribuido,PASS,Criterio funcional satisfeito,Defeito atribuido encontrado,16.94
+humano,T22,comum,Listagem pessoal omite defeito de outro responsavel,PASS,Criterio funcional satisfeito,Defeito nao atribuido omitido,17.31
+humano,T23,comum,Contagem de defeitos da organizacao,PASS,Criterio funcional satisfeito,Contagem da organizacao=2,18.21
+humano,T24,comum,Contagem pessoal de defeitos,PASS,Criterio funcional satisfeito,Contagem pessoal=1,18.15
+humano,T25,comum,Abrir formulario de edicao de defeito,PASS,Criterio funcional satisfeito,HTTP 200,23.95
+humano,T26,comum,Editar e persistir defeito,PASS,Criterio funcional satisfeito,HTTP 200; titulo atualizado,24.19
+humano,T27,robustez,Rejeitar defeito sem titulo,PASS,Criterio funcional satisfeito,HTTP 200; nenhum defeito criado,24.19
+humano,T28,robustez,Rejeitar defeito sem descricao,PASS,Criterio funcional satisfeito,HTTP 200; nenhum defeito criado,20.88
+humano,T29,robustez,Rejeitar estimativa negativa,FAIL,Criterio funcional satisfeito,IntegrityError: CHECK constraint failed: bugtracker_bug,36.03
+humano,T30,robustez,Impedir atribuicao a usuario de outra organizacao,FAIL,Criterio funcional satisfeito,AssertionError: Responsavel de outra organizacao aceito (HTTP 200),20.04
+humano,T31,robustez,Isolar lista JSON entre organizacoes,PASS,Criterio funcional satisfeito,Nenhum defeito da outra organizacao divulgado,18.06
+humano,T32,robustez,Negar detalhe JSON de outra organizacao,FAIL,Criterio funcional satisfeito,AssertionError: Detalhe externo divulgado (HTTP 200),17.77
+humano,T33,robustez,Negar edicao de outra organizacao,FAIL,Criterio funcional satisfeito,AssertionError: Edicao de organizacao externa acessivel (HTTP 200),20.54
+humano,T34,robustez,Negar encerramento de outra organizacao,FAIL,Criterio funcional satisfeito,AssertionError: Defeito de outra organizacao foi encerrado,16.82
+humano,T35,comum,Encerrar defeito e persistir estado inativo,PASS,Criterio funcional satisfeito,HTTP 200; active=False,16.97
+humano,T36,comum,Nao listar como ativo defeito concluido,PASS,Criterio funcional satisfeito,Defeito concluido nao aparece ativo,17.78
+humano,T37,robustez,Retornar 404 para detalhe JSON inexistente,FAIL,Criterio funcional satisfeito,IndexError: list index out of range,23.08
+humano,T38,robustez,Retornar 404 para edicao inexistente,FAIL,Criterio funcional satisfeito,IndexError: list index out of range,37.31
+humano,T39,robustez,Retornar 404 para encerramento inexistente,FAIL,Criterio funcional satisfeito,IndexError: list index out of range,22.94
+humano,T40,robustez,GET nao pode encerrar defeito (sem efeito colateral),FAIL,Criterio funcional satisfeito,AssertionError: GET encerrou defeito; efeito colateral em operacao de leitura,15.75

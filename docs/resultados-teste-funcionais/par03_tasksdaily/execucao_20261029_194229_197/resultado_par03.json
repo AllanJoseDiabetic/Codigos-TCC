@@ -1,0 +1,530 @@
+﻿{
+    "total":  58,
+    "execucao":  "20261029_194229_197",
+    "resultados":  [
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T01",
+                           "descricao":  "Abrir pagina inicial sem sessao",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP 200",
+                           "obtido":  "HTTP 200",
+                           "duracao_ms":  253.35
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T02",
+                           "descricao":  "Abrir formulario de cadastro",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP 200",
+                           "obtido":  "HTTP 200",
+                           "duracao_ms":  5.49
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T03",
+                           "descricao":  "Abrir formulario de login",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP 200",
+                           "obtido":  "HTTP 200",
+                           "duracao_ms":  3.91
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T04",
+                           "descricao":  "Negar consulta anonima as tarefas",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP nao 200 (sem acesso)",
+                           "obtido":  "HTTP 302 sem sessao",
+                           "duracao_ms":  1.13
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T05",
+                           "descricao":  "Negar cadastro anonimo de tarefa",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP nao 200 (sem acesso)",
+                           "obtido":  "HTTP 302 sem sessao",
+                           "duracao_ms":  1.4
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T06",
+                           "descricao":  "Negar consulta anonima ao registro diario",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP nao 200 (sem acesso)",
+                           "obtido":  "HTTP 302 sem sessao",
+                           "duracao_ms":  1.31
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T07",
+                           "descricao":  "Negar consulta anonima ao progresso",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP nao 200 (sem acesso)",
+                           "obtido":  "HTTP 302 sem sessao",
+                           "duracao_ms":  1.58
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T08",
+                           "descricao":  "Negar consulta anonima de fuso horario",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP nao 200 (sem acesso)",
+                           "obtido":  "HTTP 302 sem sessao",
+                           "duracao_ms":  1.42
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T09",
+                           "descricao":  "Rejeitar cadastro com email invalido",
+                           "resultado":  "PASS",
+                           "esperado":  "Nenhum usuario novo no banco",
+                           "obtido":  "HTTP 302; usuarios=0 antes/depois",
+                           "duracao_ms":  3.84
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T10",
+                           "descricao":  "Cadastrar usuario valido e persistir",
+                           "resultado":  "PASS",
+                           "esperado":  "Usuario criado no banco",
+                           "obtido":  "HTTP 302; usuario_id=1",
+                           "duracao_ms":  373.44
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T11",
+                           "descricao":  "Rejeitar usuario duplicado",
+                           "resultado":  "PASS",
+                           "esperado":  "Nenhum usuario duplicado criado",
+                           "obtido":  "HTTP 302; contagem de usuarios constante (1)",
+                           "duracao_ms":  6.6
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T12",
+                           "descricao":  "Rejeitar login com senha incorreta",
+                           "resultado":  "PASS",
+                           "esperado":  "Nao autenticar",
+                           "obtido":  "login HTTP 302; overview HTTP 302",
+                           "duracao_ms":  173.58
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T13",
+                           "descricao":  "Login valido permite acesso autenticado",
+                           "resultado":  "PASS",
+                           "esperado":  "Acesso ao overview HTTP 200",
+                           "obtido":  "login HTTP 302; overview HTTP 200",
+                           "duracao_ms":  202.69
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T14",
+                           "descricao":  "Abrir panorama de tarefas autenticado",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP 200",
+                           "obtido":  "HTTP 200",
+                           "duracao_ms":  8.13
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T15",
+                           "descricao":  "Criar categoria e tarefa valida para todos os dias",
+                           "resultado":  "PASS",
+                           "esperado":  "Categoria e tarefa vinculadas e persistidas",
+                           "obtido":  "HTTP 302; categoria_id=1; tarefa_id=1",
+                           "duracao_ms":  50.51
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T16",
+                           "descricao":  "Listar tarefa criada no panorama",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP 200 e nome visivel",
+                           "obtido":  "HTTP 200; nome da tarefa presente no HTML",
+                           "duracao_ms":  25.83
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T17",
+                           "descricao":  "Rejeitar tarefa sem dias da semana",
+                           "resultado":  "PASS",
+                           "esperado":  "Banco sem nova tarefa",
+                           "obtido":  "HTTP 302; tarefa rejeitada",
+                           "duracao_ms":  12.71
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T18",
+                           "descricao":  "Abrir registro diario autenticado",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP 200",
+                           "obtido":  "HTTP 200",
+                           "duracao_ms":  21.2
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T19",
+                           "descricao":  "Gerar registro de tarefa para o dia",
+                           "resultado":  "PASS",
+                           "esperado":  "Registro associado a tarefa no banco",
+                           "obtido":  "Log id=1, data=2026-10-29",
+                           "duracao_ms":  2.69
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T20",
+                           "descricao":  "Marcar tarefa como concluida no registro diario",
+                           "resultado":  "PASS",
+                           "esperado":  "Status salvo como completo",
+                           "obtido":  "HTTP 302; status=1",
+                           "duracao_ms":  8.93
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T21",
+                           "descricao":  "Abrir visao semanal",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP 200",
+                           "obtido":  "HTTP 200",
+                           "duracao_ms":  38.71
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T22",
+                           "descricao":  "Abrir historico de meses",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP 200",
+                           "obtido":  "HTTP 200",
+                           "duracao_ms":  10.57
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T23",
+                           "descricao":  "Abrir visao mensal do mes atual",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP 200",
+                           "obtido":  "HTTP 200 em /log/monthly/2026/10",
+                           "duracao_ms":  57.55
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T24",
+                           "descricao":  "Abrir pagina de progresso",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP 200",
+                           "obtido":  "HTTP 200",
+                           "duracao_ms":  6.36
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T25",
+                           "descricao":  "Abrir configuracao de fuso horario",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP 200",
+                           "obtido":  "HTTP 200",
+                           "duracao_ms":  3858.35
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T26",
+                           "descricao":  "Atualizar fuso horario do usuario",
+                           "resultado":  "PASS",
+                           "esperado":  "America/Sao_Paulo persistido",
+                           "obtido":  "HTTP 302; timezone=America/Sao_Paulo",
+                           "duracao_ms":  4.29
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T27",
+                           "descricao":  "Bloquear acesso de outro usuario a exclusao",
+                           "resultado":  "PASS",
+                           "esperado":  "Nao divulgar tarefa nem excluir",
+                           "obtido":  "GET /tasks/delete/task/1 -\u003e HTTP 302; tarefa preservada",
+                           "duracao_ms":  86.84
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T28",
+                           "descricao":  "Excluir propria tarefa e confirmar remocao",
+                           "resultado":  "PASS",
+                           "esperado":  "Tarefa nao existe mais",
+                           "obtido":  "HTTP 302; tarefa removida do banco",
+                           "duracao_ms":  5.93
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T29",
+                           "descricao":  "Encerrar sessao e bloquear panorama",
+                           "resultado":  "PASS",
+                           "esperado":  "Sessao encerrada; overview negado",
+                           "obtido":  "logout HTTP 302; overview anonimo HTTP 302",
+                           "duracao_ms":  2.84
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T01",
+                           "descricao":  "Abrir pagina inicial sem sessao",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP 200",
+                           "obtido":  "HTTP 200",
+                           "duracao_ms":  2205.08
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T02",
+                           "descricao":  "Abrir formulario de cadastro",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP 200",
+                           "obtido":  "HTTP 200",
+                           "duracao_ms":  6.15
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T03",
+                           "descricao":  "Abrir formulario de login",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP 200",
+                           "obtido":  "HTTP 200",
+                           "duracao_ms":  2.16
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T04",
+                           "descricao":  "Negar consulta anonima as tarefas",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP nao 200 (sem acesso)",
+                           "obtido":  "HTTP 302 sem sessao",
+                           "duracao_ms":  3.84
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T05",
+                           "descricao":  "Negar cadastro anonimo de tarefa",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP nao 200 (sem acesso)",
+                           "obtido":  "HTTP 302 sem sessao",
+                           "duracao_ms":  0.57
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T06",
+                           "descricao":  "Negar consulta anonima ao registro diario",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP nao 200 (sem acesso)",
+                           "obtido":  "HTTP 302 sem sessao",
+                           "duracao_ms":  0.39
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T07",
+                           "descricao":  "Negar consulta anonima ao progresso",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP nao 200 (sem acesso)",
+                           "obtido":  "HTTP 302 sem sessao",
+                           "duracao_ms":  0.4
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T08",
+                           "descricao":  "Negar consulta anonima de fuso horario",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP nao 200 (sem acesso)",
+                           "obtido":  "HTTP 302 sem sessao",
+                           "duracao_ms":  0.37
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T09",
+                           "descricao":  "Rejeitar cadastro com email invalido",
+                           "resultado":  "PASS",
+                           "esperado":  "Nenhum usuario novo no banco",
+                           "obtido":  "HTTP 200; usuarios=0 antes/depois",
+                           "duracao_ms":  3.7
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T10",
+                           "descricao":  "Cadastrar usuario valido e persistir",
+                           "resultado":  "PASS",
+                           "esperado":  "Usuario criado no banco",
+                           "obtido":  "HTTP 302; usuario_id=1",
+                           "duracao_ms":  58.98
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T11",
+                           "descricao":  "Rejeitar usuario duplicado",
+                           "resultado":  "PASS",
+                           "esperado":  "Nenhum usuario duplicado criado",
+                           "obtido":  "HTTP 200; contagem de usuarios constante (1)",
+                           "duracao_ms":  3.93
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T12",
+                           "descricao":  "Rejeitar login com senha incorreta",
+                           "resultado":  "PASS",
+                           "esperado":  "Nao autenticar",
+                           "obtido":  "login HTTP 200; overview HTTP 302",
+                           "duracao_ms":  57.2
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T13",
+                           "descricao":  "Login valido permite acesso autenticado",
+                           "resultado":  "PASS",
+                           "esperado":  "Acesso ao overview HTTP 200",
+                           "obtido":  "login HTTP 302; overview HTTP 200",
+                           "duracao_ms":  62.02
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T14",
+                           "descricao":  "Abrir panorama de tarefas autenticado",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP 200",
+                           "obtido":  "HTTP 200",
+                           "duracao_ms":  2.44
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T15",
+                           "descricao":  "Criar categoria e tarefa valida para todos os dias",
+                           "resultado":  "PASS",
+                           "esperado":  "Categoria e tarefa vinculadas e persistidas",
+                           "obtido":  "HTTP 302; categoria_id=1; tarefa_id=1",
+                           "duracao_ms":  6.96
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T16",
+                           "descricao":  "Listar tarefa criada no panorama",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP 200 e nome visivel",
+                           "obtido":  "HTTP 200; nome da tarefa presente no HTML",
+                           "duracao_ms":  5.04
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T17",
+                           "descricao":  "Rejeitar tarefa sem dias da semana",
+                           "resultado":  "PASS",
+                           "esperado":  "Banco sem nova tarefa",
+                           "obtido":  "HTTP 200; tarefa rejeitada",
+                           "duracao_ms":  8.69
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T18",
+                           "descricao":  "Abrir registro diario autenticado",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP 200",
+                           "obtido":  "HTTP 200",
+                           "duracao_ms":  9.74
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T19",
+                           "descricao":  "Gerar registro de tarefa para o dia",
+                           "resultado":  "PASS",
+                           "esperado":  "Registro associado a tarefa no banco",
+                           "obtido":  "Log id=1, data=2026-10-29",
+                           "duracao_ms":  0.88
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T20",
+                           "descricao":  "Marcar tarefa como concluida no registro diario",
+                           "resultado":  "PASS",
+                           "esperado":  "Status salvo como completo",
+                           "obtido":  "HTTP 302; status=Complete",
+                           "duracao_ms":  6.56
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T21",
+                           "descricao":  "Abrir visao semanal",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP 200",
+                           "obtido":  "HTTP 200",
+                           "duracao_ms":  10.3
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T22",
+                           "descricao":  "Abrir historico de meses",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP 200",
+                           "obtido":  "HTTP 200",
+                           "duracao_ms":  4.68
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T23",
+                           "descricao":  "Abrir visao mensal do mes atual",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP 200",
+                           "obtido":  "HTTP 200 em /log/monthly/2026/10",
+                           "duracao_ms":  8.95
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T24",
+                           "descricao":  "Abrir pagina de progresso",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP 200",
+                           "obtido":  "HTTP 200",
+                           "duracao_ms":  5.77
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T25",
+                           "descricao":  "Abrir configuracao de fuso horario",
+                           "resultado":  "PASS",
+                           "esperado":  "HTTP 200",
+                           "obtido":  "HTTP 200",
+                           "duracao_ms":  24.59
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T26",
+                           "descricao":  "Atualizar fuso horario do usuario",
+                           "resultado":  "PASS",
+                           "esperado":  "America/Sao_Paulo persistido",
+                           "obtido":  "HTTP 302; timezone=America/Sao_Paulo",
+                           "duracao_ms":  4.47
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T27",
+                           "descricao":  "Bloquear acesso de outro usuario a exclusao",
+                           "resultado":  "PASS",
+                           "esperado":  "Nao divulgar tarefa nem excluir",
+                           "obtido":  "GET /tasks/delete/task/1 -\u003e HTTP 404; tarefa preservada",
+                           "duracao_ms":  64.04
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T28",
+                           "descricao":  "Excluir propria tarefa e confirmar remocao",
+                           "resultado":  "PASS",
+                           "esperado":  "Tarefa nao existe mais",
+                           "obtido":  "HTTP 302; tarefa removida do banco",
+                           "duracao_ms":  3.18
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T29",
+                           "descricao":  "Encerrar sessao e bloquear panorama",
+                           "resultado":  "PASS",
+                           "esperado":  "Sessao encerrada; overview negado",
+                           "obtido":  "logout HTTP 302; overview anonimo HTTP 302",
+                           "duracao_ms":  2.5
+                       }
+                   ],
+    "par":  "par03_tasksdaily",
+    "origem":  "testes externos"
+}

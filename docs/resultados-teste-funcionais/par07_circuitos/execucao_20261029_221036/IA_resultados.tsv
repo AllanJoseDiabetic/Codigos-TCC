@@ -1,0 +1,37 @@
+teste	descricao	resultado	esperado	obtido	duracao_ms
+T01	Saida inicial desenergizada	PASS	false	false	1.09
+T02	Fonte de nivel alto	PASS	true	true	0.26
+T03	AND 00	PASS	False	False	0.74
+T04	AND 01	PASS	False	False	0.13
+T05	AND 10	PASS	False	False	0.00
+T06	AND 11	PASS	True	True	0.00
+T07	OR 00	PASS	False	False	0.08
+T08	OR 01	PASS	True	True	0.00
+T09	OR 10	PASS	True	True	0.00
+T10	OR 11	PASS	True	True	0.00
+T11	NOT 0	PASS	true	True	0.17
+T12	NOT 1	PASS	false	False	0.05
+T13	Juncao 0	PASS	false	False	0.12
+T14	Juncao 1	PASS	true	True	0.04
+T15	LED desligado	PASS	false	False	0.11
+T16	LED ligado	PASS	true	True	0.04
+T17	Clock estado inicial	PASS	false	false	0.09
+T18	Clock primeiro pulso	PASS	true	true	2.82
+T19	Clock segundo pulso	PASS	false	false	0.10
+T20	Flip-flop D inicia zero	PASS	false	false	0.12
+T21	Flip-flop D captura 1 na borda	PASS	true	true	0.12
+T22	Flip-flop D mantem estado sem nova borda	PASS	true	true	0.05
+T23	Flip-flop D captura 0 na borda seguinte	PASS	false	false	0.05
+T24	Flip-flop JK inicia zero	PASS	false	false	0.24
+T25	Flip-flop JK alterna com J=K=1	PASS	true	true	0.10
+T26	Flip-flop JK zera com J=0 K=1	PASS	false	false	0.10
+T27	Flip-flop JK seta com J=1 K=0	PASS	true	true	0.06
+T28	Flip-flop JK mantem com J=K=0	PASS	true	true	0.05
+T29	Visor 8 bits zero	PASS	0	0	0.38
+T30	Visor 8 bits valor 3	PASS	3	3	0.09
+T31	Visor 8 bits valor 165	PASS	165	165	0.06
+T32	Interruptor alterna para ligado	PASS	true	True	0.12
+T33	Interruptor alterna de volta para desligado	PASS	false	False	0.04
+T34	LED responde a mudanca dinamica	PASS	0->1->0	0->1->0	0.10
+T35	Entrada nao conectada em nivel baixo	PASS	false	false	0.06
+T36	NOT acompanha mudancas sucessivas	PASS	1->0->1	1->0->1	0.11

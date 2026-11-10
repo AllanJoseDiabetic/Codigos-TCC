@@ -1,0 +1,1592 @@
+﻿{
+    "issues":  [
+                   {
+                       "key":  "2229e7f2-633a-4f1d-94ae-87c59c51c153",
+                       "rule":  "python:S1192",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---habitlog:tracker/forms.py",
+                       "project":  "IA---habitlog",
+                       "line":  30,
+                       "hash":  "ae4ce8e2b7a68d419ae748d02262fbb6",
+                       "textRange":  {
+                                         "startLine":  30,
+                                         "endLine":  30,
+                                         "startOffset":  14,
+                                         "endOffset":  31
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---habitlog:tracker/forms.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  132,
+                                                                                 "endLine":  132,
+                                                                                 "startOffset":  14,
+                                                                                 "endOffset":  31
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---habitlog:tracker/forms.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  153,
+                                                                                 "endLine":  153,
+                                                                                 "startOffset":  24,
+                                                                                 "endOffset":  41
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Define a constant instead of duplicating this literal \"Nome de usuÃ¡rio\" 3 times.",
+                       "effort":  "6min",
+                       "debt":  "6min",
+                       "author":  "",
+                       "tags":  [
+                                    "design"
+                                ],
+                       "creationDate":  "2026-10-28T21:28:11-0300",
+                       "updateDate":  "2026-10-28T21:28:11-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "DISTINCT",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "553d099d-982e-4adc-868f-b17ef0ce1c86",
+                       "rule":  "python:S1481",
+                       "severity":  "MINOR",
+                       "component":  "IA---habitlog:tracker/services.py",
+                       "project":  "IA---habitlog",
+                       "line":  17,
+                       "hash":  "46999ae082ee215330f5b12267edc0ab",
+                       "textRange":  {
+                                         "startLine":  17,
+                                         "endLine":  17,
+                                         "startOffset":  13,
+                                         "endOffset":  20
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Replace the unused local variable \"created\" with \"_\".",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "unused"
+                                ],
+                       "creationDate":  "2026-10-28T21:28:11-0300",
+                       "updateDate":  "2026-10-28T21:28:11-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "b52acac9-e740-4921-84f9-eeb5cb50f182",
+                       "rule":  "python:S3776",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---habitlog:tracker/services.py",
+                       "project":  "IA---habitlog",
+                       "line":  72,
+                       "hash":  "5279d567f80ebb78c8cc2e0afcdc1d62",
+                       "textRange":  {
+                                         "startLine":  72,
+                                         "endLine":  72,
+                                         "startOffset":  4,
+                                         "endOffset":  20
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---habitlog:tracker/services.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  75,
+                                                                                 "endLine":  75,
+                                                                                 "startOffset":  4,
+                                                                                 "endOffset":  6
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---habitlog:tracker/services.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  83,
+                                                                                 "endLine":  83,
+                                                                                 "startOffset":  4,
+                                                                                 "endOffset":  6
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---habitlog:tracker/services.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  103,
+                                                                                 "endLine":  103,
+                                                                                 "startOffset":  4,
+                                                                                 "endOffset":  7
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---habitlog:tracker/services.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  111,
+                                                                                 "endLine":  111,
+                                                                                 "startOffset":  8,
+                                                                                 "endOffset":  10
+                                                                             },
+                                                               "msg":  "+2 (incl 1 for nesting)",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---habitlog:tracker/services.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  117,
+                                                                                 "endLine":  117,
+                                                                                 "startOffset":  8,
+                                                                                 "endOffset":  10
+                                                                             },
+                                                               "msg":  "+2 (incl 1 for nesting)",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---habitlog:tracker/services.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  126,
+                                                                                 "endLine":  126,
+                                                                                 "startOffset":  8,
+                                                                                 "endOffset":  13
+                                                                             },
+                                                               "msg":  "+2 (incl 1 for nesting)",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---habitlog:tracker/services.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  127,
+                                                                                 "endLine":  127,
+                                                                                 "startOffset":  12,
+                                                                                 "endOffset":  14
+                                                                             },
+                                                               "msg":  "+3 (incl 2 for nesting)",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---habitlog:tracker/services.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  133,
+                                                                                 "endLine":  133,
+                                                                                 "startOffset":  16,
+                                                                                 "endOffset":  18
+                                                                             },
+                                                               "msg":  "+4 (incl 3 for nesting)",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---habitlog:tracker/services.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  148,
+                                                                                 "endLine":  148,
+                                                                                 "startOffset":  8,
+                                                                                 "endOffset":  10
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Refactor this function to reduce its Cognitive Complexity from 17 to the 15 allowed.",
+                       "effort":  "7min",
+                       "debt":  "7min",
+                       "author":  "",
+                       "tags":  [
+                                    "brain-overload"
+                                ],
+                       "creationDate":  "2026-10-28T21:28:11-0300",
+                       "updateDate":  "2026-10-28T21:28:11-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "FOCUSED",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "12bfc88a-80df-4a35-971e-b4c5ff782558",
+                       "rule":  "Web:S5725",
+                       "severity":  "MINOR",
+                       "component":  "IA---habitlog:tracker/templates/tracker/base.html",
+                       "project":  "IA---habitlog",
+                       "line":  20,
+                       "hash":  "d3a849324710a64d959776e31e34fd6d",
+                       "textRange":  {
+                                         "startLine":  20,
+                                         "endLine":  23,
+                                         "startOffset":  4,
+                                         "endOffset":  5
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make sure not using resource integrity feature is safe here.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T21:28:11-0300",
+                       "updateDate":  "2026-10-28T21:28:11-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "5afdb8b6-babf-4bb9-9197-bc35b76cf762",
+                       "rule":  "Web:S6819",
+                       "severity":  "MAJOR",
+                       "component":  "IA---habitlog:tracker/templates/tracker/base.html",
+                       "project":  "IA---habitlog",
+                       "line":  129,
+                       "hash":  "2518e8d779a92f826f3c8b7a1c062913",
+                       "textRange":  {
+                                         "startLine":  129,
+                                         "endLine":  137,
+                                         "startOffset":  24,
+                                         "endOffset":  25
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Use \u003cbutton\u003e or \u003cinput\u003e instead of the button role to ensure accessibility across all devices.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "accessibility"
+                                ],
+                       "creationDate":  "2026-10-28T21:28:11-0300",
+                       "updateDate":  "2026-10-28T21:28:11-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "af244382-9f40-4cf6-ab16-90a9f80f0595",
+                       "rule":  "Web:MouseEventWithoutKeyboardEquivalentCheck",
+                       "severity":  "MINOR",
+                       "component":  "IA---habitlog:tracker/templates/tracker/base.html",
+                       "project":  "IA---habitlog",
+                       "line":  129,
+                       "hash":  "2518e8d779a92f826f3c8b7a1c062913",
+                       "textRange":  {
+                                         "startLine":  129,
+                                         "endLine":  137,
+                                         "startOffset":  24,
+                                         "endOffset":  25
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Add a \u0027onKeyPress|onKeyDown|onKeyUp\u0027 attribute to this \u003ca\u003e tag.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "accessibility"
+                                ],
+                       "creationDate":  "2026-10-28T21:28:11-0300",
+                       "updateDate":  "2026-10-28T21:28:11-0300",
+                       "type":  "BUG",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "06f15ce3-7806-4194-b1d7-91c172acac22",
+                       "rule":  "Web:S5725",
+                       "severity":  "MINOR",
+                       "component":  "IA---habitlog:tracker/templates/tracker/base.html",
+                       "project":  "IA---habitlog",
+                       "line":  266,
+                       "hash":  "3ea69e760752e290f4c8e2a3e37707a9",
+                       "textRange":  {
+                                         "startLine":  266,
+                                         "endLine":  266,
+                                         "startOffset":  0,
+                                         "endOffset":  63
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make sure not using resource integrity feature is safe here.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T21:28:11-0300",
+                       "updateDate":  "2026-10-28T21:28:11-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "3b47fea7-7399-40d0-b4ec-d5060357738f",
+                       "rule":  "Web:S5725",
+                       "severity":  "MINOR",
+                       "component":  "IA---habitlog:tracker/templates/tracker/base.html",
+                       "project":  "IA---habitlog",
+                       "line":  268,
+                       "hash":  "0bcddba4cb46a90ae9ae84bb4e625aaa",
+                       "textRange":  {
+                                         "startLine":  268,
+                                         "endLine":  268,
+                                         "startOffset":  0,
+                                         "endOffset":  83
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make sure not using resource integrity feature is safe here.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T21:28:11-0300",
+                       "updateDate":  "2026-10-28T21:28:11-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "36748a16-153f-442f-aef4-1a3e6b14653c",
+                       "rule":  "Web:S5725",
+                       "severity":  "MINOR",
+                       "component":  "IA---habitlog:tracker/templates/tracker/base.html",
+                       "project":  "IA---habitlog",
+                       "line":  270,
+                       "hash":  "66ec267760e2f6e66549117474e9830f",
+                       "textRange":  {
+                                         "startLine":  270,
+                                         "endLine":  270,
+                                         "startOffset":  0,
+                                         "endOffset":  85
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make sure not using resource integrity feature is safe here.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T21:28:11-0300",
+                       "updateDate":  "2026-10-28T21:28:11-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "eae9aea3-648b-429b-a72e-c9cdd4a20c01",
+                       "rule":  "Web:S6819",
+                       "severity":  "MAJOR",
+                       "component":  "IA---habitlog:tracker/templates/tracker/progress.html",
+                       "project":  "IA---habitlog",
+                       "line":  22,
+                       "hash":  "d90c26198ff23a5c54f81269ceed5c01",
+                       "textRange":  {
+                                         "startLine":  22,
+                                         "endLine":  27,
+                                         "startOffset":  8,
+                                         "endOffset":  9
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Use \u003cimg\u003e or \u003csvg\u003e instead of the img role to ensure accessibility across all devices.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "accessibility"
+                                ],
+                       "creationDate":  "2026-10-28T21:28:11-0300",
+                       "updateDate":  "2026-10-28T21:28:11-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "931c2cee-5211-4fc0-87c6-8ad50e190769",
+                       "rule":  "Web:S5725",
+                       "severity":  "MINOR",
+                       "component":  "IA---habitlog:tracker/templates/tracker/progress.html",
+                       "project":  "IA---habitlog",
+                       "line":  100,
+                       "hash":  "abbe58bade17c50f8cb53f78e4772bde",
+                       "textRange":  {
+                                         "startLine":  100,
+                                         "endLine":  100,
+                                         "startOffset":  4,
+                                         "endOffset":  59
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make sure not using resource integrity feature is safe here.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T21:28:11-0300",
+                       "updateDate":  "2026-10-28T21:28:11-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "d8312530-76a6-4a75-8e18-9558806c1637",
+                       "rule":  "javascript:S7764",
+                       "severity":  "MINOR",
+                       "component":  "IA---habitlog:tracker/templates/tracker/progress.html",
+                       "project":  "IA---habitlog",
+                       "line":  122,
+                       "hash":  "ffda7fca417f9a003265219ecbad39ee",
+                       "textRange":  {
+                                         "startLine":  122,
+                                         "endLine":  122,
+                                         "startOffset":  17,
+                                         "endOffset":  23
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Prefer `globalThis` over `window`.",
+                       "effort":  "2min",
+                       "debt":  "2min",
+                       "author":  "",
+                       "tags":  [
+                                    "portability",
+                                    "es2020"
+                                ],
+                       "creationDate":  "2026-10-28T21:28:11-0300",
+                       "updateDate":  "2026-10-28T21:28:11-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  true,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "ec04d7cc-9ead-4196-a594-a52917e49d3d",
+                       "rule":  "Web:S6853",
+                       "severity":  "MAJOR",
+                       "component":  "IA---habitlog:tracker/templates/tracker/task_form.html",
+                       "project":  "IA---habitlog",
+                       "line":  69,
+                       "hash":  "b517c9220fba83eaff08ab394bec3d27",
+                       "textRange":  {
+                                         "startLine":  69,
+                                         "endLine":  69,
+                                         "startOffset":  20,
+                                         "endOffset":  50
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "A form label must be associated with a control and have accessible text.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "accessibility"
+                                ],
+                       "creationDate":  "2026-10-28T21:28:11-0300",
+                       "updateDate":  "2026-10-28T21:28:11-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "LOGICAL",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "f40a1caf-4d27-4008-b392-33d27c9b9af7",
+                       "rule":  "python:S3752",
+                       "severity":  "MINOR",
+                       "component":  "IA---habitlog:tracker/views.py",
+                       "project":  "IA---habitlog",
+                       "line":  78,
+                       "hash":  "3e084c810410fdc515bf8ab63c6d90c1",
+                       "textRange":  {
+                                         "startLine":  78,
+                                         "endLine":  78,
+                                         "startOffset":  4,
+                                         "endOffset":  11
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Explicitly specify the HTTP methods this endpoint accepts.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "django",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T21:28:11-0300",
+                       "updateDate":  "2026-10-28T21:28:11-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "7fd56211-baf4-49bc-80e2-48da13362bf0",
+                       "rule":  "python:S1192",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---habitlog:tracker/views.py",
+                       "project":  "IA---habitlog",
+                       "line":  81,
+                       "hash":  "6d1bfda6459f54ebc12cda9fa4f9ac31",
+                       "textRange":  {
+                                         "startLine":  81,
+                                         "endLine":  81,
+                                         "startOffset":  12,
+                                         "endOffset":  30
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---habitlog:tracker/views.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  100,
+                                                                                 "endLine":  100,
+                                                                                 "startOffset":  12,
+                                                                                 "endOffset":  30
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---habitlog:tracker/views.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  145,
+                                                                                 "endLine":  145,
+                                                                                 "startOffset":  12,
+                                                                                 "endOffset":  30
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---habitlog:tracker/views.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  179,
+                                                                                 "endLine":  179,
+                                                                                 "startOffset":  12,
+                                                                                 "endOffset":  30
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---habitlog:tracker/views.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  247,
+                                                                                 "endLine":  247,
+                                                                                 "startOffset":  12,
+                                                                                 "endOffset":  30
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---habitlog:tracker/views.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  292,
+                                                                                 "endLine":  292,
+                                                                                 "startOffset":  12,
+                                                                                 "endOffset":  30
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---habitlog:tracker/views.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  322,
+                                                                                 "endLine":  322,
+                                                                                 "startOffset":  12,
+                                                                                 "endOffset":  30
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---habitlog:tracker/views.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  392,
+                                                                                 "endLine":  392,
+                                                                                 "startOffset":  12,
+                                                                                 "endOffset":  30
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---habitlog:tracker/views.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  464,
+                                                                                 "endLine":  464,
+                                                                                 "startOffset":  12,
+                                                                                 "endOffset":  30
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---habitlog:tracker/views.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  494,
+                                                                                 "endLine":  494,
+                                                                                 "startOffset":  12,
+                                                                                 "endOffset":  30
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Define a constant instead of duplicating this literal \"tracker:overview\" 10 times.",
+                       "effort":  "20min",
+                       "debt":  "20min",
+                       "author":  "",
+                       "tags":  [
+                                    "design"
+                                ],
+                       "creationDate":  "2026-10-28T21:28:11-0300",
+                       "updateDate":  "2026-10-28T21:28:11-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "DISTINCT",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "a27a1722-5210-41c0-a985-10c029018b09",
+                       "rule":  "python:S3752",
+                       "severity":  "MINOR",
+                       "component":  "IA---habitlog:tracker/views.py",
+                       "project":  "IA---habitlog",
+                       "line":  90,
+                       "hash":  "1b8c3dc4c2448ebe094f1e095b3dbdbd",
+                       "textRange":  {
+                                         "startLine":  90,
+                                         "endLine":  90,
+                                         "startOffset":  4,
+                                         "endOffset":  9
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Explicitly specify the HTTP methods this endpoint accepts.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "django",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T21:28:11-0300",
+                       "updateDate":  "2026-10-28T21:28:11-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "251c95d0-06c7-4cea-b92e-44bfbbe4e5b4",
+                       "rule":  "python:S3752",
+                       "severity":  "MINOR",
+                       "component":  "IA---habitlog:tracker/views.py",
+                       "project":  "IA---habitlog",
+                       "line":  212,
+                       "hash":  "8b07d19eb50b02acf94d85774155b01c",
+                       "textRange":  {
+                                         "startLine":  212,
+                                         "endLine":  212,
+                                         "startOffset":  4,
+                                         "endOffset":  12
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Explicitly specify the HTTP methods this endpoint accepts.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "django",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T21:28:11-0300",
+                       "updateDate":  "2026-10-28T21:28:11-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "c3845da9-aaeb-4f79-a89c-ddb7632f9fed",
+                       "rule":  "python:S1192",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---habitlog:tracker/views.py",
+                       "project":  "IA---habitlog",
+                       "line":  327,
+                       "hash":  "c7c21e4ff3fc12a4b455ef709345410b",
+                       "textRange":  {
+                                         "startLine":  327,
+                                         "endLine":  327,
+                                         "startOffset":  8,
+                                         "endOffset":  37
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---habitlog:tracker/views.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  499,
+                                                                                 "endLine":  499,
+                                                                                 "startOffset":  8,
+                                                                                 "endOffset":  37
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---habitlog:tracker/views.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  729,
+                                                                                 "endLine":  729,
+                                                                                 "startOffset":  12,
+                                                                                 "endOffset":  41
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Define a constant instead of duplicating this literal \"tracker/confirm_delete.html\" 3 times.",
+                       "effort":  "6min",
+                       "debt":  "6min",
+                       "author":  "",
+                       "tags":  [
+                                    "design"
+                                ],
+                       "creationDate":  "2026-10-28T21:28:11-0300",
+                       "updateDate":  "2026-10-28T21:28:11-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "DISTINCT",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "5aac0420-74fe-4d85-abd5-72d25c208ef2",
+                       "rule":  "python:S7492",
+                       "severity":  "MINOR",
+                       "component":  "IA---habitlog:tracker/views.py",
+                       "project":  "IA---habitlog",
+                       "line":  538,
+                       "hash":  "cbb2ae55e72fd6e66edb8921b1b7f162",
+                       "textRange":  {
+                                         "startLine":  538,
+                                         "endLine":  538,
+                                         "startOffset":  26,
+                                         "endOffset":  39
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Unpack this comprehension expression",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2026-10-28T21:28:11-0300",
+                       "updateDate":  "2026-10-28T21:28:11-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "EFFICIENT",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "abcf6d63-54e3-4879-949d-21bc369cbcdf",
+                       "rule":  "python:S3752",
+                       "severity":  "MINOR",
+                       "component":  "IA---habitlog:tracker/views.py",
+                       "project":  "IA---habitlog",
+                       "line":  628,
+                       "hash":  "88372a5bb1324f13e12826e53e07c6e3",
+                       "textRange":  {
+                                         "startLine":  628,
+                                         "endLine":  628,
+                                         "startOffset":  4,
+                                         "endOffset":  14
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Explicitly specify the HTTP methods this endpoint accepts.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "django",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T21:28:11-0300",
+                       "updateDate":  "2026-10-28T21:28:11-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "3aef9dc5-08ce-4182-931c-9adc73d5db87",
+                       "rule":  "python:S3752",
+                       "severity":  "MINOR",
+                       "component":  "IA---habitlog:tracker/views.py",
+                       "project":  "IA---habitlog",
+                       "line":  804,
+                       "hash":  "41cdee9ba89982da767bd795e619fe0f",
+                       "textRange":  {
+                                         "startLine":  804,
+                                         "endLine":  804,
+                                         "startOffset":  4,
+                                         "endOffset":  15
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Explicitly specify the HTTP methods this endpoint accepts.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "django",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T21:28:11-0300",
+                       "updateDate":  "2026-10-28T21:28:11-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "eccb620c-cf0f-4eb6-bfd6-f034befa0e92",
+                       "rule":  "python:S3752",
+                       "severity":  "MINOR",
+                       "component":  "IA---habitlog:tracker/views.py",
+                       "project":  "IA---habitlog",
+                       "line":  914,
+                       "hash":  "f64c3dad48077b4a01bbb1607953bb26",
+                       "textRange":  {
+                                         "startLine":  914,
+                                         "endLine":  914,
+                                         "startOffset":  4,
+                                         "endOffset":  15
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Explicitly specify the HTTP methods this endpoint accepts.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "django",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T21:28:11-0300",
+                       "updateDate":  "2026-10-28T21:28:11-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "e5b198b9-4cf6-4e7c-a4cd-9612d2f27cf1",
+                       "rule":  "python:S3752",
+                       "severity":  "MINOR",
+                       "component":  "IA---habitlog:tracker/views.py",
+                       "project":  "IA---habitlog",
+                       "line":  982,
+                       "hash":  "97b19c114c19220fe0c280895981a53a",
+                       "textRange":  {
+                                         "startLine":  982,
+                                         "endLine":  982,
+                                         "startOffset":  4,
+                                         "endOffset":  17
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Explicitly specify the HTTP methods this endpoint accepts.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "django",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T21:28:11-0300",
+                       "updateDate":  "2026-10-28T21:28:11-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   }
+               ],
+    "total":  23,
+    "projectKey":  "IA---habitlog"
+}

@@ -1,0 +1,41 @@
+humano T01 PASS    Abrir pagina de login | HTTP 200
+humano T02 PASS    Abrir formulario de cadastro | HTTP 200
+humano T03 PASS    Rejeitar login incorreto | HTTP 200; sessao nao autenticada
+humano T04 PASS    Autenticar com senha correta | HTTP 302; sessao autenticada
+humano T05 PASS    Encerrar sessao | HTTP 302; sessao encerrada
+humano T06 PASS    Rejeitar cadastro com senhas divergentes | HTTP 200; usuario nao criado
+humano T07 PASS    Cadastrar usuario valido | HTTP 302; cadastro persistido e autenticado
+humano T08 PASS    Rejeitar nome de usuario duplicado | HTTP 200; duplicidade rejeitada
+humano T09 FAIL    Impedir acesso anonimo a lista de defeitos | AssertionError: Anonimo acessou lista (HTTP 200)
+humano T10 FAIL    Impedir acesso anonimo a API de defeitos | IndexError: list index out of range
+humano T11 FAIL    Impedir acesso anonimo ao formulario de defeito | IndexError: list index out of range
+humano T12 FAIL    Impedir consulta anonima a detalhe de defeito | AssertionError: Anonimo consultou detalhe (HTTP 200)
+humano T13 FAIL    Impedir encerramento anonimo de defeito | AssertionError: Anonimo encerrou o defeito
+humano T14 PASS    Abrir lista da organizacao autenticado | HTTP 200
+humano T15 PASS    Abrir lista de defeitos atribuidos ao usuario | HTTP 200
+humano T16 PASS    Abrir formulario de novo defeito | HTTP 200
+humano T17 PASS    Criar defeito com dados validos e persistir | HTTP 200; defeito_id=1
+humano T18 PASS    Abrir pagina de detalhe de defeito | HTTP 200
+humano T19 PASS    Consultar dados do defeito por JSON | HTTP 200; titulo correto
+humano T20 PASS    Listagem da organizacao contem defeito | Defeito da organizacao encontrado
+humano T21 PASS    Listagem pessoal contem defeito atribuido | Defeito atribuido encontrado
+humano T22 PASS    Listagem pessoal omite defeito de outro responsavel | Defeito nao atribuido omitido
+humano T23 PASS    Contagem de defeitos da organizacao | Contagem da organizacao=2
+humano T24 PASS    Contagem pessoal de defeitos | Contagem pessoal=1
+humano T25 PASS    Abrir formulario de edicao de defeito | HTTP 200
+humano T26 PASS    Editar e persistir defeito | HTTP 200; titulo atualizado
+humano T27 PASS    Rejeitar defeito sem titulo | HTTP 200; nenhum defeito criado
+humano T28 PASS    Rejeitar defeito sem descricao | HTTP 200; nenhum defeito criado
+humano T29 FAIL    Rejeitar estimativa negativa | IntegrityError: CHECK constraint failed: bugtracker_bug
+humano T30 FAIL    Impedir atribuicao a usuario de outra organizacao | AssertionError: Responsavel de outra organizacao aceito (HTTP 200)
+humano T31 PASS    Isolar lista JSON entre organizacoes | Nenhum defeito da outra organizacao divulgado
+humano T32 FAIL    Negar detalhe JSON de outra organizacao | AssertionError: Detalhe externo divulgado (HTTP 200)
+humano T33 FAIL    Negar edicao de outra organizacao | AssertionError: Edicao de organizacao externa acessivel (HTTP 200)
+humano T34 FAIL    Negar encerramento de outra organizacao | AssertionError: Defeito de outra organizacao foi encerrado
+humano T35 PASS    Encerrar defeito e persistir estado inativo | HTTP 200; active=False
+humano T36 PASS    Nao listar como ativo defeito concluido | Defeito concluido nao aparece ativo
+humano T37 FAIL    Retornar 404 para detalhe JSON inexistente | IndexError: list index out of range
+humano T38 FAIL    Retornar 404 para edicao inexistente | IndexError: list index out of range
+humano T39 FAIL    Retornar 404 para encerramento inexistente | IndexError: list index out of range
+humano T40 FAIL    GET nao pode encerrar defeito (sem efeito colateral) | AssertionError: GET encerrou defeito; efeito colateral em operacao de leitura
+RESULTADO humano: {'PASS': 26, 'FAIL': 14, 'BLOCKED': 0}

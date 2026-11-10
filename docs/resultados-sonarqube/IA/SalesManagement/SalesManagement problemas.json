@@ -1,0 +1,2679 @@
+﻿{
+    "issues":  [
+                   {
+                       "key":  "552c2e31-2c44-4f36-8a49-27a647b0ef2e",
+                       "rule":  "csharpsquid:S6967",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---SalesManagement:Controllers/DepartmentsController.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  29,
+                       "hash":  "4cd503ed8936ec2d48a9081f5847d003",
+                       "textRange":  {
+                                         "startLine":  29,
+                                         "endLine":  29,
+                                         "startOffset":  41,
+                                         "endOffset":  48
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "ModelState.IsValid should be checked in controller actions.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "asp.net"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "TRUSTWORTHY",
+                       "cleanCodeAttributeCategory":  "RESPONSIBLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "HIGH"
+                                       },
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "HIGH"
+                                       },
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "64949084-337c-4094-9e18-3f0a6b43e69d",
+                       "rule":  "csharpsquid:S6967",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---SalesManagement:Controllers/DepartmentsController.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  94,
+                       "hash":  "f76305632ff36d57a38697b6729197b0",
+                       "textRange":  {
+                                         "startLine":  94,
+                                         "endLine":  94,
+                                         "startOffset":  41,
+                                         "endOffset":  45
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "ModelState.IsValid should be checked in controller actions.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "asp.net"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "TRUSTWORTHY",
+                       "cleanCodeAttributeCategory":  "RESPONSIBLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "HIGH"
+                                       },
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "HIGH"
+                                       },
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "e6831b31-1104-42f1-a69e-03807ca67534",
+                       "rule":  "csharpsquid:S6967",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---SalesManagement:Controllers/DepartmentsController.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  168,
+                       "hash":  "18dba3884eba60be0c17363443ffc9a1",
+                       "textRange":  {
+                                         "startLine":  168,
+                                         "endLine":  168,
+                                         "startOffset":  41,
+                                         "endOffset":  47
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "ModelState.IsValid should be checked in controller actions.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "asp.net"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "TRUSTWORTHY",
+                       "cleanCodeAttributeCategory":  "RESPONSIBLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "HIGH"
+                                       },
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "HIGH"
+                                       },
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "5fefc659-99b5-4207-86c8-8413a0cfa721",
+                       "rule":  "csharpsquid:S6967",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---SalesManagement:Controllers/DepartmentsController.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  194,
+                       "hash":  "957738b38c859ecd7fb70bb66099b92f",
+                       "textRange":  {
+                                         "startLine":  194,
+                                         "endLine":  194,
+                                         "startOffset":  41,
+                                         "endOffset":  56
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "ModelState.IsValid should be checked in controller actions.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "asp.net"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "TRUSTWORTHY",
+                       "cleanCodeAttributeCategory":  "RESPONSIBLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "HIGH"
+                                       },
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "HIGH"
+                                       },
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "bf69e3cc-4e5c-4963-a0ad-8df8113fa89a",
+                       "rule":  "csharpsquid:S6967",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---SalesManagement:Controllers/SalesRecordsController.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  27,
+                       "hash":  "24b51e926211ce4fcb1ee7f8cc5b7e4d",
+                       "textRange":  {
+                                         "startLine":  27,
+                                         "endLine":  27,
+                                         "startOffset":  41,
+                                         "endOffset":  53
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "ModelState.IsValid should be checked in controller actions.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "asp.net"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "TRUSTWORTHY",
+                       "cleanCodeAttributeCategory":  "RESPONSIBLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "HIGH"
+                                       },
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "HIGH"
+                                       },
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "2bcc1c7a-9e01-4b96-8a15-480a60541918",
+                       "rule":  "csharpsquid:S6562",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Controllers/SalesRecordsController.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  35,
+                       "hash":  "18ce0416110a1d7bf9fea955784271f4",
+                       "textRange":  {
+                                         "startLine":  35,
+                                         "endLine":  35,
+                                         "startOffset":  18,
+                                         "endOffset":  48
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Provide the \"DateTimeKind\" when creating this object.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "localisation",
+                                    "pitfall"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "ed250a14-6b65-4006-bd92-205fbf27d977",
+                       "rule":  "csharpsquid:S6967",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---SalesManagement:Controllers/SalesRecordsController.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  71,
+                       "hash":  "9b0f85b2980e5ab871d6906a4401c72d",
+                       "textRange":  {
+                                         "startLine":  71,
+                                         "endLine":  71,
+                                         "startOffset":  41,
+                                         "endOffset":  55
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "ModelState.IsValid should be checked in controller actions.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "asp.net"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "TRUSTWORTHY",
+                       "cleanCodeAttributeCategory":  "RESPONSIBLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "HIGH"
+                                       },
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "HIGH"
+                                       },
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "9cbc4eab-f875-40ba-b55f-45fcc83a0ffe",
+                       "rule":  "csharpsquid:S6562",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Controllers/SalesRecordsController.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  79,
+                       "hash":  "18ce0416110a1d7bf9fea955784271f4",
+                       "textRange":  {
+                                         "startLine":  79,
+                                         "endLine":  79,
+                                         "startOffset":  18,
+                                         "endOffset":  48
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Provide the \"DateTimeKind\" when creating this object.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "localisation",
+                                    "pitfall"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "ed9626f5-4856-438f-b245-2bf4fb7a086d",
+                       "rule":  "csharpsquid:S6967",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---SalesManagement:Controllers/SellersController.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  33,
+                       "hash":  "4cd503ed8936ec2d48a9081f5847d003",
+                       "textRange":  {
+                                         "startLine":  33,
+                                         "endLine":  33,
+                                         "startOffset":  41,
+                                         "endOffset":  48
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "ModelState.IsValid should be checked in controller actions.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "asp.net"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "TRUSTWORTHY",
+                       "cleanCodeAttributeCategory":  "RESPONSIBLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "HIGH"
+                                       },
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "HIGH"
+                                       },
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "edb6e223-e387-4a9b-8582-4c4e30639cc7",
+                       "rule":  "csharpsquid:S6967",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---SalesManagement:Controllers/SellersController.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  109,
+                       "hash":  "f76305632ff36d57a38697b6729197b0",
+                       "textRange":  {
+                                         "startLine":  109,
+                                         "endLine":  109,
+                                         "startOffset":  41,
+                                         "endOffset":  45
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "ModelState.IsValid should be checked in controller actions.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "asp.net"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "TRUSTWORTHY",
+                       "cleanCodeAttributeCategory":  "RESPONSIBLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "HIGH"
+                                       },
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "HIGH"
+                                       },
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "ca6f09ac-bbcf-4ee5-9fc9-594206ce5a8a",
+                       "rule":  "csharpsquid:S4144",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Controllers/SellersController.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  197,
+                       "hash":  "18dba3884eba60be0c17363443ffc9a1",
+                       "textRange":  {
+                                         "startLine":  197,
+                                         "endLine":  197,
+                                         "startOffset":  41,
+                                         "endOffset":  47
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---SalesManagement:Controllers/SellersController.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  33,
+                                                                                 "endLine":  33,
+                                                                                 "startOffset":  41,
+                                                                                 "endOffset":  48
+                                                                             },
+                                                               "msg":  "Update this method so that its implementation is not identical to \u0027Delete\u0027.",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Update this method so that its implementation is not identical to \u0027Details\u0027.",
+                       "effort":  "15min",
+                       "debt":  "15min",
+                       "author":  "",
+                       "tags":  [
+                                    "confusing",
+                                    "duplicate",
+                                    "suspicious"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "DISTINCT",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "db08183f-b004-4cc1-ae10-acc6e331e5ad",
+                       "rule":  "csharpsquid:S6967",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---SalesManagement:Controllers/SellersController.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  197,
+                       "hash":  "18dba3884eba60be0c17363443ffc9a1",
+                       "textRange":  {
+                                         "startLine":  197,
+                                         "endLine":  197,
+                                         "startOffset":  41,
+                                         "endOffset":  47
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "ModelState.IsValid should be checked in controller actions.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "asp.net"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "TRUSTWORTHY",
+                       "cleanCodeAttributeCategory":  "RESPONSIBLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "HIGH"
+                                       },
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "HIGH"
+                                       },
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "289bacf5-e8c5-4de0-a6bb-5ba662d3f8bb",
+                       "rule":  "csharpsquid:S6967",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---SalesManagement:Controllers/SellersController.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  224,
+                       "hash":  "957738b38c859ecd7fb70bb66099b92f",
+                       "textRange":  {
+                                         "startLine":  224,
+                                         "endLine":  224,
+                                         "startOffset":  41,
+                                         "endOffset":  56
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "ModelState.IsValid should be checked in controller actions.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "asp.net"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "TRUSTWORTHY",
+                       "cleanCodeAttributeCategory":  "RESPONSIBLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "HIGH"
+                                       },
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "HIGH"
+                                       },
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "c3bbc68a-3fda-43de-8fa7-a7471ac63200",
+                       "rule":  "csharpsquid:S6562",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Data/DbInitializer.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  46,
+                       "hash":  "5f0140c1eef4a469b8c00e150dead482",
+                       "textRange":  {
+                                         "startLine":  46,
+                                         "endLine":  46,
+                                         "startOffset":  28,
+                                         "endOffset":  53
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Provide the \"DateTimeKind\" when creating this object.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "localisation",
+                                    "pitfall"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "3e29b82e-7def-48ba-b14b-8b3dc71a9eb0",
+                       "rule":  "csharpsquid:S6562",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Data/DbInitializer.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  55,
+                       "hash":  "b938113063ddfd2151feac1ef9d51dda",
+                       "textRange":  {
+                                         "startLine":  55,
+                                         "endLine":  55,
+                                         "startOffset":  28,
+                                         "endOffset":  53
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Provide the \"DateTimeKind\" when creating this object.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "localisation",
+                                    "pitfall"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "ea5e1335-05ee-43ea-b60b-788bee98057f",
+                       "rule":  "csharpsquid:S6562",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Data/DbInitializer.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  64,
+                       "hash":  "ff9bf5aad0afc469b1b0609471c7b677",
+                       "textRange":  {
+                                         "startLine":  64,
+                                         "endLine":  64,
+                                         "startOffset":  28,
+                                         "endOffset":  53
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Provide the \"DateTimeKind\" when creating this object.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "localisation",
+                                    "pitfall"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "5aa7b941-3b60-4bb5-9e85-afed6bf8fb2b",
+                       "rule":  "csharpsquid:S6562",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Data/DbInitializer.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  73,
+                       "hash":  "e5d00116cee03050dca3197b04c09f73",
+                       "textRange":  {
+                                         "startLine":  73,
+                                         "endLine":  73,
+                                         "startOffset":  28,
+                                         "endOffset":  52
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Provide the \"DateTimeKind\" when creating this object.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "localisation",
+                                    "pitfall"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "b41cb84c-bfa6-49b9-843c-0a516da7e733",
+                       "rule":  "csharpsquid:S6562",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Data/DbInitializer.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  91,
+                       "hash":  "b5c64cb59d3b90ee19f51a97bcd40035",
+                       "textRange":  {
+                                         "startLine":  91,
+                                         "endLine":  91,
+                                         "startOffset":  27,
+                                         "endOffset":  52
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Provide the \"DateTimeKind\" when creating this object.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "localisation",
+                                    "pitfall"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "38f7c617-f4da-48f0-9be3-1fd5e995e817",
+                       "rule":  "csharpsquid:S6562",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Data/DbInitializer.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  99,
+                       "hash":  "ab91e2e4e8b9dec85cb751917ba58908",
+                       "textRange":  {
+                                         "startLine":  99,
+                                         "endLine":  99,
+                                         "startOffset":  27,
+                                         "endOffset":  53
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Provide the \"DateTimeKind\" when creating this object.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "localisation",
+                                    "pitfall"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "3601ec0d-ffd9-45ed-9091-2d3b7c0d6c7a",
+                       "rule":  "csharpsquid:S6562",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Data/DbInitializer.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  107,
+                       "hash":  "0b295a03fd5ce2b4c44811fe55f2d7be",
+                       "textRange":  {
+                                         "startLine":  107,
+                                         "endLine":  107,
+                                         "startOffset":  27,
+                                         "endOffset":  52
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Provide the \"DateTimeKind\" when creating this object.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "localisation",
+                                    "pitfall"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "d8600ab4-f2c0-4bb4-b0bb-edca55632874",
+                       "rule":  "csharpsquid:S6562",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Data/DbInitializer.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  115,
+                       "hash":  "2dcf8bcbcdb9d66f9b12745feae334b0",
+                       "textRange":  {
+                                         "startLine":  115,
+                                         "endLine":  115,
+                                         "startOffset":  27,
+                                         "endOffset":  51
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Provide the \"DateTimeKind\" when creating this object.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "localisation",
+                                    "pitfall"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "cc2535ed-2060-4a11-9048-8f28426ff14b",
+                       "rule":  "csharpsquid:S6562",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Data/DbInitializer.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  123,
+                       "hash":  "74cc668bf75fbc61a5ec23536b6bf5e1",
+                       "textRange":  {
+                                         "startLine":  123,
+                                         "endLine":  123,
+                                         "startOffset":  27,
+                                         "endOffset":  52
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Provide the \"DateTimeKind\" when creating this object.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "localisation",
+                                    "pitfall"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "cefb5b17-1357-4bc0-8f16-8df9ee387767",
+                       "rule":  "csharpsquid:S6562",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Data/DbInitializer.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  131,
+                       "hash":  "0a863435ee2e57441e1e96cc16f56a6f",
+                       "textRange":  {
+                                         "startLine":  131,
+                                         "endLine":  131,
+                                         "startOffset":  27,
+                                         "endOffset":  52
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Provide the \"DateTimeKind\" when creating this object.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "localisation",
+                                    "pitfall"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "e96ce66a-4970-4380-8130-f38e7aa863fb",
+                       "rule":  "csharpsquid:S6562",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Data/DbInitializer.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  139,
+                       "hash":  "d8dd7f31196ccf5d110b054b9b369336",
+                       "textRange":  {
+                                         "startLine":  139,
+                                         "endLine":  139,
+                                         "startOffset":  27,
+                                         "endOffset":  52
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Provide the \"DateTimeKind\" when creating this object.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "localisation",
+                                    "pitfall"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "d86a42b4-4f86-44bb-a347-4d4001fa8a37",
+                       "rule":  "csharpsquid:S6562",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Data/DbInitializer.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  147,
+                       "hash":  "d87e435241549eadd03702aa61cc0070",
+                       "textRange":  {
+                                         "startLine":  147,
+                                         "endLine":  147,
+                                         "startOffset":  27,
+                                         "endOffset":  53
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Provide the \"DateTimeKind\" when creating this object.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "localisation",
+                                    "pitfall"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "f39e7c09-a96b-42eb-96c5-764f0048e618",
+                       "rule":  "csharpsquid:S6964",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Models/Department.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  8,
+                       "hash":  "1038460e056d4a66dbc8c3de22780b2f",
+                       "textRange":  {
+                                         "startLine":  8,
+                                         "endLine":  8,
+                                         "startOffset":  19,
+                                         "endOffset":  21
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Value type property used as input in a controller action should be nullable, required or annotated with the JsonRequiredAttribute to avoid under-posting.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "asp.net"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "TRUSTWORTHY",
+                       "cleanCodeAttributeCategory":  "RESPONSIBLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "14a7fdba-c994-4cfe-a998-44f916853613",
+                       "rule":  "csharpsquid:S6964",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Models/Seller.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  10,
+                       "hash":  "1038460e056d4a66dbc8c3de22780b2f",
+                       "textRange":  {
+                                         "startLine":  10,
+                                         "endLine":  10,
+                                         "startOffset":  19,
+                                         "endOffset":  21
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Value type property used as input in a controller action should be nullable, required or annotated with the JsonRequiredAttribute to avoid under-posting.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "asp.net"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "TRUSTWORTHY",
+                       "cleanCodeAttributeCategory":  "RESPONSIBLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "ff86d205-7712-4a19-9fff-ac5820c12ef3",
+                       "rule":  "csharpsquid:S6964",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Models/Seller.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  30,
+                       "hash":  "500da20207c45ca5d8ea7a0a6531ac80",
+                       "textRange":  {
+                                         "startLine":  30,
+                                         "endLine":  30,
+                                         "startOffset":  24,
+                                         "endOffset":  33
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Value type property used as input in a controller action should be nullable, required or annotated with the JsonRequiredAttribute to avoid under-posting.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "asp.net"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "TRUSTWORTHY",
+                       "cleanCodeAttributeCategory":  "RESPONSIBLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "ec90f968-79a9-49eb-a92b-5443c457c3c6",
+                       "rule":  "csharpsquid:S1118",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Program.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  6,
+                       "hash":  "06877600eb24ccbb35aec82750235a07",
+                       "textRange":  {
+                                         "startLine":  6,
+                                         "endLine":  6,
+                                         "startOffset":  17,
+                                         "endOffset":  24
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Add a \u0027protected\u0027 constructor or the \u0027static\u0027 keyword to the class declaration.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "",
+                       "tags":  [
+                                    "design"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "d8e10f27-e49a-4fac-9883-83b8d4daa3c7",
+                       "rule":  "csharpsquid:S2325",
+                       "severity":  "MINOR",
+                       "component":  "IA---SalesManagement:Startup.cs",
+                       "project":  "IA---SalesManagement",
+                       "line":  47,
+                       "hash":  "4cfb5974abc0e278d1caff32e70cd14f",
+                       "textRange":  {
+                                         "startLine":  47,
+                                         "endLine":  47,
+                                         "startOffset":  20,
+                                         "endOffset":  29
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make \u0027Configure\u0027 a static method.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "pitfall"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "7a37eb4a-28e8-4a94-a625-36cdd9b5d299",
+                       "rule":  "external_roslyn:MVC1000",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Views/Departments/Create.cshtml",
+                       "project":  "IA---SalesManagement",
+                       "line":  20,
+                       "hash":  "4eefc437a6ef18bd3b026deac3cb2f65",
+                       "textRange":  {
+                                         "startLine":  20,
+                                         "endLine":  20,
+                                         "startOffset":  9,
+                                         "endOffset":  37
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Use of IHtmlHelper.Partial may result in application deadlocks. Consider using \u003cpartial\u003e Tag Helper or IHtmlHelper.PartialAsync.",
+                       "effort":  "0min",
+                       "debt":  "0min",
+                       "author":  "",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "externalRuleEngine":  "roslyn",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "fdcaeafb-204e-4722-bb09-2376f50e5da1",
+                       "rule":  "external_roslyn:MVC1000",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Views/Departments/Create.cshtml",
+                       "project":  "IA---SalesManagement",
+                       "line":  45,
+                       "hash":  "6b8e5fd1f22526f019da84797901a8e7",
+                       "textRange":  {
+                                         "startLine":  45,
+                                         "endLine":  45,
+                                         "startOffset":  0,
+                                         "endOffset":  46
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Use of IHtmlHelper.Partial may result in application deadlocks. Consider using \u003cpartial\u003e Tag Helper or IHtmlHelper.PartialAsync.",
+                       "effort":  "0min",
+                       "debt":  "0min",
+                       "author":  "",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "externalRuleEngine":  "roslyn",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "68bddd7c-b067-4bb4-9612-8dd1d3bf629f",
+                       "rule":  "external_roslyn:MVC1000",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Views/Departments/Edit.cshtml",
+                       "project":  "IA---SalesManagement",
+                       "line":  25,
+                       "hash":  "4eefc437a6ef18bd3b026deac3cb2f65",
+                       "textRange":  {
+                                         "startLine":  25,
+                                         "endLine":  25,
+                                         "startOffset":  9,
+                                         "endOffset":  37
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Use of IHtmlHelper.Partial may result in application deadlocks. Consider using \u003cpartial\u003e Tag Helper or IHtmlHelper.PartialAsync.",
+                       "effort":  "0min",
+                       "debt":  "0min",
+                       "author":  "",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "externalRuleEngine":  "roslyn",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "8ebb28e0-cef7-418e-8f4c-9ab7386410fa",
+                       "rule":  "external_roslyn:MVC1000",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Views/Departments/Edit.cshtml",
+                       "project":  "IA---SalesManagement",
+                       "line":  50,
+                       "hash":  "6b8e5fd1f22526f019da84797901a8e7",
+                       "textRange":  {
+                                         "startLine":  50,
+                                         "endLine":  50,
+                                         "startOffset":  0,
+                                         "endOffset":  46
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Use of IHtmlHelper.Partial may result in application deadlocks. Consider using \u003cpartial\u003e Tag Helper or IHtmlHelper.PartialAsync.",
+                       "effort":  "0min",
+                       "debt":  "0min",
+                       "author":  "",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "externalRuleEngine":  "roslyn",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "d05c672f-563a-4baa-a5b5-07a712bc5307",
+                       "rule":  "Web:S6853",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Views/Departments/_Form.cshtml",
+                       "project":  "IA---SalesManagement",
+                       "line":  10,
+                       "hash":  "8be788feb26c8751f2190b902ece29d6",
+                       "textRange":  {
+                                         "startLine":  10,
+                                         "endLine":  13,
+                                         "startOffset":  4,
+                                         "endOffset":  5
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "A form label must be associated with a control and have accessible text.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "accessibility"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "LOGICAL",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "f86ca314-67ff-4db4-a6e8-fe5b302206ca",
+                       "rule":  "external_roslyn:MVC1000",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Views/Sellers/Create.cshtml",
+                       "project":  "IA---SalesManagement",
+                       "line":  20,
+                       "hash":  "4eefc437a6ef18bd3b026deac3cb2f65",
+                       "textRange":  {
+                                         "startLine":  20,
+                                         "endLine":  20,
+                                         "startOffset":  9,
+                                         "endOffset":  37
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Use of IHtmlHelper.Partial may result in application deadlocks. Consider using \u003cpartial\u003e Tag Helper or IHtmlHelper.PartialAsync.",
+                       "effort":  "0min",
+                       "debt":  "0min",
+                       "author":  "",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "externalRuleEngine":  "roslyn",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "0e616fb0-057d-44ca-82b1-e58a537ba6d9",
+                       "rule":  "external_roslyn:MVC1000",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Views/Sellers/Create.cshtml",
+                       "project":  "IA---SalesManagement",
+                       "line":  45,
+                       "hash":  "6b8e5fd1f22526f019da84797901a8e7",
+                       "textRange":  {
+                                         "startLine":  45,
+                                         "endLine":  45,
+                                         "startOffset":  0,
+                                         "endOffset":  46
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Use of IHtmlHelper.Partial may result in application deadlocks. Consider using \u003cpartial\u003e Tag Helper or IHtmlHelper.PartialAsync.",
+                       "effort":  "0min",
+                       "debt":  "0min",
+                       "author":  "",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "externalRuleEngine":  "roslyn",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "58368ae5-0ff4-403f-ad37-979ba3f12297",
+                       "rule":  "external_roslyn:MVC1000",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Views/Sellers/Edit.cshtml",
+                       "project":  "IA---SalesManagement",
+                       "line":  25,
+                       "hash":  "4eefc437a6ef18bd3b026deac3cb2f65",
+                       "textRange":  {
+                                         "startLine":  25,
+                                         "endLine":  25,
+                                         "startOffset":  9,
+                                         "endOffset":  37
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Use of IHtmlHelper.Partial may result in application deadlocks. Consider using \u003cpartial\u003e Tag Helper or IHtmlHelper.PartialAsync.",
+                       "effort":  "0min",
+                       "debt":  "0min",
+                       "author":  "",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "externalRuleEngine":  "roslyn",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "2e3682f9-5779-4489-a9d2-232e4349bbf4",
+                       "rule":  "external_roslyn:MVC1000",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Views/Sellers/Edit.cshtml",
+                       "project":  "IA---SalesManagement",
+                       "line":  50,
+                       "hash":  "6b8e5fd1f22526f019da84797901a8e7",
+                       "textRange":  {
+                                         "startLine":  50,
+                                         "endLine":  50,
+                                         "startOffset":  0,
+                                         "endOffset":  46
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Use of IHtmlHelper.Partial may result in application deadlocks. Consider using \u003cpartial\u003e Tag Helper or IHtmlHelper.PartialAsync.",
+                       "effort":  "0min",
+                       "debt":  "0min",
+                       "author":  "",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "externalRuleEngine":  "roslyn",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "ad593d16-7ab4-4f93-b3c8-096847840e4b",
+                       "rule":  "Web:S6853",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Views/Sellers/_Form.cshtml",
+                       "project":  "IA---SalesManagement",
+                       "line":  10,
+                       "hash":  "8be788feb26c8751f2190b902ece29d6",
+                       "textRange":  {
+                                         "startLine":  10,
+                                         "endLine":  13,
+                                         "startOffset":  4,
+                                         "endOffset":  5
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "A form label must be associated with a control and have accessible text.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "accessibility"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "LOGICAL",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "55a5129f-2664-4834-916f-fb0229ea7e1c",
+                       "rule":  "Web:S6853",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Views/Sellers/_Form.cshtml",
+                       "project":  "IA---SalesManagement",
+                       "line":  29,
+                       "hash":  "8be788feb26c8751f2190b902ece29d6",
+                       "textRange":  {
+                                         "startLine":  29,
+                                         "endLine":  32,
+                                         "startOffset":  4,
+                                         "endOffset":  5
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "A form label must be associated with a control and have accessible text.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "accessibility"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "LOGICAL",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "23423877-a3de-4357-bd93-26b4fb414c0b",
+                       "rule":  "Web:S6853",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Views/Sellers/_Form.cshtml",
+                       "project":  "IA---SalesManagement",
+                       "line":  49,
+                       "hash":  "8be788feb26c8751f2190b902ece29d6",
+                       "textRange":  {
+                                         "startLine":  49,
+                                         "endLine":  52,
+                                         "startOffset":  4,
+                                         "endOffset":  5
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "A form label must be associated with a control and have accessible text.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "accessibility"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "LOGICAL",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "b21e2bf9-630b-462e-85c7-2733a19f0649",
+                       "rule":  "Web:S6853",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Views/Sellers/_Form.cshtml",
+                       "project":  "IA---SalesManagement",
+                       "line":  69,
+                       "hash":  "8be788feb26c8751f2190b902ece29d6",
+                       "textRange":  {
+                                         "startLine":  69,
+                                         "endLine":  72,
+                                         "startOffset":  4,
+                                         "endOffset":  5
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "A form label must be associated with a control and have accessible text.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "accessibility"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "LOGICAL",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "0af60d37-1182-4dd5-bf59-02dc463f7a85",
+                       "rule":  "Web:S6853",
+                       "severity":  "MAJOR",
+                       "component":  "IA---SalesManagement:Views/Sellers/_Form.cshtml",
+                       "project":  "IA---SalesManagement",
+                       "line":  91,
+                       "hash":  "8be788feb26c8751f2190b902ece29d6",
+                       "textRange":  {
+                                         "startLine":  91,
+                                         "endLine":  94,
+                                         "startOffset":  4,
+                                         "endOffset":  5
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "A form label must be associated with a control and have accessible text.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "accessibility"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "LOGICAL",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "059b7f61-8c37-4833-a1a5-7c0bed4c1c17",
+                       "rule":  "Web:S5725",
+                       "severity":  "MINOR",
+                       "component":  "IA---SalesManagement:Views/Shared/_Layout.cshtml",
+                       "project":  "IA---SalesManagement",
+                       "line":  13,
+                       "hash":  "d3a849324710a64d959776e31e34fd6d",
+                       "textRange":  {
+                                         "startLine":  13,
+                                         "endLine":  16,
+                                         "startOffset":  4,
+                                         "endOffset":  6
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make sure not using resource integrity feature is safe here.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "770ff77e-1501-4adc-97d8-0b31b3e86796",
+                       "rule":  "Web:S5725",
+                       "severity":  "MINOR",
+                       "component":  "IA---SalesManagement:Views/Shared/_Layout.cshtml",
+                       "project":  "IA---SalesManagement",
+                       "line":  149,
+                       "hash":  "7c811b5323511869abf6e4016c4a7ab8",
+                       "textRange":  {
+                                         "startLine":  149,
+                                         "endLine":  149,
+                                         "startOffset":  4,
+                                         "endOffset":  62
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make sure not using resource integrity feature is safe here.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "fa5d5372-e24e-4f0c-a828-c5213e919d5f",
+                       "rule":  "Web:S5725",
+                       "severity":  "MINOR",
+                       "component":  "IA---SalesManagement:Views/Shared/_Layout.cshtml",
+                       "project":  "IA---SalesManagement",
+                       "line":  151,
+                       "hash":  "cb5a546711732f28605ad1b5c6129483",
+                       "textRange":  {
+                                         "startLine":  151,
+                                         "endLine":  151,
+                                         "startOffset":  4,
+                                         "endOffset":  86
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make sure not using resource integrity feature is safe here.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "74da4cd9-7779-49f2-afc1-3ffdb7662633",
+                       "rule":  "Web:S5725",
+                       "severity":  "MINOR",
+                       "component":  "IA---SalesManagement:Views/Shared/_ValidationScriptsPartial.cshtml",
+                       "project":  "IA---SalesManagement",
+                       "line":  1,
+                       "hash":  "551ea1dfa41e81b6bb4fa027875fe832",
+                       "textRange":  {
+                                         "startLine":  1,
+                                         "endLine":  1,
+                                         "startOffset":  0,
+                                         "endOffset":  99
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make sure not using resource integrity feature is safe here.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "3c068776-0962-4fa8-b957-110c3829be36",
+                       "rule":  "Web:S5725",
+                       "severity":  "MINOR",
+                       "component":  "IA---SalesManagement:Views/Shared/_ValidationScriptsPartial.cshtml",
+                       "project":  "IA---SalesManagement",
+                       "line":  3,
+                       "hash":  "e759bca1a285ac6456dff86493dcc88f",
+                       "textRange":  {
+                                         "startLine":  3,
+                                         "endLine":  3,
+                                         "startOffset":  0,
+                                         "endOffset":  124
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make sure not using resource integrity feature is safe here.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T22:19:34-0300",
+                       "updateDate":  "2026-10-28T22:19:34-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   }
+               ],
+    "total":  49,
+    "projectKey":  "IA---SalesManagement"
+}

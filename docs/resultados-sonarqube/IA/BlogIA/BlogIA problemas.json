@@ -1,0 +1,1053 @@
+﻿{
+    "issues":  [
+                   {
+                       "key":  "e8eed887-3911-44dc-9de0-7fc4230436fd",
+                       "rule":  "python:S5713",
+                       "severity":  "MINOR",
+                       "component":  "IA---BlogIA:blog/models.py",
+                       "project":  "IA---BlogIA",
+                       "line":  93,
+                       "hash":  "c45273ec3965b5fea9f9744ed7cbec26",
+                       "textRange":  {
+                                         "startLine":  93,
+                                         "endLine":  93,
+                                         "startOffset":  12,
+                                         "endOffset":  28
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---BlogIA:blog/models.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  92,
+                                                                                 "endLine":  92,
+                                                                                 "startOffset":  12,
+                                                                                 "endOffset":  24
+                                                                             },
+                                                               "msg":  "Parent class.",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove this redundant Exception class; it derives from another which is already caught.",
+                       "effort":  "1min",
+                       "debt":  "1min",
+                       "author":  "",
+                       "tags":  [
+                                    "error-handling",
+                                    "bad-practice",
+                                    "unused"
+                                ],
+                       "creationDate":  "2026-10-28T21:18:36-0300",
+                       "updateDate":  "2026-10-28T21:18:36-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "LOGICAL",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "26f0523c-9d43-4547-b16a-8beba3948efb",
+                       "rule":  "python:S6965",
+                       "severity":  "MAJOR",
+                       "component":  "IA---BlogIA:blog/routes.py",
+                       "project":  "IA---BlogIA",
+                       "line":  59,
+                       "hash":  "808e87cc92c4438a622d69a2f5dc78f1",
+                       "textRange":  {
+                                         "startLine":  59,
+                                         "endLine":  59,
+                                         "startOffset":  0,
+                                         "endOffset":  16
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Specify the HTTP methods this route should accept.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "flask"
+                                ],
+                       "creationDate":  "2026-10-28T21:18:36-0300",
+                       "updateDate":  "2026-10-28T21:18:36-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "4b2998a8-cac8-4d2d-b441-f59a06c8854a",
+                       "rule":  "python:S6965",
+                       "severity":  "MAJOR",
+                       "component":  "IA---BlogIA:blog/routes.py",
+                       "project":  "IA---BlogIA",
+                       "line":  60,
+                       "hash":  "efcbcf37a6d9cca544fba22bf640ad06",
+                       "textRange":  {
+                                         "startLine":  60,
+                                         "endLine":  60,
+                                         "startOffset":  0,
+                                         "endOffset":  20
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Specify the HTTP methods this route should accept.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "flask"
+                                ],
+                       "creationDate":  "2026-10-28T21:18:36-0300",
+                       "updateDate":  "2026-10-28T21:18:36-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "49fdb1bd-a78c-47e2-a7f0-b261f96c17c6",
+                       "rule":  "python:S6965",
+                       "severity":  "MAJOR",
+                       "component":  "IA---BlogIA:blog/routes.py",
+                       "project":  "IA---BlogIA",
+                       "line":  90,
+                       "hash":  "dffdf0d2118aaeea1f2610423bb48b1c",
+                       "textRange":  {
+                                         "startLine":  90,
+                                         "endLine":  90,
+                                         "startOffset":  0,
+                                         "endOffset":  21
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Specify the HTTP methods this route should accept.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "flask"
+                                ],
+                       "creationDate":  "2026-10-28T21:18:36-0300",
+                       "updateDate":  "2026-10-28T21:18:36-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "aab41786-1671-4728-af66-d53a7c914d43",
+                       "rule":  "python:S1192",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---BlogIA:blog/routes.py",
+                       "project":  "IA---BlogIA",
+                       "line":  104,
+                       "hash":  "1be4bfdc9eb7ca7a40d3f9c1728bf914",
+                       "textRange":  {
+                                         "startLine":  104,
+                                         "endLine":  104,
+                                         "startOffset":  20,
+                                         "endOffset":  31
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---BlogIA:blog/routes.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  144,
+                                                                                 "endLine":  144,
+                                                                                 "startOffset":  20,
+                                                                                 "endOffset":  31
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---BlogIA:blog/routes.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  179,
+                                                                                 "endLine":  179,
+                                                                                 "startOffset":  24,
+                                                                                 "endOffset":  35
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---BlogIA:blog/routes.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  207,
+                                                                                 "endLine":  207,
+                                                                                 "startOffset":  16,
+                                                                                 "endOffset":  27
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---BlogIA:blog/routes.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  445,
+                                                                                 "endLine":  445,
+                                                                                 "startOffset":  16,
+                                                                                 "endOffset":  27
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---BlogIA:blog/routes.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  456,
+                                                                                 "endLine":  456,
+                                                                                 "startOffset":  20,
+                                                                                 "endOffset":  31
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---BlogIA:blog/routes.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  527,
+                                                                                 "endLine":  527,
+                                                                                 "startOffset":  20,
+                                                                                 "endOffset":  31
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Define a constant instead of duplicating this literal \"site.home\" 7 times.",
+                       "effort":  "14min",
+                       "debt":  "14min",
+                       "author":  "",
+                       "tags":  [
+                                    "design"
+                                ],
+                       "creationDate":  "2026-10-28T21:18:36-0300",
+                       "updateDate":  "2026-10-28T21:18:36-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "DISTINCT",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "4ed8345b-09f6-4c3d-863f-7c6888f0950e",
+                       "rule":  "python:S1192",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---BlogIA:blog/routes.py",
+                       "project":  "IA---BlogIA",
+                       "line":  128,
+                       "hash":  "fec83f494b8cc11b3a7e2c1d509963c7",
+                       "textRange":  {
+                                         "startLine":  128,
+                                         "endLine":  128,
+                                         "startOffset":  20,
+                                         "endOffset":  32
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---BlogIA:blog/routes.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  511,
+                                                                                 "endLine":  511,
+                                                                                 "startOffset":  20,
+                                                                                 "endOffset":  32
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---BlogIA:blog/routes.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  561,
+                                                                                 "endLine":  561,
+                                                                                 "startOffset":  20,
+                                                                                 "endOffset":  32
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Define a constant instead of duplicating this literal \"site.login\" 3 times.",
+                       "effort":  "6min",
+                       "debt":  "6min",
+                       "author":  "",
+                       "tags":  [
+                                    "design"
+                                ],
+                       "creationDate":  "2026-10-28T21:18:36-0300",
+                       "updateDate":  "2026-10-28T21:18:36-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "DISTINCT",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "6ccac7ee-4f8b-442e-95a2-4fc518cd92b6",
+                       "rule":  "python:S6965",
+                       "severity":  "MAJOR",
+                       "component":  "IA---BlogIA:blog/routes.py",
+                       "project":  "IA---BlogIA",
+                       "line":  284,
+                       "hash":  "6f3c3caa144be2d414706a8110a49d98",
+                       "textRange":  {
+                                         "startLine":  284,
+                                         "endLine":  284,
+                                         "startOffset":  0,
+                                         "endOffset":  38
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Specify the HTTP methods this route should accept.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "flask"
+                                ],
+                       "creationDate":  "2026-10-28T21:18:36-0300",
+                       "updateDate":  "2026-10-28T21:18:36-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "909eaf5e-7666-44be-a044-0505ab7aae4c",
+                       "rule":  "python:S6965",
+                       "severity":  "MAJOR",
+                       "component":  "IA---BlogIA:blog/routes.py",
+                       "project":  "IA---BlogIA",
+                       "line":  364,
+                       "hash":  "c26384070437e978e4f227aab980da48",
+                       "textRange":  {
+                                         "startLine":  364,
+                                         "endLine":  364,
+                                         "startOffset":  0,
+                                         "endOffset":  34
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Specify the HTTP methods this route should accept.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "flask"
+                                ],
+                       "creationDate":  "2026-10-28T21:18:36-0300",
+                       "updateDate":  "2026-10-28T21:18:36-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "3b4d98b1-7d96-4def-aa2d-495dc441335e",
+                       "rule":  "python:S1192",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---BlogIA:blog/routes.py",
+                       "project":  "IA---BlogIA",
+                       "line":  474,
+                       "hash":  "bb7e5741fdae1eda16553a4d5be856fe",
+                       "textRange":  {
+                                         "startLine":  474,
+                                         "endLine":  474,
+                                         "startOffset":  16,
+                                         "endOffset":  36
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---BlogIA:blog/routes.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  501,
+                                                                                 "endLine":  501,
+                                                                                 "startOffset":  20,
+                                                                                 "endOffset":  40
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---BlogIA:blog/routes.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  515,
+                                                                                 "endLine":  515,
+                                                                                 "startOffset":  8,
+                                                                                 "endOffset":  28
+                                                                             },
+                                                               "msg":  "Duplication",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Define a constant instead of duplicating this literal \"request_reset.html\" 3 times.",
+                       "effort":  "6min",
+                       "debt":  "6min",
+                       "author":  "",
+                       "tags":  [
+                                    "design"
+                                ],
+                       "creationDate":  "2026-10-28T21:18:36-0300",
+                       "updateDate":  "2026-10-28T21:18:36-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "DISTINCT",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "187a2efc-a05b-436d-8e32-ee5b571ee912",
+                       "rule":  "python:S5713",
+                       "severity":  "MINOR",
+                       "component":  "IA---BlogIA:blog/services.py",
+                       "project":  "IA---BlogIA",
+                       "line":  79,
+                       "hash":  "ef762b79886a727b3170f4bd7f326a44",
+                       "textRange":  {
+                                         "startLine":  79,
+                                         "endLine":  79,
+                                         "startOffset":  8,
+                                         "endOffset":  30
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---BlogIA:blog/services.py",
+                                                               "textRange":  {
+                                                                                 "startLine":  77,
+                                                                                 "endLine":  77,
+                                                                                 "startOffset":  8,
+                                                                                 "endOffset":  15
+                                                                             },
+                                                               "msg":  "Parent class.",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove this redundant Exception class; it derives from another which is already caught.",
+                       "effort":  "1min",
+                       "debt":  "1min",
+                       "author":  "",
+                       "tags":  [
+                                    "error-handling",
+                                    "bad-practice",
+                                    "unused"
+                                ],
+                       "creationDate":  "2026-10-28T21:18:36-0300",
+                       "updateDate":  "2026-10-28T21:18:36-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "LOGICAL",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "9dccde61-6118-4e9e-a930-af18429d1093",
+                       "rule":  "Web:S6851",
+                       "severity":  "MAJOR",
+                       "component":  "IA---BlogIA:blog/templates/account.html",
+                       "project":  "IA---BlogIA",
+                       "line":  15,
+                       "hash":  "0103d961252091e48c5f05d6396f6d1d",
+                       "textRange":  {
+                                         "startLine":  15,
+                                         "endLine":  15,
+                                         "startOffset":  0,
+                                         "endOffset":  12
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove redundant word \"image\" from the \"alt\" attribute of your \"img\" tag.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "accessibility"
+                                ],
+                       "creationDate":  "2026-10-28T21:18:36-0300",
+                       "updateDate":  "2026-10-28T21:18:36-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "LOW"
+                                       },
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "78952c7c-d9f6-4705-bdd6-afc288ec7b34",
+                       "rule":  "Web:S5725",
+                       "severity":  "MINOR",
+                       "component":  "IA---BlogIA:blog/templates/base.html",
+                       "project":  "IA---BlogIA",
+                       "line":  15,
+                       "hash":  "d3a849324710a64d959776e31e34fd6d",
+                       "textRange":  {
+                                         "startLine":  15,
+                                         "endLine":  18,
+                                         "startOffset":  4,
+                                         "endOffset":  5
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make sure not using resource integrity feature is safe here.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T21:18:36-0300",
+                       "updateDate":  "2026-10-28T21:18:36-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "333e6bf4-1fb9-47cc-bb77-dd7460749aba",
+                       "rule":  "Web:S5725",
+                       "severity":  "MINOR",
+                       "component":  "IA---BlogIA:blog/templates/base.html",
+                       "project":  "IA---BlogIA",
+                       "line":  177,
+                       "hash":  "37d50d109ef1280feb5133b17815c39e",
+                       "textRange":  {
+                                         "startLine":  177,
+                                         "endLine":  177,
+                                         "startOffset":  0,
+                                         "endOffset":  63
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make sure not using resource integrity feature is safe here.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T21:18:36-0300",
+                       "updateDate":  "2026-10-28T21:18:36-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "233a70b8-f5d0-47c4-81c0-9e698cdc17e3",
+                       "rule":  "Web:S5725",
+                       "severity":  "MINOR",
+                       "component":  "IA---BlogIA:blog/templates/base.html",
+                       "project":  "IA---BlogIA",
+                       "line":  179,
+                       "hash":  "a412832582a4c3b7627ff0815a8072b8",
+                       "textRange":  {
+                                         "startLine":  179,
+                                         "endLine":  179,
+                                         "startOffset":  0,
+                                         "endOffset":  88
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make sure not using resource integrity feature is safe here.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T21:18:36-0300",
+                       "updateDate":  "2026-10-28T21:18:36-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "7bd4795b-a7fa-42d2-a600-8614143cfb3c",
+                       "rule":  "Web:S5725",
+                       "severity":  "MINOR",
+                       "component":  "IA---BlogIA:blog/templates/base.html",
+                       "project":  "IA---BlogIA",
+                       "line":  181,
+                       "hash":  "0870ff58a17b6625ff1acc251bde8c10",
+                       "textRange":  {
+                                         "startLine":  181,
+                                         "endLine":  181,
+                                         "startOffset":  0,
+                                         "endOffset":  82
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make sure not using resource integrity feature is safe here.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "former-hotspot"
+                                ],
+                       "creationDate":  "2026-10-28T21:18:36-0300",
+                       "updateDate":  "2026-10-28T21:18:36-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "2bfb385a-9d75-4e4a-9332-d9e16cc677c6",
+                       "rule":  "Web:S6851",
+                       "severity":  "MAJOR",
+                       "component":  "IA---BlogIA:blog/templates/user_posts.html",
+                       "project":  "IA---BlogIA",
+                       "line":  13,
+                       "hash":  "0103d961252091e48c5f05d6396f6d1d",
+                       "textRange":  {
+                                         "startLine":  13,
+                                         "endLine":  13,
+                                         "startOffset":  0,
+                                         "endOffset":  12
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove redundant word \"image\" from the \"alt\" attribute of your \"img\" tag.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "accessibility"
+                                ],
+                       "creationDate":  "2026-10-28T21:18:36-0300",
+                       "updateDate":  "2026-10-28T21:18:36-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "LOW"
+                                       },
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   }
+               ],
+    "total":  16,
+    "projectKey":  "IA---BlogIA"
+}

@@ -1,0 +1,250 @@
+{
+  "par": "par02_flask_blog",
+  "projeto": "humano",
+  "data_utc": "2026-10-29T22:20:15Z",
+  "python": "3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)]",
+  "fonte_copia": "E:\\codigosTCC\\testes-funcionais\\par02_flask_blog\\copias\\execucao_20261029_191151\\humano",
+  "metodo": "Flask test_client; SQLite em memoria; formulários HTTP, CSRF habilitado; banco isolado",
+  "resumo": {
+    "PASS": 26,
+    "FAIL": 0,
+    "BLOCKED": 0
+  },
+  "erro_preparacao": null,
+  "resultados": [
+    {
+      "teste": "T01",
+      "descricao": "Abrir pagina inicial",
+      "resultado": "PASS",
+      "esperado": "GET / -> 200",
+      "obtido": "HTTP 200",
+      "http_status": null,
+      "duracao_ms": 16.43
+    },
+    {
+      "teste": "T02",
+      "descricao": "Abrir pagina Sobre",
+      "resultado": "PASS",
+      "esperado": "GET /about -> 200",
+      "obtido": "HTTP 200",
+      "http_status": null,
+      "duracao_ms": 1.43
+    },
+    {
+      "teste": "T03",
+      "descricao": "Abrir formulario de cadastro",
+      "resultado": "PASS",
+      "esperado": "GET /register -> 200",
+      "obtido": "HTTP 200",
+      "http_status": null,
+      "duracao_ms": 6.48
+    },
+    {
+      "teste": "T04",
+      "descricao": "Abrir formulario de login",
+      "resultado": "PASS",
+      "esperado": "GET /login -> 200",
+      "obtido": "HTTP 200",
+      "http_status": null,
+      "duracao_ms": 5.3
+    },
+    {
+      "teste": "T05",
+      "descricao": "Impedir acesso anonimo ao perfil",
+      "resultado": "PASS",
+      "esperado": "Acesso anonimo redireciona ao login",
+      "obtido": "HTTP 302; Location=http://localhost/login?next=%2Faccount",
+      "http_status": null,
+      "duracao_ms": 1.0
+    },
+    {
+      "teste": "T06",
+      "descricao": "Impedir publicacao anonima",
+      "resultado": "PASS",
+      "esperado": "Acesso anonimo redireciona ao login",
+      "obtido": "HTTP 302; Location=http://localhost/login?next=%2Fpost%2Fnew",
+      "http_status": null,
+      "duracao_ms": 1.32
+    },
+    {
+      "teste": "T07",
+      "descricao": "Retornar 404 para publicacao inexistente",
+      "resultado": "PASS",
+      "esperado": "GET post inexistente -> 404",
+      "obtido": "HTTP 404",
+      "http_status": null,
+      "duracao_ms": 3.37
+    },
+    {
+      "teste": "T08",
+      "descricao": "Retornar 404 para autor inexistente",
+      "resultado": "PASS",
+      "esperado": "GET autor inexistente -> 404",
+      "obtido": "HTTP 404",
+      "http_status": null,
+      "duracao_ms": 2.01
+    },
+    {
+      "teste": "T09",
+      "descricao": "Nao cadastrar usuario com formulario invalido",
+      "resultado": "PASS",
+      "esperado": "Cadastro invalido nao persiste usuario",
+      "obtido": "HTTP 200",
+      "http_status": null,
+      "duracao_ms": 8.52
+    },
+    {
+      "teste": "T10",
+      "descricao": "Cadastrar usuario valido e persistir no banco",
+      "resultado": "PASS",
+      "esperado": "Cadastro valido persiste e redireciona",
+      "obtido": "HTTP 302; Location=http://localhost/login",
+      "http_status": null,
+      "duracao_ms": 205.2
+    },
+    {
+      "teste": "T11",
+      "descricao": "Rejeitar cadastro duplicado",
+      "resultado": "PASS",
+      "esperado": "Cadastro duplicado rejeitado",
+      "obtido": "HTTP 200",
+      "http_status": null,
+      "duracao_ms": 5.64
+    },
+    {
+      "teste": "T12",
+      "descricao": "Rejeitar login com senha incorreta",
+      "resultado": "PASS",
+      "esperado": "Senha errada nao autentica",
+      "obtido": "HTTP 200",
+      "http_status": null,
+      "duracao_ms": 203.28
+    },
+    {
+      "teste": "T13",
+      "descricao": "Autenticar usuario com senha correta",
+      "resultado": "PASS",
+      "esperado": "Senha correta autentica e acessa conta",
+      "obtido": "HTTP 302; Location=http://localhost/home",
+      "http_status": null,
+      "duracao_ms": 215.93
+    },
+    {
+      "teste": "T14",
+      "descricao": "Consultar perfil autenticado",
+      "resultado": "PASS",
+      "esperado": "Perfil de usuario autenticado -> 200",
+      "obtido": "HTTP 200",
+      "http_status": null,
+      "duracao_ms": 1.55
+    },
+    {
+      "teste": "T15",
+      "descricao": "Rejeitar publicacao sem conteudo",
+      "resultado": "PASS",
+      "esperado": "Post sem conteudo rejeitado, sem persistencia",
+      "obtido": "HTTP 200",
+      "http_status": null,
+      "duracao_ms": 7.63
+    },
+    {
+      "teste": "T16",
+      "descricao": "Criar e persistir publicacao valida",
+      "resultado": "PASS",
+      "esperado": "Post criado e persistido",
+      "obtido": "HTTP 302; Location=http://localhost/home",
+      "http_status": null,
+      "duracao_ms": 5.18
+    },
+    {
+      "teste": "T17",
+      "descricao": "Exibir publicacao na pagina e detalhe",
+      "resultado": "PASS",
+      "esperado": "Post exibido no feed e detalhe",
+      "obtido": "HTTP 200 home/detalhe; titulo e conteudo presentes",
+      "http_status": null,
+      "duracao_ms": 6.0
+    },
+    {
+      "teste": "T18",
+      "descricao": "Editar e persistir publicacao propria",
+      "resultado": "PASS",
+      "esperado": "Edicao propria persiste titulo e conteudo",
+      "obtido": "HTTP 302; Location=http://localhost/post/1",
+      "http_status": null,
+      "duracao_ms": 6.01
+    },
+    {
+      "teste": "T19",
+      "descricao": "Listar publicacoes do autor",
+      "resultado": "PASS",
+      "esperado": "Pagina do autor exibe post",
+      "obtido": "HTTP 200",
+      "http_status": null,
+      "duracao_ms": 7.82
+    },
+    {
+      "teste": "T20",
+      "descricao": "Impedir edicao por outro usuario",
+      "resultado": "PASS",
+      "esperado": "Outro usuario nao pode editar post",
+      "obtido": "HTTP 403",
+      "http_status": null,
+      "duracao_ms": 424.22
+    },
+    {
+      "teste": "T21",
+      "descricao": "Impedir exclusao por outro usuario",
+      "resultado": "PASS",
+      "esperado": "Outro usuario nao pode excluir post",
+      "obtido": "HTTP 403",
+      "http_status": null,
+      "duracao_ms": 5.53
+    },
+    {
+      "teste": "T22",
+      "descricao": "Excluir publicacao propria e confirmar 404",
+      "resultado": "PASS",
+      "esperado": "Exclusao propria efetiva; detalhe vira 404",
+      "obtido": "HTTP 302; Location=http://localhost/home",
+      "http_status": null,
+      "duracao_ms": 6.98
+    },
+    {
+      "teste": "T23",
+      "descricao": "Encerrar sessao e proteger perfil",
+      "resultado": "PASS",
+      "esperado": "Logout encerra sessao",
+      "obtido": "HTTP 302; Location=http://localhost/home",
+      "http_status": null,
+      "duracao_ms": 2.32
+    },
+    {
+      "teste": "T24",
+      "descricao": "Recusar token de redefinicao invalido",
+      "resultado": "PASS",
+      "esperado": "Token invalido redireciona, sem reset",
+      "obtido": "HTTP 302; Location=http://localhost/reset_password",
+      "http_status": null,
+      "duracao_ms": 1.05
+    },
+    {
+      "teste": "T25",
+      "descricao": "Exibir pagina de solicitacao de redefinicao",
+      "resultado": "PASS",
+      "esperado": "GET pedido de redefinicao -> 200",
+      "obtido": "HTTP 200",
+      "http_status": null,
+      "duracao_ms": 3.72
+    },
+    {
+      "teste": "T26",
+      "descricao": "Bloquear publicacao sem token CSRF",
+      "resultado": "PASS",
+      "esperado": "POST sem CSRF nao cria post",
+      "obtido": "HTTP 200",
+      "http_status": null,
+      "duracao_ms": 211.83
+    }
+  ]
+}

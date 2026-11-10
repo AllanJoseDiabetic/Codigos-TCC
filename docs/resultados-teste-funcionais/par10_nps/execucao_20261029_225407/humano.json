@@ -1,0 +1,623 @@
+{
+  "par": "par10_nps",
+  "projeto": "humano",
+  "data_inicio_utc": "2026-10-30T01:54:48.514Z",
+  "data_fim_utc": "2026-10-30T01:55:00.998Z",
+  "metodo": "HTTP interno supertest + Express real + TypeORM e SQLite temporario; humano com esquema externo equivalente; IA migracao original; e-mail stub externo",
+  "projeto_fonte": "E:\\codigosTCC\\testes-funcionais\\par10_nps\\copias\\execucao_20261029_225407\\humano",
+  "preparacao_erro": null,
+  "observacoes": [
+    "NPS e persistencia reais; nao comprova envio SMTP",
+    "Testes de robustez expressam criterios adicionais",
+    "Humano: esquema externo equivalente ao das migracoes, timestamps SQLite adaptados; IA: migracao original aplicada",
+    "Dependencias npm instaladas em copias temporarias"
+  ],
+  "email_stubs_chamadas": 7,
+  "resumo": {
+    "PASS": 43,
+    "FAIL": 17,
+    "BLOCKED": 0
+  },
+  "resultados": [
+    {
+      "projeto": "humano",
+      "teste": "T01",
+      "descricao": "Listar pesquisas em banco novo",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 39
+    },
+    {
+      "projeto": "humano",
+      "teste": "T02",
+      "descricao": "Retornar 404 para rota inexistente",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 15
+    },
+    {
+      "projeto": "humano",
+      "teste": "T03",
+      "descricao": "Rejeitar JSON malformado (nao retornar 500)",
+      "grupo": "robustez",
+      "resultado": "FAIL",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "AssertionError: HTTP 500 (esperado 400); body={\"status\":\"Error\",\"message\":\"Internal server error Expected property name or '}' in JSON at position 1 (line 1 column 2)\"}",
+      "duracao_ms": 139
+    },
+    {
+      "projeto": "humano",
+      "teste": "T04",
+      "descricao": "Rejeitar usuario sem nome",
+      "grupo": "robustez",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 20
+    },
+    {
+      "projeto": "humano",
+      "teste": "T05",
+      "descricao": "Rejeitar usuario sem email",
+      "grupo": "robustez",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 10
+    },
+    {
+      "projeto": "humano",
+      "teste": "T06",
+      "descricao": "Rejeitar email com sintaxe invalida",
+      "grupo": "robustez",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 10
+    },
+    {
+      "projeto": "humano",
+      "teste": "T07",
+      "descricao": "Cadastrar primeiro usuario valido",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 33
+    },
+    {
+      "projeto": "humano",
+      "teste": "T08",
+      "descricao": "Verificar dados retornados do usuario criado",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 15
+    },
+    {
+      "projeto": "humano",
+      "teste": "T09",
+      "descricao": "Impedir cadastro de email duplicado",
+      "grupo": "robustez",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 9
+    },
+    {
+      "projeto": "humano",
+      "teste": "T10",
+      "descricao": "Cadastrar segundo usuario valido",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 18
+    },
+    {
+      "projeto": "humano",
+      "teste": "T11",
+      "descricao": "Rejeitar pesquisa sem titulo",
+      "grupo": "robustez",
+      "resultado": "FAIL",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "AssertionError: Esperado rejeicao 4xx; HTTP 500; body={\"status\":\"Error\",\"message\":\"Internal server error SQLITE_CONSTRAINT: NOT NULL constraint failed: surveys.title\"}",
+      "duracao_ms": 14
+    },
+    {
+      "projeto": "humano",
+      "teste": "T12",
+      "descricao": "Rejeitar pesquisa sem descricao",
+      "grupo": "robustez",
+      "resultado": "FAIL",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "AssertionError: Esperado rejeicao 4xx; HTTP 500; body={\"status\":\"Error\",\"message\":\"Internal server error SQLITE_CONSTRAINT: NOT NULL constraint failed: surveys.description\"}",
+      "duracao_ms": 10
+    },
+    {
+      "projeto": "humano",
+      "teste": "T13",
+      "descricao": "Cadastrar pesquisa A",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 14
+    },
+    {
+      "projeto": "humano",
+      "teste": "T14",
+      "descricao": "Confirmar pesquisa A na listagem",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 6
+    },
+    {
+      "projeto": "humano",
+      "teste": "T15",
+      "descricao": "Cadastrar pesquisa B",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 13
+    },
+    {
+      "projeto": "humano",
+      "teste": "T16",
+      "descricao": "Listar pesquisas distintas A e B",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 8
+    },
+    {
+      "projeto": "humano",
+      "teste": "T17",
+      "descricao": "Rejeitar convite para usuario inexistente",
+      "grupo": "robustez",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 7
+    },
+    {
+      "projeto": "humano",
+      "teste": "T18",
+      "descricao": "Rejeitar convite para pesquisa inexistente",
+      "grupo": "robustez",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 17
+    },
+    {
+      "projeto": "humano",
+      "teste": "T19",
+      "descricao": "Rejeitar convite sem email",
+      "grupo": "robustez",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 9
+    },
+    {
+      "projeto": "humano",
+      "teste": "T20",
+      "descricao": "Rejeitar convite sem identificador da pesquisa",
+      "grupo": "robustez",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 15
+    },
+    {
+      "projeto": "humano",
+      "teste": "T21",
+      "descricao": "Gerar convite para usuario 1 e pesquisa A",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 23
+    },
+    {
+      "projeto": "humano",
+      "teste": "T22",
+      "descricao": "Consultar NPS da pesquisa A antes de responder",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 7
+    },
+    {
+      "projeto": "humano",
+      "teste": "T23",
+      "descricao": "NPS sem respostas deve ser zero e finito",
+      "grupo": "robustez",
+      "resultado": "FAIL",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "AssertionError: NPS=null, esperado=0",
+      "duracao_ms": 9
+    },
+    {
+      "projeto": "humano",
+      "teste": "T24",
+      "descricao": "Rejeitar resposta sem identificador de convite",
+      "grupo": "robustez",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 7
+    },
+    {
+      "projeto": "humano",
+      "teste": "T25",
+      "descricao": "Registrar nota zero para primeira resposta",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 19
+    },
+    {
+      "projeto": "humano",
+      "teste": "T26",
+      "descricao": "Classificar nota zero como detratora",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 6
+    },
+    {
+      "projeto": "humano",
+      "teste": "T27",
+      "descricao": "Gerar convite para segundo usuario",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 17
+    },
+    {
+      "projeto": "humano",
+      "teste": "T28",
+      "descricao": "Registrar nota sete como passiva",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 14
+    },
+    {
+      "projeto": "humano",
+      "teste": "T29",
+      "descricao": "Calcular NPS -50 para 0 e 7",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 5
+    },
+    {
+      "projeto": "humano",
+      "teste": "T30",
+      "descricao": "Gerar novo convite apos resposta anterior",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 15
+    },
+    {
+      "projeto": "humano",
+      "teste": "T31",
+      "descricao": "Registrar nota dez como promotora",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 13
+    },
+    {
+      "projeto": "humano",
+      "teste": "T32",
+      "descricao": "Calcular NPS zero para 0, 7 e 10",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 6
+    },
+    {
+      "projeto": "humano",
+      "teste": "T33",
+      "descricao": "Rejeitar segunda resposta do mesmo convite",
+      "grupo": "robustez",
+      "resultado": "FAIL",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "AssertionError: Esperado rejeicao 4xx; HTTP 200; body={\"id\":\"d2c66ec9-da43-4f84-9c0f-c4c4b45a28b1\",\"user_id\":\"d3971802-794a-46b4-b120-aec43661dc37\",\"survey_id\":\"6bf7ca95-d306-4a9b-a0ff-4d76c4201df2\",\"value\":1,\"created_at\":\"2026-10-30T01:55:00.000Z\"}",
+      "duracao_ms": 13
+    },
+    {
+      "projeto": "humano",
+      "teste": "T34",
+      "descricao": "Preservar pontuacao apos tentativa de sobrescrita",
+      "grupo": "robustez",
+      "resultado": "FAIL",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "AssertionError: detratores=2, esperado=1",
+      "duracao_ms": 8
+    },
+    {
+      "projeto": "humano",
+      "teste": "T35",
+      "descricao": "Criar convite para pesquisa B",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 18
+    },
+    {
+      "projeto": "humano",
+      "teste": "T36",
+      "descricao": "Registrar nota nove na pesquisa B",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 11
+    },
+    {
+      "projeto": "humano",
+      "teste": "T37",
+      "descricao": "NPS da pesquisa B deve ser 100",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 7
+    },
+    {
+      "projeto": "humano",
+      "teste": "T38",
+      "descricao": "Respostas da pesquisa B nao alteram A",
+      "grupo": "comum",
+      "resultado": "FAIL",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "AssertionError: detratores=2, esperado=1",
+      "duracao_ms": 7
+    },
+    {
+      "projeto": "humano",
+      "teste": "T39",
+      "descricao": "Rejeitar NPS com ID malformado",
+      "grupo": "robustez",
+      "resultado": "FAIL",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "AssertionError: Esperado rejeicao 4xx; HTTP 200; body={\"detractor\":0,\"promoters\":0,\"passive\":0,\"totalAnswers\":0,\"nps\":null}",
+      "duracao_ms": 7
+    },
+    {
+      "projeto": "humano",
+      "teste": "T40",
+      "descricao": "Pesquisa inexistente retorna HTTP 404 no NPS",
+      "grupo": "robustez",
+      "resultado": "FAIL",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "AssertionError: HTTP 200 (esperado 404); body={\"detractor\":0,\"promoters\":0,\"passive\":0,\"totalAnswers\":0,\"nps\":null}",
+      "duracao_ms": 7
+    },
+    {
+      "projeto": "humano",
+      "teste": "T41",
+      "descricao": "Resposta para convite inexistente deve ser rejeitada",
+      "grupo": "robustez",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 7
+    },
+    {
+      "projeto": "humano",
+      "teste": "T42",
+      "descricao": "Rejeitar convite com survey_id malformado",
+      "grupo": "robustez",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 8
+    },
+    {
+      "projeto": "humano",
+      "teste": "T43",
+      "descricao": "Rejeitar titulo de pesquisa vazio",
+      "grupo": "robustez",
+      "resultado": "FAIL",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "AssertionError: Esperado rejeicao 4xx; HTTP 201; body={\"id\":\"5f2a24f7-6138-456e-b6c6-9aedeb4b3d2e\",\"title\":\"\",\"description\":\"Descricao valida\",\"created_at\":\"2026-10-30T01:55:00.000Z\"}",
+      "duracao_ms": 14
+    },
+    {
+      "projeto": "humano",
+      "teste": "T44",
+      "descricao": "Rejeitar descricao de pesquisa vazia",
+      "grupo": "robustez",
+      "resultado": "FAIL",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "AssertionError: Esperado rejeicao 4xx; HTTP 201; body={\"id\":\"95457388-7ff8-4f68-8a29-aa666136610c\",\"title\":\"Titulo valido\",\"description\":\"\",\"created_at\":\"2026-10-30T01:55:00.000Z\"}",
+      "duracao_ms": 12
+    },
+    {
+      "projeto": "humano",
+      "teste": "T45",
+      "descricao": "Rejeitar nome com apenas espacos",
+      "grupo": "robustez",
+      "resultado": "FAIL",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "AssertionError: Esperado rejeicao 4xx; HTTP 201; body={\"id\":\"8cbe49d5-c401-4cb4-9728-6470280e23d4\",\"name\":\"   \",\"email\":\"espacos@example.invalid\",\"created_at\":\"2026-10-30T01:55:00.000Z\"}",
+      "duracao_ms": 12
+    },
+    {
+      "projeto": "humano",
+      "teste": "T46",
+      "descricao": "Cadastrar usuario para notas limites",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 15
+    },
+    {
+      "projeto": "humano",
+      "teste": "T47",
+      "descricao": "Criar pesquisa C para testes de notas",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 16
+    },
+    {
+      "projeto": "humano",
+      "teste": "T48",
+      "descricao": "Criar convite para teste de notas invalidas",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 15
+    },
+    {
+      "projeto": "humano",
+      "teste": "T49",
+      "descricao": "Rejeitar resposta com nota negativa",
+      "grupo": "robustez",
+      "resultado": "FAIL",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "AssertionError: Esperado rejeicao 4xx; HTTP 200; body={\"id\":\"7b3f8122-d8fc-4751-bcbf-9535d3406d9d\",\"user_id\":\"2bd72227-3fb8-4b3f-8847-4dbb9f627fc8\",\"survey_id\":\"1bb20b53-c4bb-4721-89fd-eba4ab031d5b\",\"value\":-1,\"created_at\":\"2026-10-30T01:55:00.000Z\"}",
+      "duracao_ms": 11
+    },
+    {
+      "projeto": "humano",
+      "teste": "T50",
+      "descricao": "Rejeitar resposta com nota acima de dez",
+      "grupo": "robustez",
+      "resultado": "FAIL",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "AssertionError: Esperado rejeicao 4xx; HTTP 200; body={\"id\":\"7b3f8122-d8fc-4751-bcbf-9535d3406d9d\",\"user_id\":\"2bd72227-3fb8-4b3f-8847-4dbb9f627fc8\",\"survey_id\":\"1bb20b53-c4bb-4721-89fd-eba4ab031d5b\",\"value\":11,\"created_at\":\"2026-10-30T01:55:00.000Z\"}",
+      "duracao_ms": 12
+    },
+    {
+      "projeto": "humano",
+      "teste": "T51",
+      "descricao": "Rejeitar resposta com nota decimal",
+      "grupo": "robustez",
+      "resultado": "FAIL",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "AssertionError: Esperado rejeicao 4xx; HTTP 200; body={\"id\":\"7b3f8122-d8fc-4751-bcbf-9535d3406d9d\",\"user_id\":\"2bd72227-3fb8-4b3f-8847-4dbb9f627fc8\",\"survey_id\":\"1bb20b53-c4bb-4721-89fd-eba4ab031d5b\",\"value\":8.5,\"created_at\":\"2026-10-30T01:55:00.000Z\"}",
+      "duracao_ms": 13
+    },
+    {
+      "projeto": "humano",
+      "teste": "T52",
+      "descricao": "Rejeitar resposta com nota nao numerica",
+      "grupo": "robustez",
+      "resultado": "FAIL",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "AssertionError: Esperado rejeicao 4xx; HTTP 200; body={\"id\":\"7b3f8122-d8fc-4751-bcbf-9535d3406d9d\",\"user_id\":\"2bd72227-3fb8-4b3f-8847-4dbb9f627fc8\",\"survey_id\":\"1bb20b53-c4bb-4721-89fd-eba4ab031d5b\",\"value\":null,\"created_at\":\"2026-10-30T01:55:00.000Z\"}",
+      "duracao_ms": 15
+    },
+    {
+      "projeto": "humano",
+      "teste": "T53",
+      "descricao": "Registrar nota seis como detratora",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 11
+    },
+    {
+      "projeto": "humano",
+      "teste": "T54",
+      "descricao": "Calcular NPS -100 apos nota seis",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 5
+    },
+    {
+      "projeto": "humano",
+      "teste": "T55",
+      "descricao": "Criar segundo convite para teste de nota oito",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 17
+    },
+    {
+      "projeto": "humano",
+      "teste": "T56",
+      "descricao": "Registrar nota oito como passiva",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 14
+    },
+    {
+      "projeto": "humano",
+      "teste": "T57",
+      "descricao": "Criar terceiro convite para teste de nota nove",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 17
+    },
+    {
+      "projeto": "humano",
+      "teste": "T58",
+      "descricao": "Registrar nota nove como promotora",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 13
+    },
+    {
+      "projeto": "humano",
+      "teste": "T59",
+      "descricao": "NPS final C: um detrator, passivo e promotor",
+      "grupo": "comum",
+      "resultado": "PASS",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "Conforme expectativa",
+      "duracao_ms": 6
+    },
+    {
+      "projeto": "humano",
+      "teste": "T60",
+      "descricao": "Confirmar nenhuma resposta entre pesquisas misturada",
+      "grupo": "comum",
+      "resultado": "FAIL",
+      "esperado": "Criterio definido no executor externo",
+      "obtido": "AssertionError: detratores=2, esperado=1",
+      "duracao_ms": 4
+    }
+  ]
+}

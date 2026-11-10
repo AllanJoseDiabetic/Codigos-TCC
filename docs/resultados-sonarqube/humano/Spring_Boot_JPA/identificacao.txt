@@ -1,0 +1,6 @@
+﻿Projeto: Spring Boot/JPA
+Repositorio: https://github.com/acenelio/workshop-springboot2-jpa
+Commit: 4acdad5169c6453e9318d8a760e8880c1e5588f3
+Java utilizado na compilacao: 25.0.2
+Java declarado no projeto: 11
+Scanner: SonarScanner for Maven

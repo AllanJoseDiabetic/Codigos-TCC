@@ -1,0 +1,78 @@
+﻿{
+    "component":  {
+                      "key":  "h8---CS50-Capstone-Bug-Tracker",
+                      "name":  "h8 - CS50 Capstone Bug Tracker",
+                      "qualifier":  "TRK",
+                      "measures":  [
+                                       {
+                                           "metric":  "coverage",
+                                           "value":  "0.0",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "complexity",
+                                           "value":  "127"
+                                       },
+                                       {
+                                           "metric":  "duplicated_lines_density",
+                                           "value":  "18.6",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "ncloc_language_distribution",
+                                           "value":  "css=17;js=393;py=545;web=173"
+                                       },
+                                       {
+                                           "metric":  "software_quality_security_issues",
+                                           "value":  "23",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "sqale_debt_ratio",
+                                           "value":  "1.0",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "security_hotspots",
+                                           "value":  "1",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "sqale_index",
+                                           "value":  "333",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "lines_to_cover",
+                                           "value":  "483"
+                                       },
+                                       {
+                                           "metric":  "software_quality_reliability_issues",
+                                           "value":  "4",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "cognitive_complexity",
+                                           "value":  "70",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "ncloc",
+                                           "value":  "1128"
+                                       },
+                                       {
+                                           "metric":  "software_quality_maintainability_issues",
+                                           "value":  "75",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "files",
+                                           "value":  "38"
+                                       },
+                                       {
+                                           "metric":  "lines",
+                                           "value":  "1643"
+                                       }
+                                   ]
+                  }
+}

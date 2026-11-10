@@ -1,0 +1,73 @@
+﻿projeto,teste,descricao,resultado,esperado,obtido,duracao_ms
+humano,T01,Saida inicial desenergizada,PASS,false,false,0.37
+humano,T02,Fonte de nivel alto,PASS,true,true,53.87
+humano,T03,AND 00,PASS,False,False,3.62
+humano,T04,AND 01,PASS,False,False,1.11
+humano,T05,AND 10,PASS,False,False,0.86
+humano,T06,AND 11,PASS,True,True,1.3
+humano,T07,OR 00,PASS,False,False,1.82
+humano,T08,OR 01,PASS,True,True,0.89
+humano,T09,OR 10,PASS,True,True,0.94
+humano,T10,OR 11,PASS,True,True,1.18
+humano,T11,NOT 0,PASS,true,True,1.81
+humano,T12,NOT 1,PASS,false,False,0.66
+humano,T13,Juncao 0,PASS,false,False,5.36
+humano,T14,Juncao 1,PASS,true,True,0.81
+humano,T15,LED desligado,PASS,false,False,2.3
+humano,T16,LED ligado,PASS,true,True,1.36
+humano,T17,Clock estado inicial,PASS,false,false,1.1
+humano,T18,Clock primeiro pulso,PASS,true,true,0.37
+humano,T19,Clock segundo pulso,PASS,false,false,0.06
+humano,T20,Flip-flop D inicia zero,PASS,false,false,2.96
+humano,T21,Flip-flop D captura 1 na borda,PASS,true,true,0.14
+humano,T22,Flip-flop D mantem estado sem nova borda,PASS,true,true,0.06
+humano,T23,Flip-flop D captura 0 na borda seguinte,PASS,false,false,0.08
+humano,T24,Flip-flop JK inicia zero,PASS,false,false,3.09
+humano,T25,Flip-flop JK alterna com J=K=1,PASS,true,true,0.1
+humano,T26,Flip-flop JK zera com J=0 K=1,PASS,false,false,0.11
+humano,T27,Flip-flop JK seta com J=1 K=0,PASS,true,true,0.1
+humano,T28,Flip-flop JK mantem com J=K=0,PASS,true,true,0.1
+humano,T29,Visor 8 bits zero,PASS,0,0,5.38
+humano,T30,Visor 8 bits valor 3,PASS,3,3,2.9
+humano,T31,Visor 8 bits valor 165,PASS,165,165,2.76
+humano,T32,Interruptor alterna para ligado,PASS,true,True,1.46
+humano,T33,Interruptor alterna de volta para desligado,PASS,false,False,0.44
+humano,T34,LED responde a mudanca dinamica,PASS,0->1->0,0->1->0,1.25
+humano,T35,Entrada nao conectada em nivel baixo,PASS,false,false,0.23
+humano,T36,NOT acompanha mudancas sucessivas,PASS,1->0->1,1->0->1,0.81
+IA,T01,Saida inicial desenergizada,PASS,false,false,1.09
+IA,T02,Fonte de nivel alto,PASS,true,true,0.26
+IA,T03,AND 00,PASS,False,False,0.74
+IA,T04,AND 01,PASS,False,False,0.13
+IA,T05,AND 10,PASS,False,False,0.0
+IA,T06,AND 11,PASS,True,True,0.0
+IA,T07,OR 00,PASS,False,False,0.08
+IA,T08,OR 01,PASS,True,True,0.0
+IA,T09,OR 10,PASS,True,True,0.0
+IA,T10,OR 11,PASS,True,True,0.0
+IA,T11,NOT 0,PASS,true,True,0.17
+IA,T12,NOT 1,PASS,false,False,0.05
+IA,T13,Juncao 0,PASS,false,False,0.12
+IA,T14,Juncao 1,PASS,true,True,0.04
+IA,T15,LED desligado,PASS,false,False,0.11
+IA,T16,LED ligado,PASS,true,True,0.04
+IA,T17,Clock estado inicial,PASS,false,false,0.09
+IA,T18,Clock primeiro pulso,PASS,true,true,2.82
+IA,T19,Clock segundo pulso,PASS,false,false,0.1
+IA,T20,Flip-flop D inicia zero,PASS,false,false,0.12
+IA,T21,Flip-flop D captura 1 na borda,PASS,true,true,0.12
+IA,T22,Flip-flop D mantem estado sem nova borda,PASS,true,true,0.05
+IA,T23,Flip-flop D captura 0 na borda seguinte,PASS,false,false,0.05
+IA,T24,Flip-flop JK inicia zero,PASS,false,false,0.24
+IA,T25,Flip-flop JK alterna com J=K=1,PASS,true,true,0.1
+IA,T26,Flip-flop JK zera com J=0 K=1,PASS,false,false,0.1
+IA,T27,Flip-flop JK seta com J=1 K=0,PASS,true,true,0.06
+IA,T28,Flip-flop JK mantem com J=K=0,PASS,true,true,0.05
+IA,T29,Visor 8 bits zero,PASS,0,0,0.38
+IA,T30,Visor 8 bits valor 3,PASS,3,3,0.09
+IA,T31,Visor 8 bits valor 165,PASS,165,165,0.06
+IA,T32,Interruptor alterna para ligado,PASS,true,True,0.12
+IA,T33,Interruptor alterna de volta para desligado,PASS,false,False,0.04
+IA,T34,LED responde a mudanca dinamica,PASS,0->1->0,0->1->0,0.1
+IA,T35,Entrada nao conectada em nivel baixo,PASS,false,false,0.06
+IA,T36,NOT acompanha mudancas sucessivas,PASS,1->0->1,1->0->1,0.11

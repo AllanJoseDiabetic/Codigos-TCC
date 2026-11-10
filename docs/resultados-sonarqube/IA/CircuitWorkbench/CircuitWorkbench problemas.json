@@ -1,0 +1,1052 @@
+﻿{
+    "issues":  [
+                   {
+                       "key":  "f19e142e-66cf-471c-99c5-104cc7086538",
+                       "rule":  "csharpsquid:S3776",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---CircuitWorkbench:CircuitModel.cs",
+                       "project":  "IA---CircuitWorkbench",
+                       "line":  578,
+                       "hash":  "c9f143f2eb7c6c96ee562d9e0f1e4bc8",
+                       "textRange":  {
+                                         "startLine":  578,
+                                         "endLine":  578,
+                                         "startOffset":  20,
+                                         "endOffset":  31
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:CircuitModel.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  580,
+                                                                                 "endLine":  580,
+                                                                                 "startOffset":  12,
+                                                                                 "endOffset":  19
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:CircuitModel.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  582,
+                                                                                 "endLine":  582,
+                                                                                 "startOffset":  16,
+                                                                                 "endOffset":  18
+                                                                             },
+                                                               "msg":  "+2 (incl 1 for nesting)",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:CircuitModel.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  593,
+                                                                                 "endLine":  593,
+                                                                                 "startOffset":  12,
+                                                                                 "endOffset":  19
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:CircuitModel.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  595,
+                                                                                 "endLine":  595,
+                                                                                 "startOffset":  16,
+                                                                                 "endOffset":  18
+                                                                             },
+                                                               "msg":  "+2 (incl 1 for nesting)",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:CircuitModel.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  601,
+                                                                                 "endLine":  601,
+                                                                                 "startOffset":  49,
+                                                                                 "endOffset":  51
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:CircuitModel.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  605,
+                                                                                 "endLine":  605,
+                                                                                 "startOffset":  20,
+                                                                                 "endOffset":  22
+                                                                             },
+                                                               "msg":  "+3 (incl 2 for nesting)",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:CircuitModel.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  614,
+                                                                                 "endLine":  614,
+                                                                                 "startOffset":  16,
+                                                                                 "endOffset":  20
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:CircuitModel.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  623,
+                                                                                 "endLine":  623,
+                                                                                 "startOffset":  49,
+                                                                                 "endOffset":  51
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:CircuitModel.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  627,
+                                                                                 "endLine":  627,
+                                                                                 "startOffset":  20,
+                                                                                 "endOffset":  22
+                                                                             },
+                                                               "msg":  "+3 (incl 2 for nesting)",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:CircuitModel.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  629,
+                                                                                 "endLine":  629,
+                                                                                 "startOffset":  24,
+                                                                                 "endOffset":  26
+                                                                             },
+                                                               "msg":  "+4 (incl 3 for nesting)",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:CircuitModel.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  629,
+                                                                                 "endLine":  629,
+                                                                                 "startOffset":  31,
+                                                                                 "endOffset":  33
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:CircuitModel.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  633,
+                                                                                 "endLine":  633,
+                                                                                 "startOffset":  24,
+                                                                                 "endOffset":  28
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:CircuitModel.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  633,
+                                                                                 "endLine":  633,
+                                                                                 "startOffset":  36,
+                                                                                 "endOffset":  38
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:CircuitModel.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  637,
+                                                                                 "endLine":  637,
+                                                                                 "startOffset":  24,
+                                                                                 "endOffset":  28
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:CircuitModel.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  637,
+                                                                                 "endLine":  637,
+                                                                                 "startOffset":  35,
+                                                                                 "endOffset":  37
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:CircuitModel.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  641,
+                                                                                 "endLine":  641,
+                                                                                 "startOffset":  24,
+                                                                                 "endOffset":  28
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:CircuitModel.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  653,
+                                                                                 "endLine":  653,
+                                                                                 "startOffset":  12,
+                                                                                 "endOffset":  19
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:CircuitModel.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  664,
+                                                                                 "endLine":  664,
+                                                                                 "startOffset":  35,
+                                                                                 "endOffset":  37
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Refactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.",
+                       "effort":  "6min",
+                       "debt":  "6min",
+                       "author":  "",
+                       "tags":  [
+                                    "brain-overload"
+                                ],
+                       "creationDate":  "2026-10-28T22:29:20-0300",
+                       "updateDate":  "2026-10-28T22:29:20-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "FOCUSED",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "5a12c8d9-f9bd-45c1-81a8-0f38825cf2ad",
+                       "rule":  "csharpsquid:S3260",
+                       "severity":  "MINOR",
+                       "component":  "IA---CircuitWorkbench:MainWindow.xaml.cs",
+                       "project":  "IA---CircuitWorkbench",
+                       "line":  16,
+                       "hash":  "7cc4bea4bf301f737583d990f3fe43ed",
+                       "textRange":  {
+                                         "startLine":  16,
+                                         "endLine":  16,
+                                         "startOffset":  22,
+                                         "endOffset":  37
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Private classes which are not derived in the current assembly should be marked as \u0027sealed\u0027.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "performance"
+                                ],
+                       "creationDate":  "2026-10-28T22:29:20-0300",
+                       "updateDate":  "2026-10-28T22:29:20-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "EFFICIENT",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "044433fb-094f-442b-be6b-93d41643defd",
+                       "rule":  "csharpsquid:S4487",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---CircuitWorkbench:MainWindow.xaml.cs",
+                       "project":  "IA---CircuitWorkbench",
+                       "line":  20,
+                       "hash":  "e673fb9696315ed8f3b4b03b1bacda44",
+                       "textRange":  {
+                                         "startLine":  20,
+                                         "endLine":  20,
+                                         "startOffset":  29,
+                                         "endOffset":  34
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove this unread private class field \u0027Title\u0027 or refactor the code to use its value.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "cwe",
+                                    "unused"
+                                ],
+                       "creationDate":  "2026-10-28T22:29:20-0300",
+                       "updateDate":  "2026-10-28T22:29:20-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "48a6fbbc-b341-451f-a510-93489190e720",
+                       "rule":  "csharpsquid:S2325",
+                       "severity":  "MINOR",
+                       "component":  "IA---CircuitWorkbench:MainWindow.xaml.cs",
+                       "project":  "IA---CircuitWorkbench",
+                       "line":  390,
+                       "hash":  "f6a008d78db37d740ace27d8596e9e3f",
+                       "textRange":  {
+                                         "startLine":  390,
+                                         "endLine":  390,
+                                         "startOffset":  24,
+                                         "endOffset":  33
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make \u0027CreatePin\u0027 a static method.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "pitfall"
+                                ],
+                       "creationDate":  "2026-10-28T22:29:20-0300",
+                       "updateDate":  "2026-10-28T22:29:20-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "ccc0668c-86b0-44c7-ba78-e87714e9f6c5",
+                       "rule":  "csharpsquid:S2325",
+                       "severity":  "MINOR",
+                       "component":  "IA---CircuitWorkbench:MainWindow.xaml.cs",
+                       "project":  "IA---CircuitWorkbench",
+                       "line":  408,
+                       "hash":  "9e4ed7a2cdcd228103a68a55979150d3",
+                       "textRange":  {
+                                         "startLine":  408,
+                                         "endLine":  408,
+                                         "startOffset":  26,
+                                         "endOffset":  40
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make \u0027CreatePinLabel\u0027 a static method.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "pitfall"
+                                ],
+                       "creationDate":  "2026-10-28T22:29:20-0300",
+                       "updateDate":  "2026-10-28T22:29:20-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "121121db-5405-45e6-b5df-1f7ffd8954c2",
+                       "rule":  "csharpsquid:S2325",
+                       "severity":  "MINOR",
+                       "component":  "IA---CircuitWorkbench:MainWindow.xaml.cs",
+                       "project":  "IA---CircuitWorkbench",
+                       "line":  424,
+                       "hash":  "602e504b9c93e31574c1a26681d0eea1",
+                       "textRange":  {
+                                         "startLine":  424,
+                                         "endLine":  424,
+                                         "startOffset":  21,
+                                         "endOffset":  44
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make \u0027PositionComponentVisual\u0027 a static method.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "pitfall"
+                                ],
+                       "creationDate":  "2026-10-28T22:29:20-0300",
+                       "updateDate":  "2026-10-28T22:29:20-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "19bc77ca-a83d-4d18-9251-d632551c9d5b",
+                       "rule":  "csharpsquid:S3776",
+                       "severity":  "CRITICAL",
+                       "component":  "IA---CircuitWorkbench:MainWindow.xaml.cs",
+                       "project":  "IA---CircuitWorkbench",
+                       "line":  760,
+                       "hash":  "606228c812850853cd2a0f1bb8b1aa7b",
+                       "textRange":  {
+                                         "startLine":  760,
+                                         "endLine":  760,
+                                         "startOffset":  21,
+                                         "endOffset":  43
+                                     },
+                       "flows":  [
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  766,
+                                                                                 "endLine":  766,
+                                                                                 "startOffset":  12,
+                                                                                 "endOffset":  15
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  774,
+                                                                                 "endLine":  774,
+                                                                                 "startOffset":  16,
+                                                                                 "endOffset":  18
+                                                                             },
+                                                               "msg":  "+2 (incl 1 for nesting)",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  779,
+                                                                                 "endLine":  779,
+                                                                                 "startOffset":  16,
+                                                                                 "endOffset":  20
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  783,
+                                                                                 "endLine":  783,
+                                                                                 "startOffset":  28,
+                                                                                 "endOffset":  29
+                                                                             },
+                                                               "msg":  "+3 (incl 2 for nesting)",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  788,
+                                                                                 "endLine":  788,
+                                                                                 "startOffset":  12,
+                                                                                 "endOffset":  15
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  794,
+                                                                                 "endLine":  794,
+                                                                                 "startOffset":  24,
+                                                                                 "endOffset":  25
+                                                                             },
+                                                               "msg":  "+2 (incl 1 for nesting)",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  797,
+                                                                                 "endLine":  797,
+                                                                                 "startOffset":  16,
+                                                                                 "endOffset":  18
+                                                                             },
+                                                               "msg":  "+2 (incl 1 for nesting)",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  797,
+                                                                                 "endLine":  797,
+                                                                                 "startOffset":  47,
+                                                                                 "endOffset":  49
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  805,
+                                                                                 "endLine":  805,
+                                                                                 "startOffset":  16,
+                                                                                 "endOffset":  20
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  818,
+                                                                                 "endLine":  818,
+                                                                                 "startOffset":  12,
+                                                                                 "endOffset":  14
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  825,
+                                                                                 "endLine":  825,
+                                                                                 "startOffset":  20,
+                                                                                 "endOffset":  21
+                                                                             },
+                                                               "msg":  "+2 (incl 1 for nesting)",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  829,
+                                                                                 "endLine":  829,
+                                                                                 "startOffset":  20,
+                                                                                 "endOffset":  21
+                                                                             },
+                                                               "msg":  "+2 (incl 1 for nesting)",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     },
+                                     {
+                                         "locations":  [
+                                                           {
+                                                               "component":  "IA---CircuitWorkbench:MainWindow.xaml.cs",
+                                                               "textRange":  {
+                                                                                 "startLine":  834,
+                                                                                 "endLine":  834,
+                                                                                 "startOffset":  12,
+                                                                                 "endOffset":  16
+                                                                             },
+                                                               "msg":  "+1",
+                                                               "msgFormattings":  [
+
+                                                                                  ]
+                                                           }
+                                                       ]
+                                     }
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Refactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.",
+                       "effort":  "6min",
+                       "debt":  "6min",
+                       "author":  "",
+                       "tags":  [
+                                    "brain-overload"
+                                ],
+                       "creationDate":  "2026-10-28T22:29:20-0300",
+                       "updateDate":  "2026-10-28T22:29:20-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "FOCUSED",
+                       "cleanCodeAttributeCategory":  "ADAPTABLE",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "aa2d86dd-7010-4f1b-b28a-160bd1b45bbf",
+                       "rule":  "csharpsquid:S2325",
+                       "severity":  "MINOR",
+                       "component":  "IA---CircuitWorkbench:MainWindow.xaml.cs",
+                       "project":  "IA---CircuitWorkbench",
+                       "line":  919,
+                       "hash":  "e98b128a0aa9a733dc67834e0a5f09dd",
+                       "textRange":  {
+                                         "startLine":  919,
+                                         "endLine":  919,
+                                         "startOffset":  23,
+                                         "endOffset":  26
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make \u0027Bit\u0027 a static method.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "pitfall"
+                                ],
+                       "creationDate":  "2026-10-28T22:29:20-0300",
+                       "updateDate":  "2026-10-28T22:29:20-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "87499b74-4edb-4c9f-bd26-b048dc0792b4",
+                       "rule":  "csharpsquid:S2325",
+                       "severity":  "MINOR",
+                       "component":  "IA---CircuitWorkbench:MainWindow.xaml.cs",
+                       "project":  "IA---CircuitWorkbench",
+                       "line":  924,
+                       "hash":  "3595444dbcf9f0a7cf37857aa8f6a3dc",
+                       "textRange":  {
+                                         "startLine":  924,
+                                         "endLine":  924,
+                                         "startOffset":  23,
+                                         "endOffset":  30
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make \u0027Binary8\u0027 a static method.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "pitfall"
+                                ],
+                       "creationDate":  "2026-10-28T22:29:20-0300",
+                       "updateDate":  "2026-10-28T22:29:20-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "5574da23-a6dd-41ef-a0cf-143a70389366",
+                       "rule":  "csharpsquid:S2325",
+                       "severity":  "MINOR",
+                       "component":  "IA---CircuitWorkbench:MainWindow.xaml.cs",
+                       "project":  "IA---CircuitWorkbench",
+                       "line":  1323,
+                       "hash":  "6d54e9417adf2d1672648b82dad50e8a",
+                       "textRange":  {
+                                         "startLine":  1323,
+                                         "endLine":  1323,
+                                         "startOffset":  20,
+                                         "endOffset":  28
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Make \u0027GetDigit\u0027 a static method.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "",
+                       "tags":  [
+                                    "pitfall"
+                                ],
+                       "creationDate":  "2026-10-28T22:29:20-0300",
+                       "updateDate":  "2026-10-28T22:29:20-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CLEAR",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "LOW"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   }
+               ],
+    "total":  10,
+    "projectKey":  "IA---CircuitWorkbench"
+}

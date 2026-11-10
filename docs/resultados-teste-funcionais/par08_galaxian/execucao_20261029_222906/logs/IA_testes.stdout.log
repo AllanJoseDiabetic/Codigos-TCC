@@ -1,0 +1,31 @@
+IA T01 PASS | Inicializar jogo e nave
+IA T02 PASS | Inicializar pontuacao zerada
+IA T03 PASS | Gerar formacao inicial de inimigos
+IA T04 PASS | Manter inimigos em estado valido
+IA T05 PASS | Movimentar nave para a esquerda
+IA T06 PASS | Movimentar nave para a direita
+IA T07 PASS | Movimentar nave para cima
+IA T08 PASS | Movimentar nave para baixo
+IA T09 PASS | Bloquear saida pela esquerda
+IA T10 PASS | Bloquear saida pela direita
+IA T11 PASS | Bloquear saida pelo topo da regiao jogavel
+IA T12 PASS | Bloquear saida pela parte inferior
+IA T13 PASS | Disparar projetil do jogador
+IA T14 PASS | Projetil do jogador sobe
+IA T15 PASS | Descartar projetil ao sair da tela
+IA T16 PASS | Inimigo consegue disparar
+IA T17 PASS | Projetil inimigo avanca em direcao vertical
+IA T18 PASS | Colisao entre tiro e inimigo aumenta pontos
+IA T19 PASS | Nao pontuar sem colisao
+IA T20 PASS | Colisao letal encerra o jogo
+IA T21 PASS | Disparo inimigo fora da tela deixa de atuar
+IA T22 PASS | Gerar nova formacao apos fim dos inimigos
+IA T23 PASS | Reiniciar partida zera pontuacao
+IA T24 PASS | Reiniciar reposiciona a nave
+IA T25 PASS | Soltar tecla interrompe deslocamento
+IA T26 PASS | Renderizar pontuacao no painel
+IA T27 PASS | Atualizar efeito de fundo
+IA T28 PASS | Atualizar posicao dos inimigos durante o jogo
+IA T29 PASS | Reiniciar recoloca inimigos no campo
+IA T30 PASS | Recomecar depois de fim de jogo
+RESUMO IA: {"PASS":30,"FAIL":0,"BLOCKED":0}

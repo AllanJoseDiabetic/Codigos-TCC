@@ -1,0 +1,673 @@
+{
+  "par": "par07_circuitos",
+  "gerado_em": "2026-10-30T01:10:44.862248+00:00",
+  "testes_previstos_por_projeto": 36,
+  "metodo": "Assemblies WPF reais em thread STA; fontes originais preservados; .NET Framework 4.8 para compilacao isolada",
+  "escopo": "Logica dos componentes; sem avaliar interacao visual, XML de projeto, drag-and-drop, temporizacao da UI ou testes de automacao grafica",
+  "resumo": {
+    "humano": {
+      "PASS": 36,
+      "FAIL": 0,
+      "BLOCKED": 0,
+      "resultado": "EXECUTADO",
+      "etapa": "testes"
+    },
+    "IA": {
+      "PASS": 36,
+      "FAIL": 0,
+      "BLOCKED": 0,
+      "resultado": "EXECUTADO",
+      "etapa": "testes"
+    }
+  },
+  "resultados": [
+    {
+      "teste": "T01",
+      "descricao": "Saida inicial desenergizada",
+      "resultado": "PASS",
+      "esperado": "false",
+      "obtido": "false",
+      "duracao_ms": 0.37,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T02",
+      "descricao": "Fonte de nivel alto",
+      "resultado": "PASS",
+      "esperado": "true",
+      "obtido": "true",
+      "duracao_ms": 53.87,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T03",
+      "descricao": "AND 00",
+      "resultado": "PASS",
+      "esperado": "False",
+      "obtido": "False",
+      "duracao_ms": 3.62,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T04",
+      "descricao": "AND 01",
+      "resultado": "PASS",
+      "esperado": "False",
+      "obtido": "False",
+      "duracao_ms": 1.11,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T05",
+      "descricao": "AND 10",
+      "resultado": "PASS",
+      "esperado": "False",
+      "obtido": "False",
+      "duracao_ms": 0.86,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T06",
+      "descricao": "AND 11",
+      "resultado": "PASS",
+      "esperado": "True",
+      "obtido": "True",
+      "duracao_ms": 1.3,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T07",
+      "descricao": "OR 00",
+      "resultado": "PASS",
+      "esperado": "False",
+      "obtido": "False",
+      "duracao_ms": 1.82,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T08",
+      "descricao": "OR 01",
+      "resultado": "PASS",
+      "esperado": "True",
+      "obtido": "True",
+      "duracao_ms": 0.89,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T09",
+      "descricao": "OR 10",
+      "resultado": "PASS",
+      "esperado": "True",
+      "obtido": "True",
+      "duracao_ms": 0.94,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T10",
+      "descricao": "OR 11",
+      "resultado": "PASS",
+      "esperado": "True",
+      "obtido": "True",
+      "duracao_ms": 1.18,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T11",
+      "descricao": "NOT 0",
+      "resultado": "PASS",
+      "esperado": "true",
+      "obtido": "True",
+      "duracao_ms": 1.81,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T12",
+      "descricao": "NOT 1",
+      "resultado": "PASS",
+      "esperado": "false",
+      "obtido": "False",
+      "duracao_ms": 0.66,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T13",
+      "descricao": "Juncao 0",
+      "resultado": "PASS",
+      "esperado": "false",
+      "obtido": "False",
+      "duracao_ms": 5.36,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T14",
+      "descricao": "Juncao 1",
+      "resultado": "PASS",
+      "esperado": "true",
+      "obtido": "True",
+      "duracao_ms": 0.81,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T15",
+      "descricao": "LED desligado",
+      "resultado": "PASS",
+      "esperado": "false",
+      "obtido": "False",
+      "duracao_ms": 2.3,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T16",
+      "descricao": "LED ligado",
+      "resultado": "PASS",
+      "esperado": "true",
+      "obtido": "True",
+      "duracao_ms": 1.36,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T17",
+      "descricao": "Clock estado inicial",
+      "resultado": "PASS",
+      "esperado": "false",
+      "obtido": "false",
+      "duracao_ms": 1.1,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T18",
+      "descricao": "Clock primeiro pulso",
+      "resultado": "PASS",
+      "esperado": "true",
+      "obtido": "true",
+      "duracao_ms": 0.37,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T19",
+      "descricao": "Clock segundo pulso",
+      "resultado": "PASS",
+      "esperado": "false",
+      "obtido": "false",
+      "duracao_ms": 0.06,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T20",
+      "descricao": "Flip-flop D inicia zero",
+      "resultado": "PASS",
+      "esperado": "false",
+      "obtido": "false",
+      "duracao_ms": 2.96,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T21",
+      "descricao": "Flip-flop D captura 1 na borda",
+      "resultado": "PASS",
+      "esperado": "true",
+      "obtido": "true",
+      "duracao_ms": 0.14,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T22",
+      "descricao": "Flip-flop D mantem estado sem nova borda",
+      "resultado": "PASS",
+      "esperado": "true",
+      "obtido": "true",
+      "duracao_ms": 0.06,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T23",
+      "descricao": "Flip-flop D captura 0 na borda seguinte",
+      "resultado": "PASS",
+      "esperado": "false",
+      "obtido": "false",
+      "duracao_ms": 0.08,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T24",
+      "descricao": "Flip-flop JK inicia zero",
+      "resultado": "PASS",
+      "esperado": "false",
+      "obtido": "false",
+      "duracao_ms": 3.09,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T25",
+      "descricao": "Flip-flop JK alterna com J=K=1",
+      "resultado": "PASS",
+      "esperado": "true",
+      "obtido": "true",
+      "duracao_ms": 0.1,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T26",
+      "descricao": "Flip-flop JK zera com J=0 K=1",
+      "resultado": "PASS",
+      "esperado": "false",
+      "obtido": "false",
+      "duracao_ms": 0.11,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T27",
+      "descricao": "Flip-flop JK seta com J=1 K=0",
+      "resultado": "PASS",
+      "esperado": "true",
+      "obtido": "true",
+      "duracao_ms": 0.1,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T28",
+      "descricao": "Flip-flop JK mantem com J=K=0",
+      "resultado": "PASS",
+      "esperado": "true",
+      "obtido": "true",
+      "duracao_ms": 0.1,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T29",
+      "descricao": "Visor 8 bits zero",
+      "resultado": "PASS",
+      "esperado": "0",
+      "obtido": "0",
+      "duracao_ms": 5.38,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T30",
+      "descricao": "Visor 8 bits valor 3",
+      "resultado": "PASS",
+      "esperado": "3",
+      "obtido": "3",
+      "duracao_ms": 2.9,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T31",
+      "descricao": "Visor 8 bits valor 165",
+      "resultado": "PASS",
+      "esperado": "165",
+      "obtido": "165",
+      "duracao_ms": 2.76,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T32",
+      "descricao": "Interruptor alterna para ligado",
+      "resultado": "PASS",
+      "esperado": "true",
+      "obtido": "True",
+      "duracao_ms": 1.46,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T33",
+      "descricao": "Interruptor alterna de volta para desligado",
+      "resultado": "PASS",
+      "esperado": "false",
+      "obtido": "False",
+      "duracao_ms": 0.44,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T34",
+      "descricao": "LED responde a mudanca dinamica",
+      "resultado": "PASS",
+      "esperado": "0->1->0",
+      "obtido": "0->1->0",
+      "duracao_ms": 1.25,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T35",
+      "descricao": "Entrada nao conectada em nivel baixo",
+      "resultado": "PASS",
+      "esperado": "false",
+      "obtido": "false",
+      "duracao_ms": 0.23,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T36",
+      "descricao": "NOT acompanha mudancas sucessivas",
+      "resultado": "PASS",
+      "esperado": "1->0->1",
+      "obtido": "1->0->1",
+      "duracao_ms": 0.81,
+      "projeto": "humano"
+    },
+    {
+      "teste": "T01",
+      "descricao": "Saida inicial desenergizada",
+      "resultado": "PASS",
+      "esperado": "false",
+      "obtido": "false",
+      "duracao_ms": 1.09,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T02",
+      "descricao": "Fonte de nivel alto",
+      "resultado": "PASS",
+      "esperado": "true",
+      "obtido": "true",
+      "duracao_ms": 0.26,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T03",
+      "descricao": "AND 00",
+      "resultado": "PASS",
+      "esperado": "False",
+      "obtido": "False",
+      "duracao_ms": 0.74,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T04",
+      "descricao": "AND 01",
+      "resultado": "PASS",
+      "esperado": "False",
+      "obtido": "False",
+      "duracao_ms": 0.13,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T05",
+      "descricao": "AND 10",
+      "resultado": "PASS",
+      "esperado": "False",
+      "obtido": "False",
+      "duracao_ms": 0.0,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T06",
+      "descricao": "AND 11",
+      "resultado": "PASS",
+      "esperado": "True",
+      "obtido": "True",
+      "duracao_ms": 0.0,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T07",
+      "descricao": "OR 00",
+      "resultado": "PASS",
+      "esperado": "False",
+      "obtido": "False",
+      "duracao_ms": 0.08,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T08",
+      "descricao": "OR 01",
+      "resultado": "PASS",
+      "esperado": "True",
+      "obtido": "True",
+      "duracao_ms": 0.0,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T09",
+      "descricao": "OR 10",
+      "resultado": "PASS",
+      "esperado": "True",
+      "obtido": "True",
+      "duracao_ms": 0.0,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T10",
+      "descricao": "OR 11",
+      "resultado": "PASS",
+      "esperado": "True",
+      "obtido": "True",
+      "duracao_ms": 0.0,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T11",
+      "descricao": "NOT 0",
+      "resultado": "PASS",
+      "esperado": "true",
+      "obtido": "True",
+      "duracao_ms": 0.17,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T12",
+      "descricao": "NOT 1",
+      "resultado": "PASS",
+      "esperado": "false",
+      "obtido": "False",
+      "duracao_ms": 0.05,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T13",
+      "descricao": "Juncao 0",
+      "resultado": "PASS",
+      "esperado": "false",
+      "obtido": "False",
+      "duracao_ms": 0.12,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T14",
+      "descricao": "Juncao 1",
+      "resultado": "PASS",
+      "esperado": "true",
+      "obtido": "True",
+      "duracao_ms": 0.04,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T15",
+      "descricao": "LED desligado",
+      "resultado": "PASS",
+      "esperado": "false",
+      "obtido": "False",
+      "duracao_ms": 0.11,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T16",
+      "descricao": "LED ligado",
+      "resultado": "PASS",
+      "esperado": "true",
+      "obtido": "True",
+      "duracao_ms": 0.04,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T17",
+      "descricao": "Clock estado inicial",
+      "resultado": "PASS",
+      "esperado": "false",
+      "obtido": "false",
+      "duracao_ms": 0.09,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T18",
+      "descricao": "Clock primeiro pulso",
+      "resultado": "PASS",
+      "esperado": "true",
+      "obtido": "true",
+      "duracao_ms": 2.82,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T19",
+      "descricao": "Clock segundo pulso",
+      "resultado": "PASS",
+      "esperado": "false",
+      "obtido": "false",
+      "duracao_ms": 0.1,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T20",
+      "descricao": "Flip-flop D inicia zero",
+      "resultado": "PASS",
+      "esperado": "false",
+      "obtido": "false",
+      "duracao_ms": 0.12,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T21",
+      "descricao": "Flip-flop D captura 1 na borda",
+      "resultado": "PASS",
+      "esperado": "true",
+      "obtido": "true",
+      "duracao_ms": 0.12,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T22",
+      "descricao": "Flip-flop D mantem estado sem nova borda",
+      "resultado": "PASS",
+      "esperado": "true",
+      "obtido": "true",
+      "duracao_ms": 0.05,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T23",
+      "descricao": "Flip-flop D captura 0 na borda seguinte",
+      "resultado": "PASS",
+      "esperado": "false",
+      "obtido": "false",
+      "duracao_ms": 0.05,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T24",
+      "descricao": "Flip-flop JK inicia zero",
+      "resultado": "PASS",
+      "esperado": "false",
+      "obtido": "false",
+      "duracao_ms": 0.24,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T25",
+      "descricao": "Flip-flop JK alterna com J=K=1",
+      "resultado": "PASS",
+      "esperado": "true",
+      "obtido": "true",
+      "duracao_ms": 0.1,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T26",
+      "descricao": "Flip-flop JK zera com J=0 K=1",
+      "resultado": "PASS",
+      "esperado": "false",
+      "obtido": "false",
+      "duracao_ms": 0.1,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T27",
+      "descricao": "Flip-flop JK seta com J=1 K=0",
+      "resultado": "PASS",
+      "esperado": "true",
+      "obtido": "true",
+      "duracao_ms": 0.06,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T28",
+      "descricao": "Flip-flop JK mantem com J=K=0",
+      "resultado": "PASS",
+      "esperado": "true",
+      "obtido": "true",
+      "duracao_ms": 0.05,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T29",
+      "descricao": "Visor 8 bits zero",
+      "resultado": "PASS",
+      "esperado": "0",
+      "obtido": "0",
+      "duracao_ms": 0.38,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T30",
+      "descricao": "Visor 8 bits valor 3",
+      "resultado": "PASS",
+      "esperado": "3",
+      "obtido": "3",
+      "duracao_ms": 0.09,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T31",
+      "descricao": "Visor 8 bits valor 165",
+      "resultado": "PASS",
+      "esperado": "165",
+      "obtido": "165",
+      "duracao_ms": 0.06,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T32",
+      "descricao": "Interruptor alterna para ligado",
+      "resultado": "PASS",
+      "esperado": "true",
+      "obtido": "True",
+      "duracao_ms": 0.12,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T33",
+      "descricao": "Interruptor alterna de volta para desligado",
+      "resultado": "PASS",
+      "esperado": "false",
+      "obtido": "False",
+      "duracao_ms": 0.04,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T34",
+      "descricao": "LED responde a mudanca dinamica",
+      "resultado": "PASS",
+      "esperado": "0->1->0",
+      "obtido": "0->1->0",
+      "duracao_ms": 0.1,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T35",
+      "descricao": "Entrada nao conectada em nivel baixo",
+      "resultado": "PASS",
+      "esperado": "false",
+      "obtido": "false",
+      "duracao_ms": 0.06,
+      "projeto": "IA"
+    },
+    {
+      "teste": "T36",
+      "descricao": "NOT acompanha mudancas sucessivas",
+      "resultado": "PASS",
+      "esperado": "1->0->1",
+      "obtido": "1->0->1",
+      "duracao_ms": 0.11,
+      "projeto": "IA"
+    }
+  ]
+}

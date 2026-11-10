@@ -1,0 +1,37 @@
+T01 PASS Saida inicial desenergizada | false
+T02 PASS Fonte de nivel alto | true
+T03 PASS AND 00 | False
+T04 PASS AND 01 | False
+T05 PASS AND 10 | False
+T06 PASS AND 11 | True
+T07 PASS OR 00 | False
+T08 PASS OR 01 | True
+T09 PASS OR 10 | True
+T10 PASS OR 11 | True
+T11 PASS NOT 0 | True
+T12 PASS NOT 1 | False
+T13 PASS Juncao 0 | False
+T14 PASS Juncao 1 | True
+T15 PASS LED desligado | False
+T16 PASS LED ligado | True
+T17 PASS Clock estado inicial | false
+T18 PASS Clock primeiro pulso | true
+T19 PASS Clock segundo pulso | false
+T20 PASS Flip-flop D inicia zero | false
+T21 PASS Flip-flop D captura 1 na borda | true
+T22 PASS Flip-flop D mantem estado sem nova borda | true
+T23 PASS Flip-flop D captura 0 na borda seguinte | false
+T24 PASS Flip-flop JK inicia zero | false
+T25 PASS Flip-flop JK alterna com J=K=1 | true
+T26 PASS Flip-flop JK zera com J=0 K=1 | false
+T27 PASS Flip-flop JK seta com J=1 K=0 | true
+T28 PASS Flip-flop JK mantem com J=K=0 | true
+T29 PASS Visor 8 bits zero | 0
+T30 PASS Visor 8 bits valor 3 | 3
+T31 PASS Visor 8 bits valor 165 | 165
+T32 PASS Interruptor alterna para ligado | True
+T33 PASS Interruptor alterna de volta para desligado | False
+T34 PASS LED responde a mudanca dinamica | 0->1->0
+T35 PASS Entrada nao conectada em nivel baixo | false
+T36 PASS NOT acompanha mudancas sucessivas | 1->0->1
+RESUMO: PASS=36 FAIL=0 TOTAL=36

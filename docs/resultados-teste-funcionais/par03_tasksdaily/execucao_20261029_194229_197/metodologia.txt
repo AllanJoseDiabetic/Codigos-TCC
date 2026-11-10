@@ -1,0 +1,18 @@
+﻿TCC - PAR 03 (TASKSDAILY x HABITLOG)
+Data local: 2026-10-29 19:45:13
+Fonte humana: E:\codigosTCC\CodigosTCCHumano\tasksdaily
+Fonte IA: E:\codigosTCC\CodigosTCCGitHub\Codigos-TCC\IA\Python\habitlog
+Python: Python 3.8.5
+Ambiente humano: Django 4.0.6 / pytz 2020.4 / SQLite em memoria
+Ambiente IA: Django 3.1.4 / pytz 2020.4 / SQLite em memoria
+Metodologia: Django test client com settings minimos EXTERNOS ao codigo do projeto.
+Os settings.py de origem NAO sao usados. As dependencias de producao Heroku/Postgres
+nao sao instaladas, porque os testes usam SQLite; isso limita a generalizacao.
+CSRF desabilitado pelo test client; NAO e uma avaliacao de seguranca CSRF.
+Cada projeto recebe sua propria base SQLite em memoria.
+29 cenarios equivalentes de comportamento por projeto (58 no total).
+Os formularios usam entradas especificas para as interfaces de cada projeto,
+mas os criterios sao comportamentos equivalentes. Diferencas de implementacao
+nao devem ser interpretadas como defeitos sem examinar as respostas.
+Nao executar codigo original com dependencias desconhecidas expostas a rede.
+Nenhum arquivo do codigo-fonte original foi alterado. Fontes verificadas por SHA256.

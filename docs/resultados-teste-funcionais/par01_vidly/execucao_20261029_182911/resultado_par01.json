@@ -1,0 +1,508 @@
+{
+  "data_utc": "2026-10-29T21:30:28.763471+00:00",
+  "execucao": "20261029182911",
+  "teste": "Vidly API vs movie-rental-api",
+  "metodologia": "25 cenarios equivalentes; chamadas HTTP em bancos isolados; sem editar os fontes",
+  "resultados": [
+    {
+      "projeto": "humano",
+      "teste": "T01",
+      "descricao": "Listar generos (base vazia)",
+      "resultado": "PASS",
+      "esperado": "HTTP 200, lista vazia",
+      "obtido": "HTTP 200; registros=0",
+      "http_status": 200,
+      "duracao_ms": 0.0
+    },
+    {
+      "projeto": "humano",
+      "teste": "T02",
+      "descricao": "Bloquear consulta de clientes sem autenticacao",
+      "resultado": "PASS",
+      "esperado": "HTTP 401",
+      "obtido": "HTTP 401; resposta=Access denied. No token provided.",
+      "http_status": 401,
+      "duracao_ms": 2.2
+    },
+    {
+      "projeto": "humano",
+      "teste": "T03",
+      "descricao": "Rejeitar cadastro de usuario invalido",
+      "resultado": "PASS",
+      "esperado": "HTTP 4xx",
+      "obtido": "HTTP 400; resposta=\"name\" length must be at least 2 characters long",
+      "http_status": 400,
+      "duracao_ms": 34.7
+    },
+    {
+      "projeto": "humano",
+      "teste": "T04",
+      "descricao": "Cadastrar usuario valido e receber token",
+      "resultado": "PASS",
+      "esperado": "HTTP 2xx, usuario e token",
+      "obtido": "HTTP 200; resposta={'_id': '6ae3baf4501565333c0a09cf', 'name': 'Usuario Teste', 'email': 'tcc.20261029182911@example.invalid'}",
+      "http_status": 200,
+      "duracao_ms": 106.3
+    },
+    {
+      "projeto": "humano",
+      "teste": "T05",
+      "descricao": "Rejeitar login com senha incorreta",
+      "resultado": "PASS",
+      "esperado": "HTTP 4xx",
+      "obtido": "HTTP 400; resposta=Invalid email or password.",
+      "http_status": 400,
+      "duracao_ms": 93.8
+    },
+    {
+      "projeto": "humano",
+      "teste": "T06",
+      "descricao": "Autenticar usuario com senha correta",
+      "resultado": "PASS",
+      "esperado": "HTTP 2xx, token JWT",
+      "obtido": "HTTP 200; token JWT presente",
+      "http_status": 200,
+      "duracao_ms": 77.2
+    },
+    {
+      "projeto": "humano",
+      "teste": "T07",
+      "descricao": "Consultar perfil autenticado",
+      "resultado": "PASS",
+      "esperado": "HTTP 200, perfil corresponde ao email",
+      "obtido": "HTTP 200; resposta={'_id': '6ae3baf4501565333c0a09cf', 'name': 'Usuario Teste', 'email': 'tcc.20261029182911@example.invalid', '__v': 0}",
+      "http_status": 200,
+      "duracao_ms": 5.0
+    },
+    {
+      "projeto": "humano",
+      "teste": "T08",
+      "descricao": "Rejeitar genero de um caractere",
+      "resultado": "PASS",
+      "esperado": "HTTP 400",
+      "obtido": "HTTP 400; resposta=\"name\" length must be at least 5 characters long",
+      "http_status": 400,
+      "duracao_ms": 12.9
+    },
+    {
+      "projeto": "humano",
+      "teste": "T09",
+      "descricao": "Cadastrar genero valido",
+      "resultado": "PASS",
+      "esperado": "HTTP 2xx, ID valido",
+      "obtido": "HTTP 200; resposta={'_id': '6ae3baf5501565333c0a09d0', 'name': 'Genero de Teste', '__v': 0}",
+      "http_status": 200,
+      "duracao_ms": 9.9
+    },
+    {
+      "projeto": "humano",
+      "teste": "T10",
+      "descricao": "Consultar genero por ID",
+      "resultado": "PASS",
+      "esperado": "HTTP 200, genero correspondente",
+      "obtido": "HTTP 200; resposta={'_id': '6ae3baf5501565333c0a09d0', 'name': 'Genero de Teste'}",
+      "http_status": 200,
+      "duracao_ms": 3.3
+    },
+    {
+      "projeto": "humano",
+      "teste": "T11",
+      "descricao": "Atualizar genero",
+      "resultado": "PASS",
+      "esperado": "HTTP 2xx, nome atualizado",
+      "obtido": "HTTP 200; resposta={'_id': '6ae3baf5501565333c0a09d0', 'name': 'Genero Atualizado', '__v': 0}",
+      "http_status": 200,
+      "duracao_ms": 8.9
+    },
+    {
+      "projeto": "humano",
+      "teste": "T12",
+      "descricao": "Rejeitar exclusao de genero sem privilegio admin",
+      "resultado": "PASS",
+      "esperado": "HTTP 403 sem privilegio admin",
+      "obtido": "HTTP 403; resposta=Access denied.",
+      "http_status": 403,
+      "duracao_ms": 2.1
+    },
+    {
+      "projeto": "humano",
+      "teste": "T13",
+      "descricao": "Cadastrar cliente valido",
+      "resultado": "PASS",
+      "esperado": "HTTP 2xx, cliente criado",
+      "obtido": "HTTP 200; resposta={'isGold': True, '_id': '6ae3baf5501565333c0a09d1', 'name': 'Cliente Teste', 'phone': '11999999999', '__v': 0}",
+      "http_status": 200,
+      "duracao_ms": 11.6
+    },
+    {
+      "projeto": "humano",
+      "teste": "T14",
+      "descricao": "Consultar cliente por ID",
+      "resultado": "PASS",
+      "esperado": "HTTP 200, ID do cliente",
+      "obtido": "HTTP 200; resposta={'isGold': True, '_id': '6ae3baf5501565333c0a09d1', 'name': 'Cliente Teste', 'phone': '11999999999'}",
+      "http_status": 200,
+      "duracao_ms": 2.9
+    },
+    {
+      "projeto": "humano",
+      "teste": "T15",
+      "descricao": "Atualizar cliente",
+      "resultado": "PASS",
+      "esperado": "HTTP 2xx, telefone alterado",
+      "obtido": "HTTP 200; resposta={'isGold': True, '_id': '6ae3baf5501565333c0a09d1', 'name': 'Cliente Teste', 'phone': '11988888888', '__v': 0}",
+      "http_status": 200,
+      "duracao_ms": 24.7
+    },
+    {
+      "projeto": "humano",
+      "teste": "T16",
+      "descricao": "Rejeitar filme com estoque negativo",
+      "resultado": "PASS",
+      "esperado": "HTTP 400 para estoque negativo",
+      "obtido": "HTTP 400; resposta=\"numberInStock\" must be larger than or equal to 0",
+      "http_status": 400,
+      "duracao_ms": 2.6
+    },
+    {
+      "projeto": "humano",
+      "teste": "T17",
+      "descricao": "Cadastrar filme valido",
+      "resultado": "PASS",
+      "esperado": "HTTP 2xx, filme criado",
+      "obtido": "HTTP 200; resposta={'_id': '6ae3baf5501565333c0a09d2', 'title': 'Filme de Teste', 'genre': {'_id': '6ae3baf5501565333c0a09d0', 'name': 'Genero Atualizado'}, 'n",
+      "http_status": 200,
+      "duracao_ms": 14.6
+    },
+    {
+      "projeto": "humano",
+      "teste": "T18",
+      "descricao": "Consultar filme por ID",
+      "resultado": "PASS",
+      "esperado": "HTTP 200, filme correspondente",
+      "obtido": "HTTP 200; resposta={'_id': '6ae3baf5501565333c0a09d2', 'title': 'Filme de Teste', 'genre': {'_id': '6ae3baf5501565333c0a09d0', 'name': 'Genero Atualizado'}, 'n",
+      "http_status": 200,
+      "duracao_ms": 2.9
+    },
+    {
+      "projeto": "humano",
+      "teste": "T19",
+      "descricao": "Listar filme cadastrado",
+      "resultado": "PASS",
+      "esperado": "HTTP 200, filme na listagem",
+      "obtido": "HTTP 200; resposta=[{'_id': '6ae3baf5501565333c0a09d2', 'title': 'Filme de Teste', 'genre': {'_id': '6ae3baf5501565333c0a09d0', 'name': 'Genero Atualizado'}, '",
+      "http_status": 200,
+      "duracao_ms": 27.0
+    },
+    {
+      "projeto": "humano",
+      "teste": "T20",
+      "descricao": "Rejeitar aluguel sem IDs obrigatorios",
+      "resultado": "PASS",
+      "esperado": "HTTP 400 para locacao sem IDs",
+      "obtido": "HTTP 400; resposta=\"customerId\" is required",
+      "http_status": 400,
+      "duracao_ms": 2.5
+    },
+    {
+      "projeto": "humano",
+      "teste": "T21",
+      "descricao": "Registrar aluguel valido",
+      "resultado": "PASS",
+      "esperado": "HTTP 2xx, locacao com ID valido",
+      "obtido": "HTTP 200; resposta={'dateOut': '2026-10-29T21:30:29.313Z', '_id': '6ae3baf5501565333c0a09d6', 'customer': {'isGold': False, '_id': '6ae3baf5501565333c0a09d1', ",
+      "http_status": 200,
+      "duracao_ms": 7.3
+    },
+    {
+      "projeto": "humano",
+      "teste": "T22",
+      "descricao": "Conferir reducao do estoque apos aluguel",
+      "resultado": "PASS",
+      "esperado": "Estoque apos locacao igual a 1",
+      "obtido": "HTTP 200, estoque=1, esperado=1",
+      "http_status": 200,
+      "duracao_ms": 433.9
+    },
+    {
+      "projeto": "humano",
+      "teste": "T23",
+      "descricao": "Registrar devolucao",
+      "resultado": "PASS",
+      "esperado": "HTTP 2xx, devolucao com dataReturned",
+      "obtido": "HTTP 200; resposta={'dateOut': '2026-10-29T21:30:29.313Z', '_id': '6ae3baf5501565333c0a09d6', 'customer': {'isGold': False, '_id': '6ae3baf5501565333c0a09d1', ",
+      "http_status": 200,
+      "duracao_ms": 9.0
+    },
+    {
+      "projeto": "humano",
+      "teste": "T24",
+      "descricao": "Conferir reposicao do estoque apos devolucao",
+      "resultado": "PASS",
+      "esperado": "Estoque apos devolucao igual a 2",
+      "obtido": "HTTP 200, estoque=2, esperado=2",
+      "http_status": 200,
+      "duracao_ms": 21.9
+    },
+    {
+      "projeto": "humano",
+      "teste": "T25",
+      "descricao": "Rejeitar segunda devolucao da mesma locacao",
+      "resultado": "PASS",
+      "esperado": "HTTP 4xx para devolucao repetida",
+      "obtido": "HTTP 400; resposta=Return already processed.",
+      "http_status": 400,
+      "duracao_ms": 16.0
+    },
+    {
+      "projeto": "IA",
+      "teste": "T01",
+      "descricao": "Listar generos (base vazia)",
+      "resultado": "PASS",
+      "esperado": "HTTP 200, lista vazia",
+      "obtido": "HTTP 200; registros=0",
+      "http_status": 200,
+      "duracao_ms": 0.0
+    },
+    {
+      "projeto": "IA",
+      "teste": "T02",
+      "descricao": "Bloquear consulta de clientes sem autenticacao",
+      "resultado": "PASS",
+      "esperado": "HTTP 401",
+      "obtido": "HTTP 401; resposta={'error': 'Token de autenticação não informado.'}",
+      "http_status": 401,
+      "duracao_ms": 3.1
+    },
+    {
+      "projeto": "IA",
+      "teste": "T03",
+      "descricao": "Rejeitar cadastro de usuario invalido",
+      "resultado": "PASS",
+      "esperado": "HTTP 4xx",
+      "obtido": "HTTP 400; resposta={'error': 'Dados inválidos.', 'details': ['\"name\" length must be at least 2 characters long', '\"email\" must be a valid email', '\"password\" l",
+      "http_status": 400,
+      "duracao_ms": 119.3
+    },
+    {
+      "projeto": "IA",
+      "teste": "T04",
+      "descricao": "Cadastrar usuario valido e receber token",
+      "resultado": "PASS",
+      "esperado": "HTTP 2xx, usuario e token",
+      "obtido": "HTTP 201; resposta={'_id': '6ae3baf62cdf5222f0894754', 'name': 'Usuario Teste', 'email': 'tcc.20261029182911@example.invalid', 'isAdmin': False}",
+      "http_status": 201,
+      "duracao_ms": 94.2
+    },
+    {
+      "projeto": "IA",
+      "teste": "T05",
+      "descricao": "Rejeitar login com senha incorreta",
+      "resultado": "PASS",
+      "esperado": "HTTP 4xx",
+      "obtido": "HTTP 401; resposta={'error': 'E-mail ou senha inválidos.'}",
+      "http_status": 401,
+      "duracao_ms": 61.9
+    },
+    {
+      "projeto": "IA",
+      "teste": "T06",
+      "descricao": "Autenticar usuario com senha correta",
+      "resultado": "PASS",
+      "esperado": "HTTP 2xx, token JWT",
+      "obtido": "HTTP 200; token JWT presente",
+      "http_status": 200,
+      "duracao_ms": 95.0
+    },
+    {
+      "projeto": "IA",
+      "teste": "T07",
+      "descricao": "Consultar perfil autenticado",
+      "resultado": "PASS",
+      "esperado": "HTTP 200, perfil corresponde ao email",
+      "obtido": "HTTP 200; resposta={'isAdmin': False, '_id': '6ae3baf62cdf5222f0894754', 'name': 'Usuario Teste', 'email': 'tcc.20261029182911@example.invalid'}",
+      "http_status": 200,
+      "duracao_ms": 32.2
+    },
+    {
+      "projeto": "IA",
+      "teste": "T08",
+      "descricao": "Rejeitar genero de um caractere",
+      "resultado": "PASS",
+      "esperado": "HTTP 400",
+      "obtido": "HTTP 400; resposta={'error': 'Dados inválidos.', 'details': ['\"name\" length must be at least 2 characters long']}",
+      "http_status": 400,
+      "duracao_ms": 29.9
+    },
+    {
+      "projeto": "IA",
+      "teste": "T09",
+      "descricao": "Cadastrar genero valido",
+      "resultado": "PASS",
+      "esperado": "HTTP 2xx, ID valido",
+      "obtido": "HTTP 201; resposta={'_id': '6ae3baf62cdf5222f0894755', 'name': 'Genero de Teste', '__v': 0}",
+      "http_status": 201,
+      "duracao_ms": 36.1
+    },
+    {
+      "projeto": "IA",
+      "teste": "T10",
+      "descricao": "Consultar genero por ID",
+      "resultado": "PASS",
+      "esperado": "HTTP 200, genero correspondente",
+      "obtido": "HTTP 200; resposta={'_id': '6ae3baf62cdf5222f0894755', 'name': 'Genero de Teste', '__v': 0}",
+      "http_status": 200,
+      "duracao_ms": 3.8
+    },
+    {
+      "projeto": "IA",
+      "teste": "T11",
+      "descricao": "Atualizar genero",
+      "resultado": "PASS",
+      "esperado": "HTTP 2xx, nome atualizado",
+      "obtido": "HTTP 200; resposta={'_id': '6ae3baf62cdf5222f0894755', 'name': 'Genero Atualizado', '__v': 0}",
+      "http_status": 200,
+      "duracao_ms": 27.4
+    },
+    {
+      "projeto": "IA",
+      "teste": "T12",
+      "descricao": "Rejeitar exclusao de genero sem privilegio admin",
+      "resultado": "PASS",
+      "esperado": "HTTP 403 sem privilegio admin",
+      "obtido": "HTTP 403; resposta={'error': 'Esta operação exige privilégios de administrador.'}",
+      "http_status": 403,
+      "duracao_ms": 3.6
+    },
+    {
+      "projeto": "IA",
+      "teste": "T13",
+      "descricao": "Cadastrar cliente valido",
+      "resultado": "PASS",
+      "esperado": "HTTP 2xx, cliente criado",
+      "obtido": "HTTP 201; resposta={'isGold': True, '_id': '6ae3baf62cdf5222f0894756', 'name': 'Cliente Teste', 'phone': '11999999999', '__v': 0}",
+      "http_status": 201,
+      "duracao_ms": 10.6
+    },
+    {
+      "projeto": "IA",
+      "teste": "T14",
+      "descricao": "Consultar cliente por ID",
+      "resultado": "PASS",
+      "esperado": "HTTP 200, ID do cliente",
+      "obtido": "HTTP 200; resposta={'isGold': True, '_id': '6ae3baf62cdf5222f0894756', 'name': 'Cliente Teste', 'phone': '11999999999', '__v': 0}",
+      "http_status": 200,
+      "duracao_ms": 26.0
+    },
+    {
+      "projeto": "IA",
+      "teste": "T15",
+      "descricao": "Atualizar cliente",
+      "resultado": "PASS",
+      "esperado": "HTTP 2xx, telefone alterado",
+      "obtido": "HTTP 200; resposta={'isGold': True, '_id': '6ae3baf62cdf5222f0894756', 'name': 'Cliente Teste', 'phone': '11988888888', '__v': 0}",
+      "http_status": 200,
+      "duracao_ms": 4.6
+    },
+    {
+      "projeto": "IA",
+      "teste": "T16",
+      "descricao": "Rejeitar filme com estoque negativo",
+      "resultado": "PASS",
+      "esperado": "HTTP 400 para estoque negativo",
+      "obtido": "HTTP 400; resposta={'error': 'Dados inválidos.', 'details': ['\"numberInStock\" must be larger than or equal to 0']}",
+      "http_status": 400,
+      "duracao_ms": 25.8
+    },
+    {
+      "projeto": "IA",
+      "teste": "T17",
+      "descricao": "Cadastrar filme valido",
+      "resultado": "PASS",
+      "esperado": "HTTP 2xx, filme criado",
+      "obtido": "HTTP 201; resposta={'_id': '6ae3baf62cdf5222f0894757', 'title': 'Filme de Teste', 'genre': {'_id': '6ae3baf62cdf5222f0894755', 'name': 'Genero Atualizado'}, 'n",
+      "http_status": 201,
+      "duracao_ms": 22.7
+    },
+    {
+      "projeto": "IA",
+      "teste": "T18",
+      "descricao": "Consultar filme por ID",
+      "resultado": "PASS",
+      "esperado": "HTTP 200, filme correspondente",
+      "obtido": "HTTP 200; resposta={'_id': '6ae3baf62cdf5222f0894757', 'title': 'Filme de Teste', 'genre': {'_id': '6ae3baf62cdf5222f0894755', 'name': 'Genero Atualizado'}, 'n",
+      "http_status": 200,
+      "duracao_ms": 6.0
+    },
+    {
+      "projeto": "IA",
+      "teste": "T19",
+      "descricao": "Listar filme cadastrado",
+      "resultado": "PASS",
+      "esperado": "HTTP 200, filme na listagem",
+      "obtido": "HTTP 200; resposta=[{'_id': '6ae3baf62cdf5222f0894757', 'title': 'Filme de Teste', 'genre': {'_id': '6ae3baf62cdf5222f0894755', 'name': 'Genero Atualizado'}, '",
+      "http_status": 200,
+      "duracao_ms": 4.7
+    },
+    {
+      "projeto": "IA",
+      "teste": "T20",
+      "descricao": "Rejeitar aluguel sem IDs obrigatorios",
+      "resultado": "PASS",
+      "esperado": "HTTP 400 para locacao sem IDs",
+      "obtido": "HTTP 400; resposta={'error': 'Dados inválidos.', 'details': ['\"customerId\" is required', '\"movieId\" is required']}",
+      "http_status": 400,
+      "duracao_ms": 4.2
+    },
+    {
+      "projeto": "IA",
+      "teste": "T21",
+      "descricao": "Registrar aluguel valido",
+      "resultado": "PASS",
+      "esperado": "HTTP 2xx, locacao com ID valido",
+      "obtido": "HTTP 201; resposta={'customer': {'_id': '6ae3baf62cdf5222f0894756', 'name': 'Cliente Teste', 'phone': '11988888888', 'isGold': True}, 'movie': {'_id': '6ae3baf",
+      "http_status": 201,
+      "duracao_ms": 29.7
+    },
+    {
+      "projeto": "IA",
+      "teste": "T22",
+      "descricao": "Conferir reducao do estoque apos aluguel",
+      "resultado": "PASS",
+      "esperado": "Estoque apos locacao igual a 1",
+      "obtido": "HTTP 200, estoque=1, esperado=1",
+      "http_status": 200,
+      "duracao_ms": 4.6
+    },
+    {
+      "projeto": "IA",
+      "teste": "T23",
+      "descricao": "Registrar devolucao",
+      "resultado": "PASS",
+      "esperado": "HTTP 2xx, devolucao com dataReturned",
+      "obtido": "HTTP 200; resposta={'customer': {'_id': '6ae3baf62cdf5222f0894756', 'name': 'Cliente Teste', 'phone': '11988888888', 'isGold': True}, 'movie': {'_id': '6ae3baf",
+      "http_status": 200,
+      "duracao_ms": 17.1
+    },
+    {
+      "projeto": "IA",
+      "teste": "T24",
+      "descricao": "Conferir reposicao do estoque apos devolucao",
+      "resultado": "PASS",
+      "esperado": "Estoque apos devolucao igual a 2",
+      "obtido": "HTTP 200, estoque=2, esperado=2",
+      "http_status": 200,
+      "duracao_ms": 18.6
+    },
+    {
+      "projeto": "IA",
+      "teste": "T25",
+      "descricao": "Rejeitar segunda devolucao da mesma locacao",
+      "resultado": "PASS",
+      "esperado": "HTTP 4xx para devolucao repetida",
+      "obtido": "HTTP 400; resposta={'error': 'Não existe locação aberta para este cliente e filme.'}",
+      "http_status": 400,
+      "duracao_ms": 31.3
+    }
+  ]
+}

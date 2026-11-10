@@ -1,0 +1,5 @@
+COMANDO: C:\Program Files\Eclipse Adoptium\jdk-11.0.32.101-hotspot\bin\javac.exe --release 11 -encoding UTF-8 ...
+CODIGO: 0
+=== STDOUT ===
+
+=== STDERR ===

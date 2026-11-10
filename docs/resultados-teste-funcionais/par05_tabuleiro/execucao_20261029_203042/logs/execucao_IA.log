@@ -1,0 +1,23 @@
+COMANDO: C:\Program Files\Eclipse Adoptium\jdk-11.0.32.101-hotspot\bin\java.exe -cp E:\codigosTCC\resultados\resultados-teste-funcionais\par05_tabuleiro\execucao_20261029_203042\classes\IA ProbeIA ...
+CODIGO: 0
+=== STDOUT ===
+RESULT	T01	PASS	Dois participantes na partida	701.4859
+RESULT	T02	PASS	Ana e Bia identificadas separadamente	70.0185
+RESULT	T03	PASS	Partida iniciada no periodo 1/rodada 1	14.1208
+RESULT	T04	PASS	Recursos de inicio atribuidos	15.5949
+RESULT	T05	PASS	Familiar vinculado e livre	14.273
+RESULT	T06	PASS	Cartas presentes nas torres	14.5375
+RESULT	T07	PASS	Recompensa mercado: moedas 6 -> 9	66.8202
+RESULT	T08	PASS	Recompensa mercado: servos 4 -> 6	58.5741
+RESULT	T09	PASS	Ocupacao registrada no mercado	15.2668
+RESULT	T10	PASS	Segunda ocupacao rejeitada	14.9687
+RESULT	T11	PASS	Reutilizacao do familiar rejeitada	14.5891
+RESULT	T12	PASS	2 servos trocados por 2 pontos de poder	30.0428
+RESULT	T13	PASS	Saldo insuficiente rejeitado	45.3784
+RESULT	T14	PASS	Conselho concedeu moedas	29.9467
+RESULT	T15	PASS	Proximo jogador identificado corretamente	15.5574
+RESULT	T16	PASS	Pontos de vitoria ganhos por carta	31.0652
+RESULT	T17	PASS	Posicao invalida rejeitada	15.1912
+RESULT	T18	PASS	Jogador fora da vez bloqueado pela regra	30.3203
+
+=== STDERR ===

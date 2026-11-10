@@ -1,0 +1,31 @@
+humano T01 PASS | Inicializar jogo e nave
+humano T02 PASS | Inicializar pontuacao zerada
+humano T03 PASS | Gerar formacao inicial de inimigos
+humano T04 PASS | Manter inimigos em estado valido
+humano T05 PASS | Movimentar nave para a esquerda
+humano T06 PASS | Movimentar nave para a direita
+humano T07 PASS | Movimentar nave para cima
+humano T08 PASS | Movimentar nave para baixo
+humano T09 PASS | Bloquear saida pela esquerda
+humano T10 PASS | Bloquear saida pela direita
+humano T11 PASS | Bloquear saida pelo topo da regiao jogavel
+humano T12 PASS | Bloquear saida pela parte inferior
+humano T13 PASS | Disparar projetil do jogador
+humano T14 PASS | Projetil do jogador sobe
+humano T15 PASS | Descartar projetil ao sair da tela
+humano T16 PASS | Inimigo consegue disparar
+humano T17 PASS | Projetil inimigo avanca em direcao vertical
+humano T18 PASS | Colisao entre tiro e inimigo aumenta pontos
+humano T19 PASS | Nao pontuar sem colisao
+humano T20 PASS | Colisao letal encerra o jogo
+humano T21 PASS | Disparo inimigo fora da tela deixa de atuar
+humano T22 PASS | Gerar nova formacao apos fim dos inimigos
+humano T23 PASS | Reiniciar partida zera pontuacao
+humano T24 PASS | Reiniciar reposiciona a nave
+humano T25 PASS | Soltar tecla interrompe deslocamento
+humano T26 PASS | Renderizar pontuacao no painel
+humano T27 PASS | Atualizar efeito de fundo
+humano T28 PASS | Atualizar posicao dos inimigos durante o jogo
+humano T29 PASS | Reiniciar recoloca inimigos no campo
+humano T30 PASS | Recomecar depois de fim de jogo
+RESUMO humano: {"PASS":30,"FAIL":0,"BLOCKED":0}

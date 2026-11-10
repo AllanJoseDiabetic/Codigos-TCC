@@ -1,0 +1,2 @@
+E:\codigosTCC\testes-funcionais\par02_flask_blog\ambientes\py38_humano\lib\site-packages\flask\sessions.py:208: UserWarning: "localhost" is not a valid cookie domain, it must contain a ".". Add an entry to your hosts file, for example "localhost.localdomain", and use that instead.
+  warnings.warn(

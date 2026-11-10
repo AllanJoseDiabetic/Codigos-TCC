@@ -1,0 +1,5 @@
+﻿Projeto: NPS-NLW da Rocketseat
+Repositorio: https://github.com/rocketseat-education/nlw-04-nodejs
+Commit: d6ba81b93d7479045651554247b31db084cf9116
+Codigo analisado: src
+Versao: d6ba81b9

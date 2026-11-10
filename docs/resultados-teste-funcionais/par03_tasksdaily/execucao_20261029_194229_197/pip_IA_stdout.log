@@ -1,0 +1,10 @@
+Collecting Django==3.1.4
+  Downloading Django-3.1.4-py3-none-any.whl (7.8 MB)
+Collecting pytz==2020.4
+  Using cached pytz-2020.4-py2.py3-none-any.whl (509 kB)
+Collecting asgiref==3.3.1
+  Downloading asgiref-3.3.1-py3-none-any.whl (19 kB)
+Collecting sqlparse==0.4.1
+  Downloading sqlparse-0.4.1-py3-none-any.whl (42 kB)
+Installing collected packages: sqlparse, pytz, asgiref, Django
+Successfully installed Django-3.1.4 asgiref-3.3.1 pytz-2020.4 sqlparse-0.4.1

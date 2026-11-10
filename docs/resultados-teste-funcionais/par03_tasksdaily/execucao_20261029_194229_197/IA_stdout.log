@@ -1,0 +1,30 @@
+IA T01 - PASS : Abrir pagina inicial sem sessao
+IA T02 - PASS : Abrir formulario de cadastro
+IA T03 - PASS : Abrir formulario de login
+IA T04 - PASS : Negar consulta anonima as tarefas
+IA T05 - PASS : Negar cadastro anonimo de tarefa
+IA T06 - PASS : Negar consulta anonima ao registro diario
+IA T07 - PASS : Negar consulta anonima ao progresso
+IA T08 - PASS : Negar consulta anonima de fuso horario
+IA T09 - PASS : Rejeitar cadastro com email invalido
+IA T10 - PASS : Cadastrar usuario valido e persistir
+IA T11 - PASS : Rejeitar usuario duplicado
+IA T12 - PASS : Rejeitar login com senha incorreta
+IA T13 - PASS : Login valido permite acesso autenticado
+IA T14 - PASS : Abrir panorama de tarefas autenticado
+IA T15 - PASS : Criar categoria e tarefa valida para todos os dias
+IA T16 - PASS : Listar tarefa criada no panorama
+IA T17 - PASS : Rejeitar tarefa sem dias da semana
+IA T18 - PASS : Abrir registro diario autenticado
+IA T19 - PASS : Gerar registro de tarefa para o dia
+IA T20 - PASS : Marcar tarefa como concluida no registro diario
+IA T21 - PASS : Abrir visao semanal
+IA T22 - PASS : Abrir historico de meses
+IA T23 - PASS : Abrir visao mensal do mes atual
+IA T24 - PASS : Abrir pagina de progresso
+IA T25 - PASS : Abrir configuracao de fuso horario
+IA T26 - PASS : Atualizar fuso horario do usuario
+IA T27 - PASS : Bloquear acesso de outro usuario a exclusao
+IA T28 - PASS : Excluir propria tarefa e confirmar remocao
+IA T29 - PASS : Encerrar sessao e bloquear panorama
+RESUMO IA: {'PASS': 29, 'FAIL': 0, 'BLOCKED': 0}

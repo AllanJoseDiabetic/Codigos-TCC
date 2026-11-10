@@ -1,0 +1,27 @@
+2026-10-29T21:30:27.124Z - info: Conexão com MongoDB estabelecida.
+2026-10-29T21:30:27.237Z - info: API de locadora iniciada na porta 3982.
+2026-10-29T21:30:29.802Z - info: GET /api/genres
+2026-10-29T21:30:29.815Z - info: GET /api/customers
+2026-10-29T21:30:29.901Z - info: POST /api/users
+2026-10-29T21:30:29.938Z - info: POST /api/users
+2026-10-29T21:30:30.032Z - info: POST /api/auth
+2026-10-29T21:30:30.104Z - info: POST /api/auth
+2026-10-29T21:30:30.214Z - info: GET /api/users/me
+2026-10-29T21:30:30.245Z - info: POST /api/genres
+2026-10-29T21:30:30.276Z - info: POST /api/genres
+2026-10-29T21:30:30.287Z - info: GET /api/genres/6ae3baf62cdf5222f0894755
+2026-10-29T21:30:30.308Z - info: PUT /api/genres/6ae3baf62cdf5222f0894755
+2026-10-29T21:30:30.318Z - info: DELETE /api/genres/6ae3baf62cdf5222f0894755
+2026-10-29T21:30:30.322Z - info: POST /api/customers
+2026-10-29T21:30:30.354Z - info: GET /api/customers/6ae3baf62cdf5222f0894756
+2026-10-29T21:30:30.359Z - info: PUT /api/customers/6ae3baf62cdf5222f0894756
+2026-10-29T21:30:30.385Z - info: POST /api/movies
+2026-10-29T21:30:30.390Z - info: POST /api/movies
+2026-10-29T21:30:30.414Z - info: GET /api/movies/6ae3baf62cdf5222f0894757
+2026-10-29T21:30:30.419Z - info: GET /api/movies
+2026-10-29T21:30:30.425Z - info: POST /api/rentals
+2026-10-29T21:30:30.429Z - info: POST /api/rentals
+2026-10-29T21:30:30.459Z - info: GET /api/movies/6ae3baf62cdf5222f0894757
+2026-10-29T21:30:30.463Z - info: POST /api/returns
+2026-10-29T21:30:30.494Z - info: GET /api/movies/6ae3baf62cdf5222f0894757
+2026-10-29T21:30:30.524Z - info: POST /api/returns

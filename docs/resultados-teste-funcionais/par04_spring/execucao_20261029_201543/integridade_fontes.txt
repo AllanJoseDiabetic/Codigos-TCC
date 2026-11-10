@@ -1,0 +1,1 @@
+﻿SHA256: arquivos Java e pom.xml originais preservados.

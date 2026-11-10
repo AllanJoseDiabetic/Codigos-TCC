@@ -1,0 +1,1090 @@
+﻿{
+    "total":  18,
+    "p":  1,
+    "ps":  500,
+    "paging":  {
+                   "pageIndex":  1,
+                   "pageSize":  500,
+                   "total":  18
+               },
+    "effortTotal":  115,
+    "issues":  [
+                   {
+                       "key":  "619ecc27-49a4-4768-a56b-a97f2abfe23a",
+                       "rule":  "java:S4684",
+                       "severity":  "CRITICAL",
+                       "component":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/resources/UserResource.java",
+                       "project":  "h10---Spring-Boot-JPA",
+                       "line":  55,
+                       "hash":  "eb5366a894e459459aba803fe67c941e",
+                       "textRange":  {
+                                         "startLine":  55,
+                                         "endLine":  55,
+                                         "startOffset":  77,
+                                         "endOffset":  80
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Replace this persistent entity with a simple POJO or DTO object.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "acenelio@gmail.com",
+                       "tags":  [
+                                    "cwe",
+                                    "spring"
+                                ],
+                       "creationDate":  "2019-09-05T11:39:40-0300",
+                       "updateDate":  "2026-10-28T14:51:02-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "e736e7ab-1c79-4cde-877a-1e6e63acd14e",
+                       "rule":  "java:S4684",
+                       "severity":  "CRITICAL",
+                       "component":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/resources/UserResource.java",
+                       "project":  "h10---Spring-Boot-JPA",
+                       "line":  41,
+                       "hash":  "b527ca824451e6732d93de6999cc6a05",
+                       "textRange":  {
+                                         "startLine":  41,
+                                         "endLine":  41,
+                                         "startOffset":  54,
+                                         "endOffset":  57
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Replace this persistent entity with a simple POJO or DTO object.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "acenelio@gmail.com",
+                       "tags":  [
+                                    "cwe",
+                                    "spring"
+                                ],
+                       "creationDate":  "2019-09-05T11:07:49-0300",
+                       "updateDate":  "2026-10-28T14:51:02-0300",
+                       "type":  "VULNERABILITY",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "SECURITY",
+                                           "severity":  "HIGH"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "e4bae5f0-7864-4038-bdc5-74c3e785ec18",
+                       "rule":  "java:S6813",
+                       "severity":  "MAJOR",
+                       "component":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/config/TestConfig.java",
+                       "project":  "h10---Spring-Boot-JPA",
+                       "line":  40,
+                       "hash":  "0132ec8cee01c5dd244e1a60fe6448a1",
+                       "textRange":  {
+                                         "startLine":  40,
+                                         "endLine":  40,
+                                         "startOffset":  1,
+                                         "endOffset":  11
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove this field injection and use constructor injection instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "acenelio@gmail.com",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2019-09-03T20:52:49-0300",
+                       "updateDate":  "2026-10-28T14:51:02-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       },
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "522ff44a-075e-410c-889a-24b577e84bb8",
+                       "rule":  "java:S6813",
+                       "severity":  "MAJOR",
+                       "component":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/config/TestConfig.java",
+                       "project":  "h10---Spring-Boot-JPA",
+                       "line":  37,
+                       "hash":  "0132ec8cee01c5dd244e1a60fe6448a1",
+                       "textRange":  {
+                                         "startLine":  37,
+                                         "endLine":  37,
+                                         "startOffset":  1,
+                                         "endOffset":  11
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove this field injection and use constructor injection instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "acenelio@gmail.com",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2019-08-23T14:58:14-0300",
+                       "updateDate":  "2026-10-28T14:51:02-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       },
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "a9774234-1fe9-43ba-93d9-f727741c2072",
+                       "rule":  "java:S6813",
+                       "severity":  "MAJOR",
+                       "component":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/resources/ProductResource.java",
+                       "project":  "h10---Spring-Boot-JPA",
+                       "line":  19,
+                       "hash":  "0132ec8cee01c5dd244e1a60fe6448a1",
+                       "textRange":  {
+                                         "startLine":  19,
+                                         "endLine":  19,
+                                         "startOffset":  1,
+                                         "endOffset":  11
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove this field injection and use constructor injection instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "acenelio@gmail.com",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2019-08-23T14:58:14-0300",
+                       "updateDate":  "2026-10-28T14:51:02-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       },
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "19b0e429-70d9-467f-bf6a-6487c020d36c",
+                       "rule":  "java:S6813",
+                       "severity":  "MAJOR",
+                       "component":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/services/ProductService.java",
+                       "project":  "h10---Spring-Boot-JPA",
+                       "line":  15,
+                       "hash":  "0132ec8cee01c5dd244e1a60fe6448a1",
+                       "textRange":  {
+                                         "startLine":  15,
+                                         "endLine":  15,
+                                         "startOffset":  1,
+                                         "endOffset":  11
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove this field injection and use constructor injection instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "acenelio@gmail.com",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2019-08-23T14:58:14-0300",
+                       "updateDate":  "2026-10-28T14:51:02-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       },
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "1ebe2429-1bc5-4420-a7da-b54310eac89d",
+                       "rule":  "java:S3655",
+                       "severity":  "MAJOR",
+                       "component":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/services/ProductService.java",
+                       "project":  "h10---Spring-Boot-JPA",
+                       "line":  24,
+                       "hash":  "ee9740f9158964d797929e5de306e6c1",
+                       "textRange":  {
+                                         "startLine":  24,
+                                         "endLine":  24,
+                                         "startOffset":  9,
+                                         "endOffset":  12
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Call \"obj.isPresent()\" or \"!obj.isEmpty()\" before accessing the value.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "acenelio@gmail.com",
+                       "tags":  [
+                                    "cwe",
+                                    "symbolic-execution"
+                                ],
+                       "creationDate":  "2019-08-23T14:58:14-0300",
+                       "updateDate":  "2026-10-28T14:51:02-0300",
+                       "type":  "BUG",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "fa0e20e8-6e4a-43af-a902-82956ff0b655",
+                       "rule":  "java:S6813",
+                       "severity":  "MAJOR",
+                       "component":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/config/TestConfig.java",
+                       "project":  "h10---Spring-Boot-JPA",
+                       "line":  34,
+                       "hash":  "0132ec8cee01c5dd244e1a60fe6448a1",
+                       "textRange":  {
+                                         "startLine":  34,
+                                         "endLine":  34,
+                                         "startOffset":  1,
+                                         "endOffset":  11
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove this field injection and use constructor injection instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "acenelio@gmail.com",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2019-08-23T14:39:03-0300",
+                       "updateDate":  "2026-10-28T14:51:02-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       },
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "683aecc5-18d4-4f52-9f69-b2446af6c2cb",
+                       "rule":  "java:S6813",
+                       "severity":  "MAJOR",
+                       "component":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/resources/CategoryResource.java",
+                       "project":  "h10---Spring-Boot-JPA",
+                       "line":  19,
+                       "hash":  "0132ec8cee01c5dd244e1a60fe6448a1",
+                       "textRange":  {
+                                         "startLine":  19,
+                                         "endLine":  19,
+                                         "startOffset":  1,
+                                         "endOffset":  11
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove this field injection and use constructor injection instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "acenelio@gmail.com",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2019-08-23T14:39:03-0300",
+                       "updateDate":  "2026-10-28T14:51:02-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       },
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "0828fe27-7466-45ac-a401-a937b62834b8",
+                       "rule":  "java:S6813",
+                       "severity":  "MAJOR",
+                       "component":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/services/CategoryService.java",
+                       "project":  "h10---Spring-Boot-JPA",
+                       "line":  15,
+                       "hash":  "0132ec8cee01c5dd244e1a60fe6448a1",
+                       "textRange":  {
+                                         "startLine":  15,
+                                         "endLine":  15,
+                                         "startOffset":  1,
+                                         "endOffset":  11
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove this field injection and use constructor injection instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "acenelio@gmail.com",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2019-08-23T14:39:03-0300",
+                       "updateDate":  "2026-10-28T14:51:02-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       },
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "b6169321-ba61-4876-a451-125e1681d398",
+                       "rule":  "java:S3655",
+                       "severity":  "MAJOR",
+                       "component":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/services/CategoryService.java",
+                       "project":  "h10---Spring-Boot-JPA",
+                       "line":  24,
+                       "hash":  "ee9740f9158964d797929e5de306e6c1",
+                       "textRange":  {
+                                         "startLine":  24,
+                                         "endLine":  24,
+                                         "startOffset":  9,
+                                         "endOffset":  12
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Call \"obj.isPresent()\" or \"!obj.isEmpty()\" before accessing the value.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "acenelio@gmail.com",
+                       "tags":  [
+                                    "cwe",
+                                    "symbolic-execution"
+                                ],
+                       "creationDate":  "2019-08-23T14:39:03-0300",
+                       "updateDate":  "2026-10-28T14:51:02-0300",
+                       "type":  "BUG",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "171e432e-bb41-4976-ae78-473c53a60403",
+                       "rule":  "java:S6813",
+                       "severity":  "MAJOR",
+                       "component":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/config/TestConfig.java",
+                       "project":  "h10---Spring-Boot-JPA",
+                       "line":  31,
+                       "hash":  "0132ec8cee01c5dd244e1a60fe6448a1",
+                       "textRange":  {
+                                         "startLine":  31,
+                                         "endLine":  31,
+                                         "startOffset":  1,
+                                         "endOffset":  11
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove this field injection and use constructor injection instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "acenelio@gmail.com",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2019-08-10T10:39:35-0300",
+                       "updateDate":  "2026-10-28T14:51:02-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       },
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "89a70b2c-a8f8-4ae5-8f02-e116ff850e85",
+                       "rule":  "java:S6813",
+                       "severity":  "MAJOR",
+                       "component":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/resources/OrderResource.java",
+                       "project":  "h10---Spring-Boot-JPA",
+                       "line":  19,
+                       "hash":  "0132ec8cee01c5dd244e1a60fe6448a1",
+                       "textRange":  {
+                                         "startLine":  19,
+                                         "endLine":  19,
+                                         "startOffset":  1,
+                                         "endOffset":  11
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove this field injection and use constructor injection instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "acenelio@gmail.com",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2019-08-10T10:39:35-0300",
+                       "updateDate":  "2026-10-28T14:51:02-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       },
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "e9af758c-0453-4034-a1e7-14284967817a",
+                       "rule":  "java:S6813",
+                       "severity":  "MAJOR",
+                       "component":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/services/OrderService.java",
+                       "project":  "h10---Spring-Boot-JPA",
+                       "line":  15,
+                       "hash":  "0132ec8cee01c5dd244e1a60fe6448a1",
+                       "textRange":  {
+                                         "startLine":  15,
+                                         "endLine":  15,
+                                         "startOffset":  1,
+                                         "endOffset":  11
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove this field injection and use constructor injection instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "acenelio@gmail.com",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2019-08-10T10:39:35-0300",
+                       "updateDate":  "2026-10-28T14:51:02-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       },
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "42604a05-b5bc-4555-8268-f4475896cf01",
+                       "rule":  "java:S3655",
+                       "severity":  "MAJOR",
+                       "component":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/services/OrderService.java",
+                       "project":  "h10---Spring-Boot-JPA",
+                       "line":  24,
+                       "hash":  "ee9740f9158964d797929e5de306e6c1",
+                       "textRange":  {
+                                         "startLine":  24,
+                                         "endLine":  24,
+                                         "startOffset":  9,
+                                         "endOffset":  12
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Call \"obj.isPresent()\" or \"!obj.isEmpty()\" before accessing the value.",
+                       "effort":  "10min",
+                       "debt":  "10min",
+                       "author":  "acenelio@gmail.com",
+                       "tags":  [
+                                    "cwe",
+                                    "symbolic-execution"
+                                ],
+                       "creationDate":  "2019-08-10T10:39:35-0300",
+                       "updateDate":  "2026-10-28T14:51:02-0300",
+                       "type":  "BUG",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "COMPLETE",
+                       "cleanCodeAttributeCategory":  "INTENTIONAL",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "e137261d-e5ad-427b-8839-4434324cf415",
+                       "rule":  "java:S6813",
+                       "severity":  "MAJOR",
+                       "component":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/resources/UserResource.java",
+                       "project":  "h10---Spring-Boot-JPA",
+                       "line":  25,
+                       "hash":  "0132ec8cee01c5dd244e1a60fe6448a1",
+                       "textRange":  {
+                                         "startLine":  25,
+                                         "endLine":  25,
+                                         "startOffset":  1,
+                                         "endOffset":  11
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove this field injection and use constructor injection instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "acenelio@gmail.com",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2019-08-10T08:37:56-0300",
+                       "updateDate":  "2026-10-28T14:51:02-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       },
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "50aca37a-78f1-4ae3-a272-99a9d3e05297",
+                       "rule":  "java:S6813",
+                       "severity":  "MAJOR",
+                       "component":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/services/UserService.java",
+                       "project":  "h10---Spring-Boot-JPA",
+                       "line":  21,
+                       "hash":  "0132ec8cee01c5dd244e1a60fe6448a1",
+                       "textRange":  {
+                                         "startLine":  21,
+                                         "endLine":  21,
+                                         "startOffset":  1,
+                                         "endOffset":  11
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove this field injection and use constructor injection instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "acenelio@gmail.com",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2019-08-10T08:37:56-0300",
+                       "updateDate":  "2026-10-28T14:51:02-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       },
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   },
+                   {
+                       "key":  "e272d896-dfb7-4aa2-8d7a-5ad584eba8a0",
+                       "rule":  "java:S6813",
+                       "severity":  "MAJOR",
+                       "component":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/config/TestConfig.java",
+                       "project":  "h10---Spring-Boot-JPA",
+                       "line":  28,
+                       "hash":  "0132ec8cee01c5dd244e1a60fe6448a1",
+                       "textRange":  {
+                                         "startLine":  28,
+                                         "endLine":  28,
+                                         "startOffset":  1,
+                                         "endOffset":  11
+                                     },
+                       "flows":  [
+
+                                 ],
+                       "status":  "OPEN",
+                       "message":  "Remove this field injection and use constructor injection instead.",
+                       "effort":  "5min",
+                       "debt":  "5min",
+                       "author":  "acenelio@gmail.com",
+                       "tags":  [
+
+                                ],
+                       "creationDate":  "2019-08-09T00:44:00-0300",
+                       "updateDate":  "2026-10-28T14:51:02-0300",
+                       "type":  "CODE_SMELL",
+                       "scope":  "MAIN",
+                       "quickFixAvailable":  false,
+                       "messageFormattings":  [
+
+                                              ],
+                       "codeVariants":  [
+
+                                        ],
+                       "cleanCodeAttribute":  "CONVENTIONAL",
+                       "cleanCodeAttributeCategory":  "CONSISTENT",
+                       "impacts":  [
+                                       {
+                                           "softwareQuality":  "MAINTAINABILITY",
+                                           "severity":  "MEDIUM"
+                                       },
+                                       {
+                                           "softwareQuality":  "RELIABILITY",
+                                           "severity":  "MEDIUM"
+                                       }
+                                   ],
+                       "issueStatus":  "OPEN",
+                       "prioritizedRule":  false,
+                       "fromSonarQubeUpdate":  false,
+                       "internalTags":  [
+
+                                        ],
+                       "linkedTicketStatus":  "NOT_LINKED"
+                   }
+               ],
+    "components":  [
+                       {
+                           "key":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/resources/OrderResource.java",
+                           "enabled":  true,
+                           "qualifier":  "FIL",
+                           "name":  "OrderResource.java",
+                           "longName":  "src/main/java/com/educandoweb/course/resources/OrderResource.java",
+                           "path":  "src/main/java/com/educandoweb/course/resources/OrderResource.java"
+                       },
+                       {
+                           "key":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/resources/ProductResource.java",
+                           "enabled":  true,
+                           "qualifier":  "FIL",
+                           "name":  "ProductResource.java",
+                           "longName":  "src/main/java/com/educandoweb/course/resources/ProductResource.java",
+                           "path":  "src/main/java/com/educandoweb/course/resources/ProductResource.java"
+                       },
+                       {
+                           "key":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/services/ProductService.java",
+                           "enabled":  true,
+                           "qualifier":  "FIL",
+                           "name":  "ProductService.java",
+                           "longName":  "src/main/java/com/educandoweb/course/services/ProductService.java",
+                           "path":  "src/main/java/com/educandoweb/course/services/ProductService.java"
+                       },
+                       {
+                           "key":  "h10---Spring-Boot-JPA",
+                           "enabled":  true,
+                           "qualifier":  "TRK",
+                           "name":  "course",
+                           "longName":  "course"
+                       },
+                       {
+                           "key":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/services/OrderService.java",
+                           "enabled":  true,
+                           "qualifier":  "FIL",
+                           "name":  "OrderService.java",
+                           "longName":  "src/main/java/com/educandoweb/course/services/OrderService.java",
+                           "path":  "src/main/java/com/educandoweb/course/services/OrderService.java"
+                       },
+                       {
+                           "key":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/resources/CategoryResource.java",
+                           "enabled":  true,
+                           "qualifier":  "FIL",
+                           "name":  "CategoryResource.java",
+                           "longName":  "src/main/java/com/educandoweb/course/resources/CategoryResource.java",
+                           "path":  "src/main/java/com/educandoweb/course/resources/CategoryResource.java"
+                       },
+                       {
+                           "key":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/resources/UserResource.java",
+                           "enabled":  true,
+                           "qualifier":  "FIL",
+                           "name":  "UserResource.java",
+                           "longName":  "src/main/java/com/educandoweb/course/resources/UserResource.java",
+                           "path":  "src/main/java/com/educandoweb/course/resources/UserResource.java"
+                       },
+                       {
+                           "key":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/config/TestConfig.java",
+                           "enabled":  true,
+                           "qualifier":  "FIL",
+                           "name":  "TestConfig.java",
+                           "longName":  "src/main/java/com/educandoweb/course/config/TestConfig.java",
+                           "path":  "src/main/java/com/educandoweb/course/config/TestConfig.java"
+                       },
+                       {
+                           "key":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/services/UserService.java",
+                           "enabled":  true,
+                           "qualifier":  "FIL",
+                           "name":  "UserService.java",
+                           "longName":  "src/main/java/com/educandoweb/course/services/UserService.java",
+                           "path":  "src/main/java/com/educandoweb/course/services/UserService.java"
+                       },
+                       {
+                           "key":  "h10---Spring-Boot-JPA:src/main/java/com/educandoweb/course/services/CategoryService.java",
+                           "enabled":  true,
+                           "qualifier":  "FIL",
+                           "name":  "CategoryService.java",
+                           "longName":  "src/main/java/com/educandoweb/course/services/CategoryService.java",
+                           "path":  "src/main/java/com/educandoweb/course/services/CategoryService.java"
+                       }
+                   ],
+    "facets":  [
+
+               ]
+}

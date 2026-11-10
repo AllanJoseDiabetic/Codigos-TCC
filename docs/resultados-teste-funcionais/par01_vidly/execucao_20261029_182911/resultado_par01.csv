@@ -1,0 +1,51 @@
+﻿projeto;teste;descricao;resultado;esperado;obtido;http_status;duracao_ms
+humano;T01;Listar generos (base vazia);PASS;HTTP 200, lista vazia;"HTTP 200; registros=0";200;0.0
+humano;T02;Bloquear consulta de clientes sem autenticacao;PASS;HTTP 401;"HTTP 401; resposta=Access denied. No token provided.";401;2.2
+humano;T03;Rejeitar cadastro de usuario invalido;PASS;HTTP 4xx;"HTTP 400; resposta=""name"" length must be at least 2 characters long";400;34.7
+humano;T04;Cadastrar usuario valido e receber token;PASS;HTTP 2xx, usuario e token;"HTTP 200; resposta={'_id': '6ae3baf4501565333c0a09cf', 'name': 'Usuario Teste', 'email': 'tcc.20261029182911@example.invalid'}";200;106.3
+humano;T05;Rejeitar login com senha incorreta;PASS;HTTP 4xx;"HTTP 400; resposta=Invalid email or password.";400;93.8
+humano;T06;Autenticar usuario com senha correta;PASS;HTTP 2xx, token JWT;"HTTP 200; token JWT presente";200;77.2
+humano;T07;Consultar perfil autenticado;PASS;HTTP 200, perfil corresponde ao email;"HTTP 200; resposta={'_id': '6ae3baf4501565333c0a09cf', 'name': 'Usuario Teste', 'email': 'tcc.20261029182911@example.invalid', '__v': 0}";200;5.0
+humano;T08;Rejeitar genero de um caractere;PASS;HTTP 400;"HTTP 400; resposta=""name"" length must be at least 5 characters long";400;12.9
+humano;T09;Cadastrar genero valido;PASS;HTTP 2xx, ID valido;"HTTP 200; resposta={'_id': '6ae3baf5501565333c0a09d0', 'name': 'Genero de Teste', '__v': 0}";200;9.9
+humano;T10;Consultar genero por ID;PASS;HTTP 200, genero correspondente;"HTTP 200; resposta={'_id': '6ae3baf5501565333c0a09d0', 'name': 'Genero de Teste'}";200;3.3
+humano;T11;Atualizar genero;PASS;HTTP 2xx, nome atualizado;"HTTP 200; resposta={'_id': '6ae3baf5501565333c0a09d0', 'name': 'Genero Atualizado', '__v': 0}";200;8.9
+humano;T12;Rejeitar exclusao de genero sem privilegio admin;PASS;HTTP 403 sem privilegio admin;"HTTP 403; resposta=Access denied.";403;2.1
+humano;T13;Cadastrar cliente valido;PASS;HTTP 2xx, cliente criado;"HTTP 200; resposta={'isGold': True, '_id': '6ae3baf5501565333c0a09d1', 'name': 'Cliente Teste', 'phone': '11999999999', '__v': 0}";200;11.6
+humano;T14;Consultar cliente por ID;PASS;HTTP 200, ID do cliente;"HTTP 200; resposta={'isGold': True, '_id': '6ae3baf5501565333c0a09d1', 'name': 'Cliente Teste', 'phone': '11999999999'}";200;2.9
+humano;T15;Atualizar cliente;PASS;HTTP 2xx, telefone alterado;"HTTP 200; resposta={'isGold': True, '_id': '6ae3baf5501565333c0a09d1', 'name': 'Cliente Teste', 'phone': '11988888888', '__v': 0}";200;24.7
+humano;T16;Rejeitar filme com estoque negativo;PASS;HTTP 400 para estoque negativo;"HTTP 400; resposta=""numberInStock"" must be larger than or equal to 0";400;2.6
+humano;T17;Cadastrar filme valido;PASS;HTTP 2xx, filme criado;"HTTP 200; resposta={'_id': '6ae3baf5501565333c0a09d2', 'title': 'Filme de Teste', 'genre': {'_id': '6ae3baf5501565333c0a09d0', 'name': 'Genero Atualizado'}, 'n";200;14.6
+humano;T18;Consultar filme por ID;PASS;HTTP 200, filme correspondente;"HTTP 200; resposta={'_id': '6ae3baf5501565333c0a09d2', 'title': 'Filme de Teste', 'genre': {'_id': '6ae3baf5501565333c0a09d0', 'name': 'Genero Atualizado'}, 'n";200;2.9
+humano;T19;Listar filme cadastrado;PASS;HTTP 200, filme na listagem;"HTTP 200; resposta=[{'_id': '6ae3baf5501565333c0a09d2', 'title': 'Filme de Teste', 'genre': {'_id': '6ae3baf5501565333c0a09d0', 'name': 'Genero Atualizado'}, '";200;27.0
+humano;T20;Rejeitar aluguel sem IDs obrigatorios;PASS;HTTP 400 para locacao sem IDs;"HTTP 400; resposta=""customerId"" is required";400;2.5
+humano;T21;Registrar aluguel valido;PASS;HTTP 2xx, locacao com ID valido;"HTTP 200; resposta={'dateOut': '2026-10-29T21:30:29.313Z', '_id': '6ae3baf5501565333c0a09d6', 'customer': {'isGold': False, '_id': '6ae3baf5501565333c0a09d1', ";200;7.3
+humano;T22;Conferir reducao do estoque apos aluguel;PASS;Estoque apos locacao igual a 1;HTTP 200, estoque=1, esperado=1;200;433.9
+humano;T23;Registrar devolucao;PASS;HTTP 2xx, devolucao com dataReturned;"HTTP 200; resposta={'dateOut': '2026-10-29T21:30:29.313Z', '_id': '6ae3baf5501565333c0a09d6', 'customer': {'isGold': False, '_id': '6ae3baf5501565333c0a09d1', ";200;9.0
+humano;T24;Conferir reposicao do estoque apos devolucao;PASS;Estoque apos devolucao igual a 2;HTTP 200, estoque=2, esperado=2;200;21.9
+humano;T25;Rejeitar segunda devolucao da mesma locacao;PASS;HTTP 4xx para devolucao repetida;"HTTP 400; resposta=Return already processed.";400;16.0
+IA;T01;Listar generos (base vazia);PASS;HTTP 200, lista vazia;"HTTP 200; registros=0";200;0.0
+IA;T02;Bloquear consulta de clientes sem autenticacao;PASS;HTTP 401;"HTTP 401; resposta={'error': 'Token de autenticação não informado.'}";401;3.1
+IA;T03;Rejeitar cadastro de usuario invalido;PASS;HTTP 4xx;"HTTP 400; resposta={'error': 'Dados inválidos.', 'details': ['""name"" length must be at least 2 characters long', '""email"" must be a valid email', '""password"" l";400;119.3
+IA;T04;Cadastrar usuario valido e receber token;PASS;HTTP 2xx, usuario e token;"HTTP 201; resposta={'_id': '6ae3baf62cdf5222f0894754', 'name': 'Usuario Teste', 'email': 'tcc.20261029182911@example.invalid', 'isAdmin': False}";201;94.2
+IA;T05;Rejeitar login com senha incorreta;PASS;HTTP 4xx;"HTTP 401; resposta={'error': 'E-mail ou senha inválidos.'}";401;61.9
+IA;T06;Autenticar usuario com senha correta;PASS;HTTP 2xx, token JWT;"HTTP 200; token JWT presente";200;95.0
+IA;T07;Consultar perfil autenticado;PASS;HTTP 200, perfil corresponde ao email;"HTTP 200; resposta={'isAdmin': False, '_id': '6ae3baf62cdf5222f0894754', 'name': 'Usuario Teste', 'email': 'tcc.20261029182911@example.invalid'}";200;32.2
+IA;T08;Rejeitar genero de um caractere;PASS;HTTP 400;"HTTP 400; resposta={'error': 'Dados inválidos.', 'details': ['""name"" length must be at least 2 characters long']}";400;29.9
+IA;T09;Cadastrar genero valido;PASS;HTTP 2xx, ID valido;"HTTP 201; resposta={'_id': '6ae3baf62cdf5222f0894755', 'name': 'Genero de Teste', '__v': 0}";201;36.1
+IA;T10;Consultar genero por ID;PASS;HTTP 200, genero correspondente;"HTTP 200; resposta={'_id': '6ae3baf62cdf5222f0894755', 'name': 'Genero de Teste', '__v': 0}";200;3.8
+IA;T11;Atualizar genero;PASS;HTTP 2xx, nome atualizado;"HTTP 200; resposta={'_id': '6ae3baf62cdf5222f0894755', 'name': 'Genero Atualizado', '__v': 0}";200;27.4
+IA;T12;Rejeitar exclusao de genero sem privilegio admin;PASS;HTTP 403 sem privilegio admin;"HTTP 403; resposta={'error': 'Esta operação exige privilégios de administrador.'}";403;3.6
+IA;T13;Cadastrar cliente valido;PASS;HTTP 2xx, cliente criado;"HTTP 201; resposta={'isGold': True, '_id': '6ae3baf62cdf5222f0894756', 'name': 'Cliente Teste', 'phone': '11999999999', '__v': 0}";201;10.6
+IA;T14;Consultar cliente por ID;PASS;HTTP 200, ID do cliente;"HTTP 200; resposta={'isGold': True, '_id': '6ae3baf62cdf5222f0894756', 'name': 'Cliente Teste', 'phone': '11999999999', '__v': 0}";200;26.0
+IA;T15;Atualizar cliente;PASS;HTTP 2xx, telefone alterado;"HTTP 200; resposta={'isGold': True, '_id': '6ae3baf62cdf5222f0894756', 'name': 'Cliente Teste', 'phone': '11988888888', '__v': 0}";200;4.6
+IA;T16;Rejeitar filme com estoque negativo;PASS;HTTP 400 para estoque negativo;"HTTP 400; resposta={'error': 'Dados inválidos.', 'details': ['""numberInStock"" must be larger than or equal to 0']}";400;25.8
+IA;T17;Cadastrar filme valido;PASS;HTTP 2xx, filme criado;"HTTP 201; resposta={'_id': '6ae3baf62cdf5222f0894757', 'title': 'Filme de Teste', 'genre': {'_id': '6ae3baf62cdf5222f0894755', 'name': 'Genero Atualizado'}, 'n";201;22.7
+IA;T18;Consultar filme por ID;PASS;HTTP 200, filme correspondente;"HTTP 200; resposta={'_id': '6ae3baf62cdf5222f0894757', 'title': 'Filme de Teste', 'genre': {'_id': '6ae3baf62cdf5222f0894755', 'name': 'Genero Atualizado'}, 'n";200;6.0
+IA;T19;Listar filme cadastrado;PASS;HTTP 200, filme na listagem;"HTTP 200; resposta=[{'_id': '6ae3baf62cdf5222f0894757', 'title': 'Filme de Teste', 'genre': {'_id': '6ae3baf62cdf5222f0894755', 'name': 'Genero Atualizado'}, '";200;4.7
+IA;T20;Rejeitar aluguel sem IDs obrigatorios;PASS;HTTP 400 para locacao sem IDs;"HTTP 400; resposta={'error': 'Dados inválidos.', 'details': ['""customerId"" is required', '""movieId"" is required']}";400;4.2
+IA;T21;Registrar aluguel valido;PASS;HTTP 2xx, locacao com ID valido;"HTTP 201; resposta={'customer': {'_id': '6ae3baf62cdf5222f0894756', 'name': 'Cliente Teste', 'phone': '11988888888', 'isGold': True}, 'movie': {'_id': '6ae3baf";201;29.7
+IA;T22;Conferir reducao do estoque apos aluguel;PASS;Estoque apos locacao igual a 1;HTTP 200, estoque=1, esperado=1;200;4.6
+IA;T23;Registrar devolucao;PASS;HTTP 2xx, devolucao com dataReturned;"HTTP 200; resposta={'customer': {'_id': '6ae3baf62cdf5222f0894756', 'name': 'Cliente Teste', 'phone': '11988888888', 'isGold': True}, 'movie': {'_id': '6ae3baf";200;17.1
+IA;T24;Conferir reposicao do estoque apos devolucao;PASS;Estoque apos devolucao igual a 2;HTTP 200, estoque=2, esperado=2;200;18.6
+IA;T25;Rejeitar segunda devolucao da mesma locacao;PASS;HTTP 4xx para devolucao repetida;"HTTP 400; resposta={'error': 'Não existe locação aberta para este cliente e filme.'}";400;31.3

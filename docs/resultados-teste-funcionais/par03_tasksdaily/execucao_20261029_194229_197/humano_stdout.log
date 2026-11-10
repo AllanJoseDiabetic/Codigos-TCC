@@ -1,0 +1,30 @@
+humano T01 - PASS : Abrir pagina inicial sem sessao
+humano T02 - PASS : Abrir formulario de cadastro
+humano T03 - PASS : Abrir formulario de login
+humano T04 - PASS : Negar consulta anonima as tarefas
+humano T05 - PASS : Negar cadastro anonimo de tarefa
+humano T06 - PASS : Negar consulta anonima ao registro diario
+humano T07 - PASS : Negar consulta anonima ao progresso
+humano T08 - PASS : Negar consulta anonima de fuso horario
+humano T09 - PASS : Rejeitar cadastro com email invalido
+humano T10 - PASS : Cadastrar usuario valido e persistir
+humano T11 - PASS : Rejeitar usuario duplicado
+humano T12 - PASS : Rejeitar login com senha incorreta
+humano T13 - PASS : Login valido permite acesso autenticado
+humano T14 - PASS : Abrir panorama de tarefas autenticado
+humano T15 - PASS : Criar categoria e tarefa valida para todos os dias
+humano T16 - PASS : Listar tarefa criada no panorama
+humano T17 - PASS : Rejeitar tarefa sem dias da semana
+humano T18 - PASS : Abrir registro diario autenticado
+humano T19 - PASS : Gerar registro de tarefa para o dia
+humano T20 - PASS : Marcar tarefa como concluida no registro diario
+humano T21 - PASS : Abrir visao semanal
+humano T22 - PASS : Abrir historico de meses
+humano T23 - PASS : Abrir visao mensal do mes atual
+humano T24 - PASS : Abrir pagina de progresso
+humano T25 - PASS : Abrir configuracao de fuso horario
+humano T26 - PASS : Atualizar fuso horario do usuario
+humano T27 - PASS : Bloquear acesso de outro usuario a exclusao
+humano T28 - PASS : Excluir propria tarefa e confirmar remocao
+humano T29 - PASS : Encerrar sessao e bloquear panorama
+RESUMO humano: {'PASS': 29, 'FAIL': 0, 'BLOCKED': 0}

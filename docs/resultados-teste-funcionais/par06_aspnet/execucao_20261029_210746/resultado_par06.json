@@ -1,0 +1,699 @@
+﻿{
+    "par":  "par06_aspnet",
+    "execucao":  "20261029_210746",
+    "metodologia":  "Acao direta de controladores, servicos e modelos reais; EF Core 2.1 InMemory; sem requisicoes HTTP ou servidor MySQL",
+    "limitacoes":  [
+                       "Nao valida pipeline HTTP, views Razor renderizadas, CSRF ou banco MySQL",
+                       "Nao reproduz constraints de chave estrangeira e indices exclusivos do MySQL",
+                       "Chamadas diretas aos controladores nao simulam automaticamente model binding e ModelState do ASP.NET",
+                       "Ambiente legado netcoreapp2.1; dependencias restauradas por NuGet"
+                   ],
+    "preparacao":  [
+                       {
+                           "projeto":  "humano",
+                           "estado":  "EXECUTADO",
+                           "etapa":  "completo",
+                           "codigo":  0,
+                           "pass":  28,
+                           "fail":  5,
+                           "bloqueado":  0
+                       },
+                       {
+                           "projeto":  "IA",
+                           "estado":  "EXECUTADO",
+                           "etapa":  "completo",
+                           "codigo":  0,
+                           "pass":  33,
+                           "fail":  0,
+                           "bloqueado":  0
+                       }
+                   ],
+    "resumo":  {
+                   "total_executados":  66,
+                   "pass":  61,
+                   "fail":  5,
+                   "blocked_preparacao":  0
+               },
+    "resultados":  [
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T01",
+                           "grupo":  "comum",
+                           "descricao":  "Total de vendas do vendedor no intervalo",
+                           "resultado":  "PASS",
+                           "esperado":  "Somatorio correto",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "16"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T02",
+                           "grupo":  "comum",
+                           "descricao":  "Excluir vendas fora do intervalo",
+                           "resultado":  "PASS",
+                           "esperado":  "Somar somente datas selecionadas",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "0"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T03",
+                           "grupo":  "comum",
+                           "descricao":  "Associar vendedor ao departamento",
+                           "resultado":  "PASS",
+                           "esperado":  "Colecao inclui vendedor",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "0"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T04",
+                           "grupo":  "comum",
+                           "descricao":  "Total de vendas agregado pelo departamento",
+                           "resultado":  "PASS",
+                           "esperado":  "Soma das vendas de vendedores",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "0"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T05",
+                           "grupo":  "comum",
+                           "descricao":  "Adicionar e remover venda de um vendedor",
+                           "resultado":  "PASS",
+                           "esperado":  "Colecao reflete modificacoes",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "0"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T06",
+                           "grupo":  "comum",
+                           "descricao":  "Listar departamentos pelo controlador",
+                           "resultado":  "PASS",
+                           "esperado":  "View com dois departamentos",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "225"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T07",
+                           "grupo":  "comum",
+                           "descricao":  "Consultar departamento existente",
+                           "resultado":  "PASS",
+                           "esperado":  "View com entidade correta",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "20"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T08",
+                           "grupo":  "comum",
+                           "descricao":  "Consultar departamento inexistente",
+                           "resultado":  "PASS",
+                           "esperado":  "NotFound",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "2"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T09",
+                           "grupo":  "comum",
+                           "descricao":  "Abrir cadastro de departamento",
+                           "resultado":  "PASS",
+                           "esperado":  "View retornada",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "0"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T10",
+                           "grupo":  "comum",
+                           "descricao":  "Criar e persistir departamento",
+                           "resultado":  "PASS",
+                           "esperado":  "Redirect e entidade salva",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "15"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T11",
+                           "grupo":  "comum",
+                           "descricao":  "Abrir edicao de departamento",
+                           "resultado":  "PASS",
+                           "esperado":  "View retornada",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "3"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T12",
+                           "grupo":  "comum",
+                           "descricao":  "Alterar e persistir departamento",
+                           "resultado":  "PASS",
+                           "esperado":  "Nome alterado no banco",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "9"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T13",
+                           "grupo":  "comum",
+                           "descricao":  "Abrir exclusao de departamento",
+                           "resultado":  "PASS",
+                           "esperado":  "View retornada",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "3"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T14",
+                           "grupo":  "comum",
+                           "descricao":  "Excluir departamento sem vendedores",
+                           "resultado":  "PASS",
+                           "esperado":  "Exclusao persistida",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "5"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T15",
+                           "grupo":  "comum",
+                           "descricao":  "Listar vendedores",
+                           "resultado":  "PASS",
+                           "esperado":  "View com dois vendedores",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "6"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T16",
+                           "grupo":  "comum",
+                           "descricao":  "Abrir formulario de vendedor",
+                           "resultado":  "PASS",
+                           "esperado":  "View retornada",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "7"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T17",
+                           "grupo":  "comum",
+                           "descricao":  "Consultar vendedor existente",
+                           "resultado":  "PASS",
+                           "esperado":  "View com vendedor",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "25"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T18",
+                           "grupo":  "comum",
+                           "descricao":  "Abrir edicao de vendedor",
+                           "resultado":  "PASS",
+                           "esperado":  "View retornada",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "3"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T19",
+                           "grupo":  "comum",
+                           "descricao":  "Cadastrar e persistir vendedor",
+                           "resultado":  "PASS",
+                           "esperado":  "Vendedor salvo",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "6"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T20",
+                           "grupo":  "comum",
+                           "descricao":  "Atualizar vendedor existente",
+                           "resultado":  "PASS",
+                           "esperado":  "Alteracao persistida",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "16"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T21",
+                           "grupo":  "comum",
+                           "descricao":  "Abrir exclusao de vendedor",
+                           "resultado":  "PASS",
+                           "esperado":  "View retornada",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "3"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T22",
+                           "grupo":  "comum",
+                           "descricao":  "Excluir vendedor sem vendas",
+                           "resultado":  "PASS",
+                           "esperado":  "Exclusao persistida",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "6"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T23",
+                           "grupo":  "comum",
+                           "descricao":  "Abrir pagina de registros de vendas",
+                           "resultado":  "PASS",
+                           "esperado":  "View retornada",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "0"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T24",
+                           "grupo":  "comum",
+                           "descricao":  "Consultar vendas por intervalo",
+                           "resultado":  "PASS",
+                           "esperado":  "2 registros retornados",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "39"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T25",
+                           "grupo":  "comum",
+                           "descricao":  "Agrupar vendas por departamento",
+                           "resultado":  "PASS",
+                           "esperado":  "Dois registros em grupos",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "21"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T26",
+                           "grupo":  "validacao",
+                           "descricao":  "Validar nome obrigatorio do vendedor",
+                           "resultado":  "PASS",
+                           "esperado":  "DataAnnotations invalida nome vazio",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "1"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T27",
+                           "grupo":  "validacao",
+                           "descricao":  "Validar formato de e-mail do vendedor",
+                           "resultado":  "PASS",
+                           "esperado":  "DataAnnotations rejeita e-mail invalido",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "0"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T28",
+                           "grupo":  "validacao",
+                           "descricao":  "Validar salario negativo",
+                           "resultado":  "PASS",
+                           "esperado":  "DataAnnotations rejeita salario negativo",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "0"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T29",
+                           "grupo":  "validacao",
+                           "descricao":  "Validar departamento nao selecionado",
+                           "resultado":  "FAIL",
+                           "esperado":  "DataAnnotations rejeita DepartmentId=0",
+                           "obtido":  "Exception: DepartmentId=0 aceito",
+                           "duracao_ms":  "0"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T30",
+                           "grupo":  "validacao",
+                           "descricao":  "Recusar cadastro de vendedor com nascimento futuro",
+                           "resultado":  "FAIL",
+                           "esperado":  "Nao persiste e retorna formulario",
+                           "obtido":  "Exception: nascimento futuro aceito",
+                           "duracao_ms":  "3"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T31",
+                           "grupo":  "validacao",
+                           "descricao":  "Recusar cadastro em departamento inexistente",
+                           "resultado":  "FAIL",
+                           "esperado":  "Nao persiste e retorna formulario",
+                           "obtido":  "Exception: departamento inexistente aceito",
+                           "duracao_ms":  "2"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T32",
+                           "grupo":  "limite",
+                           "descricao":  "Busca inclui vendas na tarde da data final",
+                           "resultado":  "FAIL",
+                           "esperado":  "Registro de 20/05 15:30 incluido",
+                           "obtido":  "Exception: venda no dia final nao encontrada",
+                           "duracao_ms":  "2"
+                       },
+                       {
+                           "projeto":  "humano",
+                           "teste":  "T33",
+                           "grupo":  "validacao",
+                           "descricao":  "Nome do departamento e obrigatorio",
+                           "resultado":  "FAIL",
+                           "esperado":  "DataAnnotations rejeita nome vazio",
+                           "obtido":  "Exception: departamento sem nome aceito na validacao",
+                           "duracao_ms":  "0"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T01",
+                           "grupo":  "comum",
+                           "descricao":  "Total de vendas do vendedor no intervalo",
+                           "resultado":  "PASS",
+                           "esperado":  "Somatorio correto",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "357"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T02",
+                           "grupo":  "comum",
+                           "descricao":  "Excluir vendas fora do intervalo",
+                           "resultado":  "PASS",
+                           "esperado":  "Somar somente datas selecionadas",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "9"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T03",
+                           "grupo":  "comum",
+                           "descricao":  "Associar vendedor ao departamento",
+                           "resultado":  "PASS",
+                           "esperado":  "Colecao inclui vendedor",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "0"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T04",
+                           "grupo":  "comum",
+                           "descricao":  "Total de vendas agregado pelo departamento",
+                           "resultado":  "PASS",
+                           "esperado":  "Soma das vendas de vendedores",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "39"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T05",
+                           "grupo":  "comum",
+                           "descricao":  "Adicionar e remover venda de um vendedor",
+                           "resultado":  "PASS",
+                           "esperado":  "Colecao reflete modificacoes",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "0"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T06",
+                           "grupo":  "comum",
+                           "descricao":  "Listar departamentos pelo controlador",
+                           "resultado":  "PASS",
+                           "esperado":  "View com dois departamentos",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "32"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T07",
+                           "grupo":  "comum",
+                           "descricao":  "Consultar departamento existente",
+                           "resultado":  "PASS",
+                           "esperado":  "View com entidade correta",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "51"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T08",
+                           "grupo":  "comum",
+                           "descricao":  "Consultar departamento inexistente",
+                           "resultado":  "PASS",
+                           "esperado":  "NotFound",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "1"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T09",
+                           "grupo":  "comum",
+                           "descricao":  "Abrir cadastro de departamento",
+                           "resultado":  "PASS",
+                           "esperado":  "View retornada",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "0"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T10",
+                           "grupo":  "comum",
+                           "descricao":  "Criar e persistir departamento",
+                           "resultado":  "PASS",
+                           "esperado":  "Redirect e entidade salva",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "20"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T11",
+                           "grupo":  "comum",
+                           "descricao":  "Abrir edicao de departamento",
+                           "resultado":  "PASS",
+                           "esperado":  "View retornada",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "4"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T12",
+                           "grupo":  "comum",
+                           "descricao":  "Alterar e persistir departamento",
+                           "resultado":  "PASS",
+                           "esperado":  "Nome alterado no banco",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "14"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T13",
+                           "grupo":  "comum",
+                           "descricao":  "Abrir exclusao de departamento",
+                           "resultado":  "PASS",
+                           "esperado":  "View retornada",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "7"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T14",
+                           "grupo":  "comum",
+                           "descricao":  "Excluir departamento sem vendedores",
+                           "resultado":  "PASS",
+                           "esperado":  "Exclusao persistida",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "25"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T15",
+                           "grupo":  "comum",
+                           "descricao":  "Listar vendedores",
+                           "resultado":  "PASS",
+                           "esperado":  "View com dois vendedores",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "24"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T16",
+                           "grupo":  "comum",
+                           "descricao":  "Abrir formulario de vendedor",
+                           "resultado":  "PASS",
+                           "esperado":  "View retornada",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "43"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T17",
+                           "grupo":  "comum",
+                           "descricao":  "Consultar vendedor existente",
+                           "resultado":  "PASS",
+                           "esperado":  "View com vendedor",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "20"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T18",
+                           "grupo":  "comum",
+                           "descricao":  "Abrir edicao de vendedor",
+                           "resultado":  "PASS",
+                           "esperado":  "View retornada",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "5"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T19",
+                           "grupo":  "comum",
+                           "descricao":  "Cadastrar e persistir vendedor",
+                           "resultado":  "PASS",
+                           "esperado":  "Vendedor salvo",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "13"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T20",
+                           "grupo":  "comum",
+                           "descricao":  "Atualizar vendedor existente",
+                           "resultado":  "PASS",
+                           "esperado":  "Alteracao persistida",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "12"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T21",
+                           "grupo":  "comum",
+                           "descricao":  "Abrir exclusao de vendedor",
+                           "resultado":  "PASS",
+                           "esperado":  "View retornada",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "5"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T22",
+                           "grupo":  "comum",
+                           "descricao":  "Excluir vendedor sem vendas",
+                           "resultado":  "PASS",
+                           "esperado":  "Exclusao persistida",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "22"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T23",
+                           "grupo":  "comum",
+                           "descricao":  "Abrir pagina de registros de vendas",
+                           "resultado":  "PASS",
+                           "esperado":  "View retornada",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "0"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T24",
+                           "grupo":  "comum",
+                           "descricao":  "Consultar vendas por intervalo",
+                           "resultado":  "PASS",
+                           "esperado":  "2 registros retornados",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "35"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T25",
+                           "grupo":  "comum",
+                           "descricao":  "Agrupar vendas por departamento",
+                           "resultado":  "PASS",
+                           "esperado":  "Dois registros em grupos",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "11"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T26",
+                           "grupo":  "validacao",
+                           "descricao":  "Validar nome obrigatorio do vendedor",
+                           "resultado":  "PASS",
+                           "esperado":  "DataAnnotations invalida nome vazio",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "3"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T27",
+                           "grupo":  "validacao",
+                           "descricao":  "Validar formato de e-mail do vendedor",
+                           "resultado":  "PASS",
+                           "esperado":  "DataAnnotations rejeita e-mail invalido",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "0"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T28",
+                           "grupo":  "validacao",
+                           "descricao":  "Validar salario negativo",
+                           "resultado":  "PASS",
+                           "esperado":  "DataAnnotations rejeita salario negativo",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "0"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T29",
+                           "grupo":  "validacao",
+                           "descricao":  "Validar departamento nao selecionado",
+                           "resultado":  "PASS",
+                           "esperado":  "DataAnnotations rejeita DepartmentId=0",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "0"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T30",
+                           "grupo":  "validacao",
+                           "descricao":  "Recusar cadastro de vendedor com nascimento futuro",
+                           "resultado":  "PASS",
+                           "esperado":  "Nao persiste e retorna formulario",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "6"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T31",
+                           "grupo":  "validacao",
+                           "descricao":  "Recusar cadastro em departamento inexistente",
+                           "resultado":  "PASS",
+                           "esperado":  "Nao persiste e retorna formulario",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "5"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T32",
+                           "grupo":  "limite",
+                           "descricao":  "Busca inclui vendas na tarde da data final",
+                           "resultado":  "PASS",
+                           "esperado":  "Registro de 20/05 15:30 incluido",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "3"
+                       },
+                       {
+                           "projeto":  "IA",
+                           "teste":  "T33",
+                           "grupo":  "validacao",
+                           "descricao":  "Nome do departamento e obrigatorio",
+                           "resultado":  "PASS",
+                           "esperado":  "DataAnnotations rejeita nome vazio",
+                           "obtido":  "Comportamento verificado",
+                           "duracao_ms":  "0"
+                       }
+                   ]
+}

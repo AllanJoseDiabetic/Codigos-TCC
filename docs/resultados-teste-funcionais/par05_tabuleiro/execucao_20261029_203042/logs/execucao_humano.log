@@ -1,0 +1,23 @@
+COMANDO: C:\Program Files\Eclipse Adoptium\jdk-11.0.32.101-hotspot\bin\java.exe -cp E:\codigosTCC\resultados\resultados-teste-funcionais\par05_tabuleiro\execucao_20261029_203042\classes\humano ProbeHumano ...
+CODIGO: 0
+=== STDOUT ===
+RESULT	T01	PASS	2 giocatori preparados	91.7438
+RESULT	T02	PASS	Ana e Bia identificadas separadamente	6.2408
+RESULT	T03	PASS	Partida iniciada no periodo 1/turno 1	4.9992
+RESULT	T04	PASS	Recursos de inicio atribuidos	6.2146
+RESULT	T05	PASS	Familiar vinculado e livre	6.3767
+RESULT	T06	PASS	Cartas presentes nas torres	7.3133
+RESULT	T07	PASS	Recompensa mercado: moedas 5 -> 10	13.2561
+RESULT	T08	PASS	Recompensa mercado: servos 3 -> 8	6.5923
+RESULT	T09	PASS	Ocupacao registrada no mercado	7.5571
+RESULT	T10	PASS	Segunda ocupacao rejeitada	8.4771
+RESULT	T11	PASS	Reutilizacao do familiar rejeitada	6.2818
+RESULT	T12	PASS	2 servos trocados por 2 pontos de poder	3.8686
+RESULT	T13	PASS	Saldo insuficiente rejeitado	5.3497
+RESULT	T14	PASS	Conselho concedeu moedas	12.8062
+RESULT	T15	PASS	Proximo jogador identificado corretamente	25.7922
+RESULT	T16	PASS	Pontos de vitoria acumulados	22.8515
+RESULT	T17	PASS	Posicao invalida rejeitada	16.0334
+RESULT	T18	PASS	Jogador fora da vez bloqueado pela regra	23.5449
+
+=== STDERR ===

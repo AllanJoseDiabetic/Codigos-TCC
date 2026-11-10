@@ -1,0 +1,286 @@
+{
+  "par": "par08_galaxian",
+  "projeto": "humano",
+  "inicio_utc": "2026-10-30T01:29:07.466Z",
+  "fim_utc": "2026-10-30T01:29:07.597Z",
+  "fonte": "E:\\codigosTCC\\testes-funcionais\\par08_galaxian\\copias\\execucao_20261029_222906\\humano\\part5\\space_shooter_part_five.js",
+  "metodo": "Node VM com DOM, Canvas e audio simulados; executa o motor real. IA: captura da instancia em memoria, sem mudar arquivo; nao valida navegador/audio reais",
+  "escopo": "Versao final part5 do Galaxian; SpaceArcade game.js; cenarios adaptados a regras distintas",
+  "resumo": {
+    "PASS": 30,
+    "FAIL": 0,
+    "BLOCKED": 0
+  },
+  "resultados": [
+    {
+      "projeto": "humano",
+      "teste": "T01",
+      "descricao": "Inicializar jogo e nave",
+      "resultado": "PASS",
+      "esperado": "Nave criada com coordenadas numericas",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 24.6
+    },
+    {
+      "projeto": "humano",
+      "teste": "T02",
+      "descricao": "Inicializar pontuacao zerada",
+      "resultado": "PASS",
+      "esperado": "Pontuacao inicial igual a zero",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 4.01
+    },
+    {
+      "projeto": "humano",
+      "teste": "T03",
+      "descricao": "Gerar formacao inicial de inimigos",
+      "resultado": "PASS",
+      "esperado": "Onda inicial contem pelo menos um inimigo",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 2.74
+    },
+    {
+      "projeto": "humano",
+      "teste": "T04",
+      "descricao": "Manter inimigos em estado valido",
+      "resultado": "PASS",
+      "esperado": "Posicoes finitas e inimigos ativos",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 2.82
+    },
+    {
+      "projeto": "humano",
+      "teste": "T05",
+      "descricao": "Movimentar nave para a esquerda",
+      "resultado": "PASS",
+      "esperado": "Entrada esquerda reduz posicao horizontal",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 3.71
+    },
+    {
+      "projeto": "humano",
+      "teste": "T06",
+      "descricao": "Movimentar nave para a direita",
+      "resultado": "PASS",
+      "esperado": "Entrada direita aumenta posicao horizontal",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 3.84
+    },
+    {
+      "projeto": "humano",
+      "teste": "T07",
+      "descricao": "Movimentar nave para cima",
+      "resultado": "PASS",
+      "esperado": "Entrada cima reduz posicao vertical",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 2.73
+    },
+    {
+      "projeto": "humano",
+      "teste": "T08",
+      "descricao": "Movimentar nave para baixo",
+      "resultado": "PASS",
+      "esperado": "Entrada baixo aumenta posicao vertical",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 2.64
+    },
+    {
+      "projeto": "humano",
+      "teste": "T09",
+      "descricao": "Bloquear saida pela esquerda",
+      "resultado": "PASS",
+      "esperado": "Nave nao atravessa limite esquerdo",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 2.76
+    },
+    {
+      "projeto": "humano",
+      "teste": "T10",
+      "descricao": "Bloquear saida pela direita",
+      "resultado": "PASS",
+      "esperado": "Nave nao ultrapassa largura da tela",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 4.41
+    },
+    {
+      "projeto": "humano",
+      "teste": "T11",
+      "descricao": "Bloquear saida pelo topo da regiao jogavel",
+      "resultado": "PASS",
+      "esperado": "Nave respeita limite superior da area jogavel",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 2.64
+    },
+    {
+      "projeto": "humano",
+      "teste": "T12",
+      "descricao": "Bloquear saida pela parte inferior",
+      "resultado": "PASS",
+      "esperado": "Nave respeita limite inferior da area jogavel",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 2.8
+    },
+    {
+      "projeto": "humano",
+      "teste": "T13",
+      "descricao": "Disparar projetil do jogador",
+      "resultado": "PASS",
+      "esperado": "Disparo adiciona um ou mais projeteis",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 2.81
+    },
+    {
+      "projeto": "humano",
+      "teste": "T14",
+      "descricao": "Projetil do jogador sobe",
+      "resultado": "PASS",
+      "esperado": "Projetil do jogador move-se para cima",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 2.7
+    },
+    {
+      "projeto": "humano",
+      "teste": "T15",
+      "descricao": "Descartar projetil ao sair da tela",
+      "resultado": "PASS",
+      "esperado": "Projeteis fora da tela sao removidos do estado ativo",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 2.57
+    },
+    {
+      "projeto": "humano",
+      "teste": "T16",
+      "descricao": "Inimigo consegue disparar",
+      "resultado": "PASS",
+      "esperado": "Inimigo gera projetil",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 2.47
+    },
+    {
+      "projeto": "humano",
+      "teste": "T17",
+      "descricao": "Projetil inimigo avanca em direcao vertical",
+      "resultado": "PASS",
+      "esperado": "Projetil inimigo avanca para baixo",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 2.46
+    },
+    {
+      "projeto": "humano",
+      "teste": "T18",
+      "descricao": "Colisao entre tiro e inimigo aumenta pontos",
+      "resultado": "PASS",
+      "esperado": "Acerto real pelo detector de colisao aumenta pontuacao",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 2.65
+    },
+    {
+      "projeto": "humano",
+      "teste": "T19",
+      "descricao": "Nao pontuar sem colisao",
+      "resultado": "PASS",
+      "esperado": "Sem colisao, pontuacao nao aumenta",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 3.02
+    },
+    {
+      "projeto": "humano",
+      "teste": "T20",
+      "descricao": "Colisao letal encerra o jogo",
+      "resultado": "PASS",
+      "esperado": "Acerto do projetil inimigo pelo detector encerra partida",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 3.23
+    },
+    {
+      "projeto": "humano",
+      "teste": "T21",
+      "descricao": "Disparo inimigo fora da tela deixa de atuar",
+      "resultado": "PASS",
+      "esperado": "Projetil inimigo fora da tela e descartado",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 2.75
+    },
+    {
+      "projeto": "humano",
+      "teste": "T22",
+      "descricao": "Gerar nova formacao apos fim dos inimigos",
+      "resultado": "PASS",
+      "esperado": "Nova formacao surge apos eliminar os inimigos",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 3.14
+    },
+    {
+      "projeto": "humano",
+      "teste": "T23",
+      "descricao": "Reiniciar partida zera pontuacao",
+      "resultado": "PASS",
+      "esperado": "Reinicio limpa a pontuacao",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 2.69
+    },
+    {
+      "projeto": "humano",
+      "teste": "T24",
+      "descricao": "Reiniciar reposiciona a nave",
+      "resultado": "PASS",
+      "esperado": "Reinicio reposiciona jogador na area inicial",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 2.8
+    },
+    {
+      "projeto": "humano",
+      "teste": "T25",
+      "descricao": "Soltar tecla interrompe deslocamento",
+      "resultado": "PASS",
+      "esperado": "Soltar controle interrompe deslocamento",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 3.37
+    },
+    {
+      "projeto": "humano",
+      "teste": "T26",
+      "descricao": "Renderizar pontuacao no painel",
+      "resultado": "PASS",
+      "esperado": "HUD apresenta pontuacao atual",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 2.55
+    },
+    {
+      "projeto": "humano",
+      "teste": "T27",
+      "descricao": "Atualizar efeito de fundo",
+      "resultado": "PASS",
+      "esperado": "Fundo se movimenta com a simulacao",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 2.75
+    },
+    {
+      "projeto": "humano",
+      "teste": "T28",
+      "descricao": "Atualizar posicao dos inimigos durante o jogo",
+      "resultado": "PASS",
+      "esperado": "Posicao dos inimigos muda ao atualizar a simulacao",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 2.84
+    },
+    {
+      "projeto": "humano",
+      "teste": "T29",
+      "descricao": "Reiniciar recoloca inimigos no campo",
+      "resultado": "PASS",
+      "esperado": "Reinicio repoe inimigos",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 2.7
+    },
+    {
+      "projeto": "humano",
+      "teste": "T30",
+      "descricao": "Recomecar depois de fim de jogo",
+      "resultado": "PASS",
+      "esperado": "Partida pode reiniciar apos fim de jogo",
+      "obtido": "Assercoes funcionais do cenario atendidas",
+      "duracao_ms": 2.83
+    }
+  ]
+}

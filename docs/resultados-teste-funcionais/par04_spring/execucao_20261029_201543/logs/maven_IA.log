@@ -1,0 +1,35 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< app.commerce:commerce-api >----------------------
+[INFO] Building commerce-api 1.0.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ commerce-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ commerce-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 26 source files to E:\codigosTCC\testes-funcionais\par04_spring\execucao_20261029_201543\copias\IA\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ commerce-api ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ commerce-api ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ commerce-api ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ commerce-api ---
+[INFO] Building jar: E:\codigosTCC\testes-funcionais\par04_spring\execucao_20261029_201543\copias\IA\target\commerce-api-1.0.0.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.7.RELEASE:repackage (repackage) @ commerce-api ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.265 s
+[INFO] Finished at: 2026-10-29T20:16:18-03:00
+[INFO] ------------------------------------------------------------------------

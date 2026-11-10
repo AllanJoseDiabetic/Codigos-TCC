@@ -1,0 +1,8 @@
+﻿Projeto: IlMagnifico
+Repositorio: https://github.com/Raruto/IlMagnifico
+Commit: 4feb017bba928a0adc8159d3824e2839b6bddcbc
+Fontes analisadas: IlMagnifico/main
+Compilacao: JDK 25, compatibilidade Java 8
+Codificacao: Windows-1252
+Scanner: PySonar 1.10.0.5888
+Data da exportacao: 2026-10-28 15:04:35

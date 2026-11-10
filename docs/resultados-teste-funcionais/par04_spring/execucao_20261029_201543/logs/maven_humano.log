@@ -1,0 +1,35 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< com.educandoweb:course >-----------------------
+[INFO] Building course 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ course ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ course ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 27 source files to E:\codigosTCC\testes-funcionais\par04_spring\execucao_20261029_201543\copias\humano\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ course ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ course ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ course ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ course ---
+[INFO] Building jar: E:\codigosTCC\testes-funcionais\par04_spring\execucao_20261029_201543\copias\humano\target\course-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.7.RELEASE:repackage (repackage) @ course ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.502 s
+[INFO] Finished at: 2026-10-29T20:15:55-03:00
+[INFO] ------------------------------------------------------------------------

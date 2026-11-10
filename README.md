@@ -23,7 +23,9 @@ Codigos-TCC/
 ├── docs/
 │   ├── manifesto-rastreabilidade.md
 │   ├── PROMPTS.md
-│   └── REPRODUCAO.md
+│   ├── REPRODUCAO.md
+│   ├── resultados-sonarqube/
+│   └── resultados-teste-funcionais/
 ├── tests/
 ├── .gitignore
 └── README.md
@@ -41,7 +43,9 @@ Contém documentação complementar dos experimentos:
 
 - [`PROMPTS.md`](docs/PROMPTS.md): dez prompts das aplicações da etapa ampliada, preservados como registro histórico.
 - [`manifesto-rastreabilidade.md`](docs/manifesto-rastreabilidade.md): informações de rastreabilidade e hashes documentados na etapa preliminar.
-- [`REPRODUCAO.md`](docs/REPRODUCAO.md): estado verificável da reprodução, caminhos ausentes, inventário de CSV/JSON e conferência dos links.
+- [`REPRODUCAO.md`](docs/REPRODUCAO.md): estado verificável da reprodução, auditoria histórica, resultados publicados e limitações.
+- [`resultados-sonarqube/`](docs/resultados-sonarqube/): exportações da análise estática das dez implementações de referência e das dez implementações de IA.
+- [`resultados-teste-funcionais/`](docs/resultados-teste-funcionais/): registros dos testes funcionais dos dez pares, incluindo aprovações e reprovações.
 
 O manifesto cobre os algoritmos preliminares; não apresenta hashes das dez aplicações. Os prompts documentam especificações, não comprovam execução ou resultados.
 
@@ -248,7 +252,9 @@ A existência de um projeto neste repositório não significa que sua análise t
 
 Os resultados devem ser interpretados considerando diferenças de tamanho, linguagem, dependências e características funcionais.
 
-Na árvore auditada, não foram encontrados CSV nem JSON de resultados de análise estática ou testes funcionais da etapa ampliada. Os 14 JSON existentes são configurações, manifestos e metadados de dependências/build. O [inventário documental](docs/REPRODUCAO.md) registra os caminhos e o alcance dessa verificação; ausência na árvore não significa que análises nunca tenham ocorrido.
+Os resultados publicados estão em [`docs/resultados-sonarqube/`](docs/resultados-sonarqube/). A pasta reúne, por projeto, relatórios das dez implementações de referência e das dez implementações de IA, com métricas, apontamentos identificados e resultados do Quality Gate. Há exportações em CSV e JSON e a planilha consolidada [`Comparacao_SonarQube_10_pares.xlsx`](docs/resultados-sonarqube/Comparacao_SonarQube_10_pares.xlsx).
+
+Esses relatórios permitem conferir os indicadores experimentais registrados e recalcular agregações a partir das exportações. Eles não garantem a reprodução exata das análises sem as versões do SonarQube, plugins, configurações, escopos, ambientes e amostras originalmente utilizados.
 
 ## 7. Avaliação funcional
 
@@ -268,6 +274,25 @@ Na etapa ampliada, os critérios funcionais devem considerar as características
 Os testes automatizados cobrem cenários específicos e não garantem a ausência de todos os defeitos.
 
 Quando uma aplicação não puder ser iniciada, o impedimento deve ser registrado sem inventar resultados para testes não realizados.
+
+Os resultados da etapa ampliada estão disponíveis em [`docs/resultados-teste-funcionais/`](docs/resultados-teste-funcionais/), organizados nas pastas `par01_vidly` a `par10_nps`. Os registros incluem aprovações e reprovações dos dez pares e totalizam 672 resultados individuais, sendo 336 por grupo, conforme os registros da pesquisa.
+
+A numeração dessas pastas é um identificador original da execução e não corresponde necessariamente à numeração dos pares nas tabelas do TCC. A associação deve ser feita pelo nome do projeto:
+
+| Pasta de resultados | Projeto / par nas tabelas |
+|---|---|
+| `par01_vidly` | Movie Rental API / Vidly (par 8) |
+| `par02_flask_blog` | Flask Blog (par 1) |
+| `par03_tasksdaily` | HabitLog / TasksDaily (par 2) |
+| `par04_spring` | Commerce API / Spring Boot (par 4) |
+| `par05_tabuleiro` | Turnboard / IlMagnifico (par 5) |
+| `par06_aspnet` | SalesManagement / ASP.NET Core MVC (par 6) |
+| `par07_circuitos` | CircuitWorkbench / CircuitSimulator (par 7) |
+| `par08_galaxian` | SpaceArcade / Galaxian (par 9) |
+| `par09_bugtracker` | TeamBugTracker / CS50 Capstone (par 3) |
+| `par10_nps` | Survey NPS API / NPS-NLW (par 10) |
+
+Os arquivos preservam evidências da execução registrada, mas não recuperam automaticamente todas as condições originais de ambiente, dependências, configurações e amostras.
 
 ## 8. Direitos autorais e reconhecimento das fontes
 

@@ -1,8 +1,8 @@
 # Estado de reprodução e inventário de evidências
 
-## Escopo da conferência
+## Escopo da auditoria histórica
 
-Conferência documental realizada em 10 de novembro de 2026 sobre a árvore de `main` no commit [`b79adc0658e684c503434ab91aad946cc2b14f4f`](https://github.com/AllanJoseDiabetic/Codigos-TCC/tree/b79adc0658e684c503434ab91aad946cc2b14f4f). A listagem recursiva retornou 7.720 entradas, sem truncamento. A verificação abrange os arquivos versionados dessa árvore, não outras branches, histórico completo, anexos, releases, artefatos de execução externos ou Google Drive.
+Conferência documental realizada em 10 de novembro de 2026 sobre a árvore de `main` no commit [`b79adc0658e684c503434ab91aad946cc2b14f4f`](https://github.com/AllanJoseDiabetic/Codigos-TCC/tree/b79adc0658e684c503434ab91aad946cc2b14f4f). Esta seção é um retrato do commit examinado naquela ocasião, não uma descrição da árvore atual. A listagem recursiva retornou 7.720 entradas, sem truncamento. A verificação abrangeu os arquivos versionados dessa árvore, não outras branches, histórico completo, anexos, releases, artefatos de execução externos ou Google Drive.
 
 Foram lidos o README, os prompts, o manifesto, a suíte preliminar e os 14 JSON encontrados. Nenhum experimento foi executado, nenhum resultado científico foi recalculado e nenhum hash experimental foi substituído. Os identificadores de commits são os já registrados ou retornados pelo GitHub nesta conferência.
 
@@ -31,9 +31,17 @@ Para uma futura reprodução comparativa, será necessário localizar as amostra
 - [`manifesto-rastreabilidade.md`](manifesto-rastreabilidade.md) contém seis entradas de algoritmos e cinco cópias modificadas da etapa preliminar. Os caminhos e os onze hashes históricos foram preservados. As três cópias modificadas de IA também estão sob `IA/JavaScript/Preliminar/`; as duas de referência estão ausentes.
 - O manifesto não traz hashes das dez aplicações. Os prompts registram requisitos e restrições, mas não substituem registros de geração, ambiente, execução e coleta de métricas.
 
-## CSV/JSON efetivamente disponíveis
+## Atualização posterior — resultados experimentais publicados
 
-**Nenhum arquivo `.csv` foi encontrado. Foram encontrados 14 arquivos `.json`, listados integralmente abaixo. Nenhum deles contém relatório de análise estática ou resultado de teste funcional da etapa ampliada.** A classificação foi feita pela leitura do conteúdo, não apenas pelo nome.
+Após a auditoria histórica, foram publicados em [`resultados-sonarqube/`](resultados-sonarqube/) os relatórios das dez implementações de referência e das dez implementações de IA. O conjunto contém métricas, apontamentos identificados e resultados de Quality Gate por projeto, em exportações CSV e JSON, além da planilha consolidada [`Comparacao_SonarQube_10_pares.xlsx`](resultados-sonarqube/Comparacao_SonarQube_10_pares.xlsx).
+
+Também foram publicados em [`resultados-teste-funcionais/`](resultados-teste-funcionais/) os resultados dos testes funcionais dos dez pares, nas pastas `par01_vidly` a `par10_nps`, com aprovações e reprovações registradas. O conjunto totaliza 672 resultados individuais, sendo 336 por grupo. A numeração das pastas é a numeração original da execução; a correspondência com os pares das tabelas deve ser estabelecida pelos nomes dos projetos, e não pela posição numérica. A tabela equivalente está no [README](../README.md#7-avaliação-funcional).
+
+Esses arquivos tornam disponíveis as evidências experimentais e permitem conferir os registros e recalcular indicadores a partir das exportações. Isso não significa que os experimentos tenham sido reproduzidos nesta atualização, nem que todas as condições originais tenham sido recuperadas. A reprodução exata da execução continua limitada pelas versões de ferramentas e dependências, configurações, ambientes, escopos de análise, amostras e procedimentos que estavam disponíveis na coleta.
+
+## CSV/JSON na auditoria histórica
+
+**Na árvore do commit auditado historicamente, nenhum arquivo `.csv` foi encontrado. Foram encontrados 14 arquivos `.json`, listados integralmente abaixo. Nenhum deles continha relatório de análise estática ou resultado de teste funcional da etapa ampliada.** A classificação foi feita pela leitura do conteúdo, não apenas pelo nome.
 
 | Arquivo versionado | Conteúdo / finalidade |
 |---|---|
@@ -52,9 +60,20 @@ Para uma futura reprodução comparativa, será necessário localizar as amostra
 | [`IA/TypeScript/survey-nps-api/package.json`](../IA/TypeScript/survey-nps-api/package.json) | Manifesto de pacote e dependências Node.js |
 | [`IA/TypeScript/survey-nps-api/tsconfig.json`](../IA/TypeScript/survey-nps-api/tsconfig.json) | Configuração do compilador TypeScript |
 
-Não há CSV/JSON de resultados na raiz, em `docs/`, em `tests/` ou no restante da árvore auditada. Arquivos de build e dependências não demonstram, por si só, sucesso de compilação, validação funcional ou qualidade no SonarQube. A ausência de relatórios versionados não permite concluir que as análises nunca tenham sido realizadas; apenas impede conferir seus resultados por esses artefatos neste snapshot.
+Não havia CSV/JSON de resultados na raiz, em `docs/`, em `tests/` ou no restante da árvore auditada. Essa afirmação permanece válida apenas para o snapshot histórico; os resultados foram publicados posteriormente nos caminhos indicados acima. Arquivos de build e dependências não demonstram, por si só, sucesso de compilação, validação funcional ou qualidade no SonarQube.
 
-Para completar a documentação da etapa ampliada, permanecem pendentes os relatórios efetivamente coletados, sua associação às amostras analisadas, escopos de análise, versões efetivamente utilizadas e procedimentos/resultados funcionais. Não foram criados nomes presumidos de relatórios, números de versões, resultados ou hashes para preencher essas lacunas.
+Na auditoria histórica, permaneciam pendentes os relatórios coletados, sua associação às amostras analisadas, escopos de análise, versões efetivamente utilizadas e procedimentos/resultados funcionais. A publicação posterior fornece esses artefatos registrados, mas não preenche automaticamente todas essas lacunas metodológicas nem autoriza afirmar que as condições experimentais foram integralmente recuperadas.
+
+## Integridade e segurança dos artefatos publicados
+
+Foi feita uma verificação documental dos arquivos publicados, sem alteração ou exclusão. Não foram identificados tokens, credenciais, chaves privadas ou arquivos de configuração de segredo. Os seguintes itens são potencialmente desnecessários ou merecem revisão antes de uma distribuição mais ampla:
+
+- logs de execução e instalação em todas as pastas funcionais, por poderem revelar detalhes locais do ambiente;
+- [`par04_spring/execucao_20261029_201543/ambiente.txt`](resultados-teste-funcionais/par04_spring/execucao_20261029_201543/ambiente.txt) e os logs `java_*_stdout.log` do mesmo diretório, que contêm nome de usuário, nome de máquina e caminhos locais do ambiente de execução;
+- [`par10_nps/execucao_20261029_225407/database_humano.sqlite`](resultados-teste-funcionais/par10_nps/execucao_20261029_225407/database_humano.sqlite) e [`database_IA.sqlite`](resultados-teste-funcionais/par10_nps/execucao_20261029_225407/database_IA.sqlite), que contêm dados de teste sintéticos, inclusive nomes e endereços `example.invalid`, e devem ser confirmados como adequados à publicação;
+- binários de build, arquivos `WiredTiger*`/`.wt`, classes compiladas e o arquivo `diagnostico_origem.zip` de `par08_galaxian`, por ampliarem o conteúdo publicado além dos registros tabulares e dos logs necessários à conferência.
+
+Esta lista é para revisão do responsável. Nenhum desses arquivos foi removido, renomeado ou modificado.
 
 ## Conferência das referências externas
 
